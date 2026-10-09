@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "powerbi-authoring-local": {
+      "type": "stdio",
+      "command": "c:\\Users\\dindes08\\.vscode\\extensions\\analysis-services.powerbi-modeling-mcp-1.0.0-win32-x64\\server\\powerbi-modeling-mcp.exe",
+			"args": [
+				"--start",
+				"--accept-eula"
+			],
+			"env": {}
+    }
+  }
+}
