@@ -1,0 +1,84 @@
+table intervenidosPorFalta
+	lineageTag: 26237aa3-2650-44ac-b7eb-8ca9b073f6fe
+
+	measure 'Total Intervenidos por Faltas' =
+			
+			SUM(intervenidosPorFalta[valor])
+		formatString: 0
+		lineageTag: fec7d6e0-e064-49ef-b449-18e51c3e4851
+
+	column sexo
+		dataType: string
+		lineageTag: 8ca82559-087f-4add-8ed1-a5f39be9f714
+		summarizeBy: none
+		sourceColumn: sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8ed79e62-abab-4971-a85a-89b573818250
+		summarizeBy: none
+		sourceColumn: fecha
+
+		variation Variación
+			isDefault
+			relationship: d05c801b-7c79-4bb5-b670-219b55ea645c
+			defaultHierarchy: LocalDateTable_af69c5bc-b517-4b93-9a16-0486e44641f6.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column mes
+		dataType: string
+		lineageTag: ff4568ad-b5fa-455b-9cbf-d25961955359
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 01891667-c2d8-46bf-b989-779608ebd4dd
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: 702f1176-f1fb-4ae0-bde7-6bcd7dc357f3
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: int64
+		formatString: 0
+		lineageTag: 5b6a4c1c-b781-40ce-aa7a-f33ccce6cd65
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+	partition intervenidosPorFalta = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/REGISTROS/MININTER/victimizacion_MININTER.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "intervenidosPorFalta", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"fecha", type date}, {"mes", type text}, {"anio", Int64.Type}, {"departamento", type text}, {"hombre", Int64.Type}, {"mujer", Int64.Type}}, "es"),
+				    #"Columna de anulación de dinamización" = Table.UnpivotOtherColumns(#"Tipo de columna cambiado", {"fecha", "mes", "anio", "departamento"}, "Atributo", "valor"),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Columna de anulación de dinamización",{{"Atributo", "sexo"}})
+				in
+				    #"Columnas con nombre cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

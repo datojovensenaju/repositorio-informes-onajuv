@@ -1,0 +1,27 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Año","Rango Etario","Sexo","Mes","dimDepartamento","trabajadoresCulturales","asistenciaLectura","culturaIndigena"]
+
+annotation __LastRPTime = 134358690144004752
+
+annotation PBI_ProTooling = ["WebModelingEdit","DevMode"]
+
+ref table Año
+ref table 'Rango Etario'
+ref table Sexo
+ref table Mes
+ref table dimDepartamento
+ref table trabajadoresCulturales
+ref table asistenciaLectura
+ref table culturaIndigena
+
+ref cultureInfo es-MX
+

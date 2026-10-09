@@ -1,0 +1,38 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Transformar archivo de Consulta1'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Transformar archivo de Consulta1\Consultas auxiliares'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Transformar archivo de Consulta'
+
+	annotation PBI_QueryGroupOrder = 2
+
+queryGroup 'Transformar archivo de Consulta\Consultas auxiliares'
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Año","Rango Etario","Parámetro1","Transformar archivo de ejemplo","Archivo de ejemplo","Transformar archivo","Sexo","Mes","fact_movimiento_migratorio","Parámetro2","Transformar archivo de ejemplo (2)","Archivo de ejemplo (2)","Transformar archivo (2)"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Año
+ref table 'Rango Etario'
+ref table Sexo
+ref table Mes
+ref table fact_movimiento_migratorio
+
+ref cultureInfo es-MX
+

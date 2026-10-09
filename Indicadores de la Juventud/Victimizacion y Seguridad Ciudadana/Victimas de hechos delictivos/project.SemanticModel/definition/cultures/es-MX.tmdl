@@ -1,0 +1,104 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        }
+			      ]
+			    },
+			    "año.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año",
+			          "ConceptualProperty": "AÑO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dimregion.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "REGION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "REGIÓN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "año_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Año"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        },
+			        "año.año": {
+			          "Target": {
+			            "Entity": "año.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "año.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_años"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

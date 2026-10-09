@@ -1,0 +1,34 @@
+table 'Nivel Educativo'
+	lineageTag: 229677af-3785-42ae-a23a-ca9d37ac1a3e
+
+	column ID_NIVEDU
+		dataType: string
+		lineageTag: 3fae8720-733e-48eb-8598-38494cec193c
+		summarizeBy: none
+		sourceColumn: ID_NIVEDU
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL_EDUCATIVO
+		dataType: string
+		lineageTag: 147e1c54-5458-4783-97c5-b2745af0d5f2
+		summarizeBy: none
+		sourceColumn: NIVEL_EDUCATIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Nivel Educativo' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				    #"Nivel Educativo_Sheet" = Origen{[Item="Nivel Educativo",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Nivel Educativo_Sheet", [PromoteAllScalars=true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each ([NIVEL_EDUCATIVO] <> "ESPECIAL" and [NIVEL_EDUCATIVO] <> "INICIAL" and [NIVEL_EDUCATIVO] <> "NO DETERMINADO" and [NIVEL_EDUCATIVO] <> "PRIMARIA" and [NIVEL_EDUCATIVO] <> "SECUNDARIA" and [NIVEL_EDUCATIVO] <> "SIN NIVEL" and [NIVEL_EDUCATIVO] <> "SUPERIOR" and [NIVEL_EDUCATIVO] <> "TÉCNICA"))
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "c8962527a440a6e52b14",
+  "displayName": "Indicador por Objetivo - mobile",
+  "displayOption": "ActualSize",
+  "height": 2370,
+  "width": 370,
+  "visibility": "HiddenInViewMode"
+}

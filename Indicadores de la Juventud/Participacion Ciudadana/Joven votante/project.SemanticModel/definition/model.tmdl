@@ -1,0 +1,27 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Votantes – Extranjero – Jóvenes","Votantes – Extranjero – Total","Votantes – Perú – Jóvenes","Votantes – Perú – Total","dimRegion","Sexo","dimDepartamento","TipoVotante"]
+
+annotation __LastRPTime = 134351768615729554
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'Votantes – Extranjero – Jóvenes'
+ref table 'Votantes – Extranjero – Total'
+ref table 'Votantes – Perú – Jóvenes'
+ref table 'Votantes – Perú – Total'
+ref table dimRegion
+ref table Sexo
+ref table dimDepartamento
+ref table TipoVotante
+
+ref cultureInfo es-MX
+

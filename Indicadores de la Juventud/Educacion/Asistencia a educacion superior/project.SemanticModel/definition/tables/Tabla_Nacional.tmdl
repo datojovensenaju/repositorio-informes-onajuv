@@ -1,0 +1,80 @@
+table Tabla_Nacional
+	lineageTag: b5ae3e04-12e7-4629-9f49-79d4796e78c5
+
+	column AÑO
+		lineageTag: 4ddbd24d-f101-4a19-af4c-37b738e6b1ba
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [AÑO]
+
+		annotation SummarizationSetBy = Automatic
+
+	column FRECUENCIA
+		lineageTag: b92211e1-b935-4ea4-a738-0e95221abf02
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [FRECUENCIA]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		lineageTag: 373d9a34-ae83-4618-acbc-1059d3816160
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CATEGORIA]
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 631ede4b-47c8-4a38-8435-6de81b1b9118
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [VALOR]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		lineageTag: 6ce7fb15-9258-479b-9bd6-63925387622c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CV]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Tabla_Nacional = calculated
+		mode: import
+		source =
+				
+				SELECTCOLUMNS(
+				    FILTER(
+				        datosNacionales,
+				        TRIM(datosNacionales[CATEGORIA]) = "NACIONAL"
+				    ),
+				    "AÑO", datosNacionales[AÑO],
+				    "FRECUENCIA", datosNacionales[INDICADOR],
+				    "CATEGORIA", datosNacionales[CATEGORIA],
+				"VALOR",
+				        VAR ValorLimpio =
+				            TRIM(
+				                SUBSTITUTE(
+				                    SUBSTITUTE(
+				                        SUBSTITUTE(
+				                            datosNacionales[VALOR],
+				                            "%",
+				                            ""
+				                        ),
+				                        "(",
+				                        ""
+				                    ),
+				                    ")",
+				                    ""
+				                )
+				            )
+				        RETURN
+				            DIVIDE(VALUE(ValorLimpio), 100),
+				    "CV", datosNacionales[CV]
+				)
+
+	annotation PBI_Id = 817e6390ea4d4071a0ed0a456d8fca3f
+

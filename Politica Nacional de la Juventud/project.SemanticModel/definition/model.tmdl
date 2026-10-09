@@ -1,0 +1,24 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Indicadores","Lineamientos","Matriz de Indicadores","Objetivo Prioritario","Proveedor","Servicio","Valor de Indicadores"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Indicadores
+ref table Lineamientos
+ref table 'Matriz de Indicadores'
+ref table 'Objetivo Prioritario'
+ref table Proveedor
+ref table Servicio
+ref table 'Valor de Indicadores'
+
+ref cultureInfo es-MX
+

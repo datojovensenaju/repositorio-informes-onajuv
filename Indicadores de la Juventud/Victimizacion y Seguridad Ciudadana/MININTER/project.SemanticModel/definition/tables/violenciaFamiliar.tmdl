@@ -1,0 +1,102 @@
+table violenciaFamiliar
+	lineageTag: f138f180-4e95-429c-a6b4-f1eb463c156d
+
+	measure 'Total victimas de violencia familiar' =
+			CALCULATE(
+			SUM(violenciaFamiliar[Valor]),
+			    violenciaFamiliar[CONDICION]="VICTIMA")
+		formatString: 0
+		lineageTag: 96bcd932-d76b-40f2-8042-2c7d52ed7ab2
+
+	measure 'Total agresores de violencia familiar' =
+			CALCULATE(
+			SUM(violenciaFamiliar[Valor]),
+			    violenciaFamiliar[CONDICION]="AGRESOR")
+		formatString: 0
+		lineageTag: 9f7579fc-2ca4-4689-ada9-376386397b9a
+
+	column sexo
+		dataType: string
+		lineageTag: 062ac40f-ce91-415b-946a-1b1b75b1f798
+		summarizeBy: none
+		sourceColumn: sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column condicion
+		dataType: string
+		lineageTag: 2325e2a5-ece9-477d-ad5c-1eadef01f42b
+		summarizeBy: none
+		sourceColumn: condicion
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 262299cf-aac9-446f-b948-34997f18c2c6
+		summarizeBy: none
+		sourceColumn: fecha
+
+		variation Variación
+			isDefault
+			relationship: b62f545e-ac18-4071-8212-cd0841b88187
+			defaultHierarchy: LocalDateTable_b4a4b490-c9dc-4a5e-b11f-6c39865b8d33.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column mes
+		dataType: string
+		lineageTag: 1e43acd3-51b0-4bd0-a1f3-6b65dae98ef8
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: b394693a-27eb-4153-a206-ed2b77a2acb0
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: 40ebfc2c-9b8e-4b91-8c75-b99efd1deb8a
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: int64
+		formatString: 0
+		lineageTag: 23e5983e-302d-458c-b4cc-2565300af0b3
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+	partition violenciaFamiliar = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/REGISTROS/MININTER/victimizacion_MININTER.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "violenciaFamiliar", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"fecha", type date}, {"mes", type text}, {"anio", Int64.Type}, {"departamento", type text}, {"hombre_victima", Int64.Type}, {"mujer_victima", Int64.Type}, {"hombre_agresor", Int64.Type}, {"mujer_agresor", Int64.Type}}, "es"),
+				    #"Otras columnas con anulación de dinamización" = Table.UnpivotOtherColumns(#"Tipo de columna cambiado", {"departamento", "anio", "mes", "fecha"}, "atributo", "valor"),
+				    #"Dividir columna por delimitador" = Table.SplitColumn(#"Otras columnas con anulación de dinamización", "atributo", Splitter.SplitTextByDelimiter("_", QuoteStyle.Csv), {"Atributo.1", "Atributo.2"}),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Dividir columna por delimitador",{{"Atributo.1", type text}, {"Atributo.2", type text}}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado",{{"Atributo.1", "sexo"}, {"Atributo.2", "condicion"}})
+				in
+				  #"Columnas con nombre cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

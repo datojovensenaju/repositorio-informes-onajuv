@@ -1,0 +1,33 @@
+table frecuenciaDeUso
+	lineageTag: a4613648-8e54-4976-9679-1df8f429b171
+
+	column ID_LUG
+		dataType: string
+		lineageTag: 6d6fbd6e-11e2-4bf1-bb30-7331790a8691
+		summarizeBy: none
+		sourceColumn: ID_LUG
+
+		annotation SummarizationSetBy = Automatic
+
+	column LUGAR
+		dataType: string
+		lineageTag: 75eb7054-27de-4919-9876-0206ade3394e
+		summarizeBy: none
+		sourceColumn: LUGAR
+
+		annotation SummarizationSetBy = Automatic
+
+	partition frecuenciaDeUso = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/7.%20Competencias%20digitales/Lugar%20de%20acceso%20a%20internet.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "LugarDeAcceso", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

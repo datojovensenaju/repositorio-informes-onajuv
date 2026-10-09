@@ -1,0 +1,471 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Limpiar Filtros Nacional Mobile",
+  "name": "10a3fff0004d91c250b8",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "a6dc329e0ea95a8eace3",
+    "sections": {
+      "a6dc329e0ea95a8eace3": {
+        "visualContainers": {
+          "5be211356d45e2ba43c7": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "1a0ac1a514d7a63d4d48": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "0b5c90c0b9bb84801193": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "2af9790188063de03d40": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a4205f5c876210197eab",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "d",
+                        "Entity": "dimDepartamento",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "d"
+                                        }
+                                      },
+                                      "Property": "DEPARTAMENTO"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'NO DETERMINADO'"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'NACIONAL'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "DEPARTAMENTO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "DEPARTAMENTO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "7faf62e0209d6d05e5a3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e3156c3d12faf750749b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TipoVotante"
+                        }
+                      },
+                      "Property": "TIPO_VOTANTE"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TipoVotante"
+                        }
+                      },
+                      "Property": "TIPO_VOTANTE"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "94a4f7f0d4dda70a070e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d16f7b6d596b4fb2d401",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Perú – Jóvenes"
+                        }
+                      },
+                      "Property": "Sexo"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Perú – Jóvenes"
+                        }
+                      },
+                      "Property": "Sexo"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "bf5ee4db78c7ddd80cd2": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "85dbf4338dc084e14189": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "b18f6beb781282e45dd0": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "6bf3aa60178553be9135": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "b0b02d0d29290c60a900": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "531219607e148059d384",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Perú – Jóvenes"
+                        }
+                      },
+                      "Property": "Total de Jóvenes Votantes en Perú"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Perú – Jóvenes"
+                        }
+                      },
+                      "Property": "Total de Jóvenes Votantes en Perú"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "50a59f71cd0016d606d2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "25c420e9e11753a0e090",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Perú – Jóvenes"
+                        }
+                      },
+                      "Property": "total Nuevos Votantes Nacional"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Perú – Jóvenes"
+                        }
+                      },
+                      "Property": "total Nuevos Votantes Nacional"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "9ffaa544220d9bda5234": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a137530def137928cf66",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Perú – Jóvenes"
+                        }
+                      },
+                      "Property": "totalHombreVotantePerú"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Perú – Jóvenes"
+                        }
+                      },
+                      "Property": "totalHombreVotantePerú"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "d2e3da2dd66ba08b391a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8a252103d1b6761dbd36",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Perú – Jóvenes"
+                        }
+                      },
+                      "Property": "totalMujerVotantePerú"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Perú – Jóvenes"
+                        }
+                      },
+                      "Property": "totalMujerVotantePerú"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "4a4b6d13b15ed3590192": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "7251d7a3040b97e612c4": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,634 @@
+table CEM
+	lineageTag: 9a2cc2e1-8b64-4100-8161-d210219eac04
+
+	measure 'Total de Casos' = COUNTROWS('CEM')
+		lineageTag: 631dfd3e-5197-4dd2-bfe0-426c52e71314
+
+		formatStringDefinition = "### ### ###"
+
+	measure '% MUJERES' = ```
+			
+			VAR MujeresFiltradas = 
+			    CALCULATE(
+			        COUNTROWS(CEM), 
+			        KEEPFILTERS(CEM[sexo_victima] = "Mujer")
+			    )
+			VAR TotalEnContexto = [Total de Casos]
+			
+			RETURN
+			COALESCE(DIVIDE(MujeresFiltradas, TotalEnContexto), 0)
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 370dc3b0-8922-4d57-bde6-6d01d5f84938
+
+	measure 'Edad promedio de victima' = CALCULATE(DIVIDE(SUM(CEM[edad_victima]),COUNTROWS(CEM)))
+		formatString: 0
+		lineageTag: ed067a55-91f4-429c-9f2a-3a55405e19e5
+
+	measure 'Impusieron Denuncia' = CALCULATE(DIVIDE(CALCULATE(COUNTROWS(CEM),CEM[interpuso_denuncia]="Si"),COUNTROWS(CEM)))
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 85e2d3c4-933c-4d68-9600-91d6af35f659
+
+	measure 'Riesgo Severo' = ```
+			
+			VAR CasosSeveros = 
+			    CALCULATE(
+			        COUNTROWS(CEM), 
+			        KEEPFILTERS(CEM[nivel_riesgo_victima] = "Severo")
+			    )
+			VAR TotalContexto = COUNTROWS(CEM)
+			
+			RETURN
+			COALESCE(DIVIDE(CasosSeveros, TotalContexto), 0)
+			```
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: a09f1399-3a87-4d13-a850-5de855506374
+
+	measure 'Vincula de Pareja' = CALCULATE(DIVIDE(CALCULATE(COUNTROWS(CEM),CEM[vinculo_agresor_victima]="Con vínculo relacional de pareja"),COUNTROWS(CEM)))
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 484382e3-10c0-4dbc-a3aa-945293c1fd57
+
+	measure '% Casos' = ```
+			
+			DIVIDE(
+			    [Total de Casos], 
+			    [Total Segmentado], 
+			    0
+			)
+			```
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: bb13fe84-71b7-4306-8b8a-460db7b7eb67
+
+	measure 'Total Segmentado' = ```
+			
+			CALCULATE(
+			    COUNTROWS('CEM'), 
+			    ALLSELECTED('CEM'[REGION])
+			)
+			```
+		formatString: 0
+		lineageTag: 90c0f8a7-eb80-415a-86de-705148d2c0ac
+
+	measure Mujeres = CALCULATE(COUNTROWS(CEM),CEM[sexo_victima]="Mujer")
+		formatString: 0
+		lineageTag: e0cd9948-0579-4d29-a485-f44488fe4334
+
+	measure Hombres = CALCULATE(COUNTROWS(CEM),CEM[sexo_victima]="Hombre")
+		formatString: 0
+		lineageTag: a268b749-4ed7-4c6b-b983-727a1727beb5
+
+	measure '% Tentativa Feminicidio' = CALCULATE(COUNTROWS(CEM), CEM[tentativa_feminicidio]="Si")
+		formatString: 0
+		lineageTag: e3997283-db77-4a65-8233-47107cc27fc0
+
+	column cem
+		dataType: string
+		lineageTag: 65f9d0c7-5c22-44f8-a849-a046f32ee197
+		summarizeBy: none
+		sourceColumn: cem
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: ea9f43da-ee79-4369-8b4d-322182887512
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 13707ebd-cf60-4b2d-8024-ab96d1a13b67
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column condicion
+		dataType: string
+		lineageTag: 4a8a2500-9962-471d-a881-8b8f34b0684a
+		summarizeBy: none
+		sourceColumn: condicion
+
+		annotation SummarizationSetBy = Automatic
+
+	column nivel_educativo_victima
+		dataType: string
+		lineageTag: cb8a2ebc-1d57-478d-b688-a453c350731b
+		summarizeBy: none
+		sourceColumn: nivel_educativo_victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_ingreso
+		dataType: string
+		lineageTag: eceed39a-a2d8-48a2-ac81-2891f5f42fb0
+		summarizeBy: none
+		sourceColumn: fecha_ingreso
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio
+		dataType: string
+		lineageTag: d7db6bda-e959-4c8d-925a-ed77f09a3994
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: string
+		lineageTag: eb525c15-92b8-4e13-87d4-3e96b496e6d8
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia
+		dataType: string
+		lineageTag: b8a410a6-a90d-41c2-abd9-a110c5bc4cec
+		summarizeBy: none
+		sourceColumn: dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column victima_peruana
+		dataType: string
+		lineageTag: f421712f-633d-494b-9de8-7b85fcd0a82e
+		summarizeBy: none
+		sourceColumn: victima_peruana
+
+		annotation SummarizationSetBy = Automatic
+
+	column victima_extranjera
+		dataType: string
+		lineageTag: 32292738-ea1c-4048-b32e-645d34a1d377
+		summarizeBy: none
+		sourceColumn: victima_extranjera
+
+		annotation SummarizationSetBy = Automatic
+
+	column pais_victima_extranjera
+		dataType: string
+		lineageTag: a9a03342-6321-469b-8e31-1871d11e553f
+		summarizeBy: none
+		sourceColumn: pais_victima_extranjera
+
+		annotation SummarizationSetBy = Automatic
+
+	column edad_victima
+		dataType: string
+		lineageTag: 89a9a69d-2e48-4952-9fb6-1b3e655c46e9
+		summarizeBy: none
+		sourceColumn: edad_victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column grupo_edad_victima
+		dataType: string
+		lineageTag: 2f53794f-3c34-4b82-9948-027e1c5f24f2
+		summarizeBy: none
+		sourceColumn: grupo_edad_victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column sexo_victima
+		dataType: string
+		lineageTag: a2b2c306-1f3f-43bd-b34d-6f596ed28840
+		summarizeBy: none
+		sourceColumn: sexo_victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column victima_gestando
+		dataType: string
+		lineageTag: e489676c-ca4b-41ec-9b22-88a3b5dab50a
+		summarizeBy: none
+		sourceColumn: victima_gestando
+
+		annotation SummarizationSetBy = Automatic
+
+	column lengua_materna_victima
+		dataType: string
+		lineageTag: 91e0e893-1511-4698-80ba-dd6a17d7d648
+		summarizeBy: none
+		sourceColumn: lengua_materna_victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column etnia_victima
+		dataType: string
+		lineageTag: 86919fc4-53d2-4a08-b933-eda4c6d38adf
+		summarizeBy: none
+		sourceColumn: etnia_victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento_domicilio
+		dataType: string
+		lineageTag: fbf62837-7894-4147-ba5e-da30df734590
+		summarizeBy: none
+		sourceColumn: departamento_domicilio
+
+		annotation SummarizationSetBy = Automatic
+
+	column provincia_domicilio
+		dataType: string
+		lineageTag: f240e397-1632-43cc-a09b-83cafe0bf0a0
+		summarizeBy: none
+		sourceColumn: provincia_domicilio
+
+		annotation SummarizationSetBy = Automatic
+
+	column distrito_domicilio
+		dataType: string
+		lineageTag: 771fbc6a-6c02-4beb-b50e-003853e496b3
+		summarizeBy: none
+		sourceColumn: distrito_domicilio
+
+		annotation SummarizationSetBy = Automatic
+
+	column area_residencia_domicilio
+		dataType: string
+		lineageTag: 74ccd87e-326d-4eb6-bd57-8e68d19fab28
+		summarizeBy: none
+		sourceColumn: area_residencia_domicilio
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado_civil_victima
+		dataType: string
+		lineageTag: 44d0e461-9948-4e33-b8ad-92e381699fe3
+		summarizeBy: none
+		sourceColumn: estado_civil_victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column estudia
+		dataType: string
+		lineageTag: 0ec18f6c-44e0-4025-b27e-7f5d33536dc7
+		summarizeBy: none
+		sourceColumn: estudia
+
+		annotation SummarizationSetBy = Automatic
+
+	column trabaja
+		dataType: string
+		lineageTag: ebbef407-02b1-4c8a-9722-1a4f06eec6d3
+		summarizeBy: none
+		sourceColumn: trabaja
+
+		annotation SummarizationSetBy = Automatic
+
+	column ocupacion
+		dataType: string
+		lineageTag: 72febe77-94fa-4aba-9cd2-465a485d3c4b
+		summarizeBy: none
+		sourceColumn: ocupacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column sin_seguro
+		dataType: string
+		lineageTag: d6fcaf87-071d-4c72-8c34-97b3ae8c108e
+		summarizeBy: none
+		sourceColumn: sin_seguro
+
+		annotation SummarizationSetBy = Automatic
+
+	column discapacidad
+		dataType: string
+		lineageTag: e44ada84-122f-4e78-8162-27ed82454775
+		summarizeBy: none
+		sourceColumn: discapacidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column agresor_peruano
+		dataType: string
+		lineageTag: 0ef4afd7-95a4-421c-b19b-371e4ce62bf3
+		summarizeBy: none
+		sourceColumn: agresor_peruano
+
+		annotation SummarizationSetBy = Automatic
+
+	column agresor_extranjero
+		dataType: string
+		lineageTag: 57b2343a-c2c6-47f3-bcb7-d3aa827805ab
+		summarizeBy: none
+		sourceColumn: agresor_extranjero
+
+		annotation SummarizationSetBy = Automatic
+
+	column pais_agresaro_extranjero
+		dataType: string
+		lineageTag: e6cc6970-5395-4f72-a56b-72b467b5fd7c
+		summarizeBy: none
+		sourceColumn: pais_agresaro_extranjero
+
+		annotation SummarizationSetBy = Automatic
+
+	column vinculo_agresor_victima
+		dataType: string
+		lineageTag: eade490b-c28f-4ac8-a9d6-b18d35cda972
+		summarizeBy: none
+		sourceColumn: vinculo_agresor_victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column vinculo_pareja
+		dataType: string
+		lineageTag: 3a1243d2-45bc-49c9-ac01-3bcd467939b7
+		summarizeBy: none
+		sourceColumn: vinculo_pareja
+
+		annotation SummarizationSetBy = Automatic
+
+	column vinculo_familia
+		dataType: string
+		lineageTag: 37aa80ed-a8ec-4e99-b443-5ebfcee93f55
+		summarizeBy: none
+		sourceColumn: vinculo_familia
+
+		annotation SummarizationSetBy = Automatic
+
+	column sin_vinculo
+		dataType: string
+		lineageTag: 9a68034d-c0d5-44ca-bb80-7f8389c70c48
+		summarizeBy: none
+		sourceColumn: sin_vinculo
+
+		annotation SummarizationSetBy = Automatic
+
+	column agresor_vive_con_victima
+		dataType: string
+		lineageTag: 51b3377a-d07a-4118-9ad8-681a03f5232b
+		summarizeBy: none
+		sourceColumn: agresor_vive_con_victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column agresor_area_residencia_domicilio
+		dataType: string
+		lineageTag: fff80dff-8a30-4541-8096-ee6d007ccb80
+		summarizeBy: none
+		sourceColumn: agresor_area_residencia_domicilio
+
+		annotation SummarizationSetBy = Automatic
+
+	column edad_agresor
+		dataType: string
+		lineageTag: 7d8d4e64-404d-48f9-9b1d-1263b751ccbe
+		summarizeBy: none
+		sourceColumn: edad_agresor
+
+		annotation SummarizationSetBy = Automatic
+
+	column rango_edad_agresor
+		dataType: string
+		lineageTag: 9b4a3e55-006f-4e76-8cb9-9694f0c76680
+		summarizeBy: none
+		sourceColumn: rango_edad_agresor
+
+		annotation SummarizationSetBy = Automatic
+
+	column sexo_agresor
+		dataType: string
+		lineageTag: e0fac632-1104-4566-9f08-f8b8b714f152
+		summarizeBy: none
+		sourceColumn: sexo_agresor
+
+		annotation SummarizationSetBy = Automatic
+
+	column nivel_educativo_agresor
+		dataType: string
+		lineageTag: d61fe668-5ab2-4944-aaa9-1bffdff42197
+		summarizeBy: none
+		sourceColumn: nivel_educativo_agresor
+
+		annotation SummarizationSetBy = Automatic
+
+	column trabaja_agresor
+		dataType: string
+		lineageTag: c9cece73-89b6-4ba5-9c83-8453a79e1e51
+		summarizeBy: none
+		sourceColumn: trabaja_agresor
+
+		annotation SummarizationSetBy = Automatic
+
+	column ocupacion_agresor
+		dataType: string
+		lineageTag: 4875aeb0-4434-4057-aada-4c797277f445
+		summarizeBy: none
+		sourceColumn: ocupacion_agresor
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_violencia
+		dataType: string
+		lineageTag: 0566702c-f4a2-4d22-a512-e5e2193b92c9
+		summarizeBy: none
+		sourceColumn: tipo_violencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column discapacidad_agresor
+		dataType: string
+		lineageTag: 6be7dcce-5a37-40fb-b4ec-ba84100a8f12
+		summarizeBy: none
+		sourceColumn: discapacidad_agresor
+
+		annotation SummarizationSetBy = Automatic
+
+	column primera_vez_agredir
+		dataType: string
+		lineageTag: 5cb4c3ff-f9c8-4c84-ae89-6b62c9191b12
+		summarizeBy: none
+		sourceColumn: primera_vez_agredir
+
+		annotation SummarizationSetBy = Automatic
+
+	column frecuencia_agresion
+		dataType: string
+		lineageTag: 479a4ed3-9782-4572-b8da-03945638fbb6
+		summarizeBy: none
+		sourceColumn: frecuencia_agresion
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado_agresor_ua
+		dataType: string
+		lineageTag: 51b38095-f7fd-4be2-a4f3-bbe4563b49dc
+		summarizeBy: none
+		sourceColumn: estado_agresor_ua
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado_victima_ua
+		dataType: string
+		lineageTag: d67786b5-29b7-46c2-9698-27be1d74dd2c
+		summarizeBy: none
+		sourceColumn: estado_victima_ua
+
+		annotation SummarizationSetBy = Automatic
+
+	column vulnerabilidad_victima_lgtbi
+		dataType: string
+		lineageTag: bcc060cb-16eb-4a13-a645-3a74b5d77c42
+		summarizeBy: none
+		sourceColumn: vulnerabilidad_victima_lgtbi
+
+		annotation SummarizationSetBy = Automatic
+
+	column vulnerabilidad_victima_vih
+		dataType: string
+		lineageTag: 1a87b33e-24ff-4347-84c4-6713323ecbc4
+		summarizeBy: none
+		sourceColumn: vulnerabilidad_victima_vih
+
+		annotation SummarizationSetBy = Automatic
+
+	column nivel_riesgo_victima
+		dataType: string
+		lineageTag: cb6ae705-eda5-43ae-852e-1c890085b1b0
+		summarizeBy: none
+		sourceColumn: nivel_riesgo_victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column interpuso_denuncia
+		dataType: string
+		lineageTag: d9541664-ef89-4f4b-8c62-64d0f31a1464
+		summarizeBy: none
+		sourceColumn: interpuso_denuncia
+
+		annotation SummarizationSetBy = Automatic
+
+	column desea_denunciar
+		dataType: string
+		lineageTag: a6d3e22a-76a4-43e8-ad8d-6cd4246d46e0
+		summarizeBy: none
+		sourceColumn: desea_denunciar
+
+		annotation SummarizationSetBy = Automatic
+
+	column situacion_agresor
+		dataType: string
+		lineageTag: b72fa706-324a-4fea-8afd-964ce53c579e
+		summarizeBy: none
+		sourceColumn: situacion_agresor
+
+		annotation SummarizationSetBy = Automatic
+
+	column tentativa_feminicidio
+		dataType: string
+		lineageTag: ba5d0166-9a59-4845-91a3-6df40e68114d
+		summarizeBy: none
+		sourceColumn: tentativa_feminicidio
+
+		annotation SummarizationSetBy = Automatic
+
+	column modalidad_tentativa_feminicidio
+		dataType: string
+		lineageTag: 995a1bca-f9e1-46c8-a40f-3d0fd4668d6a
+		summarizeBy: none
+		sourceColumn: modalidad_tentativa_feminicidio
+
+		annotation SummarizationSetBy = Automatic
+
+	column nacionalidad_victima
+		dataType: string
+		lineageTag: b62a6c0c-4edc-49e5-a879-37e0cfc35e99
+		summarizeBy: none
+		sourceColumn: nacionalidad_victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column movil_tentativa_feminicidio
+		dataType: string
+		lineageTag: 248eb365-d466-444c-9f91-a0cde8b585f6
+		summarizeBy: none
+		sourceColumn: movil_tentativa_feminicidio
+
+		annotation SummarizationSetBy = Automatic
+
+	column nacionalidad_agresor
+		dataType: string
+		lineageTag: bcd14a5d-a5fb-4785-9b68-3b11263ad5e4
+		summarizeBy: none
+		sourceColumn: nacionalidad_agresor
+
+		annotation SummarizationSetBy = Automatic
+
+	column seguro
+		dataType: string
+		lineageTag: e08be4f0-805d-4726-97f8-e074c2a9e41a
+		summarizeBy: none
+		sourceColumn: seguro
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_hijos
+		dataType: string
+		lineageTag: 24119376-dae7-465d-a61f-9aa3b958d904
+		summarizeBy: none
+		sourceColumn: total_hijos
+
+		annotation SummarizationSetBy = Automatic
+
+	column nivel_ocupacional_agresor
+		dataType: string
+		lineageTag: 60b9eecc-9515-4eb6-8c2e-527fa8a23f9b
+		summarizeBy: none
+		sourceColumn: nivel_ocupacional_agresor
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento_1
+		dataType: string
+		lineageTag: 078fb6ac-1980-4457-888f-66671406be97
+		summarizeBy: none
+		sourceColumn: departamento_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column provincia
+		dataType: string
+		lineageTag: bd974281-18e3-4cfe-9d3d-93f714591761
+		summarizeBy: none
+		sourceColumn: provincia
+
+		annotation SummarizationSetBy = Automatic
+
+	column distrito
+		dataType: string
+		lineageTag: 94966a77-2b99-474e-9b96-503a464a6671
+		summarizeBy: none
+		sourceColumn: distrito
+
+		annotation SummarizationSetBy = Automatic
+
+	column ubigeo
+		dataType: string
+		lineageTag: 1c8ed753-2ff1-461f-be11-18c00af6d402
+		summarizeBy: none
+		sourceColumn: ubigeo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CEM = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/5.%20Violencia%20y%20discriminaci%C3%B3n/REGISTROS/Violencia_CEM.xlsx"), null, true),
+				    CEM_Sheet = Origen{[Item="CEM",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(CEM_Sheet, [PromoteAllScalars=true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each true)
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

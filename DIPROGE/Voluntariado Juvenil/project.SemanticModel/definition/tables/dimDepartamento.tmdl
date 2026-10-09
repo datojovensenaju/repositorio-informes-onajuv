@@ -1,0 +1,48 @@
+table dimDepartamento
+	lineageTag: b215239e-f095-424f-b555-bc94c68f004f
+
+	column ID_DEP
+		dataType: string
+		lineageTag: fb92b4d9-b3c9-4236-b017-1402887910a1
+		summarizeBy: none
+		sourceColumn: ID_DEP
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: beafd912-8e2a-4b00-bf81-8136019eeaef
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_REGNAT
+		dataType: string
+		lineageTag: 5fc44ada-c432-4d32-b172-1df376aa05b5
+		summarizeBy: none
+		sourceColumn: ID_REGNAT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DEPARTAMENTO UBICACIÓN' = "Departamento de " & dimDepartamento[DEPARTAMENTO] & ", Perú"
+		lineageTag: 337a2399-66fe-48b7-935e-aa378a060768
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimDepartamento = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Ubigeo.xlsx"), null, true),
+				    dimDepartamento_Sheet = Origen{[Item="dimDepartamento",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(dimDepartamento_Sheet, [PromoteAllScalars=true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each ([DEPARTAMENTO] <> "NACIONAL" and [DEPARTAMENTO] <> "NO DETERMINADO"))
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

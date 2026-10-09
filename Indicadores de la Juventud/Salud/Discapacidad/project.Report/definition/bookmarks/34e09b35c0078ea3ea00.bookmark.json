@@ -1,0 +1,1721 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Limpiar Discapacidad - WEB",
+  "name": "34e09b35c0078ea3ea00",
+  "options": {
+    "targetVisualNames": [
+      "d33a6283911943912017"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "0792d38f021009084e17",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "d0db5ac6b0f380f6ca24",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "s",
+                "Entity": "Sexo",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "s"
+                                }
+                              },
+                              "Property": "SEXO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'NO ESPECIFICADO'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sexo"
+                }
+              },
+              "Property": "SEXO"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "717565939bd68210e96a",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "a",
+                "Entity": "Año",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "a"
+                                }
+                              },
+                              "Property": "AÑO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'2026'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Año"
+                }
+              },
+              "Property": "AÑO"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "d3d6c2763aba230d2429",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "m",
+                "Entity": "Mes",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "m"
+                                }
+                              },
+                              "Property": "MES"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'NO DETERMINADO'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Mes"
+                }
+              },
+              "Property": "MES"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "sections": {
+      "0792d38f021009084e17": {
+        "visualContainers": {
+          "42c46cc4a47a220289a5": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d1062ae794d0d5ebe813",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "AÑO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "a",
+                                "Entity": "Año",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "a"
+                                            }
+                                          },
+                                          "Property": "AÑO"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'2025'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "AÑO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "cffb972fddb38019b351": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9dd2c1a66d220e15894e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "647b81e6d1ec67ea7068": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d69bb1766a3b8cd1d99b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "Total Casos"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "Total Casos"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "59a143468378961724d0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "cd8883bc268d6113bb72",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "totalHombres"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "totalHombres"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "592ea07ce2e2b9051be5": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "50e44ea835466ed89117",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "totalMujeres"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "totalMujeres"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "fbcabe80e84470943001": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "6bf85c91a6e40c2813e9": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "022925e52d10a9e2e7ce": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "6615f92e0ac901fa0381": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6f4162989a0ae0ba0036",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Rango Etario"
+                        }
+                      },
+                      "Property": "RANGO_ETARIO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Rango Etario"
+                        }
+                      },
+                      "Property": "RANGO_ETARIO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "7634ea3d82aeec45512d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "1d9840ae6b0bf5634d68": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6c2edc244940a6d8ec92",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimRegion"
+                        }
+                      },
+                      "Property": "REGION"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimRegion"
+                        }
+                      },
+                      "Property": "REGION"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "52517dea0b915f7d490b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "602b89719bc4b45c8d64",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimProvincia"
+                        }
+                      },
+                      "Property": "PROVINCIA"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimProvincia"
+                        }
+                      },
+                      "Property": "PROVINCIA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d33a6283911943912017": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "0670fca25e378c5cf455": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9491ecceb216d8e04d87",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDistrito"
+                        }
+                      },
+                      "Property": "DISTRITO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDistrito"
+                        }
+                      },
+                      "Property": "DISTRITO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "f3df87cf81fdaedcd789": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ebbf8bd5896477638732",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "gravedad"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "gravedad"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "e282dc7be36af1131834": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c2587ea0000e57b410d1",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "diagnostico_danio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "diagnostico_danio"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "be1666586297d377ba7a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "1bb3d0eea37eb4d5bb65",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "diagnostico_etiologico"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "diagnostico_etiologico"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5bb821a599419c45aca7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e0b36927d2a03c059827",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dimDistrito"
+                            }
+                          },
+                          "Property": "DISTRITO"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "cfa839ff9a8bbd4bc793",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dimProvincia"
+                            }
+                          },
+                          "Property": "PROVINCIA"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "4636acbf60ac1002a0a6",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDistrito"
+                        }
+                      },
+                      "Property": "ID_DIS"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "19b090b9cde73c633f3c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "Total Casos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ffc4ec821790acab29b4",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dimRegion"
+                            }
+                          },
+                          "Property": "REGION"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1eb9c0d0a49630aa0d02",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimRegion"
+                        }
+                      },
+                      "Property": "ID_REG"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "shapeMap",
+              "objects": {}
+            }
+          },
+          "50585367595560c1b6ea": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6ebf969fc96334696c90",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "totalSeveros"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "totalSeveros"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "24d3875fe9179447fd56": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "74f616da210c0d94da9c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "654eede20dcbd5e860c8",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "Total Casos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d29c3cd3ed3a07057311",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mes"
+                        }
+                      },
+                      "Property": "MES"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mes"
+                        }
+                      },
+                      "Property": "MES"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mes"
+                        }
+                      },
+                      "Property": "MES"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "89121b303d0d724fe1b2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ae3c6a62476a7b000829",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "697032d0001075db952b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "AÑO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7ff3d24f3a913c3927a4",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "Total Casos"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "AÑO"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "AÑO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "1e4cba47fe4028a44a94": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ba30075b0460371cc42b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "cf05bb41209ed85b83ac",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "Total Casos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "991495d4c6b9b41211dc",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Rango Etario"
+                        }
+                      },
+                      "Property": "RANGO_ETARIO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "Total Casos"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "193ac999cb386e52d620": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "401fe0765867bd861a46",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "Total Casos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ea278dd5c7edb160a8cd",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "gravedad"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "Total Casos"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "gravedad"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "41b51907b3d14a3687e3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0cf65c7546adb01eed63",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "Total Casos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6ec363320ed30b3e05e5",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimRegion"
+                        }
+                      },
+                      "Property": "REGION"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "710fe18ad02116167a59",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimProvincia"
+                        }
+                      },
+                      "Property": "PROVINCIA"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d181afc293019ba0e29a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDistrito"
+                        }
+                      },
+                      "Property": "DISTRITO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimRegion"
+                        }
+                      },
+                      "Property": "REGION"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "98c3c9bd78c70846b441": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "87cacd882e9b59a9a737",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "COD. DANIO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "001affc3bdb7b5c369de",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "discapacidad"
+                            }
+                          },
+                          "Property": "sexo"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "discapacidad"
+                            }
+                          },
+                          "Property": "sexo"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "COD. DANIO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d33bd7bf85211fe162ae": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "dcf5b3312c05cd7b9133",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "COD. ETIOLOGICO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "95f38bae52a47a79bc26",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "discapacidad"
+                            }
+                          },
+                          "Property": "sexo"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "discapacidad"
+                            }
+                          },
+                          "Property": "sexo"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "COD. ETIOLOGICO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "95a67c1a5c8cd614188e": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "e5dd371a02c2cf0c078f": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "2a1ee337d008ea034044": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "6c437bab0d602cd49c86",
+  "displayName": "Accidentes-WEB",
+  "displayOption": "FitToPage",
+  "height": 1980,
+  "width": 1400,
+  "pageBinding": {
+    "name": "0fcf21a2149b0689e802",
+    "type": "Default",
+    "parameters": [],
+    "acceptsFilterContext": "None"
+  },
+  "visualInteractions": [
+    {
+      "source": "b4442a4d9aeaa0a1f1ef",
+      "target": "8ac0bd10478f6e09931e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b4442a4d9aeaa0a1f1ef",
+      "target": "c20acf787939dcebc94a",
+      "type": "NoFilter"
+    }
+  ]
+}

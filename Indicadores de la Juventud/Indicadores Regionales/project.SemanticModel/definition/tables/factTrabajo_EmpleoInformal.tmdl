@@ -1,0 +1,83 @@
+table factTrabajo_EmpleoInformal
+	lineageTag: 2f04ba8e-4ce3-4678-b2de-690a32589bdd
+
+	column AÑO
+		dataType: string
+		lineageTag: 89adb4ff-7dc4-469d-a4d9-01bbce42d8b8
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: c5a684a5-fd5f-48cb-bbb7-2cbf55afe71f
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: fc4325fc-8aeb-4780-905f-592f9b3ba43b
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: dbf18e8e-8c09-40b2-b7d1-c85ddae454bf
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: ee57bfd5-7ce6-4a7a-99bd-3da2b4eb45f8
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: 53210b74-9c1e-472d-abbc-ab894afcd0ec
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: a8288995-7f50-4ba1-8ae2-1a95f204a9bd
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: 3b40a3be-cd0b-4926-b7ae-dd9ce449e815
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factTrabajo_EmpleoInformal = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/2.%20Empleo/ENCUESTAS/Trabajo_Empleo%20informal.xlsx"), null, true),
+				    Región_Sheet = Origen{[Item="datosRegionales",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Región_Sheet, [PromoteAllScalars=true]),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Encabezados promovidos","NACIONAL","REGIONAL",Replacer.ReplaceText,{"CATEGORIA"}),
+				    #"Filas filtradas" = Table.SelectRows(#"Valor reemplazado", each ([CATEGORIA] = "REGIONAL"))
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

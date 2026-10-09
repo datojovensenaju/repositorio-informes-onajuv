@@ -1,0 +1,83 @@
+table factVictimizacionSeguridadCiudadana_PercepciónInseguridad12Meses
+	lineageTag: d14d22b0-b5ee-4078-99de-b4c6cf765279
+
+	column AÑO
+		dataType: string
+		lineageTag: 62c91a18-37ef-430f-8c61-6ad39aaf0e4e
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: b010f81b-6562-4914-b075-e0631a3b423b
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: a9ca1e21-3922-4a7e-94ca-f17f24732d20
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: d591141e-bbdb-490a-87e4-06d540d1702f
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: 8bb0f33c-9095-4b73-a79c-b5891b0a7b3d
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: 2b87d342-bb79-47fb-8da0-8933b3ee2a0f
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: 8b4ae2af-d7a4-4a4b-b160-ad1147f32c05
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: b2b321df-916f-4e76-b8e9-1748d7c5efdb
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factVictimizacionSeguridadCiudadana_PercepciónInseguridad12Meses = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/ENCUESTAS/VictimizacionSeguridadCiudadana_Percepci%C3%B3n%20de%20inseguridad%20de%20los%20j%C3%B3venes.xlsx"), null, true),
+				    Región_Sheet = Origen{[Item="datosRegionales",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Región_Sheet, [PromoteAllScalars=true]),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Encabezados promovidos","NACIONAL","REGIONAL",Replacer.ReplaceText,{"CATEGORIA"}),
+				    #"Filas filtradas" = Table.SelectRows(#"Valor reemplazado", each ([CATEGORIA] = "REGIONAL"))
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

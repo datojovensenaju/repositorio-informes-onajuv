@@ -1,0 +1,33 @@
+table dimPais
+	lineageTag: 435c9269-3c82-406c-a763-7315961d437f
+
+	column ID_PAIS
+		dataType: string
+		lineageTag: 55c9a608-0635-4d3b-9159-f091ca5dbb0c
+		summarizeBy: none
+		sourceColumn: ID_PAIS
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAIS
+		dataType: string
+		lineageTag: bb258384-bc81-41c0-b2ea-b926746beb42
+		summarizeBy: none
+		sourceColumn: PAIS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimPais = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Ubigeo.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "dimPais", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

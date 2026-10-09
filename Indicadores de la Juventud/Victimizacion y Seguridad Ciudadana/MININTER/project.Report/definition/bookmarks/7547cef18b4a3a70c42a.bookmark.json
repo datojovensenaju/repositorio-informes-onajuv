@@ -1,0 +1,1477 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Accidentes - WEB",
+  "name": "7547cef18b4a3a70c42a",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "6c437bab0d602cd49c86",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "d0db5ac6b0f380f6ca24",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "s",
+                "Entity": "Sexo",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "s"
+                                }
+                              },
+                              "Property": "SEXO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'NO ESPECIFICADO'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sexo"
+                }
+              },
+              "Property": "SEXO"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "d3d6c2763aba230d2429",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "m",
+                "Entity": "Mes",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "m"
+                                }
+                              },
+                              "Property": "MES"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'NO DETERMINADO'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Mes"
+                }
+              },
+              "Property": "MES"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "4fbaa23d2286ce63a930",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "d",
+                "Entity": "dimDepartamento",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "DEPARTAMENTO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "null"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'NACIONAL'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'NO DETERMINADO'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "dimDepartamento"
+                }
+              },
+              "Property": "DEPARTAMENTO"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "1ac055981a9e478dbf2d",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "m",
+                "Entity": "Mes",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "m"
+                                }
+                              },
+                              "Property": "MES"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "null"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Mes"
+                }
+              },
+              "Property": "MES"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "661a568f394a27b74527",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "a",
+                "Entity": "Año",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "a"
+                                }
+                              },
+                              "Property": "anio"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "null"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'2026'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Año"
+                }
+              },
+              "Property": "anio"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "sections": {
+      "6c437bab0d602cd49c86": {
+        "visualContainers": {
+          "78a12d67d3bd6468270e": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "0f61d9f632c6010ee0b8": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "9963f2713c65503988bc": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "3d75b6a1aac959877b73": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "562c3439a85eb880a305": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "e9504288791a545000d6": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "4e33955bee2d4cdce2e2": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "b4442a4d9aeaa0a1f1ef": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "34b46b54a7827fc851f2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "anio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "a",
+                                "Entity": "Año",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "a"
+                                            }
+                                          },
+                                          "Property": "anio"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'2025'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "anio"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "366323d693d04496d3e1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5f6d3f3b3b330a2822a3",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "30b1289b7972468fce68": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "905a0e1133ec674f8fe9": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "188bf5ca8e3fed2d3273": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2b2613deec2e19d673e3",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mes"
+                        }
+                      },
+                      "Property": "MES"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mes"
+                        }
+                      },
+                      "Property": "MES"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "747515875dbb8a7e47ef": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "307a87027b0d501e391d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "DEPARTAMENTO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "DEPARTAMENTO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ba12b70ac49fe307105c": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "9e6f15945cfd6a5ff731": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4756ec3c5173b5287c92",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito fatales"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito fatales"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "d7aa357e626588e5d408": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3df8e6f70131692ef4ac",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoNoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito no fatales"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoNoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito no fatales"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "c20acf787939dcebc94a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a124f56ba2af6380294a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4f33ea1e53fb0ef13eff",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito fatales"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "74439105480016d6c10b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "anio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito fatales"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "anio"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "75927bfd64e25bb90f80": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8276ab53159fc5fedb00",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mes"
+                        }
+                      },
+                      "Property": "MES"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "825a31a7a94b88f7aca3",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoNoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito no fatales"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d234f07ca5d701b731a1",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoNoFatal"
+                        }
+                      },
+                      "Property": "sexo"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mes"
+                        }
+                      },
+                      "Property": "MES"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "f33ec375df4cbf7cee61": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "be440fcacf28929518e6",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b0f8e58c20d5c62dabe8",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoNoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito no fatales"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoNoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito no fatales"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "40f6e2181cdd19a2fe04": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ca085615abd472abc18e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "da895150bd6304d949be",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoNoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito no fatales"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoNoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito no fatales"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "8ac0bd10478f6e09931e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f8323f3aba6b06c05b11",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2e316e3c03cd7be1d2d2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoNoFatal"
+                        }
+                      },
+                      "Property": "Total coductores accidentes de transito no fatales"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "89ec9e7e83870f59fc32",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "anio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoNoFatal"
+                        }
+                      },
+                      "Property": "Total coductores accidentes de transito no fatales"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "anio"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "2eba4108c2dd56466978": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b709b505fe0dcd4f19eb",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "Total muertos accidentes de transito fatales"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "Total muertos accidentes de transito fatales"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "0050d743548ced592d12": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a7ac3a35d46ca438bf5d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "Total conductores accidentes de transito fatales"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "Total conductores accidentes de transito fatales"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "18c7a6ffdd54e7f8b24d": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "1aa10d0901f2dabda6a0": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "fd74425b4409f0658949": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "653cc9374d3773a759e7",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mes"
+                        }
+                      },
+                      "Property": "MES"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "67059a50ca29d73742e9",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "condicion"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "725262dce750b52dcb78",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "accidenteDeTransitoFatal"
+                            }
+                          },
+                          "Property": "valor"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mes"
+                        }
+                      },
+                      "Property": "MES"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ef1d307728d964fdd9a7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0a3f3fd891c98dbdd88a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "ID_DEP"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0a269af9fc042af1b430",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoNoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito no fatales"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "shapeMap",
+              "objects": {}
+            }
+          },
+          "a4cd8699c2624d4cef0d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a656034f0a0d3c3629d9",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "ID_DEP"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "325f407f27196b72c073",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "Total muertos accidentes de transito fatales"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c6dbd4f74cd30ad0eeff",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "Total conductores accidentes de transito fatales"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "da46f91949f537fc3ac7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "Total heridos accidentes de transito fatales"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "31013946998496125fec",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "accidenteDeTransitoFatal"
+                        }
+                      },
+                      "Property": "total accidentes de transito"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "shapeMap",
+              "objects": {}
+            }
+          },
+          "142f257c35296dda1092": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "393e5d64e41d68d66389": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "9413d1784e1918c8758a": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "42b02c4916a5723b0814": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "89a794aa346f22649232": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "1cdf5943ab411f7c0907": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "62ec3e77673d7d85c7f0": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "d95b52dabe206d31fea6": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "0d84bdfedc9f257cec96": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

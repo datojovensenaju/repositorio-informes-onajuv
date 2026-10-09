@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "1bad6c5a0078ebdccd60",
+  "displayName": "Asistencia a educación superior - WEB",
+  "displayOption": "ActualSize",
+  "height": 1980,
+  "width": 1400,
+  "visualInteractions": [
+    {
+      "source": "3e212e0a8b44503a6e80",
+      "target": "8fb2e88902956236952d",
+      "type": "NoFilter"
+    }
+  ]
+}

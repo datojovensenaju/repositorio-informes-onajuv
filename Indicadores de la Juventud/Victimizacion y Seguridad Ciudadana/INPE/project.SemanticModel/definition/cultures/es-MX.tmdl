@@ -1,0 +1,2537 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango etario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario.id_raneta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario",
+			          "ConceptualProperty": "ID_RANETA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id raneta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_RANETA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario.rango_etario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario",
+			          "ConceptualProperty": "RANGO_ETARIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango etario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rango etario name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RANGO_ETARIO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.id_sex": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "ID_SEX"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id sex": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_SEX": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sex": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "id masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "id gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "SEXO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexo name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "año.anio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año",
+			          "ConceptualProperty": "anio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "anio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Año": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimRegion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "dim province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.id_reg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "ID_REG"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id reg": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_REG": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "REGION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.id_dep": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "ID_DEP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id dep": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_DEP": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.limite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "LIMITE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "limite": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poblacion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "AÑO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.pais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "PAIS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pais": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.id_dep": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "ID_DEP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id dep": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_DEP": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.codigoep": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "CODIGOEP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codigoep": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "SEXO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.nivel_educativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "NIVEL_EDUCATIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel educativo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NIVEL_EDUCATIVO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.estado_civil": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "ESTADO_CIVIL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado civil": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ESTADO_CIVIL": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.nivel_ocupacional": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "NIVEL_OCUPACIONAL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel ocupacional": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NIVEL_OCUPACIONAL": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.rango_edad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "RANGO_EDAD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango edad": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RANGO_EDAD": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.situacion_juridica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "SITUACION_JURIDICA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacion juridica": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SITUACION_JURIDICA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Situación jurídica": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.delito_generico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "DELITO_GENERICO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "delito generico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DELITO_GENERICO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.caso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "CASOS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "caso": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.nacionalidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "NACIONALIDAD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nacionalidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.id_reg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "ID_REG"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id reg": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_REG": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "REGION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.población_penitenciaria_joven": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "Población Penitenciaria Joven"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "población penitenciaria joven": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.población_sentenciada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "Población Sentenciada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "población sentenciada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.sentenciados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "% Sentenciados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% sentenciados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage sentenciado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pct sentenciado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.delito_genérico_más_frecuente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "Delito Genérico Más Frecuente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "delito genérico más frecuente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.jóvenes_de_nacionalidad_extranjera": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "Jóvenes de Nacionalidad Extranjera"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jóvenes de nacionalidad extranjera": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.jóvenes_de_nacionalidad_extranjera1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "% Jóvenes de Nacionalidad Extranjera"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% jóvenes de nacionalidad extranjera": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage jóvene de nacionalidad extranjera": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "pct jóvene de nacionalidad extranjera": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "poblacion.entity__población_penitenciaria_joven_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "poblacion",
+			          "ConceptualProperty": "_Población Penitenciaria Joven FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_población penitenciaria joven FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "poblacion_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_sexos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "poblacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_poblacions"
+			        }
+			      ]
+			    },
+			    "poblacion_has_jóvenes_de_nacionalidad_extranjera1": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.jóvenes_de_nacionalidad_extranjera1": {
+			          "Target": {
+			            "Entity": "poblacion.jóvenes_de_nacionalidad_extranjera1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.jóvenes_de_nacionalidad_extranjera1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have__jóvenes_de_nacionalidad_extranjera"
+			        }
+			      ]
+			    },
+			    "poblacion_has_jóvenes_de_nacionalidad_extranjera": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.jóvenes_de_nacionalidad_extranjera": {
+			          "Target": {
+			            "Entity": "poblacion.jóvenes_de_nacionalidad_extranjera"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.jóvenes_de_nacionalidad_extranjera"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_jóvenes_de_nacionalidad_extranjera"
+			        }
+			      ]
+			    },
+			    "poblacion_has_delito_genérico_más_frecuente": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.delito_genérico_más_frecuente": {
+			          "Target": {
+			            "Entity": "poblacion.delito_genérico_más_frecuente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.delito_genérico_más_frecuente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_delito_genérico_más_frecuente"
+			        }
+			      ]
+			    },
+			    "poblacion_has_sentenciados": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.sentenciados": {
+			          "Target": {
+			            "Entity": "poblacion.sentenciados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.sentenciados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have__sentenciados"
+			        }
+			      ]
+			    },
+			    "poblacion_has_población_sentenciada": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.población_sentenciada": {
+			          "Target": {
+			            "Entity": "poblacion.población_sentenciada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.población_sentenciada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_población_sentenciada"
+			        }
+			      ]
+			    },
+			    "poblacion_has_población_penitenciaria_joven": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.población_penitenciaria_joven": {
+			          "Target": {
+			            "Entity": "poblacion.población_penitenciaria_joven"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.población_penitenciaria_joven"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_población_penitenciaria_joven"
+			        }
+			      ]
+			    },
+			    "poblacion_has_id_reg": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.id_reg": {
+			          "Target": {
+			            "Entity": "poblacion.id_reg"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.id_reg"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_id_regs"
+			        }
+			      ]
+			    },
+			    "poblacion_has_nacionalidad": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.nacionalidad": {
+			          "Target": {
+			            "Entity": "poblacion.nacionalidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.nacionalidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_nacionalidads"
+			        }
+			      ]
+			    },
+			    "poblacion_has_caso": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.caso": {
+			          "Target": {
+			            "Entity": "poblacion.caso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.caso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_casos"
+			        }
+			      ]
+			    },
+			    "poblacion_has_delito_generico": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.delito_generico": {
+			          "Target": {
+			            "Entity": "poblacion.delito_generico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.delito_generico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_delito_genericos"
+			        }
+			      ]
+			    },
+			    "poblacion_has_situacion_juridica": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.situacion_juridica": {
+			          "Target": {
+			            "Entity": "poblacion.situacion_juridica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.situacion_juridica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_situacion_juridicas"
+			        }
+			      ]
+			    },
+			    "poblacion_has_rango_edad": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.rango_edad": {
+			          "Target": {
+			            "Entity": "poblacion.rango_edad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.rango_edad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_rango_edads"
+			        }
+			      ]
+			    },
+			    "poblacion_has_nivel_ocupacional": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.nivel_ocupacional": {
+			          "Target": {
+			            "Entity": "poblacion.nivel_ocupacional"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.nivel_ocupacional"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_nivel_ocupacionals"
+			        }
+			      ]
+			    },
+			    "poblacion_has_estado_civil": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.estado_civil": {
+			          "Target": {
+			            "Entity": "poblacion.estado_civil"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.estado_civil"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_estado_civil"
+			        }
+			      ]
+			    },
+			    "poblacion_has_nivel_educativo": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.nivel_educativo": {
+			          "Target": {
+			            "Entity": "poblacion.nivel_educativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.nivel_educativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_nivel_educativos"
+			        }
+			      ]
+			    },
+			    "poblacion_has_codigoep": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.codigoep": {
+			          "Target": {
+			            "Entity": "poblacion.codigoep"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.codigoep"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_codigoeps"
+			        }
+			      ]
+			    },
+			    "poblacion_has_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.departamento": {
+			          "Target": {
+			            "Entity": "poblacion.departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_departamentos"
+			        }
+			      ]
+			    },
+			    "poblacion_has_id_dep": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.id_dep": {
+			          "Target": {
+			            "Entity": "poblacion.id_dep"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.id_dep"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_id_deps"
+			        }
+			      ]
+			    },
+			    "poblacion_has_pais": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.pais": {
+			          "Target": {
+			            "Entity": "poblacion.pais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.pais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_paises"
+			        }
+			      ]
+			    },
+			    "poblacion_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "poblacion.me": {
+			          "Target": {
+			            "Entity": "poblacion.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "poblacion.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_me"
+			        }
+			      ]
+			    },
+			    "dim_region_has_limite": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.limite": {
+			          "Target": {
+			            "Entity": "dim_region.limite"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.limite"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_limites"
+			        }
+			      ]
+			    },
+			    "dim_region_has_id_dep": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.id_dep": {
+			          "Target": {
+			            "Entity": "dim_region.id_dep"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.id_dep"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_id_deps"
+			        }
+			      ]
+			    },
+			    "dim_region_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.region": {
+			          "Target": {
+			            "Entity": "dim_region.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_regions"
+			        }
+			      ]
+			    },
+			    "dim_region_has_id_reg": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.id_reg": {
+			          "Target": {
+			            "Entity": "dim_region.id_reg"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.id_reg"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_id_regs"
+			        }
+			      ]
+			    },
+			    "año_has_anio": {
+			      "Binding": {
+			        "ConceptualEntity": "Año"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        },
+			        "año.anio": {
+			          "Target": {
+			            "Entity": "año.anio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "año.anio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_anios"
+			        }
+			      ]
+			    },
+			    "sexo_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.sexo": {
+			          "Target": {
+			            "Entity": "sexo.sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_sexos"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Name": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_are_names_IDs_of_sexos"
+			        }
+			      ]
+			    },
+			    "sexo_has_id_sex": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.id_sex": {
+			          "Target": {
+			            "Entity": "sexo.id_sex"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.id_sex"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_id_sexes"
+			        }
+			      ]
+			    },
+			    "rango_etario_has_rango_etario": {
+			      "Binding": {
+			        "ConceptualEntity": "Rango Etario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        },
+			        "rango_etario.rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario.rango_etario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "rango_etario.rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_rango_etarios"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Name": {
+			              "Role": "rango_etario.rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_are_names_IDs_of_rango_etarios"
+			        }
+			      ]
+			    },
+			    "rango_etario_has_id_raneta": {
+			      "Binding": {
+			        "ConceptualEntity": "Rango Etario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        },
+			        "rango_etario.id_raneta": {
+			          "Target": {
+			            "Entity": "rango_etario.id_raneta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "rango_etario.id_raneta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_id_ranetas"
+			        }
+			      ]
+			    },
+			    "poblacion_in_dim_region": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dim_region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_are_in_dim_regions"
+			        }
+			      ]
+			    },
+			    "dim_region_in_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.region": {
+			          "Target": {
+			            "Entity": "dim_region.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dim_region.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_region.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_are_in_regions"
+			        }
+			      ]
+			    },
+			    "poblacion_has_dim_region": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          },
+			          "Nouns": [
+			            {
+			              "region": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "dim_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_dim_regions"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "poblacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_poblacions"
+			        }
+			      ]
+			    },
+			    "poblacion_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "poblacion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "poblacion": {
+			          "Target": {
+			            "Entity": "poblacion"
+			          }
+			        },
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "poblacion"
+			            },
+			            "Object": {
+			              "Role": "año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "poblacions_have_años"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "poblacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_poblacions"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

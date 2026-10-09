@@ -1,0 +1,39 @@
+table principalProblema
+	lineageTag: d1ecef17-e928-4412-9d7c-30523e2a22a2
+
+	column ID_PRINPRO
+		dataType: string
+		lineageTag: 96cc1ea6-038f-4859-9d3d-02e80b28c2fe
+		summarizeBy: none
+		sourceColumn: ID_PRINPRO
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PRINCIPAL PROBLEMA'
+		dataType: string
+		lineageTag: c389f919-255a-43a5-ba90-fc51f83c9d85
+		summarizeBy: none
+		sourceColumn: PRINCIPAL PROBLEMA
+		sortByColumn: ID_PRINPRO
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	partition principalProblema = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/6. Participación ciudadana y gobernanza/ENCUESTAS/ParticipaciónCiudadana_Principales problemas del país.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "principalesProblemas", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Encabezados promovidos",{{"Principales_problemas", "PRINCIPAL PROBLEMA"}})
+				in
+				    #"Columnas con nombre cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

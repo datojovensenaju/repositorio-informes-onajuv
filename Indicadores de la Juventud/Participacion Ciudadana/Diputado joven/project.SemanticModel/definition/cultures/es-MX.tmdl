@@ -1,0 +1,2097 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "candidatura_joven": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "candidatura joven": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.distrito_electoral": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Distrito Electoral"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "distrito electoral": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.escaño_diputado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Escaño Diputado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "escaño diputado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.posicion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Posicion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "posicion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.documento_identidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Documento Identidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "documento identidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.edad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Edad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.fecha_nacimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Fecha Nacimiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha nacimiento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.nivel_educativo_alcanzado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Nivel Educativo Alcanzado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "nivel educativo alcanzado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.tiene_cargo_partidario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Tiene Cargo Partidario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tiene cargo partidario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.tiene_elección_popular": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Tiene Elección Popular"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tiene elección popular": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.total_de_candidatos_jóvenes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Total de Candidatos Jóvenes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de candidatos jóvenes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de candidato jóvene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall de candidato jóvene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Jóvenes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Candidatos Jóvenes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.total_de_candidatos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Total de Candidatos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de candidatos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de candidato": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall de candidato": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.porcentaje_de_candidatos_jóvenes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Porcentaje de Candidatos Jóvenes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "porcentaje de candidatos jóvenes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "% Candidatos Jóvenes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.porcentaje_mujeres_jóvenes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Porcentaje Mujeres Jóvenes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "porcentaje mujeres jóvenes": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_joven.porcentaje_hombres_jóvenes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura joven",
+			          "ConceptualProperty": "Porcentaje Hombres Jóvenes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "porcentaje hombres jóvenes": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_general": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura general"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "candidatura general": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_general.distrito_electoral": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura general",
+			          "ConceptualProperty": "Distrito Electoral"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "distrito electoral": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_general.escaño_diputado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura general",
+			          "ConceptualProperty": "Escaño Diputado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "escaño diputado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_general.documento_identidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura general",
+			          "ConceptualProperty": "Documento Identidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "documento identidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_general.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura general",
+			          "ConceptualProperty": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_general.edad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura general",
+			          "ConceptualProperty": "Edad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_general.condicion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura general",
+			          "ConceptualProperty": "Condicion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "condicion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_general.posicion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura general",
+			          "ConceptualProperty": "Posicion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "posicion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_general.estado_candidato": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura general",
+			          "ConceptualProperty": "Estado Candidato"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado candidato": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "candidatura_general.total_de_candidatos_no_jóvenes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "candidatura general",
+			          "ConceptualProperty": "Total de Candidatos No Jóvenes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de candidatos no jóvenes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de candidato no jóvene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall de candidato no jóvene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total de candidato number jóvene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "No Jóvenes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.id_sex": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "ID_SEX"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id sex": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_SEX": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sex": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "id masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "id gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "SEXO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexo name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "distrito_electoral": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "distritoElectoral"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "distrito electoral": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "distritoElectoral": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "distrito_electoral.id_disele": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "distritoElectoral",
+			          "ConceptualProperty": "ID_DISELE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id disele": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_DISELE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification disele": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity disele": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier disele": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential disele": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "distrito_electoral.distrito_electoral": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "distritoElectoral",
+			          "ConceptualProperty": "DISTRITO ELECTORAL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "distrito electoral": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "distrito electoral name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "nivel_educativo_eleccione.id_niveduele": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Nivel Educativo Elecciones",
+			          "ConceptualProperty": "ID_NIVEDUELE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id niveduele": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_NIVEDUELE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification niveduele": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity niveduele": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier niveduele": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential niveduele": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "nivel_educativo_eleccione": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Nivel Educativo Elecciones"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel educativo eleccione": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "nivel_educativo_eleccione.nivel_educativo_eleccione": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Nivel Educativo Elecciones",
+			          "ConceptualProperty": "NIVEL_EDUCATIVO_ELECCIONES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel educativo eleccione": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nivel educativo eleccione name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NIVEL_EDUCATIVO_ELECCIONES": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    }
+			  },
+			  "Relationships": {
+			    "candidatura_joven_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_sexos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_candidatura_jovens"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_distrito_electoral": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "distrito_electoral": {
+			          "Target": {
+			            "Entity": "distrito_electoral"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "distrito_electoral"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_distrito_electoral"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "distrito_electoral"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "distrito_electoral_have_candidatura_jovens"
+			        }
+			      ]
+			    },
+			    "nivel_educativo_eleccione_has_nivel_educativo_eleccione": {
+			      "Binding": {
+			        "ConceptualEntity": "Nivel Educativo Elecciones"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nivel_educativo_eleccione": {
+			          "Target": {
+			            "Entity": "nivel_educativo_eleccione"
+			          }
+			        },
+			        "nivel_educativo_eleccione.nivel_educativo_eleccione": {
+			          "Target": {
+			            "Entity": "nivel_educativo_eleccione.nivel_educativo_eleccione"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nivel_educativo_eleccione"
+			            },
+			            "Object": {
+			              "Role": "nivel_educativo_eleccione.nivel_educativo_eleccione"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nivel_educativo_elecciones_have_nivel_educativo_elecciones"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "nivel_educativo_eleccione"
+			            },
+			            "Name": {
+			              "Role": "nivel_educativo_eleccione.nivel_educativo_eleccione"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nivel_educativo_elecciones_are_names_IDs_of_nivel_educativo_elecciones"
+			        }
+			      ]
+			    },
+			    "nivel_educativo_eleccione_has_id_niveduele": {
+			      "Binding": {
+			        "ConceptualEntity": "Nivel Educativo Elecciones"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "nivel_educativo_eleccione": {
+			          "Target": {
+			            "Entity": "nivel_educativo_eleccione"
+			          }
+			        },
+			        "nivel_educativo_eleccione.id_niveduele": {
+			          "Target": {
+			            "Entity": "nivel_educativo_eleccione.id_niveduele"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nivel_educativo_eleccione"
+			            },
+			            "Object": {
+			              "Role": "nivel_educativo_eleccione.id_niveduele"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nivel_educativo_elecciones_have_id_nivedueles"
+			        }
+			      ]
+			    },
+			    "distrito_electoral_has_distrito_electoral": {
+			      "Binding": {
+			        "ConceptualEntity": "distritoElectoral"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "distrito_electoral": {
+			          "Target": {
+			            "Entity": "distrito_electoral"
+			          }
+			        },
+			        "distrito_electoral.distrito_electoral": {
+			          "Target": {
+			            "Entity": "distrito_electoral.distrito_electoral"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "distrito_electoral"
+			            },
+			            "Object": {
+			              "Role": "distrito_electoral.distrito_electoral"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "distrito_electoral_have_distrito_electoral"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "distrito_electoral"
+			            },
+			            "Name": {
+			              "Role": "distrito_electoral.distrito_electoral"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "distrito_electoral_are_names_IDs_of_distrito_electoral"
+			        }
+			      ]
+			    },
+			    "distrito_electoral_has_id_disele": {
+			      "Binding": {
+			        "ConceptualEntity": "distritoElectoral"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "distrito_electoral": {
+			          "Target": {
+			            "Entity": "distrito_electoral"
+			          }
+			        },
+			        "distrito_electoral.id_disele": {
+			          "Target": {
+			            "Entity": "distrito_electoral.id_disele"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "distrito_electoral"
+			            },
+			            "Object": {
+			              "Role": "distrito_electoral.id_disele"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "distrito_electoral_have_id_diseles"
+			        }
+			      ]
+			    },
+			    "sexo_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.sexo": {
+			          "Target": {
+			            "Entity": "sexo.sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_sexos"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Name": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_are_names_IDs_of_sexos"
+			        }
+			      ]
+			    },
+			    "sexo_has_id_sex": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.id_sex": {
+			          "Target": {
+			            "Entity": "sexo.id_sex"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.id_sex"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_id_sexes"
+			        }
+			      ]
+			    },
+			    "candidatura_general_has_total_de_candidatos_no_jóvenes": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura general"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_general": {
+			          "Target": {
+			            "Entity": "candidatura_general"
+			          }
+			        },
+			        "candidatura_general.total_de_candidatos_no_jóvenes": {
+			          "Target": {
+			            "Entity": "candidatura_general.total_de_candidatos_no_jóvenes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_general"
+			            },
+			            "Object": {
+			              "Role": "candidatura_general.total_de_candidatos_no_jóvenes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_generals_have_total_de_candidatos_no_jóvenes"
+			        }
+			      ]
+			    },
+			    "candidatura_general_has_estado_candidato": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura general"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_general": {
+			          "Target": {
+			            "Entity": "candidatura_general"
+			          }
+			        },
+			        "candidatura_general.estado_candidato": {
+			          "Target": {
+			            "Entity": "candidatura_general.estado_candidato"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_general"
+			            },
+			            "Object": {
+			              "Role": "candidatura_general.estado_candidato"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_generals_have_estado_candidatos"
+			        }
+			      ]
+			    },
+			    "candidatura_general_has_posicion": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura general"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_general": {
+			          "Target": {
+			            "Entity": "candidatura_general"
+			          }
+			        },
+			        "candidatura_general.posicion": {
+			          "Target": {
+			            "Entity": "candidatura_general.posicion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_general"
+			            },
+			            "Object": {
+			              "Role": "candidatura_general.posicion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_generals_have_posicions"
+			        }
+			      ]
+			    },
+			    "candidatura_general_has_condicion": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura general"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_general": {
+			          "Target": {
+			            "Entity": "candidatura_general"
+			          }
+			        },
+			        "candidatura_general.condicion": {
+			          "Target": {
+			            "Entity": "candidatura_general.condicion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_general"
+			            },
+			            "Object": {
+			              "Role": "candidatura_general.condicion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_generals_have_condicions"
+			        }
+			      ]
+			    },
+			    "candidatura_general_has_edad": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura general"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_general": {
+			          "Target": {
+			            "Entity": "candidatura_general"
+			          }
+			        },
+			        "candidatura_general.edad": {
+			          "Target": {
+			            "Entity": "candidatura_general.edad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_general"
+			            },
+			            "Object": {
+			              "Role": "candidatura_general.edad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_generals_have_edads"
+			        }
+			      ]
+			    },
+			    "candidatura_general_has_documento_identidad": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura general"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_general": {
+			          "Target": {
+			            "Entity": "candidatura_general"
+			          }
+			        },
+			        "candidatura_general.documento_identidad": {
+			          "Target": {
+			            "Entity": "candidatura_general.documento_identidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_general"
+			            },
+			            "Object": {
+			              "Role": "candidatura_general.documento_identidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_generals_have_documento_identidads"
+			        }
+			      ]
+			    },
+			    "candidatura_general_has_escaño_diputado": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura general"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_general": {
+			          "Target": {
+			            "Entity": "candidatura_general"
+			          }
+			        },
+			        "candidatura_general.escaño_diputado": {
+			          "Target": {
+			            "Entity": "candidatura_general.escaño_diputado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_general"
+			            },
+			            "Object": {
+			              "Role": "candidatura_general.escaño_diputado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_generals_have_escaño_diputados"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_porcentaje_hombres_jóvenes": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.porcentaje_hombres_jóvenes": {
+			          "Target": {
+			            "Entity": "candidatura_joven.porcentaje_hombres_jóvenes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.porcentaje_hombres_jóvenes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_porcentaje_hombres_jóvenes"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_porcentaje_mujeres_jóvenes": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.porcentaje_mujeres_jóvenes": {
+			          "Target": {
+			            "Entity": "candidatura_joven.porcentaje_mujeres_jóvenes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.porcentaje_mujeres_jóvenes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_porcentaje_mujeres_jóvenes"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_porcentaje_de_candidatos_jóvenes": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.porcentaje_de_candidatos_jóvenes": {
+			          "Target": {
+			            "Entity": "candidatura_joven.porcentaje_de_candidatos_jóvenes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.porcentaje_de_candidatos_jóvenes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_porcentaje_de_candidatos_jóvenes"
+			        }
+			      ]
+			    },
+			    "candidatura_general_has_candidatura_joven_porcentaje_de_candidatos_jóvenes": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura general"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_general": {
+			          "Target": {
+			            "Entity": "candidatura_general"
+			          }
+			        },
+			        "candidatura_joven.porcentaje_de_candidatos_jóvenes": {
+			          "Target": {
+			            "Entity": "candidatura_joven.porcentaje_de_candidatos_jóvenes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_general"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.porcentaje_de_candidatos_jóvenes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_generals_have_porcentaje_de_candidatos_jóvenes"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_total_de_candidatos": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.total_de_candidatos": {
+			          "Target": {
+			            "Entity": "candidatura_joven.total_de_candidatos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.total_de_candidatos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_total_de_candidatos"
+			        }
+			      ]
+			    },
+			    "candidatura_general_has_candidatura_joven_total_de_candidatos": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura general"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_general": {
+			          "Target": {
+			            "Entity": "candidatura_general"
+			          }
+			        },
+			        "candidatura_joven.total_de_candidatos": {
+			          "Target": {
+			            "Entity": "candidatura_joven.total_de_candidatos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_general"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.total_de_candidatos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_generals_have_total_de_candidatos"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_total_de_candidatos_jóvenes": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.total_de_candidatos_jóvenes": {
+			          "Target": {
+			            "Entity": "candidatura_joven.total_de_candidatos_jóvenes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.total_de_candidatos_jóvenes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_total_de_candidatos_jóvenes"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_tiene_elección_popular": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.tiene_elección_popular": {
+			          "Target": {
+			            "Entity": "candidatura_joven.tiene_elección_popular"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.tiene_elección_popular"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_tiene_elección_popular"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_tiene_cargo_partidario": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.tiene_cargo_partidario": {
+			          "Target": {
+			            "Entity": "candidatura_joven.tiene_cargo_partidario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.tiene_cargo_partidario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_tiene_cargo_partidarios"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_fecha_nacimiento": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.fecha_nacimiento": {
+			          "Target": {
+			            "Entity": "candidatura_joven.fecha_nacimiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.fecha_nacimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_fecha_nacimientos"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_edad": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.edad": {
+			          "Target": {
+			            "Entity": "candidatura_joven.edad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.edad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_edads"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_documento_identidad": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.documento_identidad": {
+			          "Target": {
+			            "Entity": "candidatura_joven.documento_identidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.documento_identidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_documento_identidads"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_posicion": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.posicion": {
+			          "Target": {
+			            "Entity": "candidatura_joven.posicion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.posicion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_posicions"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_escaño_diputado": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "candidatura_joven.escaño_diputado": {
+			          "Target": {
+			            "Entity": "candidatura_joven.escaño_diputado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven.escaño_diputado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_escaño_diputados"
+			        }
+			      ]
+			    },
+			    "candidatura_joven_has_nivel_educativo_eleccione": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura joven"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_joven": {
+			          "Target": {
+			            "Entity": "candidatura_joven"
+			          }
+			        },
+			        "nivel_educativo_eleccione": {
+			          "Target": {
+			            "Entity": "nivel_educativo_eleccione"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_joven"
+			            },
+			            "Object": {
+			              "Role": "nivel_educativo_eleccione"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_jovens_have_nivel_educativo_elecciones"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "nivel_educativo_eleccione"
+			            },
+			            "Object": {
+			              "Role": "candidatura_joven"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "nivel_educativo_elecciones_have_candidatura_jovens"
+			        }
+			      ]
+			    },
+			    "candidatura_general_has_distrito_electoral": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura general"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_general": {
+			          "Target": {
+			            "Entity": "candidatura_general"
+			          }
+			        },
+			        "distrito_electoral": {
+			          "Target": {
+			            "Entity": "distrito_electoral"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_general"
+			            },
+			            "Object": {
+			              "Role": "distrito_electoral"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_generals_have_distrito_electoral"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "distrito_electoral"
+			            },
+			            "Object": {
+			              "Role": "candidatura_general"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "distrito_electoral_have_candidatura_generals"
+			        }
+			      ]
+			    },
+			    "candidatura_general_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "candidatura general"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "candidatura_general": {
+			          "Target": {
+			            "Entity": "candidatura_general"
+			          }
+			        },
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "candidatura_general"
+			            },
+			            "Object": {
+			              "Role": "sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "candidatura_generals_have_sexos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "candidatura_general"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_candidatura_generals"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

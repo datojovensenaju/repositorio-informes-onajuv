@@ -1,0 +1,40 @@
+relationship AutoDetected_56e00f7c-992b-4dd7-9663-93fc1029c608
+	fromColumn: factPoblacionGeneral.AÑO
+	toColumn: Año.AÑO
+
+relationship AutoDetected_ca00c144-5255-4c00-9298-2bee4c35f2c7
+	fromColumn: factPoblacionJoven.AÑO
+	toColumn: Año.AÑO
+
+relationship AutoDetected_af06ec7a-9f78-4e2d-a803-a0a8b49aff25
+	fromColumn: dimRegion.ID_DEP
+	toColumn: dimDepartamento.ID_DEP
+
+relationship AutoDetected_67c9ca54-9245-4c57-bbf3-0db9f0ce2765
+	fromColumn: dimDistrito.ID_PROV
+	toColumn: dimProvincia.ID_PROV
+
+relationship AutoDetected_8d3264df-63f9-4875-aed5-625598a14825
+	fromColumn: dimProvincia.ID_REG
+	toColumn: dimRegion.ID_REG
+
+relationship AutoDetected_db433e85-2ce0-4f3c-a874-c1cedb602246
+	fromColumn: factPoblacionGeneral.SEXO
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_a34fa2d0-5358-4565-ab08-15c1c986eb20
+	fromColumn: factPoblacionJoven.SEXO
+	toColumn: Sexo.SEXO
+
+relationship 555d7bbc-d2f4-4d06-4d2a-9b5c20131383
+	fromColumn: factPoblacionJoven.'RANGO DE EDAD'
+	toColumn: Edad.RANGO_EDAD
+
+relationship 52f0271c-760d-5dbe-33e0-325bf6d711dd
+	fromColumn: factPoblacionGeneral.UBIGEO
+	toColumn: dimDistrito.ID_DIS
+
+relationship 553267ab-a0ce-8bdc-16ca-8569c628505e
+	fromColumn: factPoblacionJoven.UBIGEO
+	toColumn: dimDistrito.ID_DIS
+

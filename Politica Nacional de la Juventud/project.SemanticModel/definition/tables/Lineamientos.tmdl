@@ -1,0 +1,43 @@
+table Lineamientos
+	lineageTag: abcfc7d0-c8a6-4312-9f7a-7034be69d7d7
+
+	column COD_LINEAMIENTO
+		dataType: string
+		lineageTag: 4cab1941-6ff1-4d50-9cf8-ae4c7447e6b9
+		summarizeBy: none
+		sourceColumn: COD_LINEAMIENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column LINEAMIENTO
+		dataType: string
+		lineageTag: 691c96b1-48b6-4985-b561-e062e8c15d17
+		summarizeBy: none
+		sourceColumn: LINEAMIENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_OBJETIVO
+		dataType: string
+		lineageTag: 47006d83-2d99-4ef2-b6f2-a6c50fce947f
+		summarizeBy: none
+		sourceColumn: COD_OBJETIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Lineamientos = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/POL%C3%8DTICA%20NACIONAL%20DE%20JUVENTUD/Politica%20Nacional%20de%20la%20Juventud.xlsx"), null, true),
+				    Lineamientos_Sheet = Origen{[Item="Lineamientos",Kind="Sheet"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Lineamientos_Sheet,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}}),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Tipo cambiado", [PromoteAllScalars=true]),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"COD_LINEAMIENTO", type text}, {"LINEAMIENTO", type text}, {"COD_OBJETIVO", type text}})
+				in
+				    #"Tipo cambiado1"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

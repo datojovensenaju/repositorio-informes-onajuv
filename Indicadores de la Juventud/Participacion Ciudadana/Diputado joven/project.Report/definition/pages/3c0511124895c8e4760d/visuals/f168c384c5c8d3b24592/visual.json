@@ -1,0 +1,157 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "f168c384c5c8d3b24592",
+  "position": {
+    "x": 20,
+    "y": 1853.3333333333333,
+    "z": 21000,
+    "height": 583.33333333333337,
+    "width": 821.11111111111109,
+    "tabOrder": 21000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "distritoElectoral"
+                    }
+                  },
+                  "Property": "DISTRITO ELECTORAL"
+                }
+              },
+              "queryRef": "distritoElectoral.DISTRITO ELECTORAL",
+              "nativeQueryRef": "Distrito Electoral",
+              "active": true,
+              "displayName": "Distrito Electoral"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "candidatura joven"
+                    }
+                  },
+                  "Property": "Total de Candidatos"
+                }
+              },
+              "queryRef": "candidatura joven.Total de Candidatos",
+              "nativeQueryRef": "Total de Candidatos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "candidatura joven"
+                    }
+                  },
+                  "Property": "Total de Candidatos Jóvenes"
+                }
+              },
+              "queryRef": "candidatura joven.Total de Candidatos Jóvenes",
+              "nativeQueryRef": "Candidatos Jóvenes",
+              "displayName": "Candidatos Jóvenes"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "candidatura joven"
+                    }
+                  },
+                  "Property": "Porcentaje de Candidatos Jóvenes"
+                }
+              },
+              "queryRef": "candidatura joven.Porcentaje de Candidatos Jóvene",
+              "nativeQueryRef": "% Candidatos Jóvenes",
+              "displayName": "% Candidatos Jóvenes"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Escaño Diputado"
+                    }
+                  },
+                  "Function": 4
+                }
+              },
+              "queryRef": "Min(candidatura joven.Escaño Diputado)",
+              "nativeQueryRef": "Máx. de Escaño Diputado",
+              "displayName": "Cantidad de Escaños"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "subTotals": [
+        {
+          "properties": {
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#673A0F'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#673A0F'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

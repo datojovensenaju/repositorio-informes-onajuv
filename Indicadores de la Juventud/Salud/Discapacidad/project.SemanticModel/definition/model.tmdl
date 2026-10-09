@@ -1,0 +1,38 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Transformar archivo de Consulta1'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Transformar archivo de Consulta1\Consultas auxiliares'
+
+	annotation PBI_QueryGroupOrder = 0
+
+/// Errores en las consultas cargadas en 1/07/2026 11:01:21.
+queryGroup 'Errores en las consultas: 1/07/2026 11:01:21'
+
+	annotation PBI_QueryGroupOrder = 2
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Año","dimRegion","dimProvincia","dimDistrito","Rango Etario","Parámetro1","Transformar archivo de ejemplo","Archivo de ejemplo","Transformar archivo","discapacidad","Sexo","Mes","Errores en discapacidad"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dimRegion
+ref table Año
+ref table 'Rango Etario'
+ref table dimProvincia
+ref table dimDistrito
+ref table discapacidad
+ref table Sexo
+ref table Mes
+
+ref cultureInfo es-MX
+

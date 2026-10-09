@@ -1,0 +1,16 @@
+relationship 86b9658a-2af4-e347-381b-bcc929fe46ea
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.AÑO
+
+relationship 646cba64-3f5d-579d-e0b0-1cbd57a2f57c
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.AÑO
+
+relationship 742ea5b5-fd72-0e4b-cd9e-ac6a9573cc1a
+	fromColumn: datosNacionales.INDICADOR
+	toColumn: dispositivoUtilizado.'DISPOSITIVO UTILIZADO'
+
+relationship 3c6637b4-49b0-6d28-db5d-3a3c1a427ec3
+	fromColumn: datosRegionales.INDICADOR
+	toColumn: dispositivoUtilizado.'DISPOSITIVO UTILIZADO'
+

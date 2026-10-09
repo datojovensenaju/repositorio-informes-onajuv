@@ -1,0 +1,484 @@
+table RNPCD
+	lineageTag: 40a9dc18-6a9e-40fe-99be-2bad41b49eda
+
+	measure 'Total jóvenes registrados' = ```
+			VAR registrados =
+			COUNTROWS('RNPCD')
+			RETURN
+			IF(ISBLANK(COUNTROWS(RNPCD)),
+			    "-",
+			    registrados)
+			
+			
+			```
+		formatString: 0
+		lineageTag: 9603086e-fce5-48cf-aa4b-80683627051c
+
+	measure 'Registros activos' =
+			
+			CALCULATE(
+			    [Total jóvenes registrados],
+			    KEEPFILTERS(
+			        'RNPCD'[Estado_Registro] = "Activo"
+			    )
+			)
+		formatString: 0
+		lineageTag: 89a726ca-2f1d-477a-b679-fa36dbff794d
+
+	measure '% registros activos' =
+			
+			DIVIDE(
+			    [Registros activos],
+			    [Total jóvenes registrados],
+			    0
+			)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 0912d74d-9f48-43ee-a173-617fee3cd4f7
+
+	measure 'Registros con gravedad severa' =
+			
+			CALCULATE(
+			    COUNTROWS('RNPCD'),
+			    KEEPFILTERS(
+			        'RNPCD'[Nivel_Gravedad] = "Severo"
+			    )
+			)
+		formatString: 0
+		lineageTag: 654e0762-acbf-4726-80e4-e238bf343805
+
+	measure '% gravedad severa' =
+			
+			VAR TotalRegistros =
+			    COUNTROWS('RNPCD')
+			
+			VAR Porcentaje =
+			    DIVIDE(
+			        [Registros con gravedad severa],
+			        TotalRegistros
+			    )
+			
+			RETURN
+			IF(
+			    ISBLANK(Porcentaje),
+			    "-",
+			    FORMAT(Porcentaje, "0.0%"))
+		lineageTag: 74757025-bcbf-4d5a-a5f9-f11bc9714cad
+
+	measure 'Edad promedio' =
+			
+			AVERAGE('RNPCD'[Edad])
+		lineageTag: 5b54f18e-02db-4191-813f-0cec02a71bd2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Tipo de deficiencia más frecuente' =
+			
+			VAR TablaFrecuencias =
+			    ADDCOLUMNS(
+			        ALLSELECTED(
+			            'DimDeficiencia'[tipo_deficiencia]
+			        ),
+			        "@Cantidad",
+			            CALCULATE(
+			                [Jóvenes por tipo de deficiencia]
+			            )
+			    )
+			
+			VAR MayorCantidad =
+			    MAXX(
+			        TablaFrecuencias,
+			        [@Cantidad]
+			    )
+			
+			RETURN
+			IF([Total jóvenes registrados]="-",
+			"-",
+			    CONCATENATEX(
+			        FILTER(
+			            TablaFrecuencias,
+			            [@Cantidad] = MayorCantidad
+			        ),
+			        'DimDeficiencia'[tipo_deficiencia],
+			        ", "
+			    ))
+		lineageTag: e2c682d7-08d3-46c8-9248-f0973818d486
+
+	measure 'Tipo de limitación más frecuente' =
+			
+			VAR TablaFrecuencias =
+			    ADDCOLUMNS(
+			        ALLSELECTED(
+			            'DimLimitacion'[tipo_limitacion]
+			        ),
+			        "@Cantidad",
+			            CALCULATE(
+			                [Jóvenes por tipo de limitación]
+			            )
+			    )
+			
+			VAR MayorCantidad =
+			    MAXX(
+			        TablaFrecuencias,
+			        [@Cantidad]
+			    )
+			
+			RETURN
+			IF([Total jóvenes registrados]="-",
+			"-",
+			    CONCATENATEX(
+			        FILTER(
+			            TablaFrecuencias,
+			            [@Cantidad] = MayorCantidad
+			        ),
+			        'DimLimitacion'[tipo_limitacion],
+			        ", "
+			    ))
+		lineageTag: bb7298ab-b366-49c8-ba84-9227c7d369fa
+
+	measure '% gravedad severasadas' =
+			
+			VAR TotalRegistros =
+			    [Total jóvenes registrados]
+			
+			VAR Porcentaje =
+			    DIVIDE(
+			        [Registros con gravedad severa],
+			        TotalRegistros
+			    )
+			
+			RETURN
+			IF(
+			    ISBLANK(Porcentaje),
+			    "-",
+			    FORMAT(Porcentaje, "0.0%"))
+		lineageTag: e267df1d-0f3b-42af-9835-f938e23ce8d3
+
+	column anio_inscripcion
+		dataType: string
+		lineageTag: 1ad03d46-5aa7-4507-87cd-343244c3d985
+		summarizeBy: none
+		sourceColumn: anio_inscripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes_inscripcion
+		dataType: string
+		lineageTag: 4fc9a665-66ed-48d7-a9b5-47b82b452452
+		summarizeBy: none
+		sourceColumn: mes_inscripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_inscripcion
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cebad17c-2577-4187-a55b-6318ae21608e
+		summarizeBy: none
+		sourceColumn: fecha_inscripcion
+
+		variation Variación
+			isDefault
+			relationship: ec3b2a3a-5b93-4d40-99aa-25ef07ce8b28
+			defaultHierarchy: LocalDateTable_5b5bbe41-d322-4ab4-a8ef-2818302ea797.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column departamento
+		dataType: string
+		lineageTag: 8916229a-2bd5-4bfa-bd7f-a3388be25984
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column provincia
+		dataType: string
+		lineageTag: afd757fa-924d-40bd-b196-0e8ea68631c8
+		summarizeBy: none
+		sourceColumn: provincia
+
+		annotation SummarizationSetBy = Automatic
+
+	column distrito
+		dataType: string
+		lineageTag: 1f2d4d39-4e3a-44ef-a039-e9113dab7853
+		summarizeBy: none
+		sourceColumn: distrito
+
+		annotation SummarizationSetBy = Automatic
+
+	column edad
+		dataType: string
+		lineageTag: 897985ac-e0df-44bd-82ff-71bf4defdcc3
+		summarizeBy: none
+		sourceColumn: edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column rango_edad
+		dataType: string
+		lineageTag: 5ae5ee2f-ce8a-40df-bc61-79951bdf02c6
+		summarizeBy: none
+		sourceColumn: rango_edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column sexo
+		dataType: string
+		lineageTag: 8a31091c-1366-451d-bfce-69ef91a9aba6
+		summarizeBy: none
+		sourceColumn: sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column lim_conducta
+		dataType: string
+		lineageTag: 8f0ffe5f-975a-474d-a16e-305d097270dd
+		summarizeBy: none
+		sourceColumn: lim_conducta
+
+		annotation SummarizationSetBy = Automatic
+
+	column lim_comunicación
+		dataType: string
+		lineageTag: 81917e82-6e92-4c09-9815-5728166dbe09
+		summarizeBy: none
+		sourceColumn: lim_comunicación
+
+		annotation SummarizationSetBy = Automatic
+
+	column lim_cuidado
+		dataType: string
+		lineageTag: 2b2453a4-2c09-4991-826c-8cb4a8d90b78
+		summarizeBy: none
+		sourceColumn: lim_cuidado
+
+		annotation SummarizationSetBy = Automatic
+
+	column lim_locomocion
+		dataType: string
+		lineageTag: 1afaa4d6-7924-46c9-8255-ac4dd061fe94
+		summarizeBy: none
+		sourceColumn: lim_locomocion
+
+		annotation SummarizationSetBy = Automatic
+
+	column lim_corporal
+		dataType: string
+		lineageTag: c2382cf1-0da7-4dea-8f49-c29053484313
+		summarizeBy: none
+		sourceColumn: lim_corporal
+
+		annotation SummarizationSetBy = Automatic
+
+	column lim_destreza
+		dataType: string
+		lineageTag: eebdc2dc-7937-4112-92b7-03b711c88723
+		summarizeBy: none
+		sourceColumn: lim_destreza
+
+		annotation SummarizationSetBy = Automatic
+
+	column situacion
+		dataType: string
+		lineageTag: 20fe1bf3-c795-47a9-a688-513a386d91e8
+		summarizeBy: none
+		sourceColumn: situacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column def_intelectual
+		dataType: string
+		lineageTag: 588956e8-515c-45e6-9f02-25ea2ea8a534
+		summarizeBy: none
+		sourceColumn: def_intelectual
+
+		annotation SummarizationSetBy = Automatic
+
+	column def_psicologica
+		dataType: string
+		lineageTag: fababfdc-0d76-4a55-91b3-331bea266f78
+		summarizeBy: none
+		sourceColumn: def_psicologica
+
+		annotation SummarizationSetBy = Automatic
+
+	column def_lenguaje
+		dataType: string
+		lineageTag: f5c31025-cc2a-4dd7-ac08-097a39a5e698
+		summarizeBy: none
+		sourceColumn: def_lenguaje
+
+		annotation SummarizationSetBy = Automatic
+
+	column def_audicion
+		dataType: string
+		lineageTag: 15cde7eb-b006-4284-ae92-2bed170065f3
+		summarizeBy: none
+		sourceColumn: def_audicion
+
+		annotation SummarizationSetBy = Automatic
+
+	column def_vision
+		dataType: string
+		lineageTag: e6f3bc4e-ac15-40df-9865-665c8727f557
+		summarizeBy: none
+		sourceColumn: def_vision
+
+		annotation SummarizationSetBy = Automatic
+
+	column def_visceral
+		dataType: string
+		lineageTag: f743fe7a-0838-4554-9fdd-5746bab13948
+		summarizeBy: none
+		sourceColumn: def_visceral
+
+		annotation SummarizationSetBy = Automatic
+
+	column def_musculo
+		dataType: string
+		lineageTag: 6494491e-5ea8-4db5-b516-130e90ee529d
+		summarizeBy: none
+		sourceColumn: def_musculo
+
+		annotation SummarizationSetBy = Automatic
+
+	column def_generalizada
+		dataType: string
+		lineageTag: 383e0bb4-c451-4071-b6dd-c266f1f27d60
+		summarizeBy: none
+		sourceColumn: def_generalizada
+
+		annotation SummarizationSetBy = Automatic
+
+	column nivel_gravedad
+		dataType: string
+		lineageTag: 14788006-8f82-4c3a-be04-a8ff67575b9d
+		summarizeBy: none
+		sourceColumn: nivel_gravedad
+
+		annotation SummarizationSetBy = Automatic
+
+	column nivel_educativo
+		dataType: string
+		lineageTag: 1b635f3f-3313-41ed-910b-ca189243ec56
+		summarizeBy: none
+		sourceColumn: nivel_educativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column diag_sdown
+		dataType: string
+		lineageTag: 8d0631a2-7554-4b5f-8b46-f5c391594d53
+		summarizeBy: none
+		sourceColumn: diag_sdown
+
+		annotation SummarizationSetBy = Automatic
+
+	column diag_tea
+		dataType: string
+		lineageTag: 86f9e074-e9ce-4bcd-89ff-e65da2001fa0
+		summarizeBy: none
+		sourceColumn: diag_tea
+
+		annotation SummarizationSetBy = Automatic
+
+	column diag_esquizofrenia
+		dataType: string
+		lineageTag: a4e703ce-5f6f-4d9f-8029-1dfa6d22acb5
+		summarizeBy: none
+		sourceColumn: diag_esquizofrenia
+
+		annotation SummarizationSetBy = Automatic
+
+	column diag_retrazo_mental
+		dataType: string
+		lineageTag: 7edd1ac0-8574-4c66-9f30-534fb525ba4b
+		summarizeBy: none
+		sourceColumn: diag_retrazo_mental
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado_registro
+		dataType: string
+		lineageTag: 76ba1bc6-01c2-4350-8e1a-f72cc7ff78e1
+		summarizeBy: none
+		sourceColumn: estado_registro
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado_civil
+		dataType: string
+		lineageTag: bb14c0eb-c469-477d-86c0-e5bb1466c652
+		summarizeBy: none
+		sourceColumn: estado_civil
+
+		annotation SummarizationSetBy = Automatic
+
+	column nacionalidad
+		dataType: string
+		lineageTag: 4ebcd0a3-8755-4947-b002-84da8a513daa
+		summarizeBy: none
+		sourceColumn: nacionalidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column pais
+		dataType: string
+		lineageTag: 4bf7d696-c87a-4f10-b049-436b6aeb5edf
+		summarizeBy: none
+		sourceColumn: pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column ubigeo
+		dataType: string
+		lineageTag: 599b7e0d-9428-433d-88a1-7274bb6ac14f
+		summarizeBy: none
+		sourceColumn: ubigeo
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_reg
+		dataType: string
+		lineageTag: 9ae82c31-8b7f-470a-9232-e98e2c30e155
+		summarizeBy: none
+		sourceColumn: id_reg
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 31bf8ebd-6518-4f4b-8f89-1ffbf55d9f89
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column registro_id
+		dataType: int64
+		formatString: 0
+		lineageTag: ea37c809-9c94-4d01-bd7f-3188b40b0870
+		summarizeBy: none
+		sourceColumn: registro_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RNPCD = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/3.%20Salud/REGISTROS/Salud_CONADIS.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "RNPCD", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Índice agregado" = Table.AddIndexColumn(#"Encabezados promovidos", "registro_id", 1, 1, Int64.Type),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Índice agregado",{{"fecha_inscripcion", type date}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

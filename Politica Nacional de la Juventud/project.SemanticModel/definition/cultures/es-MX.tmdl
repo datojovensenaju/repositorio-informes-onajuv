@@ -1,0 +1,3553 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "indicadore": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicadore": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.cod_objetivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "COD_OBJETIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod objetivo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_OBJETIVO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.objetivo_prioritario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "OBJETIVO_PRIORITARIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "objetivo prioritario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "OBJETIVO_PRIORITARIO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.cod_indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "COD_INDICADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod indicador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_INDICADOR": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "INDICADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.justificación": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "JUSTIFICACIÓN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "justificación": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.responsable_objetivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "RESPONSABLE_OBJETIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "responsable objetivo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RESPONSABLE_OBJETIVO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.img_responsable": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "IMG_RESPONSABLE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "img responsable": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "IMG_RESPONSABLE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.responsable_indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "RESPONSABLE_INDICADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "responsable indicador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RESPONSABLE_INDICADOR": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.fuente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "FUENTE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fuente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.ficha_tecnica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "FICHA_TECNICA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ficha tecnica": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FICHA_TECNICA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "lineamiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Lineamientos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lineamiento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "lineamiento.cod_lineamiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Lineamientos",
+			          "ConceptualProperty": "COD_LINEAMIENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod lineamiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_LINEAMIENTO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "lineamiento.lineamiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Lineamientos",
+			          "ConceptualProperty": "LINEAMIENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lineamiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "lineamiento name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "lineamiento.cod_objetivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Lineamientos",
+			          "ConceptualProperty": "COD_OBJETIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod objetivo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_OBJETIVO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "matriz_de_indicadore": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Matriz de Indicadores"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "matriz de indicadore": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "matriz_de_indicadore.cod_objetivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Matriz de Indicadores",
+			          "ConceptualProperty": "COD_OBJETIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod objetivo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_OBJETIVO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "matriz_de_indicadore.cod_indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Matriz de Indicadores",
+			          "ConceptualProperty": "COD_INDICADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod indicador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_INDICADOR": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "matriz_de_indicadore.cod_dinde": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Matriz de Indicadores",
+			          "ConceptualProperty": "COD_DINDES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod dinde": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_DINDES": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "objetivo_prioritario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Objetivo Prioritario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "objetivo prioritario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "objetivo_prioritario.cod_objetivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Objetivo Prioritario",
+			          "ConceptualProperty": "COD_OBJETIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod objetivo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_OBJETIVO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "objetivo_prioritario.objetivo_prioritario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Objetivo Prioritario",
+			          "ConceptualProperty": "OBJETIVO_PRIORITARIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "objetivo prioritario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "objetivo prioritario name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "OBJETIVO_PRIORITARIO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "proveedor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Proveedor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "proveedor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "proveedor.proveedor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Proveedor",
+			          "ConceptualProperty": "PROVEEDOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "proveedor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "proveedor name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "proveedor.img_responsable": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Proveedor",
+			          "ConceptualProperty": "IMG_RESPONSABLE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "img responsable": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "IMG_RESPONSABLE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "servicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "servicio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.cod_lineamiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "COD_LINEAMIENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod lineamiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_LINEAMIENTO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.cod_servicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "COD_SERVICIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod servicio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_SERVICIO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.servicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "SERVICIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "servicio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "servicio name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "servicio.proveedor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "PROVEEDOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "proveedor": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.cod_objetivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "COD_OBJETIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod objetivo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_OBJETIVO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.persona": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "PERSONA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "persona": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "facade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "façade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "personality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "role": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "personage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "character": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "guise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "front": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.definicion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "DEFINICION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "definicion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "INDICADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.cobertura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "COBERTURA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cobertura": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor de indicadore": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.cod_objetivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "COD_OBJETIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod objetivo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_OBJETIVO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.cod_indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "COD_INDICADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cod indicador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_INDICADOR": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.valor_esperado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "Valor_esperado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor esperado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Valor_esperado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.valor_obtenido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "Valor_obtenido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor obtenido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Valor_obtenido": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.fuente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "Fuente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fuente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.mostrar_valor_obtenido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "MostrarValorObtenido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar valor obtenido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MostrarValorObtenido": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Valor obtenido": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.mostrar_valor_esperado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "MostrarValorEsperado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar valor esperado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MostrarValorEsperado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Valor esperado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.mostrar_justificación": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "MostrarJustificación"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar justificación": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MostrarJustificación": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.mostrar_valor_obtenido_extra": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "MostrarValorObtenidoExtra"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar valor obtenido extra": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MostrarValorObtenidoExtra": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.mostrar_servicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "MostrarServicio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar servicio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MostrarServicio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.mostrar_lineamiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "MostrarLineamiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar lineamiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MostrarLineamiento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.lineamiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "LINEAMIENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lineamiento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.mostrar_persona": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "Mostrar Persona"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar persona": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mostrar facade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mostrar façade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mostrar identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mostrar personality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mostrar role": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mostrar person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mostrar personage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mostrar character": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "mostrar guise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "mostrar front": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.mostrar_imagen_del_responsable_servicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "Mostrar imagen del Responsable Servicio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar imagen del responsable servicio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.mostrar_definición": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "Mostrar Definición"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar definición": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.mostrar_indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "Mostrar Indicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.mostrar_cobertura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "Mostrar Cobertura"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar cobertura": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "servicio.mostrar_objetivo_de_lineamiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Servicio",
+			          "ConceptualProperty": "Mostrar Objetivo de Lineamiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar objetivo de lineamiento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.mostrar_responsable_indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "Mostrar Responsable Indicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar responsable indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.mostrar_fuentes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "Mostrar Fuentes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar fuentes": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.mostrar_objetivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "MostrarObjetivo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar objetivo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MostrarObjetivo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.mostrar_indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "MostrarIndicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar indicador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MostrarIndicador": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.mostrar_imagen_del_responsable_indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "Mostrar imagen del Responsable Indicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar imagen del responsable indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore.mostrar_ficha_técnica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Valor de Indicadores",
+			          "ConceptualProperty": "Mostrar Ficha Técnica"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mostrar ficha técnica": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "indicadore_has_objetivo_prioritario1": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "objetivo_prioritario": {
+			          "Target": {
+			            "Entity": "objetivo_prioritario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "objetivo_prioritario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_objetivo_prioritarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "objetivo_prioritario"
+			            },
+			            "Object": {
+			              "Role": "indicadore"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "objetivo_prioritarios_have_indicadores"
+			        }
+			      ]
+			    },
+			    "indicadore_has_valor_de_indicadore_mostrar_ficha_técnica": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_ficha_técnica": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_ficha_técnica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_ficha_técnica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_mostrar_ficha_técnica"
+			        }
+			      ]
+			    },
+			    "indicadore_has_valor_de_indicadore_mostrar_imagen_del_responsable_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_imagen_del_responsable_indicador": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_imagen_del_responsable_indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_imagen_del_responsable_indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_mostrar_imagen_del_responsable_indicador"
+			        }
+			      ]
+			    },
+			    "indicadore_has_valor_de_indicadore_mostrar_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_indicador": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_mostrar_indicador"
+			        }
+			      ]
+			    },
+			    "indicadore_has_valor_de_indicadore_mostrar_objetivo": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_objetivo": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_objetivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_objetivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_mostrar_objetivo"
+			        }
+			      ]
+			    },
+			    "indicadore_has_valor_de_indicadore_mostrar_fuentes": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_fuentes": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_fuentes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_fuentes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_mostrar_fuentes"
+			        }
+			      ]
+			    },
+			    "indicadore_has_valor_de_indicadore_mostrar_responsable_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_responsable_indicador": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_responsable_indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_responsable_indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_mostrar_responsable_indicador"
+			        }
+			      ]
+			    },
+			    "servicio_has_mostrar_objetivo_de_lineamiento": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.mostrar_objetivo_de_lineamiento": {
+			          "Target": {
+			            "Entity": "servicio.mostrar_objetivo_de_lineamiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.mostrar_objetivo_de_lineamiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_mostrar_objetivo_de_lineamiento"
+			        }
+			      ]
+			    },
+			    "objetivo_prioritario_has_servicio_mostrar_objetivo_de_lineamiento": {
+			      "Binding": {
+			        "ConceptualEntity": "Objetivo Prioritario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "objetivo_prioritario": {
+			          "Target": {
+			            "Entity": "objetivo_prioritario"
+			          }
+			        },
+			        "servicio.mostrar_objetivo_de_lineamiento": {
+			          "Target": {
+			            "Entity": "servicio.mostrar_objetivo_de_lineamiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "objetivo_prioritario"
+			            },
+			            "Object": {
+			              "Role": "servicio.mostrar_objetivo_de_lineamiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "objetivo_prioritarios_have_mostrar_objetivo_de_lineamiento"
+			        }
+			      ]
+			    },
+			    "servicio_has_mostrar_cobertura": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.mostrar_cobertura": {
+			          "Target": {
+			            "Entity": "servicio.mostrar_cobertura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.mostrar_cobertura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_mostrar_cobertura"
+			        }
+			      ]
+			    },
+			    "servicio_has_mostrar_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.mostrar_indicador": {
+			          "Target": {
+			            "Entity": "servicio.mostrar_indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.mostrar_indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_mostrar_indicador"
+			        }
+			      ]
+			    },
+			    "servicio_has_mostrar_definición": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.mostrar_definición": {
+			          "Target": {
+			            "Entity": "servicio.mostrar_definición"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.mostrar_definición"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_mostrar_definición"
+			        }
+			      ]
+			    },
+			    "servicio_has_mostrar_imagen_del_responsable_servicio": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.mostrar_imagen_del_responsable_servicio": {
+			          "Target": {
+			            "Entity": "servicio.mostrar_imagen_del_responsable_servicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.mostrar_imagen_del_responsable_servicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_mostrar_imagen_del_responsable_servicio"
+			        }
+			      ]
+			    },
+			    "proveedor_has_servicio_mostrar_imagen_del_responsable_servicio": {
+			      "Binding": {
+			        "ConceptualEntity": "Proveedor"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "proveedor": {
+			          "Target": {
+			            "Entity": "proveedor"
+			          }
+			        },
+			        "servicio.mostrar_imagen_del_responsable_servicio": {
+			          "Target": {
+			            "Entity": "servicio.mostrar_imagen_del_responsable_servicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "proveedor"
+			            },
+			            "Object": {
+			              "Role": "servicio.mostrar_imagen_del_responsable_servicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "proveedors_have_mostrar_imagen_del_responsable_servicio"
+			        }
+			      ]
+			    },
+			    "servicio_has_mostrar_persona": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.mostrar_persona": {
+			          "Target": {
+			            "Entity": "servicio.mostrar_persona"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.mostrar_persona"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_mostrar_persona"
+			        }
+			      ]
+			    },
+			    "servicio_has_lineamiento": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.lineamiento": {
+			          "Target": {
+			            "Entity": "servicio.lineamiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.lineamiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_lineamientos"
+			        }
+			      ]
+			    },
+			    "servicio_has_mostrar_lineamiento": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.mostrar_lineamiento": {
+			          "Target": {
+			            "Entity": "servicio.mostrar_lineamiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.mostrar_lineamiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_mostrar_lineamiento"
+			        }
+			      ]
+			    },
+			    "lineamiento_has_servicio_mostrar_lineamiento": {
+			      "Binding": {
+			        "ConceptualEntity": "Lineamientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lineamiento": {
+			          "Target": {
+			            "Entity": "lineamiento"
+			          }
+			        },
+			        "servicio.mostrar_lineamiento": {
+			          "Target": {
+			            "Entity": "servicio.mostrar_lineamiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "lineamiento"
+			            },
+			            "Object": {
+			              "Role": "servicio.mostrar_lineamiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "lineamientos_have_mostrar_lineamiento"
+			        }
+			      ]
+			    },
+			    "servicio_has_mostrar_servicio": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.mostrar_servicio": {
+			          "Target": {
+			            "Entity": "servicio.mostrar_servicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.mostrar_servicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_mostrar_servicio"
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore_has_mostrar_valor_obtenido_extra": {
+			      "Binding": {
+			        "ConceptualEntity": "Valor de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "valor_de_indicadore": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_valor_obtenido_extra": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_valor_obtenido_extra"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "valor_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_valor_obtenido_extra"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_de_indicadores_have_mostrar_valor_obtenido_extra"
+			        }
+			      ]
+			    },
+			    "indicadore_has_valor_de_indicadore_mostrar_valor_obtenido_extra": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_valor_obtenido_extra": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_valor_obtenido_extra"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_valor_obtenido_extra"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_mostrar_valor_obtenido_extra"
+			        }
+			      ]
+			    },
+			    "indicadore_has_valor_de_indicadore_mostrar_justificación": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_justificación": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_justificación"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_justificación"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_mostrar_justificación"
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore_has_mostrar_valor_esperado": {
+			      "Binding": {
+			        "ConceptualEntity": "Valor de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "valor_de_indicadore": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_valor_esperado": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_valor_esperado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "valor_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_valor_esperado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_de_indicadores_have_mostrar_valor_esperado"
+			        }
+			      ]
+			    },
+			    "indicadore_has_valor_de_indicadore_mostrar_valor_esperado": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_valor_esperado": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_valor_esperado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_valor_esperado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_mostrar_valor_esperado"
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore_has_mostrar_valor_obtenido": {
+			      "Binding": {
+			        "ConceptualEntity": "Valor de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "valor_de_indicadore": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_valor_obtenido": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_valor_obtenido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "valor_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_valor_obtenido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_de_indicadores_have_mostrar_valor_obtenido"
+			        }
+			      ]
+			    },
+			    "indicadore_has_valor_de_indicadore_mostrar_valor_obtenido": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.mostrar_valor_obtenido": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.mostrar_valor_obtenido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.mostrar_valor_obtenido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_mostrar_valor_obtenido"
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore_has_fuente": {
+			      "Binding": {
+			        "ConceptualEntity": "Valor de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "valor_de_indicadore": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.fuente": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.fuente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "valor_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.fuente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_de_indicadores_have_fuentes"
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore_has_valor_obtenido": {
+			      "Binding": {
+			        "ConceptualEntity": "Valor de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "valor_de_indicadore": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.valor_obtenido": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.valor_obtenido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "valor_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.valor_obtenido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_de_indicadores_have_valor_obtenidos"
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore_has_valor_esperado": {
+			      "Binding": {
+			        "ConceptualEntity": "Valor de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "valor_de_indicadore": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.valor_esperado": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.valor_esperado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "valor_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.valor_esperado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_de_indicadores_have_valor_esperados"
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Valor de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "valor_de_indicadore": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.año": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "valor_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_de_indicadores_have_años"
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore_has_cod_objetivo": {
+			      "Binding": {
+			        "ConceptualEntity": "Valor de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "valor_de_indicadore": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore"
+			          }
+			        },
+			        "valor_de_indicadore.cod_objetivo": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore.cod_objetivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "valor_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore.cod_objetivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_de_indicadores_have_cod_objetivos"
+			        }
+			      ]
+			    },
+			    "servicio_has_cobertura": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.cobertura": {
+			          "Target": {
+			            "Entity": "servicio.cobertura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.cobertura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_coberturas"
+			        }
+			      ]
+			    },
+			    "servicio_has_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.indicador": {
+			          "Target": {
+			            "Entity": "servicio.indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_indicadors"
+			        }
+			      ]
+			    },
+			    "servicio_has_definicion": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.definicion": {
+			          "Target": {
+			            "Entity": "servicio.definicion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.definicion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_definicions"
+			        }
+			      ]
+			    },
+			    "servicio_has_persona": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.persona": {
+			          "Target": {
+			            "Entity": "servicio.persona"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.persona"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_personae"
+			        }
+			      ]
+			    },
+			    "servicio_has_cod_objetivo": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.cod_objetivo": {
+			          "Target": {
+			            "Entity": "servicio.cod_objetivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.cod_objetivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_cod_objetivos"
+			        }
+			      ]
+			    },
+			    "servicio_has_servicio": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.servicio": {
+			          "Target": {
+			            "Entity": "servicio.servicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.servicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_servicios"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Name": {
+			              "Role": "servicio.servicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_are_names_IDs_of_servicios"
+			        }
+			      ]
+			    },
+			    "servicio_has_cod_servicio": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "servicio.cod_servicio": {
+			          "Target": {
+			            "Entity": "servicio.cod_servicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "servicio.cod_servicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_cod_servicios"
+			        }
+			      ]
+			    },
+			    "proveedor_has_img_responsable": {
+			      "Binding": {
+			        "ConceptualEntity": "Proveedor"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "proveedor": {
+			          "Target": {
+			            "Entity": "proveedor"
+			          }
+			        },
+			        "proveedor.img_responsable": {
+			          "Target": {
+			            "Entity": "proveedor.img_responsable"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "proveedor"
+			            },
+			            "Object": {
+			              "Role": "proveedor.img_responsable"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "proveedors_have_img_responsables"
+			        }
+			      ]
+			    },
+			    "proveedor_has_proveedor": {
+			      "Binding": {
+			        "ConceptualEntity": "Proveedor"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "proveedor": {
+			          "Target": {
+			            "Entity": "proveedor"
+			          }
+			        },
+			        "proveedor.proveedor": {
+			          "Target": {
+			            "Entity": "proveedor.proveedor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "proveedor"
+			            },
+			            "Object": {
+			              "Role": "proveedor.proveedor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "proveedors_have_proveedors"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "proveedor"
+			            },
+			            "Name": {
+			              "Role": "proveedor.proveedor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "proveedors_are_names_IDs_of_proveedors"
+			        }
+			      ]
+			    },
+			    "objetivo_prioritario_has_objetivo_prioritario": {
+			      "Binding": {
+			        "ConceptualEntity": "Objetivo Prioritario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "objetivo_prioritario": {
+			          "Target": {
+			            "Entity": "objetivo_prioritario"
+			          }
+			        },
+			        "objetivo_prioritario.objetivo_prioritario": {
+			          "Target": {
+			            "Entity": "objetivo_prioritario.objetivo_prioritario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "objetivo_prioritario"
+			            },
+			            "Object": {
+			              "Role": "objetivo_prioritario.objetivo_prioritario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "objetivo_prioritarios_have_objetivo_prioritarios"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "objetivo_prioritario"
+			            },
+			            "Name": {
+			              "Role": "objetivo_prioritario.objetivo_prioritario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "objetivo_prioritarios_are_names_IDs_of_objetivo_prioritarios"
+			        }
+			      ]
+			    },
+			    "objetivo_prioritario_has_cod_objetivo": {
+			      "Binding": {
+			        "ConceptualEntity": "Objetivo Prioritario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "objetivo_prioritario": {
+			          "Target": {
+			            "Entity": "objetivo_prioritario"
+			          }
+			        },
+			        "objetivo_prioritario.cod_objetivo": {
+			          "Target": {
+			            "Entity": "objetivo_prioritario.cod_objetivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "objetivo_prioritario"
+			            },
+			            "Object": {
+			              "Role": "objetivo_prioritario.cod_objetivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "objetivo_prioritarios_have_cod_objetivos"
+			        }
+			      ]
+			    },
+			    "matriz_de_indicadore_has_cod_dinde": {
+			      "Binding": {
+			        "ConceptualEntity": "Matriz de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "matriz_de_indicadore": {
+			          "Target": {
+			            "Entity": "matriz_de_indicadore"
+			          }
+			        },
+			        "matriz_de_indicadore.cod_dinde": {
+			          "Target": {
+			            "Entity": "matriz_de_indicadore.cod_dinde"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "matriz_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "matriz_de_indicadore.cod_dinde"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matriz_de_indicadores_have_cod_dindes"
+			        }
+			      ]
+			    },
+			    "matriz_de_indicadore_has_cod_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "Matriz de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "matriz_de_indicadore": {
+			          "Target": {
+			            "Entity": "matriz_de_indicadore"
+			          }
+			        },
+			        "matriz_de_indicadore.cod_indicador": {
+			          "Target": {
+			            "Entity": "matriz_de_indicadore.cod_indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "matriz_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "matriz_de_indicadore.cod_indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matriz_de_indicadores_have_cod_indicadors"
+			        }
+			      ]
+			    },
+			    "matriz_de_indicadore_has_cod_objetivo": {
+			      "Binding": {
+			        "ConceptualEntity": "Matriz de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "matriz_de_indicadore": {
+			          "Target": {
+			            "Entity": "matriz_de_indicadore"
+			          }
+			        },
+			        "matriz_de_indicadore.cod_objetivo": {
+			          "Target": {
+			            "Entity": "matriz_de_indicadore.cod_objetivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "matriz_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "matriz_de_indicadore.cod_objetivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matriz_de_indicadores_have_cod_objetivos"
+			        }
+			      ]
+			    },
+			    "lineamiento_has_lineamiento": {
+			      "Binding": {
+			        "ConceptualEntity": "Lineamientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lineamiento": {
+			          "Target": {
+			            "Entity": "lineamiento"
+			          }
+			        },
+			        "lineamiento.lineamiento": {
+			          "Target": {
+			            "Entity": "lineamiento.lineamiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "lineamiento"
+			            },
+			            "Object": {
+			              "Role": "lineamiento.lineamiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "lineamientos_have_lineamientos"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "lineamiento"
+			            },
+			            "Name": {
+			              "Role": "lineamiento.lineamiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "lineamientos_are_names_IDs_of_lineamientos"
+			        }
+			      ]
+			    },
+			    "lineamiento_has_cod_lineamiento": {
+			      "Binding": {
+			        "ConceptualEntity": "Lineamientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lineamiento": {
+			          "Target": {
+			            "Entity": "lineamiento"
+			          }
+			        },
+			        "lineamiento.cod_lineamiento": {
+			          "Target": {
+			            "Entity": "lineamiento.cod_lineamiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "lineamiento"
+			            },
+			            "Object": {
+			              "Role": "lineamiento.cod_lineamiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "lineamientos_have_cod_lineamientos"
+			        }
+			      ]
+			    },
+			    "indicadore_has_ficha_tecnica": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "indicadore.ficha_tecnica": {
+			          "Target": {
+			            "Entity": "indicadore.ficha_tecnica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "indicadore.ficha_tecnica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_ficha_tecnicas"
+			        }
+			      ]
+			    },
+			    "indicadore_has_fuente": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "indicadore.fuente": {
+			          "Target": {
+			            "Entity": "indicadore.fuente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "indicadore.fuente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_fuentes"
+			        }
+			      ]
+			    },
+			    "indicadore_has_responsable_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "indicadore.responsable_indicador": {
+			          "Target": {
+			            "Entity": "indicadore.responsable_indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "indicadore.responsable_indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_responsable_indicadors"
+			        }
+			      ]
+			    },
+			    "indicadore_has_img_responsable": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "indicadore.img_responsable": {
+			          "Target": {
+			            "Entity": "indicadore.img_responsable"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "indicadore.img_responsable"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_img_responsables"
+			        }
+			      ]
+			    },
+			    "indicadore_has_responsable_objetivo": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "indicadore.responsable_objetivo": {
+			          "Target": {
+			            "Entity": "indicadore.responsable_objetivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "indicadore.responsable_objetivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_responsable_objetivos"
+			        }
+			      ]
+			    },
+			    "indicadore_has_justificación": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "indicadore.justificación": {
+			          "Target": {
+			            "Entity": "indicadore.justificación"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "indicadore.justificación"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_justificacións"
+			        }
+			      ]
+			    },
+			    "indicadore_has_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "indicadore.indicador": {
+			          "Target": {
+			            "Entity": "indicadore.indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "indicadore.indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_indicadors"
+			        }
+			      ]
+			    },
+			    "indicadore_has_cod_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "indicadore.cod_indicador": {
+			          "Target": {
+			            "Entity": "indicadore.cod_indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "indicadore.cod_indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_cod_indicadors"
+			        }
+			      ]
+			    },
+			    "indicadore_has_objetivo_prioritario": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "indicadore.objetivo_prioritario": {
+			          "Target": {
+			            "Entity": "indicadore.objetivo_prioritario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "indicadore.objetivo_prioritario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_objetivo_prioritarios1"
+			        }
+			      ]
+			    },
+			    "lineamiento_has_objetivo_prioritario": {
+			      "Binding": {
+			        "ConceptualEntity": "Lineamientos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lineamiento": {
+			          "Target": {
+			            "Entity": "lineamiento"
+			          }
+			        },
+			        "objetivo_prioritario": {
+			          "Target": {
+			            "Entity": "objetivo_prioritario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "lineamiento"
+			            },
+			            "Object": {
+			              "Role": "objetivo_prioritario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "lineamientos_have_objetivo_prioritarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "objetivo_prioritario"
+			            },
+			            "Object": {
+			              "Role": "lineamiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "objetivo_prioritarios_have_lineamientos"
+			        }
+			      ]
+			    },
+			    "servicio_has_lineamiento1": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "lineamiento": {
+			          "Target": {
+			            "Entity": "lineamiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "lineamiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_lineamientos1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "lineamiento"
+			            },
+			            "Object": {
+			              "Role": "servicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "lineamientos_have_servicios"
+			        }
+			      ]
+			    },
+			    "servicio_has_proveedor": {
+			      "Binding": {
+			        "ConceptualEntity": "Servicio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "servicio": {
+			          "Target": {
+			            "Entity": "servicio"
+			          }
+			        },
+			        "proveedor": {
+			          "Target": {
+			            "Entity": "proveedor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "servicio"
+			            },
+			            "Object": {
+			              "Role": "proveedor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servicios_have_proveedors"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "proveedor"
+			            },
+			            "Object": {
+			              "Role": "servicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "proveedors_have_servicios"
+			        }
+			      ]
+			    },
+			    "valor_de_indicadore_has_indicadore": {
+			      "Binding": {
+			        "ConceptualEntity": "Valor de Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "valor_de_indicadore": {
+			          "Target": {
+			            "Entity": "valor_de_indicadore"
+			          }
+			        },
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "valor_de_indicadore"
+			            },
+			            "Object": {
+			              "Role": "indicadore"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "valor_de_indicadores_have_indicadores"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "valor_de_indicadore"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have_valor_de_indicadores"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

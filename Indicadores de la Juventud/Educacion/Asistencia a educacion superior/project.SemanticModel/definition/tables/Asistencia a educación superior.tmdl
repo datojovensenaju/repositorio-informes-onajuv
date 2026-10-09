@@ -1,0 +1,33 @@
+table 'Asistencia a educación superior'
+	lineageTag: d96687e4-4ef9-4304-8e1a-4b7da971ba81
+
+	column ID_AU
+		dataType: int64
+		formatString: 0
+		lineageTag: f91b5d4b-922c-4722-9ab4-0491094e2519
+		summarizeBy: sum
+		sourceColumn: ID_AU
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column ASISTENCIA_UNIVERSITARIA
+		dataType: string
+		lineageTag: fa51e223-1502-45a4-9149-4cb0bc626b3c
+		summarizeBy: none
+		sourceColumn: ASISTENCIA_UNIVERSITARIA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Asistencia a educación superior' = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "Asistencia a educación superior", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"ID_AU", Int64.Type}, {"ASISTENCIA_UNIVERSITARIA", type text}}, "es")
+				in
+				  #"Tipo de columna cambiado"
+

@@ -1,0 +1,83 @@
+table factParticipaciónCiudadana_ConoceDemocracia
+	lineageTag: 3c3f6009-33c5-4e7f-876e-c679f1e9a7a2
+
+	column AÑO
+		dataType: string
+		lineageTag: 16097703-4a65-412b-aa92-6214b85ed822
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: 9a999bde-ad10-43f1-b704-e00c76fbd2ff
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 5407e303-2aa9-4c6c-963d-43fb7a20c254
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: e698053e-c7db-4ca9-b793-0d40a7a325e9
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: f4816df9-8833-4b3b-88bd-9b5f52c91bca
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: adcfe6c9-e6ca-4e97-b9aa-77344b58481e
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: 330839b9-07d4-454e-b31b-e2a1e3d824e5
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: 631e2681-d9c2-442a-a6c2-5bcbaf7ee45a
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factParticipaciónCiudadana_ConoceDemocracia = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/6.%20Participaci%C3%B3n%20ciudadana%20y%20gobernanza/ENCUESTAS/Participaci%C3%B3nCiudadana_Percepci%C3%B3n%20de%20la%20democracia.xlsx"), null, true),
+				    Región_Sheet = Origen{[Item="datosRegionales",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Región_Sheet, [PromoteAllScalars=true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each ([CATEGORIA] = "NACIONAL" or [CATEGORIA] = "REGIONAL")),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Filas filtradas","NACIONAL","REGIONAL",Replacer.ReplaceText,{"CATEGORIA"})
+				in
+				    #"Valor reemplazado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

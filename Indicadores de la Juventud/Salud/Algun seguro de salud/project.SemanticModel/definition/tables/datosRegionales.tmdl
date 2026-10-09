@@ -1,0 +1,81 @@
+table datosRegionales
+	lineageTag: 9ab5554e-5954-4ed6-8ac2-db101d23cb58
+
+	column AÑO
+		dataType: string
+		lineageTag: 2fb01470-eb57-4a0b-b052-48ca67999ef0
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: 55a96a0e-aaed-45a4-99ea-f27c9cb1cda7
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: f02297a1-f1c7-44ee-a6da-cd69db8272df
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: 201c563f-7d38-41ad-838d-c60cc8fe35a1
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: 5d021ad7-5bd2-4f2d-8d16-dca95e16264c
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: 30815880-13c8-422b-af21-5230cce167de
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: b673dbaf-20da-4872-b312-75f3c99b164a
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: ddbcf82c-b489-4cab-b1ec-7fee0bb9a909
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition datosRegionales = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/3.%20Salud/ENCUESTAS/Salud-CuentaConSeguro.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "datosRegionales", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

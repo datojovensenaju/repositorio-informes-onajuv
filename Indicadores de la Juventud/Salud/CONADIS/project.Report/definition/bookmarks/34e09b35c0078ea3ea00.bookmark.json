@@ -1,0 +1,1925 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "CONADIS - WEB",
+  "name": "34e09b35c0078ea3ea00",
+  "options": {
+    "targetVisualNames": [
+      "d33a6283911943912017"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "0792d38f021009084e17",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "e8162c5d0a2a8d390bdb",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "d",
+                "Entity": "dimRegion",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "REGION"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "null"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "dimRegion"
+                }
+              },
+              "Property": "REGION"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "sections": {
+      "0792d38f021009084e17": {
+        "visualContainers": {
+          "022925e52d10a9e2e7ce": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "0670fca25e378c5cf455": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b9d85783dc9818269bc7",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDistrito"
+                        }
+                      },
+                      "Property": "DISTRITO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDistrito"
+                        }
+                      },
+                      "Property": "DISTRITO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "0feaf66f79b7a0202034": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "193ac999cb386e52d620": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "52c3d22c3d6000278819",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "nivel_gravedad"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "cc50deb3bdd491be6309",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Total jóvenes registrados"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Total jóvenes registrados"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "nivel_gravedad"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "1d9840ae6b0bf5634d68": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4c456ce309ad84bb50ad",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimRegion"
+                        }
+                      },
+                      "Property": "REGION"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimRegion"
+                        }
+                      },
+                      "Property": "REGION"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "1df107a3580e48a1085e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9bfea1c1e9214057ea62",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "estado_civil"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "estado_civil"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "24d3875fe9179447fd56": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "cef3a12fd270d55a9267",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimDeficiencia"
+                        }
+                      },
+                      "Property": "tipo_deficiencia"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1738a62cd69d0d509637",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RegistroDeficiencia"
+                        }
+                      },
+                      "Property": "Jóvenes por tipo de deficiencia"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RegistroDeficiencia"
+                        }
+                      },
+                      "Property": "Jóvenes por tipo de deficiencia"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimDeficiencia"
+                        }
+                      },
+                      "Property": "tipo_deficiencia"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "2a1ee337d008ea034044": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "42c46cc4a47a220289a5": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ced938591c091294b0d9",
+                  "type": "Advanced",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "RNPCD"
+                                }
+                              },
+                              "Name": "Variación",
+                              "Property": "fecha_inscripcion"
+                            }
+                          },
+                          "Hierarchy": "Jerarquía de fechas"
+                        }
+                      },
+                      "Level": "Año"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f7bb3d4469e925218364",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "RNPCD"
+                                }
+                              },
+                              "Name": "Variación",
+                              "Property": "fecha_inscripcion"
+                            }
+                          },
+                          "Hierarchy": "Jerarquía de fechas"
+                        }
+                      },
+                      "Level": "Trimestre"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ffed12ed0d8bee20338a",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "RNPCD"
+                                }
+                              },
+                              "Name": "Variación",
+                              "Property": "fecha_inscripcion"
+                            }
+                          },
+                          "Hierarchy": "Jerarquía de fechas"
+                        }
+                      },
+                      "Level": "Mes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "l",
+                                "Entity": "LocalDateTable_5b5bbe41-d322-4ab4-a8ef-2818302ea797",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "l"
+                                            }
+                                          },
+                                          "Property": "Año"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "2026L"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "RNPCD"
+                                }
+                              },
+                              "Name": "Variación",
+                              "Property": "fecha_inscripcion"
+                            }
+                          },
+                          "Hierarchy": "Jerarquía de fechas"
+                        }
+                      },
+                      "Level": "Año"
+                    }
+                  }
+                ]
+              },
+              "cachedFilterDisplayItems": [
+                {
+                  "id": {
+                    "scopeId": {
+                      "Comparison": {
+                        "ComparisonKind": 0,
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "LocalDateTable_5b5bbe41-d322-4ab4-a8ef-2818302ea797"
+                              }
+                            },
+                            "Property": "Año"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "2026L"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "displayName": "2026"
+                }
+              ],
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Values"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "RNPCD.fecha_inscripcion.Variación.Jerarquía de fechas.Año"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "LocalDateTable_5b5bbe41-d322-4ab4-a8ef-2818302ea797"
+                              }
+                            },
+                            "Property": "Año"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "RNPCD.fecha_inscripcion.Variación.Jerarquía de fechas.Trimestre"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "LocalDateTable_5b5bbe41-d322-4ab4-a8ef-2818302ea797"
+                              }
+                            },
+                            "Property": "Trimestre"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "RNPCD.fecha_inscripcion.Variación.Jerarquía de fechas.Mes"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": []
+                  }
+                }
+              ]
+            }
+          },
+          "50585367595560c1b6ea": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "423d9ffc40ad7112e295",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Tipo de limitación más frecuente"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "totalSeveros"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "52517dea0b915f7d490b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "26b7fdef07cb30359164",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimProvincia"
+                        }
+                      },
+                      "Property": "PROVINCIA"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimProvincia"
+                        }
+                      },
+                      "Property": "PROVINCIA"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "592ea07ce2e2b9051be5": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ac27768f70ec9b238978",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Tipo de deficiencia más frecuente"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {}
+            }
+          },
+          "59a143468378961724d0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d4b64e181827ba10c188",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "% gravedad severa"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "% gravedad severa"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "5bb821a599419c45aca7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e0b36927d2a03c059827",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dimDistrito"
+                            }
+                          },
+                          "Property": "DISTRITO"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "cfa839ff9a8bbd4bc793",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dimProvincia"
+                            }
+                          },
+                          "Property": "PROVINCIA"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "4636acbf60ac1002a0a6",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDistrito"
+                        }
+                      },
+                      "Property": "ID_DIS"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "19b090b9cde73c633f3c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "discapacidad"
+                        }
+                      },
+                      "Property": "Total Casos"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "ffc4ec821790acab29b4",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dimRegion"
+                            }
+                          },
+                          "Property": "REGION"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "62223a4932ec373150d2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimRegion"
+                        }
+                      },
+                      "Property": "ID_REG"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9bfdcac8712653464867",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Total jóvenes registrados"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "shapeMap",
+              "objects": {}
+            }
+          },
+          "647b81e6d1ec67ea7068": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "822ea2508e445bdee2e9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Total jóvenes registrados"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Total jóvenes registrados"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "6615f92e0ac901fa0381": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0b4c708d02d11a016d90",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Rango Etario"
+                        }
+                      },
+                      "Property": "RANGO_ETARIO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Rango Etario"
+                        }
+                      },
+                      "Property": "RANGO_ETARIO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "68b04c2782500a2ac875": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "cd5723ef53b3eaa9e744",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Rango Etario"
+                        }
+                      },
+                      "Property": "RANGO_ETARIO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4ebbbedcbc0010acd44a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "83e6deb6804d1c960c27",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Total jóvenes registrados"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Total jóvenes registrados"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Rango Etario"
+                        }
+                      },
+                      "Property": "RANGO_ETARIO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "69fa439abeae68805390": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8c52f41c52e21823e9c6",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimLimitacion"
+                        }
+                      },
+                      "Property": "tipo_limitacion"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5e8261e4202e3396007b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RegistroLimitacion"
+                        }
+                      },
+                      "Property": "Jóvenes por tipo de limitación"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RegistroLimitacion"
+                        }
+                      },
+                      "Property": "Jóvenes por tipo de limitación"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimLimitacion"
+                        }
+                      },
+                      "Property": "tipo_limitacion"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "6bf85c91a6e40c2813e9": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "7634ea3d82aeec45512d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "80ac2a2ad2de7b4e2ce2": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "89121b303d0d724fe1b2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e07e4459ec4089b0e15e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "75f03dcb46ebbe8141c7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Total jóvenes registrados"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "539ebec2312d94b23e97",
+                  "type": "Advanced",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "RNPCD"
+                                }
+                              },
+                              "Name": "Variación",
+                              "Property": "fecha_inscripcion"
+                            }
+                          },
+                          "Hierarchy": "Jerarquía de fechas"
+                        }
+                      },
+                      "Level": "Año"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "RNPCD"
+                                }
+                              },
+                              "Name": "Variación",
+                              "Property": "fecha_inscripcion"
+                            }
+                          },
+                          "Hierarchy": "Jerarquía de fechas"
+                        }
+                      },
+                      "Level": "Año"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "RNPCD"
+                                }
+                              },
+                              "Name": "Variación",
+                              "Property": "fecha_inscripcion"
+                            }
+                          },
+                          "Hierarchy": "Jerarquía de fechas"
+                        }
+                      },
+                      "Level": "Año"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "95a67c1a5c8cd614188e": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "98c3c9bd78c70846b441": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "456b4c364ded6dae754c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "df520931d519ebd04618",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimRegion"
+                        }
+                      },
+                      "Property": "REGION"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f2a5a2694a5c9c06c1e7",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimProvincia"
+                        }
+                      },
+                      "Property": "PROVINCIA"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "68144591c0a2d3820aed",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDistrito"
+                        }
+                      },
+                      "Property": "DISTRITO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "64c0da3c3ba903707b06",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Total jóvenes registrados"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "activeProjections": {
+                "Columns": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  }
+                ],
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimRegion"
+                        }
+                      },
+                      "Property": "REGION"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "dimRegion.REGION"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "dimRegion"
+                              }
+                            },
+                            "Property": "REGION"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "dimProvincia.PROVINCIA"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "dimProvincia"
+                              }
+                            },
+                            "Property": "PROVINCIA"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "dimDistrito.DISTRITO"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": []
+                  }
+                }
+              ]
+            }
+          },
+          "be1666586297d377ba7a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "dc339123c4b05000c767",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "nivel_educativo"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "nivel_educativo"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "cffb972fddb38019b351": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "701bfa55d0948a2e95d8",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d33a6283911943912017": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "d33bd7bf85211fe162ae": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "76b3687daaa002038816",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "estado_registro"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7cbb926903a67d6441cc",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Total jóvenes registrados"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "columnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "Total jóvenes registrados"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "estado_registro"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "e282dc7be36af1131834": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e204b49618591970753e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "nivel_gravedad"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "nivel_gravedad"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "e5dd371a02c2cf0c078f": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "f3df87cf81fdaedcd789": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b9f4277963b965085849",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "estado_registro"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "RNPCD"
+                        }
+                      },
+                      "Property": "estado_registro"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "fbcabe80e84470943001": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

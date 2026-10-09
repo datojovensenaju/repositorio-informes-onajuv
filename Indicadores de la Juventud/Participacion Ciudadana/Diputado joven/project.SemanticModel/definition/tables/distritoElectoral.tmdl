@@ -1,0 +1,36 @@
+table distritoElectoral
+	lineageTag: 1689b227-2881-4402-8927-42aa590e5f2e
+
+	column ID_DISELE
+		dataType: string
+		lineageTag: 650f0196-bc4a-42c0-8786-6699a130eb17
+		summarizeBy: none
+		sourceColumn: ID_DISELE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DISTRITO ELECTORAL'
+		dataType: string
+		lineageTag: 357b9c79-36d9-4169-810b-e3ef55879902
+		summarizeBy: none
+		sourceColumn: DISTRITO ELECTORAL
+		sortByColumn: ID_DISELE
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	partition distritoElectoral = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Ubigeo.xlsx"), null, true),
+				    distritoElectoral_Sheet = Origen{[Item="distritoElectoral",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(distritoElectoral_Sheet, [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

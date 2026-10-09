@@ -1,0 +1,126 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 431.99999999999983,
+        "y": 74.999999999999972
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1065.4602874165651,
+            "y": 237.27123676708436
+          },
+          "nodeIndex": "Año",
+          "nodeLineageTag": "40dcbd65-19db-42bb-ad42-8337abc7942d",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 281.33044859369363,
+            "y": 528.47480748383714
+          },
+          "nodeIndex": "Rango Etario",
+          "nodeLineageTag": "ef47faec-fd26-4e44-9c6d-8424b4226d5b",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 836.09446469931572,
+            "y": 17.256984909942751
+          },
+          "nodeIndex": "Sexo",
+          "nodeLineageTag": "d6d6b9f5-5a01-459d-80e2-2d4ed8013e77",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 770.581821130302,
+            "y": 806.80863330106422
+          },
+          "nodeIndex": "Mes",
+          "nodeLineageTag": "5b3acb81-32bd-40b7-87ad-d5d975a71433",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 419.51264356901379,
+            "y": 136.36303803441788
+          },
+          "nodeIndex": "dimDepartamento",
+          "nodeLineageTag": "62358f72-4728-48ea-a6f8-963d7ceaddba",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 787.51264356901345,
+            "y": 214.36303803441785
+          },
+          "nodeIndex": "trabajadoresCulturales",
+          "nodeLineageTag": "528f74a8-7d0b-481d-b56e-7fae6bc0b820",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1350.1298388228713,
+            "y": 48.528152498875158
+          },
+          "nodeIndex": "asistenciaLectura",
+          "nodeLineageTag": "8e5a9556-de79-4800-97e0-7eea1a81bb2b",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1349.1298388228715,
+            "y": 290.52815249887504
+          },
+          "nodeIndex": "culturaIndigena",
+          "nodeLineageTag": "4cee72bc-878c-4f67-a2ef-c58dd86b0198",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100.00000000000004,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

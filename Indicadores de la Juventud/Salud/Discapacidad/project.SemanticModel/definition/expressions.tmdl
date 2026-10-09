@@ -1,0 +1,74 @@
+expression Parámetro1 = #"Archivo de ejemplo" meta [IsParameterQuery=true, BinaryIdentifier=#"Archivo de ejemplo", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: a44625bd-3287-41c3-b883-6cd81f1f216e
+	queryGroup: 'Transformar archivo de Consulta1\Consultas auxiliares'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformar archivo de ejemplo' =
+		let
+		    Origen = Excel.Workbook(Parámetro1, null, true),
+		    discapacidad_Sheet = Origen{[Item="discapacidad",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(discapacidad_Sheet, [PromoteAllScalars=true])
+		in
+		    #"Encabezados promovidos"
+	lineageTag: 614dd9a1-dfd0-4f7a-8899-3ad55e3c0e82
+	queryGroup: 'Transformar archivo de Consulta1'
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'Archivo de ejemplo' =
+		let
+		    Origen = SharePoint.Files("https://mineduperu.sharepoint.com/sites/DATAJOVEN", [ApiVersion = 15]),
+		    #"Filas filtradas" = Table.SelectRows(Origen, each ([Name] = "SALUD-discapacidad-2025.xlsx")),
+		    Navegación1 = #"Filas filtradas"{0}[Content]
+		in
+		    Navegación1
+	lineageTag: d9305a62-338b-40ea-a80d-83cdf83a044f
+	queryGroup: 'Transformar archivo de Consulta1\Consultas auxiliares'
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformar archivo' =
+		let
+		    Origen = (Parámetro1 as binary) => let
+		    Origen = Excel.Workbook(Parámetro1, null, true),
+		    discapacidad_Sheet = Origen{[Item="discapacidad",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(discapacidad_Sheet, [PromoteAllScalars=true])
+		in
+		    #"Encabezados promovidos"
+		in
+		    Origen
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformar archivo de ejemplo""}" ]
+	lineageTag: 5ea2fa82-c54f-43ca-8d8a-f710ad0d970d
+	queryGroup: 'Transformar archivo de Consulta1\Consultas auxiliares'
+
+	annotation PBI_ResultType = Function
+
+expression 'Errores en discapacidad' =
+		let
+		Origen = discapacidad,
+		  #"Errores de coincidencia detectados" = let
+		    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Origen, Table.ColumnsOfType(Origen, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),
+		    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),
+		    fieldNames = Record.FieldNames(recordTypeFields),
+		    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),
+		    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = "El tipo del valor no coincide con el tipo de la columna.", Detail = v], fieldTypes{i}})
+		in
+		    Table.TransformColumns(Origen, pairs),
+		  #"Índice agregado" = Table.AddIndexColumn(#"Errores de coincidencia detectados", "Número de fila" ,1),
+		  #"Conservar errores" = Table.SelectRowsWithErrors(#"Índice agregado", {"anio_emision", "mes_emision", "departamento", "provincia", "distrito", "ubigeo", "grupo_edad", "sexo", "gravedad", "diagnostico_danio", "diagnostico_etiologico", "COD. DANIO", "COD. ETIOLOGICO"}),
+		  #"Columnas reordenadas" = Table.ReorderColumns(#"Conservar errores", {"Número de fila", "anio_emision", "mes_emision", "departamento", "provincia", "distrito", "ubigeo", "grupo_edad", "sexo", "gravedad", "diagnostico_danio", "diagnostico_etiologico", "COD. DANIO", "COD. ETIOLOGICO"}),
+		    #"COD  DANIO" = #"Columnas reordenadas"{0}[COD. DANIO]
+		in
+		  #"COD  DANIO"
+	lineageTag: 67cecc09-d469-49b2-9c87-efb3532a960c
+	queryGroup: 'Errores en las consultas: 1/07/2026 11:01:21'
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Exception
+

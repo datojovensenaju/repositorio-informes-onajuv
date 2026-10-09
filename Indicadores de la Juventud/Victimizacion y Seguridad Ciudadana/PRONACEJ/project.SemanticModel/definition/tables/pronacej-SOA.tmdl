@@ -1,0 +1,221 @@
+table pronacej-SOA
+	lineageTag: fdb676f0-58f3-430d-8c50-d65352f7c065
+
+	measure 'Total Jóvenes SOA' =
+			
+			COUNTROWS('pronacej-SOA')
+		lineageTag: 9af6ba45-3089-4d38-acf4-73039b4a24e7
+
+		formatStringDefinition = "# ##0"
+
+	measure 'Edad Promedio SOA' =
+			
+			AVERAGE('pronacej-SOA'[Edad])
+		formatString: 0
+		lineageTag: 96a6db8b-98c6-4d8a-9094-6647b2e010be
+
+	measure 'Duración Promedio Medida' =
+			
+			AVERAGE('pronacej-SOA'[Duracion_medida_meses])
+		formatString: 0
+		lineageTag: ef70e917-33a3-401f-a50a-745ba910af24
+
+	measure '% Con Hijos' =
+			
+			DIVIDE(
+			    CALCULATE(
+			        [Total Jóvenes SOA],
+			        'pronacej-SOA'[Numero_hijos] > 0
+			    ),
+			    [Total Jóvenes SOA]
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 870d8577-3b54-40e5-a5cb-53febdb85118
+
+	column Anio
+		dataType: int64
+		formatString: 0
+		lineageTag: e04cae88-0ab6-46fb-9da2-c763ca68b1fc
+		summarizeBy: none
+		sourceColumn: Anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		dataType: string
+		lineageTag: 23130ff4-8867-463c-b777-72814a6da10b
+		summarizeBy: none
+		sourceColumn: Mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Departamento_origen
+		dataType: string
+		lineageTag: e8b38407-60e0-4daf-8aa3-10af56329107
+		summarizeBy: none
+		sourceColumn: Departamento_origen
+
+		annotation SummarizationSetBy = Automatic
+
+	column Departamento_infraccion
+		dataType: string
+		lineageTag: 7e75c218-0916-4eaf-a3e2-5af90ef64f2d
+		summarizeBy: none
+		sourceColumn: Departamento_infraccion
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOA
+		dataType: string
+		lineageTag: f8553375-5c91-4400-8ed4-1ba542cd9635
+		summarizeBy: none
+		sourceColumn: SOA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Edad
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a21072a-363d-4d67-9e28-708abb5b7a24
+		summarizeBy: sum
+		sourceColumn: Edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado
+		dataType: string
+		lineageTag: 5c1a0f41-22cd-496e-ad9c-cd947e6b99a4
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: dbf05a0a-7c20-464e-9d60-3aea987cf9fc
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Educacion
+		dataType: string
+		lineageTag: 837aae5a-f78a-494c-9721-eb27b157b96b
+		summarizeBy: none
+		sourceColumn: Educacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nivel_consumo_drogas
+		dataType: string
+		lineageTag: e10f2a6e-2b53-49d3-b275-321bae4eafc9
+		summarizeBy: none
+		sourceColumn: Nivel_consumo_drogas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo_droga
+		dataType: string
+		lineageTag: 67b2c730-7f6f-49c7-bbbb-226ae44ec0bb
+		summarizeBy: none
+		sourceColumn: Tipo_droga
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nivel_consumo_alcohol
+		dataType: string
+		lineageTag: e93f34ef-ec95-4256-bea6-bca48e70c16f
+		summarizeBy: none
+		sourceColumn: Nivel_consumo_alcohol
+
+		annotation SummarizationSetBy = Automatic
+
+	column Situacion_laboral
+		dataType: string
+		lineageTag: a83b99de-b089-4faa-a343-6675cc7000d7
+		summarizeBy: none
+		sourceColumn: Situacion_laboral
+
+		annotation SummarizationSetBy = Automatic
+
+	column Situacion_juridica
+		dataType: string
+		lineageTag: 946efcdd-899d-4a9e-bbe5-891f1b6be3f9
+		summarizeBy: none
+		sourceColumn: Situacion_juridica
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo_infraccion_generica
+		dataType: string
+		lineageTag: fd27c74b-51c0-4a49-8d75-7477f1902a6d
+		summarizeBy: none
+		sourceColumn: Tipo_infraccion_generica
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo_infraccion_especifica
+		dataType: string
+		lineageTag: 64c1eae3-83f6-4174-b6fd-15cde68e7cf0
+		summarizeBy: none
+		sourceColumn: Tipo_infraccion_especifica
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo_medida
+		dataType: string
+		lineageTag: e52a99ae-e9b4-4e4a-bd17-c5c66af2f382
+		summarizeBy: none
+		sourceColumn: Tipo_medida
+
+		annotation SummarizationSetBy = Automatic
+
+	column Duracion_medida_meses
+		dataType: int64
+		formatString: 0
+		lineageTag: ff2a7737-97da-4330-8c53-9b8a5f845e09
+		summarizeBy: sum
+		sourceColumn: Duracion_medida_meses
+
+		annotation SummarizationSetBy = Automatic
+
+	column Numero_hijos
+		dataType: int64
+		formatString: 0
+		lineageTag: 2a306f9f-4502-4441-8c43-cb92b8a3e110
+		summarizeBy: sum
+		sourceColumn: Numero_hijos
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado_civil_padres
+		dataType: string
+		lineageTag: f89117fc-eb66-4fac-b835-c73f25e3bc0c
+		summarizeBy: none
+		sourceColumn: Estado_civil_padres
+
+		annotation SummarizationSetBy = Automatic
+
+	column Grupo_edad
+		dataType: string
+		lineageTag: a8b243d6-13aa-42f7-aa45-056f49294177
+		summarizeBy: none
+		sourceColumn: Grupo_edad
+
+		annotation SummarizationSetBy = Automatic
+
+	partition pronacej-SOA = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/4. Victimización y seguridad ciudadana/REGISTROS/PRONACEJ/PRONACEJ_Servicio_de_orientación_al_adolescente.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "pronacej-SOA", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"Anio", Int64.Type}, {"Mes", type text}, {"Departamento_origen", type text}, {"Departamento_infraccion", type text}, {"SOA", type text}, {"Edad", Int64.Type}, {"Estado", type text}, {"Sexo", type text}, {"Educacion", type text}, {"Nivel_consumo_drogas", type text}, {"Tipo_droga", type text}, {"Nivel_consumo_alcohol", type text}, {"Situacion_laboral", type text}, {"Situacion_juridica", type text}, {"Tipo_infraccion_generica", type text}, {"Tipo_infraccion_especifica", type text}, {"Tipo_medida", type text}, {"Duracion_medida_meses", Int64.Type}, {"Numero_hijos", Int64.Type}, {"Estado_civil_padres", type text}, {"Grupo_edad", type text}}, "es")
+				in
+				  #"Tipo de columna cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

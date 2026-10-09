@@ -1,0 +1,33 @@
+table TipoVotante
+	lineageTag: 5d563ad7-b938-4338-8545-637692403984
+
+	column ID_TV
+		dataType: string
+		lineageTag: 378d1fd6-f56c-4b58-a237-b8fc3058fb60
+		summarizeBy: none
+		sourceColumn: ID_TV
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO_VOTANTE
+		dataType: string
+		lineageTag: 6875f6a7-9603-4fde-b99c-d03f68cd9e29
+		summarizeBy: none
+		sourceColumn: TIPO_VOTANTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TipoVotante = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/6.%20Participaci%C3%B3n%20ciudadana%20y%20gobernanza/REGISTROS/Participaci%C3%B3nCiudadana_PadronElectoral.xlsx"), null, true),
+				    TipoVotante_Sheet = Origen{[Item="TipoVotante",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(TipoVotante_Sheet, [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

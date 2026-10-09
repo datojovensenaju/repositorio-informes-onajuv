@@ -1,0 +1,369 @@
+table CNV
+	lineageTag: 3a62b0fb-460f-4ab4-9770-25087fe81331
+
+	measure 'Total nacidos vivos' =
+			
+			VAR TotalRegistros = COUNTROWS('CNV')
+			RETURN
+			    IF(TotalRegistros = 0, BLANK(), TotalRegistros)
+		formatString: 0
+		lineageTag: b126769c-cf9f-4878-9a54-84a7d650fb0d
+
+	measure 'Edad promedio de la madre' =
+			
+			VAR PromedioEdad =
+			    AVERAGE('CNV'[edad])
+			RETURN
+			    IF(
+			        ISBLANK(PromedioEdad),
+			        BLANK(),
+			        ROUND(PromedioEdad, 1)
+			    )
+		formatString: 0
+		lineageTag: d1feeada-2d69-4775-b134-f4ea2c4bfc13
+
+	measure 'Variación enero-junio 2026 vs 2025' =
+			
+			VAR Total2025 =
+			    CALCULATE(
+			        [Total nacidos vivos],
+			        REMOVEFILTERS(
+			            'CNV'[fecha],
+			            'CNV'[anio],
+			            'CNV'[mes]
+			        ),
+			        FILTER(
+			            ALL('CNV'[fecha]),
+			            'CNV'[fecha] >= DATE(2025, 1, 1)
+			                && 'CNV'[fecha] < DATE(2025, 7, 1)
+			        )
+			    )
+			VAR Total2026 =
+			    CALCULATE(
+			        [Total nacidos vivos],
+			        REMOVEFILTERS(
+			            'CNV'[fecha],
+			            'CNV'[anio],
+			            'CNV'[mes]
+			        ),
+			        FILTER(
+			            ALL('CNV'[fecha]),
+			            'CNV'[fecha] >= DATE(2026, 1, 1)
+			                && 'CNV'[fecha] < DATE(2026, 7, 1)
+			        )
+			    )
+			RETURN
+			    IF(
+			        ISBLANK(Total2025) || ISBLANK(Total2026),
+			        "-",
+			        DIVIDE(Total2026 - Total2025, Total2025)
+			    )
+		lineageTag: cb4ea057-580e-4dc1-a5c3-b7e774a70778
+
+		formatStringDefinition = "0.00 %;-0.00 %;0.00 %"
+
+	measure 'Registros con condición de parto conocida' =
+			
+			CALCULATE(
+			    [Total nacidos vivos],
+			    REMOVEFILTERS('CNV'[condicion_parto]),
+			    KEEPFILTERS('CNV'[fecha] >= DATE(2025, 1, 1)),
+			    'CNV'[condicion_parto]
+			        IN {
+			            "ESPONTANEO",
+			            "CESAREA",
+			            "INSTRUMENTADO",
+			            "OTRO"
+			        }
+			)
+		formatString: 0
+		lineageTag: 22c8140f-6fb8-4d13-be42-970e440c4b23
+
+	measure 'Nacidos vivos en partos espontáneos' =
+			
+			CALCULATE(
+			    [Total nacidos vivos],
+			    REMOVEFILTERS('CNV'[condicion_parto]),
+			    KEEPFILTERS('CNV'[fecha] >= DATE(2025, 1, 1)),
+			    'CNV'[condicion_parto] = "ESPONTANEO"
+			)
+		formatString: 0
+		lineageTag: 66986e8b-59df-4f26-b327-4ec491b028d6
+
+	measure '% nacidos vivos en partos espontáneos' =
+			
+			DIVIDE(
+			    [Nacidos vivos en partos espontáneos],
+			    [Registros con condición de parto conocida]
+			)
+		lineageTag: bb0b1bd5-25a3-4265-b97c-cf4978fec008
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% según condición del parto' =
+			
+			VAR TotalInformado =
+			    CALCULATE(
+			        [Total nacidos vivos],
+			        REMOVEFILTERS('CNV'[condicion_parto_pb]),
+			        'CNV'[condicion_parto_pb]
+			            IN {
+			                "ESPONTANEO",
+			                "CESAREA",
+			                "INSTRUMENTADO",
+			                "OTRO"
+			            }
+			    )
+			RETURN
+			    DIVIDE(
+			        [Total nacidos vivos],
+			        TotalInformado
+			    )
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: d880901e-a67c-4c9d-b939-71879c2ebd6f
+
+	measure Medida
+		lineageTag: 5be31428-eecd-4be9-8cec-c0d7c32a97fd
+
+		annotation 43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c = True
+
+	measure '% según edad de la madre' =
+			
+			DIVIDE(
+			    [Total nacidos vivos],
+			    CALCULATE(
+			        [Total nacidos vivos],
+			        REMOVEFILTERS('CNV'[edad], 'CNV'[rango_edad])
+			    )
+			)
+		formatString: #,0.0\ %;-#,0.0\ %;#,0.0\ %
+		lineageTag: 3fa2e93d-8823-494d-8009-adf10127c558
+
+	column anio
+		dataType: string
+		lineageTag: a36edf6a-9650-4dd9-8ca1-ed81e79c918e
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: string
+		lineageTag: b6a8061f-ee76-448f-b7f6-8e38bf653f89
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: 7ebc4265-9a4c-4405-99eb-abd9a620f5ac
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column provincia
+		dataType: string
+		lineageTag: dce36b81-cb5e-4fcd-a0de-56190f489a18
+		summarizeBy: none
+		sourceColumn: provincia
+
+		annotation SummarizationSetBy = Automatic
+
+	column distrito
+		dataType: string
+		lineageTag: ac3a43e4-42e8-4c48-86c4-f04ad0f2e94a
+		summarizeBy: none
+		sourceColumn: distrito
+
+		annotation SummarizationSetBy = Automatic
+
+	column financiador_salud
+		dataType: string
+		lineageTag: 94de7a50-ef2c-47ca-a0aa-4b579ca7b11f
+		summarizeBy: none
+		sourceColumn: financiador_salud
+
+		annotation SummarizationSetBy = Automatic
+
+	column profesional_certifica_nacimiento
+		dataType: string
+		lineageTag: 6d87f80a-6d43-4fb8-9014-5272f96391ea
+		summarizeBy: none
+		sourceColumn: profesional_certifica_nacimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento_eess
+		dataType: string
+		lineageTag: 1c312eea-df0b-464e-96c3-c0e10a72c7c6
+		summarizeBy: none
+		sourceColumn: departamento_eess
+
+		annotation SummarizationSetBy = Automatic
+
+	column provincia_eess
+		dataType: string
+		lineageTag: 47bfc399-b3ca-4726-b8bf-418195c72b07
+		summarizeBy: none
+		sourceColumn: provincia_eess
+
+		annotation SummarizationSetBy = Automatic
+
+	column distrito_eess
+		dataType: string
+		lineageTag: 89287db6-7c82-4e63-ae03-d32fd3e81571
+		summarizeBy: none
+		sourceColumn: distrito_eess
+
+		annotation SummarizationSetBy = Automatic
+
+	column edad
+		dataType: int64
+		formatString: 0
+		lineageTag: b0072a3c-6bd9-4c1d-ae6a-32e49ca3af9a
+		summarizeBy: sum
+		sourceColumn: edad
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado_civil
+		dataType: string
+		lineageTag: a19d8dc0-4f51-481a-9f9b-74ef403d8371
+		summarizeBy: none
+		sourceColumn: estado_civil
+
+		annotation SummarizationSetBy = Automatic
+
+	column nivel_educativo
+		dataType: string
+		lineageTag: 520254c1-3893-40ff-a521-e8288d071743
+		summarizeBy: none
+		sourceColumn: nivel_educativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column pais
+		dataType: string
+		lineageTag: e32251c5-43c2-4c9b-bacb-3763b05723db
+		summarizeBy: none
+		sourceColumn: pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column condicion_parto
+		dataType: string
+		lineageTag: a455b52b-06e8-412f-a035-6e9a8aa8ef75
+		summarizeBy: none
+		sourceColumn: condicion_parto
+
+		annotation SummarizationSetBy = Automatic
+
+	column condicion_parto_pb
+		dataType: string
+		lineageTag: 365712bf-35d3-45c6-a485-6cddd02f5280
+		summarizeBy: none
+		sourceColumn: condicion_parto_pb
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_parto
+		dataType: string
+		lineageTag: 03c8ba7b-f8d3-43e7-a0fc-ba2c4532ae00
+		summarizeBy: none
+		sourceColumn: tipo_parto
+
+		annotation SummarizationSetBy = Automatic
+
+	column nacionalidad
+		dataType: string
+		lineageTag: 7da627ac-01fd-410a-b96f-c7c5f8fcae87
+		summarizeBy: none
+		sourceColumn: nacionalidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column ubigeo
+		dataType: string
+		lineageTag: ca543863-3a36-44e8-b7be-551bfbf0fbcb
+		summarizeBy: none
+		sourceColumn: ubigeo
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_region
+		dataType: string
+		lineageTag: 21ef9ab1-1815-4f7b-9f16-02677bc48bc0
+		summarizeBy: none
+		sourceColumn: id_region
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 65f72536-b265-49c6-9059-27a2784a47e5
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column rango_edad
+		dataType: string
+		lineageTag: dbf3fd00-5c49-40e6-83fe-c9dfa78f4ea2
+		summarizeBy: none
+		sourceColumn: rango_edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_establecimiento
+		dataType: string
+		lineageTag: a0149eea-1364-4e46-a986-6af440c4e237
+		summarizeBy: none
+		sourceColumn: tipo_establecimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column numero_parto
+		dataType: string
+		lineageTag: 737d2ab0-f48d-4331-965b-e73b8fad30d1
+		summarizeBy: none
+		sourceColumn: numero_parto
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4a7df2a1-9673-4699-b573-d2c3fd8aea16
+		summarizeBy: none
+		sourceColumn: fecha
+
+		variation Variación
+			isDefault
+			relationship: e4255b21-560f-4a1b-a368-be60aec17445
+			defaultHierarchy: LocalDateTable_5db3898a-f2d6-4740-abf7-20905f256249.'Jerarquía de fechas'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition CNV = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/3.%20Salud/REGISTROS/Salud_CNV.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "CNV", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each true)
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

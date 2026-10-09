@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 108.75342832163842
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 12.284244694003405,
+            "y": 282.0862485002524
+          },
+          "nodeIndex": "Indicadores",
+          "nodeLineageTag": "6e039d9e-d008-4776-a9a3-e8ec94380d77",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 609.35773356812422,
+            "y": 348.15459446408011
+          },
+          "nodeIndex": "Lineamientos",
+          "nodeLineageTag": "abcfc7d0-c8a6-4312-9f7a-7034be69d7d7",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 909,
+            "y": 887.38758873139864
+          },
+          "nodeIndex": "Matriz de Indicadores",
+          "nodeLineageTag": "5683f0c9-85f5-4b9d-92ce-fa1c54e00d35",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 327.83976190618625,
+            "y": 0
+          },
+          "nodeIndex": "Objetivo Prioritario",
+          "nodeLineageTag": "b7cc6dd7-2e2c-4e60-8762-856beadc469b",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1041.7837838003297,
+            "y": 152.65221002367861
+          },
+          "nodeIndex": "Proveedor",
+          "nodeLineageTag": "6337d78e-510b-4b95-9083-a9a9bd46a36c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 609,
+            "y": 722
+          },
+          "nodeIndex": "Servicio",
+          "nodeLineageTag": "633b1def-1ef8-4433-9f39-0a7a6fd031df",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 147.93350608634125,
+            "y": 854.82879827979468
+          },
+          "nodeIndex": "Valor de Indicadores",
+          "nodeLineageTag": "f7f0770e-7e06-4b56-ad32-4a71870969d0",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 89.192590520569482,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

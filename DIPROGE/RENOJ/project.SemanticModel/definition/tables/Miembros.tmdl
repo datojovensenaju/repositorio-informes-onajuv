@@ -1,0 +1,141 @@
+table Miembros
+	lineageTag: 6dde7c00-48da-4c2d-aedc-5dde14c514c9
+
+	measure 'Miembros Registrados (15-29)' =
+			
+			CALCULATE(
+			    COUNTROWS(Miembros),
+			    VALUE(Miembros[Edad]) >= 15,
+			    VALUE(Miembros[Edad]) <= 29
+			)
+		formatString: 0
+		lineageTag: 7a19189a-39de-4518-9fc8-ca6cd3f88c79
+
+	measure 'Promedio Edad' =
+			ROUND(
+			AVERAGEX(
+			    Miembros,
+			    VALUE(Miembros[Edad])),0)
+		lineageTag: a299711b-9ae0-45ba-afb5-c6416d296e4f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ID
+		dataType: string
+		lineageTag: 5841e3bb-e81f-42dc-91a6-7a8dfd054181
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Organización Juvenil o Institución Pública o Privada'
+		dataType: string
+		lineageTag: 9918cd2e-ceda-4fcb-a638-81e3b8b92000
+		summarizeBy: none
+		sourceColumn: Organización Juvenil o Institución Pública o Privada
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha de Acreditación'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8625196c-e222-4ab1-807b-fc1cd910a61a
+		summarizeBy: none
+		sourceColumn: Fecha de Acreditación
+
+		variation Variación
+			isDefault
+			relationship: 9ee8c76f-62c3-45be-85be-cc7b27fbbfc1
+			defaultHierarchy: LocalDateTable_a08db200-e4cd-4fef-bbc9-e3b27e4cc203.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Region
+		dataType: string
+		lineageTag: 44cd80e6-757b-4539-b5a2-95e2a0b9a1e3
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cargo en la organización'
+		dataType: string
+		lineageTag: e9d23df5-42c4-4691-b241-006b3f1f2265
+		summarizeBy: none
+		sourceColumn: Cargo en la organización
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha de nacimiento'
+		dataType: string
+		lineageTag: b392ff90-af83-4dd3-bacd-cd7b67d43a45
+		summarizeBy: none
+		sourceColumn: Fecha de nacimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Edad
+		dataType: string
+		lineageTag: 2a7c98d1-3601-4b28-a3dd-bc8a97bc3131
+		summarizeBy: none
+		sourceColumn: Edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: 75eee381-ee71-415c-9296-e33a9c9c5781
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Región Integrantes'
+		dataType: string
+		lineageTag: 902d24dd-85ad-4dfc-a83a-363d36ea03a7
+		summarizeBy: none
+		sourceColumn: Región Integrantes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Temática de organización 1'
+		dataType: string
+		lineageTag: 86a99c2d-1a10-4b9c-b576-3d3b06ba0f85
+		summarizeBy: none
+		sourceColumn: Temática de organización 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Temática de organización 2'
+		dataType: string
+		lineageTag: b23061dc-6c71-4cb3-94f8-272f1cffa10e
+		summarizeBy: none
+		sourceColumn: Temática de organización 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RANGO ETARIO'
+		dataType: string
+		lineageTag: ad038efb-fc7a-4a50-95e7-4ae756bf29f4
+		summarizeBy: none
+		sourceColumn: RANGO ETARIO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Miembros = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/DIPROGE/RENOJ-SETIEMBRE.xlsx"), null, true),
+				    Miembros_Sheet = Origen{[Item="Miembros",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Miembros_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Fecha de Acreditación", type date}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

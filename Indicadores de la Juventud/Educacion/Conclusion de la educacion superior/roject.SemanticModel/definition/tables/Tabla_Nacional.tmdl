@@ -1,0 +1,71 @@
+table Tabla_Nacional
+	lineageTag: be7ef218-4000-44d0-9581-49c3ead80a3f
+
+	column AÑO
+		lineageTag: 841398c9-91b7-4ef4-88e1-1df14a7fb050
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [AÑO]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		lineageTag: 20682ba5-ca7e-4780-a90b-405bfcd9ac6a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CATEGORIA]
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: b1c7be0c-db62-429d-8eb9-d5bb9afd5c04
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [VALOR]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		lineageTag: 631e1dca-ceae-4739-8d54-57b6888ca528
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CV]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Tabla_Nacional = calculated
+		mode: import
+		source =
+				
+				SELECTCOLUMNS(
+				    FILTER(
+				        datosNacionales,
+				        TRIM(datosNacionales[CATEGORIA]) = "NACIONAL"
+				    ),
+				    "AÑO", datosNacionales[AÑO],
+				    "CATEGORIA", datosNacionales[CATEGORIA],
+				"VALOR",
+				        VAR ValorLimpio =
+				            TRIM(
+				                SUBSTITUTE(
+				                    SUBSTITUTE(
+				                        SUBSTITUTE(
+				                            datosNacionales[VALOR],
+				                            "%",
+				                            ""
+				                        ),
+				                        "(",
+				                        ""
+				                    ),
+				                    ")",
+				                    ""
+				                )
+				            )
+				        RETURN
+				            DIVIDE(VALUE(ValorLimpio), 100),
+				    "CV", datosNacionales[CV]
+				)
+
+	annotation PBI_Id = db21afd7e4e746999cf891c5bc47bd4f
+

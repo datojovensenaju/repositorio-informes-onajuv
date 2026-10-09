@@ -1,0 +1,158 @@
+table RegistroLimitacion
+	lineageTag: 2b1225f9-2789-4be5-9984-c3b023c5cc92
+
+	measure 'Jóvenes por tipo de limitación' =
+			
+			DISTINCTCOUNT(
+			    'RegistroLimitacion'[registro_id]
+			)
+		formatString: 0
+		lineageTag: 430e8265-e0d3-4585-ba05-5dbe56f1a522
+
+	column registro_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 943940c2-4b7a-4ba8-8144-3505324e5b38
+		summarizeBy: none
+		sourceColumn: registro_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column limitacion_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 79c47204-b4df-4eba-aedb-335a1d3259e4
+		summarizeBy: none
+		sourceColumn: limitacion_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RegistroLimitacion = m
+		mode: import
+		source =
+				let
+				    // Consulta principal con la columna registro_id
+				    Origen = #"RNPCD",
+				    SeleccionarColumnas =
+				        Table.SelectColumns(
+				            Origen,
+				            {
+				                "registro_id",
+				                "lim_conducta",
+				                "lim_comunicación",
+				                "lim_cuidado",
+				                "lim_locomocion",
+				                "lim_corporal",
+				                "lim_destreza"
+				            }
+				        ),
+				
+				    DespivotarLimitaciones =
+				        Table.UnpivotOtherColumns(
+				            SeleccionarColumnas,
+				            {"registro_id"},
+				            "campo_origen",
+				            "respuesta"
+				        ),
+				
+				    NormalizarRespuesta =
+				        Table.TransformColumns(
+				            DespivotarLimitaciones,
+				            {
+				                {
+				                    "respuesta",
+				                    each
+				                        if _ = null then
+				                            null
+				                        else
+				                            Text.Upper(
+				                                Text.Trim(
+				                                    Text.From(_)
+				                                )
+				                            ),
+				                    type text
+				                }
+				            }
+				        ),
+				
+				    FiltrarPresentes =
+				        Table.SelectRows(
+				            NormalizarRespuesta,
+				            each [respuesta] = "PRESENTA LA LIMITACIÓN"
+				        ),
+				
+				    NormalizarCampoOrigen =
+				        Table.TransformColumns(
+				            FiltrarPresentes,
+				            {
+				                {
+				                    "campo_origen",
+				                    each
+				                        Text.Lower(
+				                            Text.Trim(
+				                                Text.From(_)
+				                            )
+				                        ),
+				                    type text
+				                }
+				            }
+				        ),
+				
+				    AgregarLimitacionID =
+				        Table.AddColumn(
+				            NormalizarCampoOrigen,
+				            "limitacion_id",
+				            each
+				                if [campo_origen] = "lim_conducta" then 1
+				                else if [campo_origen] = "lim_comunicación" then 2
+				                else if [campo_origen] = "lim_cuidado" then 3
+				                else if [campo_origen] = "lim_locomocion" then 4
+				                else if [campo_origen] = "lim_corporal" then 5
+				                else if [campo_origen] = "lim_destreza" then 6
+				                else null,
+				            Int64.Type
+				        ),
+				
+				    CamposSinMapear =
+				        List.Distinct(
+				            Table.SelectRows(
+				                AgregarLimitacionID,
+				                each [limitacion_id] = null
+				            )[campo_origen]
+				        ),
+				
+				    ValidarMapeo =
+				        if List.Count(CamposSinMapear) > 0 then
+				            error
+				                "Existen campos de limitación sin mapear: "
+				                & Text.Combine(CamposSinMapear, ", ")
+				        else
+				            AgregarLimitacionID,
+				
+				    SeleccionarResultado =
+				        Table.SelectColumns(
+				            ValidarMapeo,
+				            {
+				                "registro_id",
+				                "limitacion_id"
+				            }
+				        ),
+				
+				    EliminarDuplicados =
+				        Table.Distinct(SeleccionarResultado),
+				
+				    CambiarTipos =
+				        Table.TransformColumnTypes(
+				            EliminarDuplicados,
+				            {
+				                {"registro_id", Int64.Type},
+				                {"limitacion_id", Int64.Type}
+				            }
+				        )
+				in
+				    CambiarTipos
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

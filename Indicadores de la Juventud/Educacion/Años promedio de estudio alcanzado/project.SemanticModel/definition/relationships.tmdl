@@ -1,0 +1,26 @@
+relationship 9e45a6cc-631b-2aa3-b444-870e0dc4c039
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.anio
+
+relationship 57d23aa3-c692-f56d-dd34-b57b559e1c77
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.anio
+
+relationship AutoDetected_6d1ff1a2-a75b-4bc4-b592-c16fe849f8b1
+	fromColumn: datosRegionales.CATEGORIA
+	toColumn: 'Datos Regionales'.CATEGORIA
+
+relationship a9b6e3ba-16de-d4fb-c7be-62e6a9de8c4a
+	fromColumn: datosNacionales.CATEGORIA
+	toColumn: 'Region Natural'.CATEGORIA
+
+relationship c53b207a-5af5-45c4-cda1-593ea08aa737
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Año.anio
+	toColumn: Tabla_Nacional.AÑO
+
+relationship AutoDetected_20fdbc65-e954-4c7b-b8ab-d1a62c3306e0
+	fromColumn: datosRegionales.REGION
+	toColumn: dimRegion.REGION
+

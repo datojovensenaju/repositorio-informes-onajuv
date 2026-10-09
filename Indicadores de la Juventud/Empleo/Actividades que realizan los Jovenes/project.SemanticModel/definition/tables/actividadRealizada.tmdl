@@ -1,0 +1,35 @@
+table actividadRealizada
+	lineageTag: 9775c796-7fb3-4c68-bc80-e9a919c55251
+
+	column ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 6dc9dd4d-37e1-49f6-ab8e-ec0112bf33eb
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ACTIVIDAD_REALIZADA
+		dataType: string
+		lineageTag: 06396d76-fc5a-4c25-8322-f1c047501215
+		summarizeBy: none
+		sourceColumn: ACTIVIDAD_REALIZADA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition actividadRealizada = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/2. Empleo/ENCUESTAS/Empleo-Filtro.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "actividadRealizada", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"ID", Int64.Type}, {"ACTIVIDAD_REALIZADA", type text}}, "es")
+				in
+				  #"Tipo de columna cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

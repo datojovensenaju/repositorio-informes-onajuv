@@ -1,0 +1,1158 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Trabajadores sector cultura - WEB",
+  "name": "34e09b35c0078ea3ea00",
+  "options": {
+    "targetVisualNames": [
+      "d33a6283911943912017"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "0792d38f021009084e17",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "d0db5ac6b0f380f6ca24",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "s",
+                "Entity": "Sexo",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "s"
+                                }
+                              },
+                              "Property": "SEXO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'NO ESPECIFICADO'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sexo"
+                }
+              },
+              "Property": "SEXO"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "717565939bd68210e96a",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "a",
+                "Entity": "Año",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "a"
+                                }
+                              },
+                              "Property": "AÑO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'2019'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'2020'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'2026'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'2021'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Año"
+                }
+              },
+              "Property": "AÑO"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "d3d6c2763aba230d2429",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "m",
+                "Entity": "Mes",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "m"
+                                }
+                              },
+                              "Property": "MES"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'NO DETERMINADO'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Mes"
+                }
+              },
+              "Property": "MES"
+            }
+          },
+          "howCreated": 1
+        },
+        {
+          "name": "3798c27d0d32a0584c00",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "d",
+                "Entity": "dimDepartamento",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "Not": {
+                    "Expression": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "DEPARTAMENTO"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'NO DETERMINADO'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'NACIONAL'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "dimDepartamento"
+                }
+              },
+              "Property": "DEPARTAMENTO"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "sections": {
+      "0792d38f021009084e17": {
+        "visualContainers": {
+          "42c46cc4a47a220289a5": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ead4f78e27f3cafcccd1",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "AÑO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "a",
+                                "Entity": "Año",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "a"
+                                            }
+                                          },
+                                          "Property": "AÑO"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'2025'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "AÑO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "cffb972fddb38019b351": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ed642f4824fd73be63fd",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "647b81e6d1ec67ea7068": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e4f6465e0a77d4b0fc0b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Total jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Total jóvenes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "59a143468378961724d0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e9140206c68f71afb506",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Departamento principal"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {}
+            }
+          },
+          "fbcabe80e84470943001": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "6bf85c91a6e40c2813e9": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "022925e52d10a9e2e7ce": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "6615f92e0ac901fa0381": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "718a17676d93af5f20af",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Rango Etario"
+                        }
+                      },
+                      "Property": "RANGO_ETARIO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Rango Etario"
+                        }
+                      },
+                      "Property": "RANGO_ETARIO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "7634ea3d82aeec45512d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "1d9840ae6b0bf5634d68": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4b597045a0cf1ec22d09",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "SECTOR CULTURAL"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "SECTOR CULTURAL"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "52517dea0b915f7d490b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "833daecc6a970e6dc3a2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "DEPARTAMENTO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "DEPARTAMENTO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d33a6283911943912017": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "0670fca25e378c5cf455": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "63a42c3af55c43696875",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "TRIMESTRE"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "TRIMESTRE"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "b7d0fdfea0883c40e7ca": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "cab8bfae47e2e4eaea44": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "35d8250281326a875a05": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "7fdc67373ea78eac2134": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ea1fb3e103c36f9aabfa",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "ID_DEP"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1eac4d191ec9c8b90094",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Total jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "febd9b2051442b2db7ae",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dimDepartamento"
+                            }
+                          },
+                          "Property": "DEPARTAMENTO"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "shapeMap",
+              "objects": {}
+            }
+          },
+          "db29365f01c656a6cdbe": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "3bfc3299c457c0549c73": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "84b43c063f66d376b933",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Sector cultural principal"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {}
+            }
+          },
+          "b3bdb1b04b80ca570b6d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a0d47ebd3de28302704a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "AÑO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "95f36c0fffddd9c957c7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Total jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "AÑO"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Año"
+                        }
+                      },
+                      "Property": "AÑO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "0bad5590c037094a6799": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ecf88ac631ac3d140fee",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Rango Etario"
+                        }
+                      },
+                      "Property": "RANGO_ETARIO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6b4b7735b6d351293f55",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Total jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "columnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Total jóvenes"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Rango Etario"
+                        }
+                      },
+                      "Property": "RANGO_ETARIO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d0a4b10a894080070737": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3a555994a8c1cc6fa7cc",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Total jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a9446df2ca27376e2c78",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Total jóvenes"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "3a8f86702a6d30a087a2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "77eea56f7ebd63afb285",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "SECTOR CULTURAL"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "cb8648c6151ac19c1db7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Total jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "Total jóvenes"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "trabajadoresCulturales"
+                        }
+                      },
+                      "Property": "SECTOR CULTURAL"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

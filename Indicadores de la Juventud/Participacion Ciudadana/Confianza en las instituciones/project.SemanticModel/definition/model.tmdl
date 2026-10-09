@@ -1,0 +1,22 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Año","datosNacionales","datosRegionales","instituciones"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Año
+ref table datosNacionales
+ref table datosRegionales
+ref table instituciones
+ref table Tabla_Nacional
+
+ref cultureInfo es-MX
+

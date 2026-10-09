@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "c75786e6a236653fec6b",
+  "displayName": "Servicio por Lineamiento - mobile",
+  "displayOption": "ActualSize",
+  "height": 2370,
+  "width": 370,
+  "visibility": "HiddenInViewMode"
+}

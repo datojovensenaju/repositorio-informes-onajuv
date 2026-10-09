@@ -1,0 +1,51 @@
+table dimRegion
+	lineageTag: 0e452d2a-61df-4e8b-95ca-d9858b80a47c
+
+	column ID_REG
+		dataType: string
+		lineageTag: 2d044646-1f33-40f2-b191-2eae2c218484
+		summarizeBy: none
+		sourceColumn: ID_REG
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 41744fda-6c9e-410b-af88-49a13b37db06
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_DEP
+		dataType: string
+		lineageTag: 0e36391a-b55b-4923-8848-d4678c85e2c8
+		summarizeBy: none
+		sourceColumn: ID_DEP
+
+		annotation SummarizationSetBy = Automatic
+
+	column LIMITE
+		dataType: string
+		lineageTag: 0f2b666c-891c-4909-870c-c63c3004fa5a
+		summarizeBy: none
+		sourceColumn: LIMITE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimRegion = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Ubigeo.xlsx"), null, true),
+				    dimRegion_Sheet = Origen{[Item="dimRegion",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(dimRegion_Sheet, [PromoteAllScalars=true]),
+				    #"Filas inferiores quitadas" = Table.RemoveLastN(#"Encabezados promovidos",1),
+				    #"Filas superiores quitadas" = Table.Skip(#"Filas inferiores quitadas",1)
+				in
+				    #"Filas superiores quitadas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

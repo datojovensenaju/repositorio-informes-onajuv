@@ -1,0 +1,152 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 193.10014899999959,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1192.673795364205,
+            "y": 387.2160082511337
+          },
+          "nodeIndex": "Edad",
+          "nodeLineageTag": "7557a92a-be44-4f95-b526-198519adbbb6",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 489.14898199999897,
+            "y": 264.53020245442252
+          },
+          "nodeIndex": "Nivel Educativo",
+          "nodeLineageTag": "229677af-3785-42ae-a23a-ca9d37ac1a3e",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1137.0698559999996,
+            "y": 1157.3969464544211
+          },
+          "nodeIndex": "Nivel Ocupacional",
+          "nodeLineageTag": "b12089cb-6aa6-414c-bb9b-8758bf0d8ecc",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 412.96256282209583,
+            "y": 1052.8954238179281
+          },
+          "nodeIndex": "Sexo",
+          "nodeLineageTag": "5d6e8ff5-4b35-4d9f-a5f1-2e1662718093",
+          "size": {
+            "height": 145,
+            "width": 209
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1339.2040459420841,
+            "y": 8.077476961548598
+          },
+          "nodeIndex": "dimDepartamento",
+          "nodeLineageTag": "b215239e-f095-424f-b555-bc94c68f004f",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 2115.98135372872,
+            "y": 590.7495090161201
+          },
+          "nodeIndex": "dimDistrito",
+          "nodeLineageTag": "e0291b6c-21e9-4c30-a164-3736fad74eb0",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 2156.117211127229,
+            "y": 213.21397913281436
+          },
+          "nodeIndex": "dimProvincia",
+          "nodeLineageTag": "64f4b320-dc11-4159-91be-8e8263d586c9",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1705.5715607714026,
+            "y": 171.01720135531306
+          },
+          "nodeIndex": "dimRegion",
+          "nodeLineageTag": "b0ce6850-c62a-48f5-aa46-b2665ad6c90a",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1437.8255847287217,
+            "y": 860.398609250065
+          },
+          "nodeIndex": "fact_Voluntarios",
+          "nodeLineageTag": "2f9ebaf4-f203-4c20-b915-b8ace42250e6",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1846.4554263051339,
+            "y": 954.52686706695158
+          },
+          "nodeIndex": "fact_movilizacion",
+          "nodeLineageTag": "73684cc0-63b1-465f-b971-ec3fae319039",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 56.447393005377869,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

@@ -1,0 +1,42 @@
+table 'Matriz de Indicadores'
+	lineageTag: 5683f0c9-85f5-4b9d-92ce-fa1c54e00d35
+
+	column COD_OBJETIVO
+		dataType: string
+		lineageTag: 2e09f5f8-8a3c-4d10-81de-19f442f2fb90
+		summarizeBy: none
+		sourceColumn: COD_OBJETIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_INDICADOR
+		dataType: string
+		lineageTag: 2c86b7a2-1899-4504-b6c1-729dbbf13edf
+		summarizeBy: none
+		sourceColumn: COD_INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_DINDES
+		dataType: string
+		lineageTag: 7e3a7293-24cf-42e0-b3de-8ae10db95d8c
+		summarizeBy: none
+		sourceColumn: COD_DINDES
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Matriz de Indicadores' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/POL%C3%8DTICA%20NACIONAL%20DE%20JUVENTUD/Politica%20Nacional%20de%20la%20Juventud.xlsx"), null, true),
+				    #"Matriz de Indicadores_Sheet" = Origen{[Item="Matriz de Indicadores",Kind="Sheet"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Matriz de Indicadores_Sheet",{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}}),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Tipo cambiado", [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

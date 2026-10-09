@@ -1,0 +1,205 @@
+table discapacidad
+	lineageTag: 19521537-2860-4b26-8a9f-59580db3fe77
+
+	measure 'Total Casos' =
+			
+			VAR TotalCasos =
+			    COUNTROWS(discapacidad)
+			RETURN
+			IF(
+			    TotalCasos > 0,
+			    TotalCasos,
+			    "-"
+			)
+		lineageTag: 339646bd-345c-48c2-92c7-ef6d19cc5d4d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Severa' = CALCULATE([Total Casos], discapacidad[GRAVEDAD] = "Severa")
+		formatString: 0
+		lineageTag: 119537a8-7b4e-40fc-b044-8e2f921438a7
+
+	measure totalHombres =
+			VAR TotalHombres =
+			    CALCULATE(
+			        COUNTROWS(discapacidad),
+			        Sexo[SEXO] = "HOMBRE"
+			    )
+			RETURN
+			IF(
+			    TotalHombres > 0,
+			    TotalHombres,
+			    "-"
+			)
+		lineageTag: bde11ba4-f727-4642-becc-6eb61d182ed6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure totalMujeres =
+			VAR TotalMujeres =
+			    CALCULATE(
+			        COUNTROWS(discapacidad),
+			        Sexo[SEXO] = "MUJER"
+			    )
+			RETURN
+			IF(
+			    TotalMujeres > 0,
+			    TotalMujeres,
+			    "-"
+			)
+		lineageTag: 284d7862-40cd-4bd6-a8de-1317a1d4c52d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure totalSeveros =
+			VAR TotalSeveros =
+			    CALCULATE(
+			        COUNTROWS(discapacidad),
+			        discapacidad[GRAVEDAD] = "Severa"
+			    )
+			RETURN
+			IF(
+			    TotalSeveros > 0,
+			    TotalSeveros,
+			    "-"
+			)
+		lineageTag: 91a2e40a-abd6-47f6-b04f-dd2ef1ba8ee6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% casos' =
+			
+			DIVIDE(
+			    [Total Casos],
+			    CALCULATE(
+			        [Total Casos],
+			        REMOVEFILTERS('dimRegion'),
+			        REMOVEFILTERS('dimProvincia'),
+			        REMOVEFILTERS('dimDistrito')
+			    )
+			)
+		lineageTag: 4391fe6f-1d03-4d9c-bb0f-614bc1877585
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'COD. DANIO'
+		dataType: string
+		lineageTag: 75d0c1f2-d463-4681-93c3-de9e68738430
+		summarizeBy: none
+		sourceColumn: COD. DANIO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'COD. ETIOLOGICO'
+		dataType: string
+		lineageTag: bacddb49-a8c2-416e-a6ff-b4c87679a08e
+		summarizeBy: none
+		sourceColumn: COD. ETIOLOGICO
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio_emision
+		dataType: string
+		lineageTag: d3b08af1-0499-4de9-a0af-243e98ea5aaa
+		summarizeBy: none
+		sourceColumn: anio_emision
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes_emision
+		dataType: string
+		lineageTag: debe9cca-1485-4850-90bb-ca044eb41f6c
+		summarizeBy: none
+		sourceColumn: mes_emision
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: c52fe5e5-dfe5-4481-b134-8cd67c0d2c7d
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column provincia
+		dataType: string
+		lineageTag: 96a12934-0485-4e42-9b63-7af5752689ec
+		summarizeBy: none
+		sourceColumn: provincia
+
+		annotation SummarizationSetBy = Automatic
+
+	column distrito
+		dataType: string
+		lineageTag: a94e3883-2368-4ce7-888b-013c6df79bbd
+		summarizeBy: none
+		sourceColumn: distrito
+
+		annotation SummarizationSetBy = Automatic
+
+	column ubigeo
+		dataType: string
+		lineageTag: 8f7daae2-ea5f-49a8-aa78-894735ac6b04
+		summarizeBy: none
+		sourceColumn: ubigeo
+
+		annotation SummarizationSetBy = Automatic
+
+	column grupo_edad
+		dataType: string
+		lineageTag: 20c30dc1-6afe-43c8-8082-ac7c9c012219
+		summarizeBy: none
+		sourceColumn: grupo_edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column sexo
+		dataType: string
+		lineageTag: aca7ef8b-0eeb-4de5-a16f-7eff38d387de
+		summarizeBy: none
+		sourceColumn: sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column gravedad
+		dataType: string
+		lineageTag: be3bc130-a2c3-4310-a4ed-cff80cfa1cf2
+		summarizeBy: none
+		sourceColumn: gravedad
+
+		annotation SummarizationSetBy = Automatic
+
+	column diagnostico_danio
+		dataType: string
+		lineageTag: fa63cf9d-181b-4289-980e-bfbd66fb77d8
+		summarizeBy: none
+		sourceColumn: diagnostico_danio
+
+		annotation SummarizationSetBy = Automatic
+
+	column diagnostico_etiologico
+		dataType: string
+		lineageTag: ce744a0d-1749-418d-9438-3b59b2f22404
+		summarizeBy: none
+		sourceColumn: diagnostico_etiologico
+
+		annotation SummarizationSetBy = Automatic
+
+	partition discapacidad = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/3. Salud/REGISTROS/SALUD-discapacidad.xlsx"), null, true),
+				    discapacidad_Sheet = Origen{[Item="discapacidad",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(discapacidad_Sheet, [PromoteAllScalars=true]),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Encabezados promovidos","Discapacidad ","",Replacer.ReplaceText,{"gravedad"}),
+				    #"Personalizada agregada" = Table.AddColumn(#"Valor reemplazado", "COD. DANIO", each Text.Start([diagnostico_danio], 4)),
+				    #"Personalizada agregada1" = Table.AddColumn(#"Personalizada agregada", "COD. ETIOLOGICO", each Text.Start([diagnostico_etiologico], 4))
+				in
+				    #"Personalizada agregada1"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

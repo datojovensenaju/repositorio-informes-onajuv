@@ -1,0 +1,83 @@
+table factVictimizacionSeguridadCiudadana_ActividadQueDejóDeRealizar
+	lineageTag: 368e1b32-e6fa-4420-8286-c3904edf5669
+
+	column AÑO
+		dataType: string
+		lineageTag: a80afb6e-89c9-40d3-bfd4-27a2fb107289
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: 9a1ce608-f77c-4adb-937b-58f77628b587
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 622be5f7-33d0-4dae-a8c2-33093a126865
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: 8d323a1e-974f-4a1b-b672-af2810a521cf
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: 536f41d8-7d6e-4c30-ab0d-1e23a22c8e5d
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: 84f9cffd-429e-47cf-8aed-c27cee11f554
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: 95ebd8e5-48f1-47bd-b6f2-e763c632ceb5
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: 86713336-f8e0-4c86-9fb0-01029e49927e
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factVictimizacionSeguridadCiudadana_ActividadQueDejóDeRealizar = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/ENCUESTAS/VictimizacionSeguridadCiudadana_J%C3%B3venes%20que%20dejaron%20de%20realizar%20alguna%20actividad%20para%20protegerse%20de%20la%20%20delincuencia.xlsx"), null, true),
+				    Región_Sheet = Origen{[Item="datosRegionales",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Región_Sheet, [PromoteAllScalars=true]),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Encabezados promovidos","NACIONAL","REGIONAL",Replacer.ReplaceText,{"CATEGORIA"}),
+				    #"Filas filtradas" = Table.SelectRows(#"Valor reemplazado", each ([CATEGORIA] = "REGIONAL"))
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

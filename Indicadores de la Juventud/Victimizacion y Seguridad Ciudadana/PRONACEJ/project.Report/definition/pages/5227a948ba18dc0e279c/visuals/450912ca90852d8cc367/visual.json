@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "450912ca90852d8cc367",
+  "position": {
+    "x": 10,
+    "y": 113,
+    "z": 17000,
+    "height": 60,
+    "width": 1380,
+    "tabOrder": 16000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Presenta información sobre jóvenes de 15 a 29 años atendidos en el Servicio de Orientación al Adolescente (SOA) de PRONACEJ, permitiendo conocer sus características demográficas, educativas, familiares, laborales, jurídicas y territoriales.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#666666"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

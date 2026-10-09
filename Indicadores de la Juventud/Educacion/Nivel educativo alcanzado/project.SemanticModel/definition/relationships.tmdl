@@ -1,0 +1,32 @@
+relationship a0f6b6e8-9d1d-cf02-3a9c-06514a4614f9
+	fromColumn: datosRegionales.INDICADOR
+	toColumn: 'Nivel Educativo Alcanzado'.NIVEL_EDUCATIVO_ALCANZADO
+
+relationship d8c4745c-f763-ca06-0239-94ab4c7867ea
+	fromColumn: datosNacionales.INDICADOR
+	toColumn: 'Nivel Educativo Alcanzado'.NIVEL_EDUCATIVO_ALCANZADO
+
+relationship 91ca2506-5e66-16d0-fc53-000d6580d635
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.anio
+
+relationship 19d5dfff-3c2a-8af6-eba9-333deb26241f
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.anio
+
+relationship ba6bafeb-2fd3-1ca3-86da-490f020a729a
+	fromColumn: datosRegionales.CATEGORIA
+	toColumn: 'Datos Regionales'.CATEGORIA
+
+relationship a58b331d-e8b6-b3c3-6660-bcbb3ea05b32
+	fromColumn: datosNacionales.CATEGORIA
+	toColumn: 'Region Natural'.CATEGORIA
+
+relationship ed8ef6f5-7b4a-b6b8-37f9-07e37b7c6259
+	fromColumn: Tabla_Nacional.AÑO
+	toColumn: Año.anio
+
+relationship 343e5c9c-ba08-37e8-fbcc-bf59eb2bf65f
+	fromColumn: Tabla_Nacional.'NIVEL EDUCATIVO'
+	toColumn: 'Nivel Educativo Alcanzado'.NIVEL_EDUCATIVO_ALCANZADO
+

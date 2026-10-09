@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "8ff4aa4c23443b8d83bb",
+  "displayName": "Servicio por Lineamiento - web",
+  "displayOption": "ActualSize",
+  "height": 1980,
+  "width": 1400,
+  "visibility": "HiddenInViewMode"
+}

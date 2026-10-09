@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "b60f98321c63bd37072b",
+  "displayName": "VIH-SALUD-MOBILE",
+  "displayOption": "ActualSize",
+  "height": 4580,
+  "width": 370,
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "4c71bacffa9719034588",
+      "target": "bb0f3426cf723028b71c",
+      "type": "NoFilter"
+    }
+  ]
+}

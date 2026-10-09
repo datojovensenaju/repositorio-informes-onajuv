@@ -1,0 +1,36 @@
+relationship 9e45a6cc-631b-2aa3-b444-870e0dc4c039
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.anio
+
+relationship 57d23aa3-c692-f56d-dd34-b57b559e1c77
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.anio
+
+relationship AutoDetected_6d1ff1a2-a75b-4bc4-b592-c16fe849f8b1
+	fromColumn: datosRegionales.CATEGORIA
+	toColumn: 'Datos Regionales'.CATEGORIA
+
+relationship a9b6e3ba-16de-d4fb-c7be-62e6a9de8c4a
+	fromColumn: datosNacionales.CATEGORIA
+	toColumn: 'Region Natural'.CATEGORIA
+
+relationship AutoDetected_20fdbc65-e954-4c7b-b8ab-d1a62c3306e0
+	fromColumn: datosRegionales.REGION
+	toColumn: dimRegion.REGION
+
+relationship 81eef273-1a1d-e0f7-ab54-42d8305ab10d
+	fromColumn: datosNacionales.INDICADOR
+	toColumn: frecuenciaDeUso.FRECUENCIA
+
+relationship cbe795fb-c36c-e71f-c598-7eb026f66657
+	fromColumn: datosRegionales.INDICADOR
+	toColumn: frecuenciaDeUso.FRECUENCIA
+
+relationship 2faadd49-9635-3244-c249-cc9f7e6511fb
+	fromColumn: Tabla_Nacional.AÑO
+	toColumn: Año.anio
+
+relationship 1f6dabb1-41d6-169a-d7ad-1641c05b40c1
+	fromColumn: Tabla_Nacional.FRECUENCIA
+	toColumn: frecuenciaDeUso.FRECUENCIA
+

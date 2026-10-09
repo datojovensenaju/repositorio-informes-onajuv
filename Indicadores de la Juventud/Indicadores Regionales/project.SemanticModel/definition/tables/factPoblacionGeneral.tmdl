@@ -1,0 +1,51 @@
+table factPoblacionGeneral
+	lineageTag: 7cf67184-490b-4d42-91ba-566d5bb8b831
+
+	column UBIGEO
+		dataType: string
+		lineageTag: f512deaf-c629-4511-a63e-6f3929a9b58b
+		summarizeBy: none
+		sourceColumn: UBIGEO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: int64
+		formatString: 0
+		lineageTag: 9bb24c01-f80b-4b57-89d5-5cd47cb0cea6
+		summarizeBy: sum
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: 3b036a71-96f8-47c2-b802-f5e6cf425e11
+		summarizeBy: none
+		sourceColumn: SEXO
+
+		annotation SummarizationSetBy = Automatic
+
+	column AÑO
+		dataType: string
+		lineageTag: a793e8a0-d8b1-45ef-92ea-0bfce9852318
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factPoblacionGeneral = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/DATOS%20DEMOGR%C3%81FICOS/Datos%20demogr%C3%A1ficos.xlsx"), null, true),
+				    factPoblacionGeneral_Sheet = Origen{[Item="factPoblacionGeneral",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(factPoblacionGeneral_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"POBLACION", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

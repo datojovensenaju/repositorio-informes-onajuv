@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 72.876008669138955
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 217.04875936889096,
+            "y": 442.80858536888957
+          },
+          "nodeIndex": "Año",
+          "nodeLineageTag": "611c59ad-cca9-492c-b38e-95de70881e3e",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 630.86615304729673
+          },
+          "nodeIndex": "datosNacionales",
+          "nodeLineageTag": "d12adfde-f9a5-4e84-879e-9697e62f178e",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 630.86615304729673
+          },
+          "nodeIndex": "datosRegionales",
+          "nodeLineageTag": "2a7d3f67-21ca-4f21-bf9e-6aeb4368797c",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 435.85171272570517
+          },
+          "nodeIndex": "Asistencia a educación superior",
+          "nodeLineageTag": "d96687e4-4ef9-4304-8e1a-4b7da971ba81",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 659.15886936781692,
+            "y": 171.20788381532628
+          },
+          "nodeIndex": "Datos Regionales",
+          "nodeLineageTag": "e3d58503-4ef9-4c14-a255-ace0fefa4228",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 352.83732080610338
+          },
+          "nodeIndex": "Region Natural",
+          "nodeLineageTag": "dcbb4ed1-8d39-43f7-8610-a24a4ccc2e80",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 830.26491446204466,
+            "y": 615.52363326179034
+          },
+          "nodeIndex": "Tabla_Nacional",
+          "nodeLineageTag": "b5ae3e04-12e7-4629-9f49-79d4796e78c5",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 89.192590520569723,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

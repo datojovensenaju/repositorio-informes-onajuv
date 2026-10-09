@@ -1,0 +1,89 @@
+table datosNacionales
+	lineageTag: 38a777dc-841f-46f6-9983-ed7f133c7581
+
+	measure 'Valor Naconal' =
+			
+			CALCULATE(
+			    MAX(datosNacionales[VALOR]),
+			    datosNacionales[CATEGORIA] = "NACIONAL"
+			)
+		lineageTag: 2346d3f0-8e9e-4b0c-b6c8-63f6678b756d
+
+	column AÑO
+		dataType: string
+		lineageTag: 6d276376-5a01-43b1-a826-cc9251832bbe
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: d7fcaa6c-deef-4b5a-bb8c-9eb76f81b351
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: f41983f9-e4df-45e7-804e-9c683e5075ea
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: c4ccb9af-7144-4c2c-880e-ba3e8a54e26c
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: 6f4f6c9b-33b5-49c0-a756-50c2c2792207
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: 74853219-457d-4658-a8a5-205d754c865f
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: 28adaee3-0e29-4f1a-9c83-5cc89a5a1004
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: 8dc52409-3be3-4ad0-abf6-3239b1b98408
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition datosNacionales = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/7.%20Competencias%20digitales/Lugar%20de%20acceso%20a%20internet.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "datosNacionales", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

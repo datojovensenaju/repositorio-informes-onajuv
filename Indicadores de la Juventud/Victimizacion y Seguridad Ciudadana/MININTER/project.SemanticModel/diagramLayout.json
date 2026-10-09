@@ -1,0 +1,152 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 12.400927,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 718.9366984165647,
+            "y": 0
+          },
+          "nodeIndex": "Año",
+          "nodeLineageTag": "40dcbd65-19db-42bb-ad42-8337abc7942d",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1742.9202097630664,
+            "y": 883.19443016221328
+          },
+          "nodeIndex": "Sexo",
+          "nodeLineageTag": "d6d6b9f5-5a01-459d-80e2-2d4ed8013e77",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 593.18403913030215,
+            "y": 1143.4873465533349
+          },
+          "nodeIndex": "Mes",
+          "nodeLineageTag": "5b3acb81-32bd-40b7-87ad-d5d975a71433",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 2256.9575271056215,
+            "y": 490.15739818890825
+          },
+          "nodeIndex": "dimDepartamento",
+          "nodeLineageTag": "c6be74b0-fa0b-4646-b3f7-c317169f8ff5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 254.06633927344166
+          },
+          "nodeIndex": "accidenteDeTransitoFatal",
+          "nodeLineageTag": "c305c660-079b-448d-94d9-68843af174d9",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 254.06633927344166
+          },
+          "nodeIndex": "accidenteDeTransitoNoFatal",
+          "nodeLineageTag": "ec2a69ff-ecb1-4baf-bd37-c58e367c7997",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 266.06633927344166
+          },
+          "nodeIndex": "detenidosComisionDelitos",
+          "nodeLineageTag": "1eaa08ad-e307-487c-b6be-f7b7645c2eda",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 901.603708,
+            "y": 269.60946127344164
+          },
+          "nodeIndex": "intervenidosPorFalta",
+          "nodeLineageTag": "26237aa3-2650-44ac-b7eb-8ca9b073f6fe",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1164.344976,
+            "y": 247.38102227344166
+          },
+          "nodeIndex": "violenciaFamiliar",
+          "nodeLineageTag": "f138f180-4e95-429c-a6b4-f1eb463c156d",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1420,
+            "y": 254.06633927344166
+          },
+          "nodeIndex": "violenciaSexual",
+          "nodeLineageTag": "87c649d4-5433-4190-933a-4beba37bc4bc",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 6
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 56.447393005377741,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

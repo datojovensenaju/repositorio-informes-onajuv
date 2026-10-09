@@ -1,0 +1,23 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["candidatura joven","candidatura general","Sexo","distritoElectoral","Nivel Educativo Elecciones","Nivel Educativo Elecciones - Mo"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'candidatura joven'
+ref table 'candidatura general'
+ref table Sexo
+ref table distritoElectoral
+ref table 'Nivel Educativo Elecciones'
+ref table 'Nivel Educativo Elecciones - Mo'
+
+ref cultureInfo es-MX
+

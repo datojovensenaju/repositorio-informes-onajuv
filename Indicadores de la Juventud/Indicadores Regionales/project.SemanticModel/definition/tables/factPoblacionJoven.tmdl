@@ -1,0 +1,153 @@
+table factPoblacionJoven
+	lineageTag: 1f03da13-d9a9-4a23-9b5c-4a4ad1cd7407
+
+	measure %JOVENES =
+			
+			DIVIDE(
+				SUM('factPoblacionJoven'[POBLACION JOVEN]),
+				SUM('factPoblacionGeneral'[POBLACION])
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: dbfea61a-5627-4e8e-b96b-9b8bc306c8cf
+
+	measure 'NO JOVEN' = SUM(factPoblacionGeneral[POBLACION])-SUM(factPoblacionJoven[POBLACION JOVEN])
+		lineageTag: e926a11a-a30c-46ad-81bb-b82fe4f12c12
+
+		formatStringDefinition = "### ### ###"
+
+	measure 'FOCO JUVENIL DISTRITAL' =
+			
+			VAR FilaDistritoTop =
+			    TOPN(
+			        1,
+			        VALUES('dimDistrito'[DISTRITO]),
+			        CALCULATE(SUM('factPoblacionJoven'[POBLACION JOVEN])),
+			        DESC
+			    )
+			RETURN
+			    MAXX(FilaDistritoTop, 'dimDistrito'[DISTRITO])
+		lineageTag: 94b4ad81-5bdf-4725-a473-7faedd8ab7d1
+
+	measure 'TOTAL JOVENES' = SUM(factPoblacionJoven[POBLACION JOVEN])
+		lineageTag: b3db0cf7-5673-40a6-9f04-9ff2d353000a
+
+		formatStringDefinition = "### ### ###"
+
+	measure totalHombresJóvenes =
+			VAR TotalHombre =
+			    CALCULATE(
+			        SUM('factPoblacionJoven'[POBLACION JOVEN]),
+			        factPoblacionJoven[SEXO] = "HOMBRE"
+			    )
+			RETURN
+			IF(
+			    TotalHombre > 0,
+			    TotalHombre,
+			    "-"
+			)
+		lineageTag: 6fdb3369-2b3d-4912-a2a6-f6fdba3d0567
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% Mujeres' = DIVIDE([totalMujeresJóvenes],CALCULATE([totalHombresJóvenes]+[totalMujeresJóvenes]))
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 81a53052-7216-420d-b20e-ea120bf343f1
+
+	measure totalMujeresJóvenes =
+			VAR TotalMujer =
+			    CALCULATE(
+			        SUM('factPoblacionJoven'[POBLACION JOVEN]),
+			        factPoblacionJoven[SEXO] = "MUJER"
+			    )
+			RETURN
+			IF(
+			    TotalMujer > 0,
+			    TotalMujer,
+			    "-"
+			)
+		lineageTag: aaceba74-7cd6-402f-b14b-9de5ddcc2ad0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% Hombres' = DIVIDE([totalHombresJóvenes],CALCULATE([totalHombresJóvenes]+[totalMujeresJóvenes]))
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 5f16aa17-0ccf-4709-9f2c-691830972150
+
+	measure 'Total Global Jovenes' = ```
+			
+			CALCULATE(
+			    [TOTAL JOVENES], 
+			    ALLSELECTED('factPoblacionJoven'[RANGO DE EDAD]) -- Cambia 'Edad' por el nombre de tu columna de edades
+			)
+			```
+		formatString: 0
+		lineageTag: 95e61b83-e471-4164-a148-17b34b7fd8c8
+
+	measure '% Distribución Jóvenes' = ```
+			
+			VAR PoblacionDeLaBarra = SUM('factPoblacionJoven'[POBLACION JOVEN]) 
+			VAR TotalDinamico = CALCULATE(
+			    SUM('factPoblacionJoven'[POBLACION JOVEN]), 
+			    ALLSELECTED() -- Sin nada adentro, respeta filtros externos pero limpia el de la barra
+			)
+			RETURN DIVIDE(PoblacionDeLaBarra, TotalDinamico, 0)
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 15fb21d7-4935-4282-ac15-62d869727232
+
+	column UBIGEO
+		dataType: string
+		lineageTag: 491ebdc9-f27a-46b5-a061-fd0b7b5d31ef
+		summarizeBy: none
+		sourceColumn: UBIGEO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RANGO DE EDAD'
+		dataType: string
+		lineageTag: cd43aa5c-a8fb-46f4-8775-36ca7ff32277
+		summarizeBy: none
+		sourceColumn: RANGO DE EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'POBLACION JOVEN'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1e4315c1-47b3-4b7e-849f-7a57b5c19194
+		summarizeBy: sum
+		sourceColumn: POBLACION JOVEN
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: e267c86c-4589-4a42-ab73-6518da95447e
+		summarizeBy: none
+		sourceColumn: SEXO
+
+		annotation SummarizationSetBy = Automatic
+
+	column AÑO
+		dataType: string
+		lineageTag: 35887fc1-63e6-4ce1-90fe-b55e207216e7
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factPoblacionJoven = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/DATOS%20DEMOGR%C3%81FICOS/Datos%20demogr%C3%A1ficos.xlsx"), null, true),
+				    factPoblacionJoven_Sheet = Origen{[Item="factPoblacionJoven",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(factPoblacionJoven_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"POBLACION JOVEN", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

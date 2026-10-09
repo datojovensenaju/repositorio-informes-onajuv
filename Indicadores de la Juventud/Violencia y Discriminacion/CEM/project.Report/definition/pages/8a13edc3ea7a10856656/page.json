@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "8a13edc3ea7a10856656",
+  "displayName": "CEM -Web",
+  "displayOption": "ActualSize",
+  "height": 1980,
+  "width": 1400,
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "181L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "b19f9de71305ab32d1a1",
+      "target": "ef30fc955add1bcae760",
+      "type": "NoFilter"
+    }
+  ]
+}

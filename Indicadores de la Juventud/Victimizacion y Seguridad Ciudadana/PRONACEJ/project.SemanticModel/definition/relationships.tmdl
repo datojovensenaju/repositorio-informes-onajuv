@@ -1,0 +1,56 @@
+relationship AutoDetected_874848e6-2cd2-4754-949c-7167be60c771
+	fromColumn: pronacej-CJDR.Sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_ce3e2bf7-8847-4a5e-88fb-bc7a7dfcb558
+	fromColumn: pronacej-CJDR.Mes
+	toColumn: Mes.MES
+
+relationship d3c3a8f0-a0a7-eb10-6534-28dabe794688
+	fromColumn: pronacej-CJDR.Anio
+	toColumn: Año.AÑO
+
+relationship AutoDetected_416a2d71-8d5c-4ca6-9f52-fa9ef67d1228
+	fromColumn: pronacej-PASPE.Sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_eb1538d8-e5ac-47c7-ae6d-46e2d8de0409
+	fromColumn: pronacej-PASPE.Mes
+	toColumn: Mes.MES
+
+relationship 7d9e505f-24eb-77a8-fd49-98722e887d17
+	fromColumn: pronacej-PASPE.Anio
+	toColumn: Año.AÑO
+
+relationship b2de3578-787f-bca0-ffd0-ff1da0751992
+	fromColumn: pronacej-PASPE.Grupo_edad
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+
+relationship AutoDetected_841d6564-b7f3-4f70-ae6f-2dcd4fe3c81c
+	fromColumn: pronacej-SOA.Sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_909b61de-8b00-4d7d-8e75-ae16e0b3f53f
+	fromColumn: pronacej-SOA.Mes
+	toColumn: Mes.MES
+
+relationship 3197f259-2af6-c485-8327-60b695c4ea64
+	fromColumn: pronacej-SOA.Departamento_infraccion
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship 8070d675-4634-2edb-cb60-c463f9092957
+	fromColumn: pronacej-SOA.Grupo_edad
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+
+relationship 657e590b-a0fb-e716-be97-b46546fa0143
+	fromColumn: pronacej-SOA.Anio
+	toColumn: Año.AÑO
+
+relationship b6e0f0cf-05b9-c56b-1675-6db4f20cafd1
+	fromColumn: pronacej-CJDR.Departamento_infraccion
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship cb548091-6927-cd9b-efc0-0f3651098c73
+	fromColumn: pronacej-CJDR.Rango_edad
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+

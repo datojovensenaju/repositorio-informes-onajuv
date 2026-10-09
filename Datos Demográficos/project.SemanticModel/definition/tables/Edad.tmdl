@@ -1,0 +1,33 @@
+table Edad
+	lineageTag: 850cbcb1-9703-471e-b05f-740bed1c6e77
+
+	column ID_EDA
+		dataType: string
+		lineageTag: e69f1260-deab-4501-bbae-5d5da792f65e
+		summarizeBy: none
+		sourceColumn: ID_EDA
+
+		annotation SummarizationSetBy = Automatic
+
+	column RANGO_EDAD
+		dataType: string
+		lineageTag: 1a177daa-bdab-49f1-97a9-ce87a4522148
+		summarizeBy: none
+		sourceColumn: RANGO_EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Edad = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				    Edad_Sheet = Origen{[Item="Edad",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Edad_Sheet, [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

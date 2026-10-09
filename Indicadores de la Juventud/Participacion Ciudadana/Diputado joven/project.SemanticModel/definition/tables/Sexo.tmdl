@@ -1,0 +1,35 @@
+table Sexo
+	lineageTag: 529367ea-1005-4e2c-b8e6-514db87368c8
+
+	column ID_SEX
+		dataType: string
+		lineageTag: 467c722e-8a46-48fb-9e4c-c8e9d1e17d3e
+		summarizeBy: none
+		sourceColumn: ID_SEX
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: 9efc98c8-3ad5-44d4-8152-3d92b8a634da
+		summarizeBy: none
+		sourceColumn: SEXO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sexo = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				    Sexo_Sheet = Origen{[Item="Sexo",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Sexo_Sheet, [PromoteAllScalars=true]),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Encabezados promovidos","HOMBRE","Hombre",Replacer.ReplaceText,{"SEXO"}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Valor reemplazado","MUJER","Mujer",Replacer.ReplaceText,{"SEXO"})
+				in
+				    #"Valor reemplazado1"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

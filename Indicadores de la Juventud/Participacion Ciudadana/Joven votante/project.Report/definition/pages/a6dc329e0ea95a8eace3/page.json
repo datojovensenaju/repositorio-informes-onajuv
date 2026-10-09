@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "a6dc329e0ea95a8eace3",
+  "displayName": "Nacional_Mobile",
+  "displayOption": "ActualSize",
+  "height": 2135,
+  "width": 370,
+  "visibility": "HiddenInViewMode"
+}

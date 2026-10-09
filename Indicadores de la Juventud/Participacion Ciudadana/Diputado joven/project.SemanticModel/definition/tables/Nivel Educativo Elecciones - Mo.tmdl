@@ -1,0 +1,36 @@
+table 'Nivel Educativo Elecciones - Mo'
+	lineageTag: f36c9ca1-af53-4bd5-9eb4-ad5b107b03fd
+
+	column ID_NIVEDUELEMB
+		dataType: string
+		lineageTag: 55965ddf-cf1d-439b-abf7-ec4f4fef7533
+		summarizeBy: none
+		sourceColumn: ID_NIVEDUELEMB
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL_EDUCATIVO_ELECCIONES_MB
+		dataType: string
+		lineageTag: 8da1d695-c0ef-467a-a631-8bb9c6412e93
+		summarizeBy: none
+		sourceColumn: NIVEL_EDUCATIVO_ELECCIONES_MB
+		sortByColumn: ID_NIVEDUELEMB
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Nivel Educativo Elecciones - Mo' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/6.%20Participaci%C3%B3n%20ciudadana%20y%20gobernanza/REGISTROS/participacionCiudadana-JovenVotante.xlsx"), null, true),
+				    #"Nivel Educativo Elecciones - Mo_Sheet" = Origen{[Item="Nivel Educativo Elecciones - Mo",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Nivel Educativo Elecciones - Mo_Sheet", [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

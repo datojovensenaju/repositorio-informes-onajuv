@@ -1,0 +1,140 @@
+table IPD
+	lineageTag: 1cf9508a-c785-4b66-b77b-ca0de3c8045a
+
+	measure 'Total de jóvenes IPD' =
+			var total=COUNTROWS(IPD)
+			RETURN
+			 IF(total=BLANK(),"-",total)
+		formatString: 0
+		lineageTag: 003b6619-2332-42c1-9ea0-b77e65ef8570
+
+	measure 'Edad Promedio' =
+			var promedio=AVERAGE('IPD'[EDAD])
+			RETURN
+			IF(promedio=BLANK(), "-",
+			promedio)
+		formatString: 0
+		lineageTag: 502f52f8-5936-48c3-b663-d5e1874eeb29
+
+	measure 'Porcentaje de nuevos ingresos' =
+			VAR Nuevos = DIVIDE(CALCULATE(COUNTROWS(IPD), IPD[PERMANENCIA]="NUEVO"), [Total de jóvenes IPD])
+			RETURN
+			IF(
+			    Nuevos>0,
+			    Nuevos,
+			    "-"
+			    )
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 65a56b36-d0e3-4362-aebc-cc4af4262cc7
+
+	measure 'Disciplina que mas se practica' =
+			VAR TopDisciplina =
+			    TOPN(
+			        1,
+			        VALUES('IPD'[DISCIPLINA]),
+			        [Total de jóvenes IPD], DESC,
+			        'IPD'[DISCIPLINA], ASC
+			    )
+			RETURN
+			IF(TopDisciplina=BLANK(),"-",    CONCATENATEX(TopDisciplina, 'IPD'[DISCIPLINA], ", "))
+		lineageTag: 2274a936-3f5b-400a-8f62-3a2d4819e983
+
+	column ID
+		dataType: string
+		lineageTag: f1b92474-554f-4e4f-a88b-c3c16b30b604
+		summarizeBy: none
+		sourceColumn: ID
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column CENTRO_ALTO_RENDIMIENTO
+		dataType: string
+		lineageTag: 856ce331-17bf-4d08-9c5b-35ecd2f18756
+		summarizeBy: none
+		sourceColumn: CENTRO_ALTO_RENDIMIENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: 20f1aae8-563a-497d-82b5-cb6523a69b7e
+		summarizeBy: none
+		sourceColumn: SEXO
+
+		annotation SummarizationSetBy = Automatic
+
+	column EDAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 80bb74e0-d838-4a91-8e52-0f5d48ccf9ab
+		summarizeBy: sum
+		sourceColumn: EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column GRUPO_EDAD
+		dataType: string
+		lineageTag: 27c56960-0fd1-4def-b50b-dc39deed9a42
+		summarizeBy: none
+		sourceColumn: GRUPO_EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISCIPLINA
+		dataType: string
+		lineageTag: d8230ba3-f5ee-4c53-a62b-c092c05fffbd
+		summarizeBy: none
+		sourceColumn: DISCIPLINA
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_INGRESO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b76a600b-3500-4a7b-b72c-30491d73a638
+		summarizeBy: none
+		sourceColumn: FECHA_INGRESO
+
+		variation Variación
+			isDefault
+			relationship: a5915cd7-a033-4bb8-84d9-0a506f9e7bb9
+			defaultHierarchy: LocalDateTable_5979b33e-ac62-42f1-9ca2-841f6d29e11f.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column PERMANENCIA
+		dataType: string
+		lineageTag: deaf5d9a-2276-4c21-9a28-a726da5545e4
+		summarizeBy: none
+		sourceColumn: PERMANENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ANIO
+		dataType: int64
+		formatString: 0
+		lineageTag: 471a65ea-e30c-4616-a39b-2626106281b4
+		summarizeBy: none
+		sourceColumn: ANIO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition IPD = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/3.%20Salud/REGISTROS/Salud-IPD.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "IPD", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"ID", Int64.Type}, {"CENTRO_ALTO_RENDIMIENTO", type text}, {"SEXO", type text}, {"EDAD", Int64.Type}, {"GRUPO_EDAD", type text}, {"DISCIPLINA", type text}, {"FECHA_INGRESO", type date}, {"PERMANENCIA", type text}, {"ANIO", Int64.Type}}, "es")
+				in
+				    #"Tipo de columna cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,21 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["CEM","dimDepartamento"]
+
+annotation PBI_ProTooling = ["DaxQueryView_Desktop","WebModelingEdit","DevMode"]
+
+annotation __LastRPTime = 134340560036824016
+
+ref table CEM
+ref table dimDepartamento
+
+ref cultureInfo es-MX
+

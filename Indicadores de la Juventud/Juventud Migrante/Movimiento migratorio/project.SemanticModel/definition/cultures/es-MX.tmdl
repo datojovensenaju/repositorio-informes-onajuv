@@ -1,0 +1,756 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "año.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año",
+			          "ConceptualProperty": "AÑO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "año name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "rango_etario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango etario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario.id_raneta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario",
+			          "ConceptualProperty": "ID_RANETA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id raneta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_RANETA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario.rango_etario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario",
+			          "ConceptualProperty": "RANGO_ETARIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango etario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rango etario name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RANGO_ETARIO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.id_sex": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "ID_SEX"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id sex": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_SEX": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sex": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "id masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "id gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "SEXO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexo name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "me.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mes",
+			          "ConceptualProperty": "MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "me.id_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mes",
+			          "ConceptualProperty": "ID_MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_MES": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "identity me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "identifier me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "credential me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representantes.total_de_organizaciones": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "Total de Organizaciones"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "representantes.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "SEXO"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "representantes.tipo_de_organización": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "TIPO DE ORGANIZACIÓN"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "representantes.temática_de_organización": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "TEMÁTICA DE ORGANIZACIÓN"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "miembros.miembros_registrados_1529": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Miembros Registrados (15-29)"
+			        }
+			      },
+			      "State": "Generated"
+			    }
+			  },
+			  "Relationships": {
+			    "me_has_id_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Mes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "me": {
+			          "Target": {
+			            "Entity": "me"
+			          }
+			        },
+			        "me.id_me": {
+			          "Target": {
+			            "Entity": "me.id_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "me"
+			            },
+			            "Object": {
+			              "Role": "me.id_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_id_me"
+			        }
+			      ]
+			    },
+			    "me_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Mes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "me": {
+			          "Target": {
+			            "Entity": "me"
+			          }
+			        },
+			        "me.me": {
+			          "Target": {
+			            "Entity": "me.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "me"
+			            },
+			            "Object": {
+			              "Role": "me.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_me"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "me"
+			            },
+			            "Name": {
+			              "Role": "me.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_names_IDs_of_me"
+			        }
+			      ]
+			    },
+			    "sexo_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.sexo": {
+			          "Target": {
+			            "Entity": "sexo.sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_sexos"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Name": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_are_names_IDs_of_sexos"
+			        }
+			      ]
+			    },
+			    "sexo_has_id_sex": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.id_sex": {
+			          "Target": {
+			            "Entity": "sexo.id_sex"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.id_sex"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_id_sexes"
+			        }
+			      ]
+			    },
+			    "rango_etario_has_rango_etario": {
+			      "Binding": {
+			        "ConceptualEntity": "Rango Etario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        },
+			        "rango_etario.rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario.rango_etario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "rango_etario.rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_rango_etarios"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Name": {
+			              "Role": "rango_etario.rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_are_names_IDs_of_rango_etarios"
+			        }
+			      ]
+			    },
+			    "rango_etario_has_id_raneta": {
+			      "Binding": {
+			        "ConceptualEntity": "Rango Etario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        },
+			        "rango_etario.id_raneta": {
+			          "Target": {
+			            "Entity": "rango_etario.id_raneta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "rango_etario.id_raneta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_id_ranetas"
+			        }
+			      ]
+			    },
+			    "año_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Año"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        },
+			        "año.año": {
+			          "Target": {
+			            "Entity": "año.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "año.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_años"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Name": {
+			              "Role": "año.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_are_names_IDs_of_años"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

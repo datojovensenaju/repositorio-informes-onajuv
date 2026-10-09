@@ -1,0 +1,162 @@
+table 'Valor de Indicadores'
+	lineageTag: f7f0770e-7e06-4b56-ad32-4a71870969d0
+
+	measure MostrarValorEsperado =
+			
+			IF(
+			    ISFILTERED(Indicadores[OBJETIVO_PRIORITARIO]) && ISFILTERED(Indicadores[INDICADOR]),
+			    SELECTEDVALUE('Valor de Indicadores'[Valor_esperado]),
+			    ""
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: f5a04cfa-3c72-4964-9ab3-b3bbcbc58f81
+
+	measure MostrarValorObtenido =
+			
+			IF(
+			    ISFILTERED(Indicadores[OBJETIVO_PRIORITARIO]) && ISFILTERED(Indicadores[INDICADOR]),
+			    SELECTEDVALUE('Valor de Indicadores'[Valor_obtenido]),
+			    ""
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 0e58bdc0-da23-4bd7-b146-948fec00be3d
+
+	measure MostrarJustificación =
+			
+			IF(
+			    ISFILTERED(Indicadores[OBJETIVO_PRIORITARIO]) && ISFILTERED(Indicadores[INDICADOR]),
+			    SELECTEDVALUE(Indicadores[JUSTIFICACIÓN]),
+			    ""
+			)
+		lineageTag: 9bc75d4b-c6c8-49e4-9f30-357ed6c0d9b3
+
+	measure MostrarValorObtenidoExtra =
+			
+			IF(
+			    ISFILTERED(Indicadores[OBJETIVO_PRIORITARIO]) && ISFILTERED(Indicadores[INDICADOR]),
+			    SELECTEDVALUE('Valor de Indicadores'[Valor_obtenido]),
+			    ""
+			)
+		lineageTag: b42b032c-04e3-4d33-8fa5-3c1a1e3c6cf0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Mostrar Responsable Indicador' =
+			
+			IF(
+			    ISFILTERED(Indicadores[OBJETIVO_PRIORITARIO]) && ISFILTERED(Indicadores[INDICADOR]),
+			    SELECTEDVALUE(Indicadores[RESPONSABLE_INDICADOR]),
+			    ""
+			)
+		lineageTag: 00eb99d5-b8d3-4415-ae69-1fc5ead84b79
+
+	measure 'Mostrar Fuentes' =
+			
+			IF(
+			    ISFILTERED(Indicadores[OBJETIVO_PRIORITARIO]) && ISFILTERED(Indicadores[INDICADOR]),
+			    SELECTEDVALUE(Indicadores[FUENTE]),
+			    ""
+			)
+		lineageTag: 8e2e5389-d262-46e2-90f2-c0d718036721
+
+	measure MostrarObjetivo =
+			
+			IF(
+			    ISFILTERED(Indicadores[OBJETIVO_PRIORITARIO]) && ISFILTERED(Indicadores[INDICADOR]),
+			    SELECTEDVALUE(Indicadores[OBJETIVO_PRIORITARIO]),
+			    "-"
+			)
+		lineageTag: c0450365-6602-47b5-b9ca-bcf326237926
+
+	measure MostrarIndicador =
+			
+			IF(
+			    ISFILTERED(Indicadores[OBJETIVO_PRIORITARIO]) && ISFILTERED(Indicadores[INDICADOR]),
+			    SELECTEDVALUE(Indicadores[INDICADOR]),
+			    "-"
+			)
+		lineageTag: e5b96c59-9284-4ad1-860c-bbccc7a67ee3
+
+	measure 'Mostrar imagen del Responsable Indicador' =
+			
+			IF(
+			    ISFILTERED(Indicadores[OBJETIVO_PRIORITARIO]) && ISFILTERED(Indicadores[INDICADOR]),
+			    SELECTEDVALUE(Indicadores[IMG_RESPONSABLE]),
+			    "https://images.creativefabrica.com/products/previews/2024/07/25/7LQDyBVkX/2jjd73KyoSwENqlfg9D5paIyz8h-desktop.jpg"
+			)
+		lineageTag: 34898deb-e28d-471a-9438-670ef06e63cb
+
+	measure 'Mostrar Ficha Técnica' =
+			
+			IF(
+			    ISFILTERED(Indicadores[OBJETIVO_PRIORITARIO]) && ISFILTERED(Indicadores[INDICADOR]),
+			    SELECTEDVALUE(Indicadores[FICHA_TECNICA]),
+			    ""
+			)
+		lineageTag: 65aa82c7-3dfc-4924-bcb2-043d1b01fdcb
+
+	column COD_OBJETIVO
+		dataType: string
+		lineageTag: d8f1ffcf-7fd7-49d7-bdb1-fdafb59d49fe
+		summarizeBy: none
+		sourceColumn: COD_OBJETIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_INDICADOR
+		dataType: string
+		lineageTag: b86545ad-dc85-48f7-9105-d0544d480458
+		summarizeBy: none
+		sourceColumn: COD_INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		dataType: string
+		lineageTag: 500e2956-c2d2-4875-8e84-a1314d7b80b9
+		summarizeBy: none
+		sourceColumn: Año
+
+		annotation SummarizationSetBy = Automatic
+
+	column Valor_esperado
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 79d65ceb-c6e4-47c7-9686-3e48632a5072
+		summarizeBy: sum
+		sourceColumn: Valor_esperado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Valor_obtenido
+		dataType: double
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: aeffb5a7-cd01-424a-b7fc-3a459882250c
+		summarizeBy: sum
+		sourceColumn: Valor_obtenido
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fuente
+		dataType: string
+		lineageTag: 2c792af8-41c7-470b-8f91-8f5599b6159b
+		summarizeBy: none
+		sourceColumn: Fuente
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Valor de Indicadores' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/POL%C3%8DTICA%20NACIONAL%20DE%20JUVENTUD/Politica%20Nacional%20de%20la%20Juventud.xlsx"), null, true),
+				    #"Valor de Indicadores_Sheet" = Origen{[Item="Valor de Indicadores",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Valor de Indicadores_Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Valor_obtenido", Percentage.Type}, {"Valor_esperado", Percentage.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

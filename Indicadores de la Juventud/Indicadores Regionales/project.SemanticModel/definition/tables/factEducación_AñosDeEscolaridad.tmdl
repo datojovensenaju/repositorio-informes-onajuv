@@ -1,0 +1,88 @@
+table factEducación_AñosDeEscolaridad
+	lineageTag: 918d76f9-9d68-4897-85e9-098fa7d757ec
+
+	column AÑO
+		dataType: string
+		lineageTag: 67ffff4f-8ad9-473c-9458-0b93529328cb
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: e87bf6d9-3127-49f6-8a3d-c6334ba85fe5
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 2ee46b59-eb70-4549-879a-bd9c02187a70
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: d2256693-bfcd-484f-83e8-af97c60382d8
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: c8eba39b-2017-4dea-9827-37516f660e0e
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: double
+		lineageTag: fac600ae-21d8-4d30-adf1-8a5da5becd68
+		summarizeBy: sum
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CV
+		dataType: double
+		lineageTag: 0323f32b-0354-4d60-b7c7-cded3f9d4e9b
+		summarizeBy: sum
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FUENTE
+		dataType: string
+		lineageTag: 0076d106-d022-44e1-b282-3b348737f7ec
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factEducación_AñosDeEscolaridad = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/1.%20Educaci%C3%B3n/Educaci%C3%B3n_A%C3%B1os%20promedio%20de%20estudio%20alcanzados.xlsx"), null, true),
+				    datosRegionales_Sheet = Origen{[Item="datosRegionales",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(datosRegionales_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"VALOR", type number}, {"CV", type number}}),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Tipo cambiado","NACIONAL","REGIONAL",Replacer.ReplaceText,{"CATEGORIA"}),
+				    #"Filas filtradas" = Table.SelectRows(#"Valor reemplazado", each ([CATEGORIA] = "REGIONAL"))
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

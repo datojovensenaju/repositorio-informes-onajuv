@@ -1,0 +1,45 @@
+relationship AutoDetected_df1038d7-e8db-468d-8b19-a870370dbf1e
+	fromColumn: 'Votantes – Extranjero – Jóvenes'.Sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_d24eb0db-e802-41ef-b5f8-f25bf9cbe065
+	fromColumn: 'Votantes – Extranjero – Total'.Sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_64701b8e-7719-4856-9dc0-dea9ac9ff109
+	fromColumn: 'Votantes – Perú – Jóvenes'.Sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_d38bc32d-432f-464a-b1a9-349b6cec1725
+	fromColumn: 'Votantes – Perú – Total'.Sexo
+	toColumn: Sexo.SEXO
+
+relationship 036ea1f5-680a-c572-4419-cc4e59c9e2cc
+	fromColumn: 'Votantes – Perú – Total'.Departamento
+	toColumn: dimRegion.REGION
+
+relationship 11aa242f-8f8e-39b8-0b92-3f3704caf0e0
+	fromColumn: 'Votantes – Perú – Jóvenes'.Departamento
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_aff8bdfc-49ba-404f-9d59-5352adb7d53f
+	isActive: false
+	fromColumn: dimRegion.ID_DEP
+	toColumn: dimDepartamento.ID_DEP
+
+relationship AutoDetected_390deede-f09b-4601-a1af-3ff1eef715cc
+	fromColumn: 'Votantes – Extranjero – Jóvenes'.TipoVotante
+	toColumn: TipoVotante.TIPO_VOTANTE
+
+relationship AutoDetected_b02f4a88-5cf0-4080-a87f-bef04402d3cc
+	fromColumn: 'Votantes – Perú – Jóvenes'.TipoVotante
+	toColumn: TipoVotante.TIPO_VOTANTE
+
+relationship fab98169-ac5e-8af2-7c63-672bc4848e2f
+	fromColumn: 'Votantes – Perú – Jóvenes'.Departamento
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship c284d8fa-9da1-6390-46ca-3c7c23406fe7
+	fromColumn: 'Votantes – Perú – Total'.Departamento
+	toColumn: dimDepartamento.DEPARTAMENTO
+

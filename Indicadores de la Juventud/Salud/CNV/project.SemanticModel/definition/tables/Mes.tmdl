@@ -1,0 +1,37 @@
+table Mes
+	lineageTag: 5b3acb81-32bd-40b7-87ad-d5d975a71433
+
+	column ID_MES
+		dataType: string
+		lineageTag: 0fc81693-4ff6-4ef2-aaa2-2fb27081f134
+		summarizeBy: none
+		sourceColumn: ID_MES
+
+		annotation SummarizationSetBy = Automatic
+
+	column MES
+		dataType: string
+		lineageTag: 72496294-802c-495a-90cd-3d90e3ebd3cb
+		summarizeBy: none
+		sourceColumn: MES
+		sortByColumn: ID_MES
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Mes = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				    Mes_Sheet = Origen{[Item="Mes",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Mes_Sheet, [PromoteAllScalars=true]),
+				    #"Filas inferiores quitadas" = Table.RemoveLastN(#"Encabezados promovidos",1)
+				in
+				    #"Filas inferiores quitadas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

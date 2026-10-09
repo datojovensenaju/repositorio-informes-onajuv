@@ -1,0 +1,67 @@
+table asistenciaLectura
+	lineageTag: 8e5a9556-de79-4800-97e0-7eea1a81bb2b
+
+	column AÑO
+		dataType: int64
+		formatString: 0
+		lineageTag: a13c9915-362a-44e6-8d5f-4a54abb707f4
+		summarizeBy: sum
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MES
+		dataType: string
+		lineageTag: 2b6b0355-fc9a-40bb-ba89-681152a472e7
+		summarizeBy: none
+		sourceColumn: MES
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: 651c60ca-b8d2-4ca8-ac0f-247f5d78766c
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column RANGO_EDAD
+		dataType: string
+		lineageTag: 924a7ff2-3b02-46ef-a4a8-0f3dbce2295b
+		summarizeBy: none
+		sourceColumn: RANGO_EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N ASISTENTES HOMBRE'
+		dataType: int64
+		formatString: 0
+		lineageTag: a4cd2d6a-bdeb-4423-a265-891648cf41e9
+		summarizeBy: sum
+		sourceColumn: N ASISTENTES HOMBRE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N ASISTENTES MUJER'
+		dataType: int64
+		formatString: 0
+		lineageTag: d7564626-1aa4-4485-b53c-cd9d35d24164
+		summarizeBy: sum
+		sourceColumn: N ASISTENTES MUJER
+
+		annotation SummarizationSetBy = Automatic
+
+	partition asistenciaLectura = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/2.%20Empleo/REGISTROS/ASISTENCIA_LECTURA_2022_2026.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "ASISTENCIA_LECTURA_2022_2026", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"AÑO", Int64.Type}, {"MES", type text}, {"DEPARTAMENTO", type text}, {"RANGO_EDAD", type text}, {"N ASISTENTES HOMBRE", Int64.Type}, {"N ASISTENTES MUJER", Int64.Type}}, "es")
+				in
+				  #"Tipo de columna cambiado"
+
+	annotation PBI_ResultType = Table
+

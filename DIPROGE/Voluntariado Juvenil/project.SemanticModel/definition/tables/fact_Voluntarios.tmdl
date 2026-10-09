@@ -1,0 +1,693 @@
+table fact_Voluntarios
+	lineageTag: 2f9ebaf4-f203-4c20-b915-b8ace42250e6
+
+	measure 'Total Voluntarios' =
+			VAR voluntarios = COUNTROWS(fact_Voluntarios)
+			RETURN
+			IF(
+			    voluntarios>0,
+			    voluntarios,
+			    "-")
+		lineageTag: 7ec8ae16-0f1f-4b44-b9a1-931d0ecbf228
+
+		formatStringDefinition = "### ### ###"
+
+	measure totalVoluntariosPeru =
+			
+			VAR FiltroResidePeru =
+			    SELECTEDVALUE(fact_Voluntarios[RESIDE_PERU])
+			
+			VAR VoluntariosPeru =
+			    CALCULATE(
+			        COUNTROWS(fact_Voluntarios),
+			        fact_Voluntarios[RESIDE_PERU] = "SI"
+			    )
+			RETURN
+			IF(
+			    FiltroResidePeru = "NO",
+			    "-",
+			    IF(
+			        VoluntariosPeru > 0,
+			        VoluntariosPeru,
+			        "-"
+			    )
+			)
+		lineageTag: 35a09f3a-2f12-481e-a563-567ec7dbf8be
+
+		formatStringDefinition = "### ### ###"
+
+	measure totalVoluntariosExtranjero =
+			
+			VAR FiltroResidePeru =
+			    SELECTEDVALUE(fact_Voluntarios[RESIDE_PERU])
+			
+			VAR VoluntariosExtranjero =
+			    CALCULATE(
+			        COUNTROWS(fact_Voluntarios),
+			        fact_Voluntarios[RESIDE_PERU] = "NO"
+			    )
+			
+			RETURN
+			IF(
+			    FiltroResidePeru = "SI",
+			    "-",
+			    IF(
+			        VoluntariosExtranjero > 0,
+			        VoluntariosExtranjero,
+			        "-"
+			    )
+			)
+		lineageTag: 1eabe6d8-c118-44a4-aa68-72e4224ac8d2
+
+		formatStringDefinition = "### ### ###"
+
+	measure totalVoluntariosPeruHombre =
+			VAR VoluntariosPeruHombre =
+			    CALCULATE(
+			        [Total Voluntarios],
+			        fact_Voluntarios[RESIDE_PERU] = "SI",
+			        Sexo[SEXO]="HOMBRE"
+			    )
+			RETURN
+			IF(
+			    VoluntariosPeruHombre > 0,
+			    VoluntariosPeruHombre,
+			    "-"
+			)
+		lineageTag: 85e17a82-492c-498d-9dbd-bcc78d6d7806
+
+		formatStringDefinition = "### ### ###"
+
+	measure VoluntariosExperiencia =
+			VAR VoluntariosExperiencia =
+			    CALCULATE(
+			        [Total Voluntarios],
+			        fact_Voluntarios[EXPERIENCIA_VOLUNTARIADO] = "SI"
+			    )
+			RETURN
+			IF(
+			    VoluntariosExperiencia > 0,
+			    VoluntariosExperiencia,
+			    "-"
+			)
+		lineageTag: a348cc9f-e517-4488-8815-e5f37bea5b86
+
+		formatStringDefinition = "### ### ###"
+
+	measure totalVoluntariosPeruMujer =
+			VAR VoluntariosPeruMujer =
+			    CALCULATE(
+			        [Total Voluntarios],
+			        fact_Voluntarios[RESIDE_PERU] = "SI",
+			        Sexo[SEXO]="MUJER"
+			    )
+			RETURN
+			IF(
+			    VoluntariosPeruMujer > 0,
+			    VoluntariosPeruMujer,
+			    "-"
+			)
+		lineageTag: d108a142-453e-43bd-a3d7-330be4f14dbe
+
+		formatStringDefinition = "### ### ###"
+
+	measure totalVoluntariosExtranjeroHombre =
+			VAR VoluntariosExtranjeroHombre =
+			    CALCULATE(
+			        [Total Voluntarios],
+			        fact_Voluntarios[RESIDE_PERU] = "NO",
+			        Sexo[SEXO]="HOMBRE"
+			    )
+			RETURN
+			IF(
+			    VoluntariosExtranjeroHombre > 0,
+			    VoluntariosExtranjeroHombre,
+			    "-"
+			)
+		lineageTag: d2c80056-99e5-43f9-8453-2c1d9d27c2e1
+
+		formatStringDefinition = "### ### ###"
+
+	measure totalVoluntariosExtranjeroMujer =
+			VAR VoluntariosExtranjeroMujer =
+			    CALCULATE(
+			        [Total Voluntarios],
+			        fact_Voluntarios[RESIDE_PERU] = "NO",
+			        Sexo[SEXO]="MUJER"
+			    )
+			RETURN
+			IF(
+			    VoluntariosExtranjeroMujer > 0,
+			    VoluntariosExtranjeroMujer,
+			    "-"
+			)
+		lineageTag: 6b2b536f-3d83-499b-913f-f4b98578ad7b
+
+		formatStringDefinition = "### ### ###"
+
+	measure Porcentaje_Area =
+			
+			DIVIDE(
+			    COUNTROWS(fact_Voluntarios),
+			    CALCULATE(
+			        COUNTROWS(fact_Voluntarios),
+			        ALL(fact_Voluntarios[AREA_ESTANDARIZADA])
+			    )
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: d97941d0-b4d5-40a8-ab83-d65ed6deb01f
+
+	measure Porcentaje_Ocupacion =
+			
+			DIVIDE(
+			    COUNTROWS(fact_Voluntarios),
+			    CALCULATE(
+			        COUNTROWS(fact_Voluntarios),
+			        ALL('Nivel Ocupacional'[NIVEL_OCUPACIONAL])
+			    )
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: da50505d-d5fa-4f01-b001-e9821ea52b13
+
+	measure Porcentaje_Educacion =
+			
+			DIVIDE(
+			    COUNTROWS(fact_Voluntarios),
+			    CALCULATE(
+			        COUNTROWS(fact_Voluntarios),
+			        ALL('Nivel Educativo'[NIVEL_EDUCATIVO])
+			    )
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 81eabe7a-f1f0-4cfb-af19-26f19830b00e
+
+	column ID
+		dataType: string
+		lineageTag: c39a28c1-5930-4dff-bacd-4a42df1ec5d7
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAIS_RESIDENCIA
+		dataType: string
+		lineageTag: 786e52c6-f693-44e4-b8f1-2b9a06a921a4
+		summarizeBy: none
+		sourceColumn: PAIS_RESIDENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column EDAD
+		dataType: string
+		lineageTag: 8b9b5063-ca82-4974-9fdf-cb196173669d
+		summarizeBy: none
+		sourceColumn: EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column NACIONALIDAD
+		dataType: string
+		lineageTag: ae2c8c5d-db17-4f59-ad1e-667741437c7d
+		summarizeBy: none
+		sourceColumn: NACIONALIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column GENERO
+		dataType: string
+		lineageTag: f0023ce9-61f8-436f-9c7c-e7bfd6483555
+		summarizeBy: none
+		sourceColumn: GENERO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: f14b0241-5207-41c7-bd88-9dd8c62c4fc8
+		summarizeBy: none
+		sourceColumn: SEXO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISCAPACIDA
+		dataType: string
+		lineageTag: 66c0cefb-e59a-40d3-b8a8-655b3d240ad1
+		summarizeBy: none
+		sourceColumn: DISCAPACIDA
+
+		annotation SummarizationSetBy = Automatic
+
+	column IDIOMAS
+		dataType: string
+		lineageTag: f4a5db35-317f-41ea-b07c-139c9e950a89
+		summarizeBy: none
+		sourceColumn: IDIOMAS
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEGURO
+		dataType: string
+		lineageTag: 6d68573b-c73a-47fb-b5c8-a83a537d0989
+		summarizeBy: none
+		sourceColumn: SEGURO
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESIDE_PERU
+		dataType: string
+		lineageTag: 87ba5e51-4b96-4ce7-94c6-12daaa7604b8
+		summarizeBy: none
+		sourceColumn: RESIDE_PERU
+
+		annotation SummarizationSetBy = Automatic
+
+	column VIH/SIDA
+		dataType: string
+		lineageTag: a4c25222-3872-48e4-8b5d-960b047218d1
+		summarizeBy: none
+		sourceColumn: VIH/SIDA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TBC
+		dataType: string
+		lineageTag: ba927dbe-1609-4ffb-8140-4dd8d1bce4f5
+		summarizeBy: none
+		sourceColumn: TBC
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 90d8e238-2bcb-44bd-9fe3-84a23ec32ee1
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROVINCIA
+		dataType: string
+		lineageTag: 2e4924c8-8c3b-451d-b45f-e5c11c928f5b
+		summarizeBy: none
+		sourceColumn: PROVINCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISTRITO
+		dataType: string
+		lineageTag: 24adc75a-9f45-4661-bf7d-fbfe76e6e7b5
+		summarizeBy: none
+		sourceColumn: DISTRITO
+
+		annotation SummarizationSetBy = Automatic
+
+	column UBIGEO
+		dataType: string
+		lineageTag: 2afe8be5-f95c-44d8-9203-9764af19461f
+		summarizeBy: none
+		sourceColumn: UBIGEO
+
+		annotation SummarizationSetBy = Automatic
+
+	column RANGO_EDAD
+		dataType: string
+		lineageTag: ce70d386-c01f-45fd-86c4-1931ce06b1d0
+		summarizeBy: none
+		sourceColumn: RANGO_EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEGUNDA_NACIONALIDAD
+		dataType: string
+		lineageTag: f6c6b1e4-e069-490f-a404-75a6309cdcd6
+		summarizeBy: none
+		sourceColumn: SEGUNDA_NACIONALIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMUNIDAD_CAMPESINA,_NATIVA,_PUEBLOS_ORIGINARIOS
+		dataType: string
+		lineageTag: b947c9b9-455b-41b4-9f8e-4ffa01a29459
+		summarizeBy: none
+		sourceColumn: COMUNIDAD_CAMPESINA,_NATIVA,_PUEBLOS_ORIGINARIOS
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMUNIDAD_AFROPERUANA
+		dataType: string
+		lineageTag: c89af846-3924-49d1-93a4-88bff7abd4de
+		summarizeBy: none
+		sourceColumn: COMUNIDAD_AFROPERUANA
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMUNIDAD_CHINA
+		dataType: string
+		lineageTag: a59f38ab-0851-485b-8c26-64f3cae13c6d
+		summarizeBy: none
+		sourceColumn: COMUNIDAD_CHINA
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMUNIDAD_JAPONESA
+		dataType: string
+		lineageTag: 31edab26-dae0-4819-979b-cd386c18fedd
+		summarizeBy: none
+		sourceColumn: COMUNIDAD_JAPONESA
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMUNIDAD_LGTBIQ+
+		dataType: string
+		lineageTag: 1fe8664b-4cbc-42bd-81ba-1e53b115dcca
+		summarizeBy: none
+		sourceColumn: COMUNIDAD_LGTBIQ+
+
+		annotation SummarizationSetBy = Automatic
+
+	column SITUACIÓN_MOVILIDAD
+		dataType: string
+		lineageTag: ccb92e62-42bc-4d92-9c93-1baa19e9b22c
+		summarizeBy: none
+		sourceColumn: SITUACIÓN_MOVILIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISCAPACIDAD_FÍSICA
+		dataType: string
+		lineageTag: 85301ed2-46e3-4b09-87b0-b64f582f03ed
+		summarizeBy: none
+		sourceColumn: DISCAPACIDAD_FÍSICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISCAPACIDAD_SENSORIAL
+		dataType: string
+		lineageTag: 6785c01c-08a5-4eb1-856c-4f9d1d150196
+		summarizeBy: none
+		sourceColumn: DISCAPACIDAD_SENSORIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISCAPACIDAD_MENTAL
+		dataType: string
+		lineageTag: 5db8dcde-1732-4b08-a476-020ade021971
+		summarizeBy: none
+		sourceColumn: DISCAPACIDAD_MENTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISCAPACIDAD_INTELECTUAL
+		dataType: string
+		lineageTag: a18b0864-9cda-4ac4-88c6-9d7ca5557050
+		summarizeBy: none
+		sourceColumn: DISCAPACIDAD_INTELECTUAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL_EDUCATIVO
+		dataType: string
+		lineageTag: 054e1ad0-4699-4544-bfa5-554d95eb6925
+		summarizeBy: none
+		sourceColumn: NIVEL_EDUCATIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column BENEFICIARIO_PRONABEC
+		dataType: string
+		lineageTag: 9b69c51f-1151-4355-bb38-6ecb79135088
+		summarizeBy: none
+		sourceColumn: BENEFICIARIO_PRONABEC
+
+		annotation SummarizationSetBy = Automatic
+
+	column DETALLE_PROFESION
+		dataType: string
+		lineageTag: 5b70a26e-5868-46c7-b08c-883364303ca5
+		summarizeBy: none
+		sourceColumn: DETALLE_PROFESION
+
+		annotation SummarizationSetBy = Automatic
+
+	column OCUPACION
+		dataType: string
+		lineageTag: 41f15696-41aa-47c7-a538-07e53fc88d1b
+		summarizeBy: none
+		sourceColumn: OCUPACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOMINAN_OTRO_IDIOMA
+		dataType: string
+		lineageTag: fd8af341-8c74-4e7f-815f-675322f754e7
+		summarizeBy: none
+		sourceColumn: DOMINAN_OTRO_IDIOMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARTICIPA_ORGANIZACIÓN_JUVENIL
+		dataType: string
+		lineageTag: 6a49b02d-fb48-44a3-9e84-625426b68a13
+		summarizeBy: none
+		sourceColumn: PARTICIPA_ORGANIZACIÓN_JUVENIL
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARTICIPA_CONSEJO_DE_JUVENTUD
+		dataType: string
+		lineageTag: 38b88551-aeac-4a02-a083-6804de9df129
+		summarizeBy: none
+		sourceColumn: PARTICIPA_CONSEJO_DE_JUVENTUD
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARTICIPA_VOLUNTARIADO
+		dataType: string
+		lineageTag: 41083cf3-4d6e-44d2-bce6-d10ac67b73c3
+		summarizeBy: none
+		sourceColumn: PARTICIPA_VOLUNTARIADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ROL_VOLUNTARIO
+		dataType: string
+		lineageTag: ce03bf06-0d79-412c-9ebe-16105aadbe95
+		summarizeBy: none
+		sourceColumn: ROL_VOLUNTARIO
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPERIENCIA_VOLUNTARIADO
+		dataType: string
+		lineageTag: fbbcee75-5afa-474d-8976-0721d6f5d9ed
+		summarizeBy: none
+		sourceColumn: EXPERIENCIA_VOLUNTARIADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPERIENCIA_VOLUNTARIADO_CULTURA
+		dataType: string
+		lineageTag: 425c4115-287d-4876-9030-80b3ec44b796
+		summarizeBy: none
+		sourceColumn: EXPERIENCIA_VOLUNTARIADO_CULTURA
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPERIENCIA_VOLUNTARIADO_CIENCIA
+		dataType: string
+		lineageTag: 53885104-a9c1-4929-96d4-77c8034d019a
+		summarizeBy: none
+		sourceColumn: EXPERIENCIA_VOLUNTARIADO_CIENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPERIENCIA_VOLUNTARIADO_ECONOMÍA
+		dataType: string
+		lineageTag: b602b27e-c67b-4a6c-80f7-d4f4d7c97475
+		summarizeBy: none
+		sourceColumn: EXPERIENCIA_VOLUNTARIADO_ECONOMÍA
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPERIENCIA_VOLUNTARIADO_EDUCACIÓN
+		dataType: string
+		lineageTag: 4b156f68-393a-4ea9-aeae-b07d9cf053a4
+		summarizeBy: none
+		sourceColumn: EXPERIENCIA_VOLUNTARIADO_EDUCACIÓN
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPERIENCIA_VOLUNTARIADO_MEDIO_AMBIENTE
+		dataType: string
+		lineageTag: a31a1c21-1128-4926-96ba-d56126e791d7
+		summarizeBy: none
+		sourceColumn: EXPERIENCIA_VOLUNTARIADO_MEDIO_AMBIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPERIENCIA_VOLUNTARIADO_DEMOCRACIA
+		dataType: string
+		lineageTag: 2a7b157b-3a26-423e-ad5a-426196399a65
+		summarizeBy: none
+		sourceColumn: EXPERIENCIA_VOLUNTARIADO_DEMOCRACIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPERIENCIA_VOLUNTARIADO_DEPORTE
+		dataType: string
+		lineageTag: 790f9606-8a2e-48a6-9d02-545f9cb58572
+		summarizeBy: none
+		sourceColumn: EXPERIENCIA_VOLUNTARIADO_DEPORTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPERIENCIA_VOLUNTARIADO_SALUD
+		dataType: string
+		lineageTag: 6cb5c9ac-9477-49e6-823b-19190cd1dd95
+		summarizeBy: none
+		sourceColumn: EXPERIENCIA_VOLUNTARIADO_SALUD
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPERIENCIA_VOLUNTARIADO_OTRA_TEMÁTICA
+		dataType: string
+		lineageTag: 49c1f19f-598d-458b-b143-11c535194901
+		summarizeBy: none
+		sourceColumn: EXPERIENCIA_VOLUNTARIADO_OTRA_TEMÁTICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIEMPO_EXPERIENCIA_VOLUNTARIADO
+		dataType: string
+		lineageTag: 5a8e0a76-9644-474c-8972-196b630d97cb
+		summarizeBy: none
+		sourceColumn: TIEMPO_EXPERIENCIA_VOLUNTARIADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MODALIDAD_VOLUNTARIADO
+		dataType: string
+		lineageTag: cbdb4bc6-5261-4278-a8ec-a9ed363c9ba4
+		summarizeBy: none
+		sourceColumn: MODALIDAD_VOLUNTARIADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column INTERES_VOLUNTARIADO_EDUCACIÓN_INTEGRAL
+		dataType: string
+		lineageTag: 76b24dce-a0ca-4fbd-9198-705e2dfb8a08
+		summarizeBy: none
+		sourceColumn: INTERES_VOLUNTARIADO_EDUCACIÓN_INTEGRAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column INTERES_VOLUNTARIADO_SALUD_MENTAL_Y_BIENESTAR
+		dataType: string
+		lineageTag: ad15abe0-bb56-4c7a-a98e-27ab81ff256b
+		summarizeBy: none
+		sourceColumn: INTERES_VOLUNTARIADO_SALUD_MENTAL_Y_BIENESTAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column INTERES_VOLUNTARIADO_PARTICIPACIÓN_CIUDADANA
+		dataType: string
+		lineageTag: 75a4cd13-2c06-4e9b-84b1-cdf97d261d3f
+		summarizeBy: none
+		sourceColumn: INTERES_VOLUNTARIADO_PARTICIPACIÓN_CIUDADANA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INTERES_VOLUNTARIADO_EDUCACIÓN_PARA_LA_EMPLEABILIDAD
+		dataType: string
+		lineageTag: 14a5b927-1bf5-498e-9b63-07b748af334c
+		summarizeBy: none
+		sourceColumn: INTERES_VOLUNTARIADO_EDUCACIÓN_PARA_LA_EMPLEABILIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column INTERES_VOLUNTARIADO_POBLACIONES_SITUACIÓN_VULNERABILIDAD
+		dataType: string
+		lineageTag: 39d4a80e-f5ad-4e5f-b92a-9da6b695390e
+		summarizeBy: none
+		sourceColumn: INTERES_VOLUNTARIADO_POBLACIONES_SITUACIÓN_VULNERABILIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column INTERES_VOLUNTARIADO_PARTICIPACIÓN_JUVENIL_MEDIANTE_EL_DEPORTE,_EL_ARTE_Y_LA_CULTURA
+		dataType: string
+		lineageTag: 69e413b6-9d4c-40c8-b869-858397223409
+		summarizeBy: none
+		sourceColumn: INTERES_VOLUNTARIADO_PARTICIPACIÓN_JUVENIL_MEDIANTE_EL_DEPORTE,_EL_ARTE_Y_LA_CULTURA
+
+		annotation SummarizationSetBy = Automatic
+
+	column HABILIDAD_VOLUNTARIADO_PERSONAS_CON_DISCAPACIDAD_FÍSICA
+		dataType: string
+		lineageTag: 21b71969-4b49-478f-977b-fd3b093d444a
+		summarizeBy: none
+		sourceColumn: HABILIDAD_VOLUNTARIADO_PERSONAS_CON_DISCAPACIDAD_FÍSICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column HABILIDAD_VOLUNTARIADO_PERSONAS_CON_DISPACIDAD_SENSORIAL
+		dataType: string
+		lineageTag: 59d0e8af-4ca5-4d32-9b0e-f8318d73897e
+		summarizeBy: none
+		sourceColumn: HABILIDAD_VOLUNTARIADO_PERSONAS_CON_DISPACIDAD_SENSORIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column HABILIDAD_VOLUNTARIADO_PERSONAS_CON_DISPACIDAD_MENTAL
+		dataType: string
+		lineageTag: fdab9287-b037-4675-b276-4d8f0139be68
+		summarizeBy: none
+		sourceColumn: HABILIDAD_VOLUNTARIADO_PERSONAS_CON_DISPACIDAD_MENTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column HABILIDAD_VOLUNTARIADO_PERSONAS_CON_DISPACIDAD_INTELECTUAL
+		dataType: string
+		lineageTag: fa883b32-f41e-458c-b885-d2077192d3a5
+		summarizeBy: none
+		sourceColumn: HABILIDAD_VOLUNTARIADO_PERSONAS_CON_DISPACIDAD_INTELECTUAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION_NATURAL
+		dataType: string
+		lineageTag: d5b001eb-e339-4ec4-9af9-bb49b1e3ddfe
+		summarizeBy: none
+		sourceColumn: REGION_NATURAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column AREA_ESTANDARIZADA
+		dataType: string
+		lineageTag: dbce9b55-7f91-42ce-8fac-37836422ba01
+		summarizeBy: none
+		sourceColumn: AREA_ESTANDARIZADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column AREA_ESTUDIO_O_CARRERA
+		dataType: string
+		lineageTag: c1e3ccdd-fd57-4be7-8168-4ea6aeadb86c
+		summarizeBy: none
+		sourceColumn: AREA_ESTUDIO_O_CARRERA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_Voluntarios = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/DIPROGE/voluntariadoJuvenil.xlsx"), null, true),
+				    fact_Voluntarios_Sheet = Origen{[Item="fact_Voluntarios",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(fact_Voluntarios_Sheet, [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

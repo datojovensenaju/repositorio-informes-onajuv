@@ -1,0 +1,34 @@
+table Proveedor
+	lineageTag: 6337d78e-510b-4b95-9083-a9a9bd46a36c
+
+	column PROVEEDOR
+		dataType: string
+		lineageTag: 84f29321-ab32-4e36-a42c-1ae5a6d0ae47
+		summarizeBy: none
+		sourceColumn: PROVEEDOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column IMG_RESPONSABLE
+		dataType: string
+		lineageTag: 40f2ff50-7cf5-4264-bc12-f940f4133920
+		summarizeBy: none
+		sourceColumn: IMG_RESPONSABLE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Proveedor = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/POL%C3%8DTICA%20NACIONAL%20DE%20JUVENTUD/Politica%20Nacional%20de%20la%20Juventud.xlsx"), null, true),
+				    Proveedor_Sheet = Origen{[Item="Proveedor",Kind="Sheet"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Proveedor_Sheet,{{"Column1", type text}, {"Column2", type text}}),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Tipo cambiado", [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

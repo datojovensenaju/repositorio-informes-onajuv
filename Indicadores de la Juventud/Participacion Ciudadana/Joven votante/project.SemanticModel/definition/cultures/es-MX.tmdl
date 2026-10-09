@@ -1,0 +1,3948 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "votantes__extranjero__jóvene": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "votantes – extranjero – jóvene": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "votante – extranjero – jóvene": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene.continente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes",
+			          "ConceptualProperty": "Continente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "continente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene.país": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes",
+			          "ConceptualProperty": "País"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "país": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "País:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes",
+			          "ConceptualProperty": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene.tipo_votante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes",
+			          "ConceptualProperty": "TipoVotante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "tipo votante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TipoVotante": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene.total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes",
+			          "ConceptualProperty": "Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "votantes – extranjero – total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "votante – extranjero – total": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "votante – extranjero – aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "votante – extranjero – overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__total.continente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Total",
+			          "ConceptualProperty": "Continente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "continente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__total.país": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Total",
+			          "ConceptualProperty": "País"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "país": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__total.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Total",
+			          "ConceptualProperty": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__total.total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Total",
+			          "ConceptualProperty": "Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "votantes – perú – jóvene": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "votante – perú – jóvene": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes",
+			          "ConceptualProperty": "Departamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes",
+			          "ConceptualProperty": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene.tipo_votante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes",
+			          "ConceptualProperty": "TipoVotante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "tipo votante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TipoVotante": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene.total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes",
+			          "ConceptualProperty": "Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "votantes – perú – total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "votante – perú – total": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "votante – perú – aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "votante – perú – overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__total.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Total",
+			          "ConceptualProperty": "Departamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__total.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Total",
+			          "ConceptualProperty": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__total.total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Total",
+			          "ConceptualProperty": "Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__total.total_de_votantes_en_perú": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Total",
+			          "ConceptualProperty": "Total de Votantes en Perú"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de votantes en perú": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de votante en perú": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall de votante en perú": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene.total_de_jóvenes_votantes_en_perú": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes",
+			          "ConceptualProperty": "Total de Jóvenes Votantes en Perú"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de jóvenes votantes en perú": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total de Jóvenes Votantes en el Perú:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total de Jóvenes Votantes en Perú:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimRegion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "dim province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.id_reg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "ID_REG"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id reg": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_REG": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "REGION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.id_dep": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "ID_DEP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id dep": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_DEP": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.id_sex": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "ID_SEX"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id sex": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_SEX": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sex": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "id masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "id gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "SEXO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexo name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Sexo:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "votantes__perú__jóvene.total_hombre_votante_perú": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes",
+			          "ConceptualProperty": "totalHombreVotantePerú"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total hombre votante perú": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "totalHombreVotantePerú": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate hombre votante perú": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall hombre votante perú": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene.total_mujer_votante_perú": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes",
+			          "ConceptualProperty": "totalMujerVotantePerú"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total mujer votante perú": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "totalMujerVotantePerú": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate mujer votante perú": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall mujer votante perú": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene.total_nuevos_votantes_nacional": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes",
+			          "ConceptualProperty": "total Nuevos Votantes Nacional"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total nuevos votantes nacional": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate nuevo votante nacional": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall nuevo votante nacional": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene.total_de_jóvenes_votantes_exterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes",
+			          "ConceptualProperty": "Total de Jóvenes Votantes Exterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de jóvenes votantes exterior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de jóvene votante exterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall de jóvene votante exterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total de jóvene votante facade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "total de jóvene votante façade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "total de jóvene votante outside": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "total de jóvene votante surface": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "total de jóvene votante shell": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "total de jóvene votante appearance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.469
+			          }
+			        },
+			        {
+			          "total de jóvene votante mien": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.469
+			          }
+			        },
+			        {
+			          "total de jóvene votante aura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.469
+			          }
+			        },
+			        {
+			          "Total de Jóvenes Votantes Exterior:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total de Jóvenes Votantes en el Extranjero:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total de Jóvenes Votantes en el Exterior:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene.total_nuevos_votantes_exterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes",
+			          "ConceptualProperty": "total Nuevos Votantes Exterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total nuevos votantes exterior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate nuevo votante exterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall nuevo votante exterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "total nuevo votante facade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "total nuevo votante façade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "total nuevo votante outside": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "total nuevo votante surface": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "total nuevo votante shell": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "total nuevo votante appearance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "total nuevo votante mien": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "total nuevo votante aura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene.total_hombre_votante_exterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes",
+			          "ConceptualProperty": "totalHombreVotanteExterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total hombre votante exterior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "totalHombreVotanteExterior": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate hombre votante exterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall hombre votante exterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "total hombre votante facade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "total hombre votante façade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "total hombre votante outside": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "total hombre votante surface": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "total hombre votante shell": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "total hombre votante appearance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "total hombre votante mien": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "total hombre votante aura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene.total_mujer_votante_exterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes",
+			          "ConceptualProperty": "totalMujerVotanteExterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total mujer votante exterior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "totalMujerVotanteExterior": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate mujer votante exterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall mujer votante exterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "total mujer votante facade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "total mujer votante façade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "total mujer votante outside": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "total mujer votante surface": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "total mujer votante shell": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "total mujer votante appearance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "total mujer votante mien": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "total mujer votante aura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim departamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimDepartamento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.id_dep": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "ID_DEP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id dep": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_DEP": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Departamento:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.id_regnat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "ID_REGNAT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id regnat": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_REGNAT": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification regnat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity regnat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier regnat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential regnat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.departamento_ubicación": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "DEPARTAMENTO UBICACIÓN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento ubicación": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ubicación:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tipo_votante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TipoVotante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo votante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TipoVotante": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tipo_votante.id_tv": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TipoVotante",
+			          "ConceptualProperty": "ID_TV"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id tv": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_TV": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "tv": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification tv": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity tv": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier tv": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential tv": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "tipo_votante.tipo_votante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TipoVotante",
+			          "ConceptualProperty": "TIPO_VOTANTE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo votante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo votante name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TIPO_VOTANTE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "TIPO DE VOTANTE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Tipo de votante:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "votantes__extranjero__jóvene.jóvenes_país": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes",
+			          "ConceptualProperty": "% Jóvenes País"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% jóvenes país": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage jóvene país": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct jóvene país": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "% Jóvenes en el País:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene.jóvenes_departamental": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes",
+			          "ConceptualProperty": "% Jóvenes Departamental"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% jóvenes departamental": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage jóvene departamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct jóvene departamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "% Jóvenes:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene.entity__total_de_jóvenes_votantes_exterior_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Extranjero – Jóvenes",
+			          "ConceptualProperty": "_Total de Jóvenes Votantes Exterior FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_total de jóvenes votantes exterior FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene.sub_header": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes",
+			          "ConceptualProperty": "Sub Header"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sub header": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "header": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sub shot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sub pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sub goal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "shot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "goal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "sub slogan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "sub legend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "sub headpiece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "sub description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene.entity__total_de_jóvenes_votantes_en_perú_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Votantes – Perú – Jóvenes",
+			          "ConceptualProperty": "_Total de Jóvenes Votantes en Perú FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_total de jóvenes votantes en perú FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "votantes__perú__total_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Total"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__total": {
+			          "Target": {
+			            "Entity": "votantes__perú__total"
+			          }
+			        },
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__total"
+			            },
+			            "Object": {
+			              "Role": "sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__totals_have_sexos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_votantes__perú__totals"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_has_dim_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_have_dim_departamentos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__jóvene"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_votantes__perú__jóvenes"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_has_tipo_votante": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "tipo_votante": {
+			          "Target": {
+			            "Entity": "tipo_votante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Object": {
+			              "Role": "tipo_votante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_have_tipo_votantes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_votante"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__jóvene"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_votantes_have_votantes__perú__jóvenes"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_has_dim_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Object": {
+			              "Role": "dim_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_have_dim_regions"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__jóvene"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_votantes__perú__jóvenes"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Object": {
+			              "Role": "sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_have_sexos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__jóvene"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_votantes__perú__jóvenes"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__total_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Total"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__total": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__total"
+			          }
+			        },
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__total"
+			            },
+			            "Object": {
+			              "Role": "sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__totals_have_sexos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_votantes__extranjero__totals"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene_has_tipo_votante": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene"
+			          }
+			        },
+			        "tipo_votante": {
+			          "Target": {
+			            "Entity": "tipo_votante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__jóvene"
+			            },
+			            "Object": {
+			              "Role": "tipo_votante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__jóvenes_have_tipo_votantes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_votante"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__jóvene"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_votantes_have_votantes__extranjero__jóvenes"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene"
+			          }
+			        },
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__jóvene"
+			            },
+			            "Object": {
+			              "Role": "sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__jóvenes_have_sexos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__jóvene"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_votantes__extranjero__jóvenes"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_has_sub_header": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "votantes__perú__jóvene.sub_header": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene.sub_header"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__jóvene.sub_header"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_have_sub_header"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_has_jóvenes_departamental": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "votantes__perú__jóvene.jóvenes_departamental": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene.jóvenes_departamental"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__jóvene.jóvenes_departamental"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_have__jóvenes_departamental"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene_has_jóvenes_país": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene"
+			          }
+			        },
+			        "votantes__extranjero__jóvene.jóvenes_país": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene.jóvenes_país"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__jóvene.jóvenes_país"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__jóvenes_have__jóvenes_país"
+			        }
+			      ]
+			    },
+			    "tipo_votante_has_tipo_votante": {
+			      "Binding": {
+			        "ConceptualEntity": "TipoVotante"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tipo_votante": {
+			          "Target": {
+			            "Entity": "tipo_votante"
+			          }
+			        },
+			        "tipo_votante.tipo_votante": {
+			          "Target": {
+			            "Entity": "tipo_votante.tipo_votante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_votante"
+			            },
+			            "Object": {
+			              "Role": "tipo_votante.tipo_votante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_votantes_have_tipo_votantes"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "tipo_votante"
+			            },
+			            "Name": {
+			              "Role": "tipo_votante.tipo_votante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_votantes_are_names_IDs_of_tipo_votantes"
+			        }
+			      ]
+			    },
+			    "tipo_votante_has_id_tv": {
+			      "Binding": {
+			        "ConceptualEntity": "TipoVotante"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tipo_votante": {
+			          "Target": {
+			            "Entity": "tipo_votante"
+			          }
+			        },
+			        "tipo_votante.id_tv": {
+			          "Target": {
+			            "Entity": "tipo_votante.id_tv"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tipo_votante"
+			            },
+			            "Object": {
+			              "Role": "tipo_votante.id_tv"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tipo_votantes_have_id_tvs"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_departamento_ubicación": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.departamento_ubicación": {
+			          "Target": {
+			            "Entity": "dim_departamento.departamento_ubicación"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.departamento_ubicación"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_departamento_ubicacións"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_id_regnat": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.id_regnat": {
+			          "Target": {
+			            "Entity": "dim_departamento.id_regnat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.id_regnat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_id_regnats"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento.departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_departamentos"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_id_dep": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.id_dep": {
+			          "Target": {
+			            "Entity": "dim_departamento.id_dep"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.id_dep"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_id_deps"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene_has_total_mujer_votante_exterior": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene"
+			          }
+			        },
+			        "votantes__extranjero__jóvene.total_mujer_votante_exterior": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene.total_mujer_votante_exterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__jóvene.total_mujer_votante_exterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__jóvenes_have_total_mujer_votante_exterior"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene_has_total_hombre_votante_exterior": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene"
+			          }
+			        },
+			        "votantes__extranjero__jóvene.total_hombre_votante_exterior": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene.total_hombre_votante_exterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__jóvene.total_hombre_votante_exterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__jóvenes_have_total_hombre_votante_exterior"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene_has_total_nuevos_votantes_exterior": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene"
+			          }
+			        },
+			        "votantes__extranjero__jóvene.total_nuevos_votantes_exterior": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene.total_nuevos_votantes_exterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__jóvene.total_nuevos_votantes_exterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__jóvenes_have_total_nuevos_votantes_exterior"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene_has_total_de_jóvenes_votantes_exterior": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene"
+			          }
+			        },
+			        "votantes__extranjero__jóvene.total_de_jóvenes_votantes_exterior": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene.total_de_jóvenes_votantes_exterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__jóvene.total_de_jóvenes_votantes_exterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__jóvenes_have_total_de_jóvenes_votantes_exterior"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_has_total_nuevos_votantes_nacional": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "votantes__perú__jóvene.total_nuevos_votantes_nacional": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene.total_nuevos_votantes_nacional"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__jóvene.total_nuevos_votantes_nacional"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_have_total_nuevos_votantes_nacional"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_has_total_mujer_votante_perú": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "votantes__perú__jóvene.total_mujer_votante_perú": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene.total_mujer_votante_perú"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__jóvene.total_mujer_votante_perú"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_have_total_mujer_votante_perú"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_has_total_hombre_votante_perú": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "votantes__perú__jóvene.total_hombre_votante_perú": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene.total_hombre_votante_perú"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__jóvene.total_hombre_votante_perú"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_have_total_hombre_votante_perú"
+			        }
+			      ]
+			    },
+			    "sexo_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.sexo": {
+			          "Target": {
+			            "Entity": "sexo.sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_sexos"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Name": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_are_names_IDs_of_sexos"
+			        }
+			      ]
+			    },
+			    "sexo_has_id_sex": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.id_sex": {
+			          "Target": {
+			            "Entity": "sexo.id_sex"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.id_sex"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_id_sexes"
+			        }
+			      ]
+			    },
+			    "dim_region_has_id_dep": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.id_dep": {
+			          "Target": {
+			            "Entity": "dim_region.id_dep"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.id_dep"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_id_deps"
+			        }
+			      ]
+			    },
+			    "dim_region_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.region": {
+			          "Target": {
+			            "Entity": "dim_region.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_regions"
+			        }
+			      ]
+			    },
+			    "dim_region_has_id_reg": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.id_reg": {
+			          "Target": {
+			            "Entity": "dim_region.id_reg"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.id_reg"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_id_regs"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_has_total_de_jóvenes_votantes_en_perú": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "votantes__perú__jóvene.total_de_jóvenes_votantes_en_perú": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene.total_de_jóvenes_votantes_en_perú"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__jóvene.total_de_jóvenes_votantes_en_perú"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_have_total_de_jóvenes_votantes_en_perú"
+			        }
+			      ]
+			    },
+			    "votantes__perú__total_has_total_de_votantes_en_perú": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Total"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__total": {
+			          "Target": {
+			            "Entity": "votantes__perú__total"
+			          }
+			        },
+			        "votantes__perú__total.total_de_votantes_en_perú": {
+			          "Target": {
+			            "Entity": "votantes__perú__total.total_de_votantes_en_perú"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__total"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__total.total_de_votantes_en_perú"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__totals_have_total_de_votantes_en_perú"
+			        }
+			      ]
+			    },
+			    "votantes__perú__total_has_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Total"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__total": {
+			          "Target": {
+			            "Entity": "votantes__perú__total"
+			          }
+			        },
+			        "votantes__perú__total.total": {
+			          "Target": {
+			            "Entity": "votantes__perú__total.total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__total"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__total.total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__totals_have_totals"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_has_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "votantes__perú__jóvene.total": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene.total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__jóvene.total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_have_totals"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__total_has_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Total"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__total": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__total"
+			          }
+			        },
+			        "votantes__extranjero__total.total": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__total.total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__total"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__total.total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__totals_have_totals"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__total_has_país": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Total"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__total": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__total"
+			          }
+			        },
+			        "votantes__extranjero__total.país": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__total.país"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__total"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__total.país"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__totals_have_país"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__total_has_continente": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Total"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__total": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__total"
+			          }
+			        },
+			        "votantes__extranjero__total.continente": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__total.continente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__total"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__total.continente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__totals_have_continentes"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene_has_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene"
+			          }
+			        },
+			        "votantes__extranjero__jóvene.total": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene.total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__jóvene.total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__jóvenes_have_totals"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene_has_país": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene"
+			          }
+			        },
+			        "votantes__extranjero__jóvene.país": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene.país"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__jóvene.país"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__jóvenes_have_país"
+			        }
+			      ]
+			    },
+			    "votantes__extranjero__jóvene_has_continente": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Extranjero – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__extranjero__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene"
+			          }
+			        },
+			        "votantes__extranjero__jóvene.continente": {
+			          "Target": {
+			            "Entity": "votantes__extranjero__jóvene.continente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__extranjero__jóvene"
+			            },
+			            "Object": {
+			              "Role": "votantes__extranjero__jóvene.continente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__extranjero__jóvenes_have_continentes"
+			        }
+			      ]
+			    },
+			    "votantes__perú__total_in_dim_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Total"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__total": {
+			          "Target": {
+			            "Entity": "votantes__perú__total"
+			          }
+			        },
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dim_region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "votantes__perú__total"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__totals_are_in_dim_regions"
+			        }
+			      ]
+			    },
+			    "votantes__perú__jóvene_in_dim_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Jóvenes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__jóvene": {
+			          "Target": {
+			            "Entity": "votantes__perú__jóvene"
+			          }
+			        },
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dim_region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "votantes__perú__jóvene"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__jóvenes_are_in_dim_regions"
+			        }
+			      ]
+			    },
+			    "dim_region_in_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.region": {
+			          "Target": {
+			            "Entity": "dim_region.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dim_region.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_region.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_are_in_regions"
+			        }
+			      ]
+			    },
+			    "votantes__perú__total_has_dim_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Total"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__total": {
+			          "Target": {
+			            "Entity": "votantes__perú__total"
+			          }
+			        },
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__total"
+			            },
+			            "Object": {
+			              "Role": "dim_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__totals_have_dim_regions"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_votantes__perú__totals"
+			        }
+			      ]
+			    },
+			    "votantes__perú__total_has_dim_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Votantes – Perú – Total"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "votantes__perú__total": {
+			          "Target": {
+			            "Entity": "votantes__perú__total"
+			          }
+			        },
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "votantes__perú__total"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "votantes__perú__totals_have_dim_departamentos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "votantes__perú__total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_votantes__perú__totals"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

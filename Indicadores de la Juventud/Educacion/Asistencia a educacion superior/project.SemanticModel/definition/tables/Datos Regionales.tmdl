@@ -1,0 +1,31 @@
+table 'Datos Regionales'
+	lineageTag: e3d58503-4ef9-4c14-a255-ace0fefa4228
+
+	column id_datreg
+		dataType: int64
+		formatString: 0
+		lineageTag: 264f576d-b6ad-432f-b7e2-7fb517b0f068
+		summarizeBy: none
+		sourceColumn: id_datreg
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: 2bbbe1b5-ad74-4c01-b93c-e9f269e8a860
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Datos Regionales' = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "Datos Regionales", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"id_datreg", Int64.Type}, {"CATEGORIA", type text}}, "es")
+				in
+				  #"Tipo de columna cambiado"
+

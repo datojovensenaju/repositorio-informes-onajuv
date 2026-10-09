@@ -1,0 +1,170 @@
+table Servicio
+	lineageTag: 633b1def-1ef8-4433-9f39-0a7a6fd031df
+
+	measure MostrarLineamiento =
+			
+			IF(
+			    ISFILTERED(Servicio[LINEAMIENTO]) && ISFILTERED(Servicio[SERVICIO]),
+			    SELECTEDVALUE(Lineamientos[LINEAMIENTO]),
+			    "-"
+			)
+		lineageTag: 6efadafa-2510-4b56-89e9-20ce68fb745c
+
+	measure MostrarServicio =
+			
+			IF(
+			    ISFILTERED(Servicio[LINEAMIENTO]) && ISFILTERED(Servicio[SERVICIO]),
+			    SELECTEDVALUE(Servicio[SERVICIO]),
+			    "-"
+			)
+		lineageTag: 2c0d7d47-0edc-42f3-83ab-c21168f6ac4a
+
+	measure 'Mostrar Persona' =
+			
+			IF(
+			    ISFILTERED(Servicio[LINEAMIENTO]) && ISFILTERED(Servicio[SERVICIO]),
+			    SELECTEDVALUE(Servicio[PERSONA]),
+			    "-"
+			)
+		lineageTag: 45b83bff-2a78-49a3-b5ca-bdc9b0aad3a3
+
+	measure 'Mostrar imagen del Responsable Servicio' =
+			
+			IF(
+			    ISFILTERED(Servicio[LINEAMIENTO]) && ISFILTERED(Servicio[SERVICIO]),
+			    SELECTEDVALUE(Proveedor[IMG_RESPONSABLE]),
+			    "https://images.creativefabrica.com/products/previews/2024/07/25/7LQDyBVkX/2jjd73KyoSwENqlfg9D5paIyz8h-desktop.jpg"
+			)
+		lineageTag: c6c9ee5d-2299-40b5-b780-5aa731cc2b0a
+
+	measure 'Mostrar Definición' =
+			
+			IF(
+			    ISFILTERED(Servicio[LINEAMIENTO]) && ISFILTERED(Servicio[SERVICIO]),
+			    SELECTEDVALUE(Servicio[DEFINICION]),
+			    "-"
+			)
+		lineageTag: 17e13d81-338a-4429-97e4-12f0d9e34155
+
+	measure 'Mostrar Indicador' =
+			
+			IF(
+			    ISFILTERED(Servicio[LINEAMIENTO]) && ISFILTERED(Servicio[SERVICIO]),
+			    SELECTEDVALUE(Servicio[INDICADOR]),
+			    "-"
+			)
+		lineageTag: 2b512520-5be3-4ac1-8f04-a9df567d5690
+
+	measure 'Mostrar Cobertura' =
+			
+			IF(
+			    ISFILTERED(Servicio[LINEAMIENTO]) && ISFILTERED(Servicio[SERVICIO]),
+			    SELECTEDVALUE(Servicio[COBERTURA]),
+			    "-"
+			)
+		lineageTag: 90b6b7d9-785b-4db6-9b71-6cec85b6facb
+
+	measure 'Mostrar Objetivo de Lineamiento' =
+			
+			IF(
+			    ISFILTERED(Servicio[LINEAMIENTO]) && ISFILTERED(Servicio[SERVICIO]),
+			    SELECTEDVALUE('Objetivo Prioritario'[OBJETIVO_PRIORITARIO]),
+			    "-"
+			)
+		lineageTag: c737ec49-5832-43c8-8fce-d3d0bebb3725
+
+	column COD_LINEAMIENTO
+		dataType: string
+		lineageTag: d6dfc3ea-25fe-4d76-becd-dd7c24261a23
+		summarizeBy: none
+		sourceColumn: COD_LINEAMIENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_SERVICIO
+		dataType: string
+		lineageTag: 2159193c-54b6-4932-9f0a-2d9a413ad88a
+		summarizeBy: none
+		sourceColumn: COD_SERVICIO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SERVICIO
+		dataType: string
+		lineageTag: b1e6263f-51ab-42d1-945a-9247e01ed025
+		summarizeBy: none
+		sourceColumn: SERVICIO
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROVEEDOR
+		dataType: string
+		lineageTag: af546147-2499-44dc-80e7-ad519ba5a921
+		summarizeBy: none
+		sourceColumn: PROVEEDOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_OBJETIVO
+		dataType: string
+		lineageTag: de64844c-e13b-494d-9517-43f7540a4cdd
+		summarizeBy: none
+		sourceColumn: COD_OBJETIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column PERSONA
+		dataType: string
+		lineageTag: 24043816-8221-44a4-a400-9cb8be34f0ab
+		summarizeBy: none
+		sourceColumn: PERSONA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEFINICION
+		dataType: string
+		lineageTag: a5e62ea4-7be6-4b95-9bdb-6b4f7e9918ff
+		summarizeBy: none
+		sourceColumn: DEFINICION
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: 400b217c-b817-4216-aa9b-ca0d53940422
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column COBERTURA
+		dataType: string
+		lineageTag: 123eb08d-80c3-4443-a259-f2e68a27863c
+		summarizeBy: none
+		sourceColumn: COBERTURA
+
+		annotation SummarizationSetBy = Automatic
+
+	column LINEAMIENTO
+		dataType: string
+		lineageTag: 9c75fd94-da63-4362-b074-b3d67c0f7674
+		summarizeBy: none
+		sourceColumn: LINEAMIENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Servicio = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/POL%C3%8DTICA%20NACIONAL%20DE%20JUVENTUD/Politica%20Nacional%20de%20la%20Juventud.xlsx"), null, true),
+				    Servicio_Sheet = Origen{[Item="Servicio",Kind="Sheet"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Servicio_Sheet,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}}),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Tipo cambiado", [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

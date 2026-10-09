@@ -1,0 +1,49 @@
+relationship AutoDetected_73221d33-78d4-42da-bf44-f9da0a680256
+	fromColumn: dimProvincia.ID_REG
+	toColumn: dimRegion.ID_REG
+
+relationship AutoDetected_cd7a5220-6892-48c7-83df-19665b35f3b0
+	fromColumn: dimDistrito.ID_PROV
+	toColumn: dimProvincia.ID_PROV
+
+relationship AutoDetected_12317959-1787-4972-92ae-8a0cf7534c23
+	fromColumn: RNPCD.sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_de505598-6574-472c-937e-7dd052642e64
+	fromColumn: RegistroDeficiencia.registro_id
+	toColumn: RNPCD.registro_id
+
+relationship AutoDetected_12c43bfc-299e-4f90-bccf-23583e609f69
+	fromColumn: RegistroLimitacion.registro_id
+	toColumn: RNPCD.registro_id
+
+relationship AutoDetected_ed54d588-98e1-479f-ab44-4bb084cef427
+	fromColumn: RegistroDeficiencia.deficiencia_id
+	toColumn: DimDeficiencia.deficiencia_id
+
+relationship AutoDetected_38c26c6e-2a4c-455b-9fae-030ce054c2ab
+	fromColumn: RegistroLimitacion.limitacion_id
+	toColumn: DimLimitacion.limitacion_id
+
+relationship 4298efbd-6231-7df7-826b-67b38a900d8a
+	fromColumn: RNPCD.anio_inscripcion
+	toColumn: Año.AÑO
+
+relationship 3cc1c92e-2a74-5897-d41e-e6c0d1e8aad0
+	fromColumn: RNPCD.ubigeo
+	toColumn: dimDistrito.ID_DIS
+
+relationship e9ac37ef-66f2-19cb-c31a-300a233625d9
+	fromColumn: RNPCD.mes_inscripcion
+	toColumn: Mes.MES
+
+relationship f995ef65-e737-7696-26ce-cb5571734654
+	fromColumn: RNPCD.rango_edad
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+
+relationship ec3b2a3a-5b93-4d40-99aa-25ef07ce8b28
+	joinOnDateBehavior: datePartOnly
+	fromColumn: RNPCD.fecha_inscripcion
+	toColumn: LocalDateTable_5b5bbe41-d322-4ab4-a8ef-2818302ea797.Date
+

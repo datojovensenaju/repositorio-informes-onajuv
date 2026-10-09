@@ -1,0 +1,16 @@
+relationship 86b9658a-2af4-e347-381b-bcc929fe46ea
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.AÑO
+
+relationship 646cba64-3f5d-579d-e0b0-1cbd57a2f57c
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.AÑO
+
+relationship d653213c-df39-5f5d-1d10-8cd6c1ffb585
+	fromColumn: datosNacionales.INDICADOR
+	toColumn: actividadInformatica.'ACTIVIDAD INFORMATICA'
+
+relationship aa06b5e8-6773-1fc3-190d-47d7c0fb2fa1
+	fromColumn: datosRegionales.INDICADOR
+	toColumn: actividadInformatica.'ACTIVIDAD INFORMATICA'
+

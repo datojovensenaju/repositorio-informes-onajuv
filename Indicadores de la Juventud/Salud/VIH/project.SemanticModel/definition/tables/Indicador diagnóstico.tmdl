@@ -1,0 +1,48 @@
+table 'Indicador diagnóstico'
+	lineageTag: 92d0a6db-1848-4960-9251-fd377fa89cb9
+
+	column Parámetro
+		lineageTag: 510088c5-fcf4-4498-b1cc-ea20d87f3d4b
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parámetro Orden'
+
+		relatedColumnDetails
+			groupByColumn: 'Parámetro Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parámetro Campos'
+		isHidden
+		lineageTag: 92bef83c-9126-41b8-8d90-1e705abb3e32
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parámetro Orden'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parámetro Orden'
+		isHidden
+		formatString: 0
+		lineageTag: 54d794fd-4a01-43b7-a984-9cc45f65c260
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Indicador diagnóstico' = calculated
+		mode: import
+		source =
+				{
+				    ("Casos SIDA", NAMEOF('VIH'[Casos SIDA]), 0),
+				    ("Casos VIH", NAMEOF('VIH'[Casos VIH]), 1)
+				}
+
+	annotation PBI_Id = 41473f822fa1405bb3f8ca8a68be282f
+

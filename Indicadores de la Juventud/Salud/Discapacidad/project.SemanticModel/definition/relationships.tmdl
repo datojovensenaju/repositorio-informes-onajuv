@@ -1,0 +1,28 @@
+relationship AutoDetected_73221d33-78d4-42da-bf44-f9da0a680256
+	fromColumn: dimProvincia.ID_REG
+	toColumn: dimRegion.ID_REG
+
+relationship AutoDetected_cd7a5220-6892-48c7-83df-19665b35f3b0
+	fromColumn: dimDistrito.ID_PROV
+	toColumn: dimProvincia.ID_PROV
+
+relationship AutoDetected_30c5b571-c3e9-4d84-842a-8ca606bf9941
+	fromColumn: discapacidad.sexo
+	toColumn: Sexo.SEXO
+
+relationship 0b1838ca-0c88-fe6e-0b7c-eb91468584d9
+	fromColumn: discapacidad.grupo_edad
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+
+relationship 6af71ccf-3661-542f-f653-fb80c2810da9
+	fromColumn: discapacidad.anio_emision
+	toColumn: Año.AÑO
+
+relationship c130fbd2-a1cb-dd72-ba44-00717fabc5e7
+	fromColumn: discapacidad.ubigeo
+	toColumn: dimDistrito.ID_DIS
+
+relationship 10092e10-b788-2032-ac7e-7db98dbbbf33
+	fromColumn: discapacidad.mes_emision
+	toColumn: Mes.MES
+

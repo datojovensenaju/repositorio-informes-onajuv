@@ -1,0 +1,200 @@
+table VIH
+	lineageTag: a10da4ba-ac86-4121-b7e9-b9808cd1e513
+
+	measure 'Casos VIH' = COUNTROWS(VIH)
+		lineageTag: a236162f-323d-41df-8f59-af09e6217cd2
+
+		formatStringDefinition = "### ### ###"
+
+	measure 'Casos Hombres' = CALCULATE([Casos VIH], VIH[sexo] = "Hombre")
+		lineageTag: 908f4c6c-a2f0-4358-8237-cbbac4fcdd3d
+
+		formatStringDefinition = "### ### ###"
+
+	measure 'Casos Mujeres' = CALCULATE([Casos VIH], VIH[sexo] = "Mujer")
+		lineageTag: b848ca5b-475e-446e-9518-b81a069c5539
+
+		formatStringDefinition = "### ### ###"
+
+	measure 'Casos SIDA' =
+			VAR casosSida =
+			CALCULATE(
+			    [Casos VIH],
+			    NOT ISBLANK(VIH[fecha_dx_sida])
+			)
+			RETURN
+			IF(
+			    casosSida > 0,
+			    casosSida,
+			    "-"
+			)
+		lineageTag: 0db52658-0a87-48cf-914b-e50c1cc0b15f
+
+		formatStringDefinition = "### ### ###"
+
+	measure '% Casos con SIDA' =
+			VAR casosPorcentajeSida =
+			DIVIDE(
+			    CALCULATE(
+			    [Casos VIH],
+			    NOT ISBLANK(VIH[fecha_dx_sida])),
+			    [Casos VIH]
+			)
+			RETURN
+			IF(
+			    casosPorcentajeSida > 0,
+			    casosPorcentajeSida,
+			    "-"
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 09948a79-8c93-411a-87f5-2a60a78ca1d5
+
+	measure 'Edad promedio' = AVERAGE(VIH[edad])
+		formatString: 0
+		lineageTag: c5fc532f-e5f9-4597-b9f6-ba5641633a22
+
+	column id
+		dataType: string
+		lineageTag: c28856d8-32d3-49f6-b84b-741bc98bf23c
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: 2c9bc3fa-eb6c-47f4-9359-2894d857a64e
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column provincia
+		dataType: string
+		lineageTag: f810ba8b-45f0-4ea9-80b8-98bd6cce5696
+		summarizeBy: none
+		sourceColumn: provincia
+
+		annotation SummarizationSetBy = Automatic
+
+	column distrito
+		dataType: string
+		lineageTag: 8dc21075-f0d6-492b-96c6-a4056858101e
+		summarizeBy: none
+		sourceColumn: distrito
+
+		annotation SummarizationSetBy = Automatic
+
+	column ubigeo
+		dataType: string
+		lineageTag: 265edc1e-529f-4c31-98cc-253da983e8bd
+		summarizeBy: none
+		sourceColumn: ubigeo
+
+		annotation SummarizationSetBy = Automatic
+
+	column sexo
+		dataType: string
+		lineageTag: 7040077c-8a22-4705-b626-fe5b1d1acd0b
+		summarizeBy: none
+		sourceColumn: sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column antecedentes_rs
+		dataType: string
+		lineageTag: a1213854-e6fe-4b57-a633-bc2559664e99
+		summarizeBy: none
+		sourceColumn: antecedentes_rs
+
+		annotation SummarizationSetBy = Automatic
+
+	column via_transmision
+		dataType: string
+		lineageTag: 23fa2e96-3609-4587-b5c6-7621a2953b6a
+		summarizeBy: none
+		sourceColumn: via_transmision
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio_dx_vih
+		dataType: string
+		lineageTag: 9a6328fc-1868-4703-bc64-1cf157eb0cfd
+		summarizeBy: none
+		sourceColumn: anio_dx_vih
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes_dx_vih
+		dataType: string
+		lineageTag: ea36b2f8-b363-4ba4-a2b1-b0ed031bd1a1
+		summarizeBy: none
+		sourceColumn: mes_dx_vih
+
+		annotation SummarizationSetBy = Automatic
+
+	column edad
+		dataType: int64
+		formatString: 0
+		lineageTag: fc4f06ea-a9a7-4f01-b7c6-8ec30aa06978
+		summarizeBy: sum
+		sourceColumn: edad
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column grupo_edad
+		dataType: string
+		lineageTag: 8cff3751-221b-40a5-89e7-211472473ce3
+		summarizeBy: none
+		sourceColumn: grupo_edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_dx_sida
+		dataType: string
+		lineageTag: 826e3f88-e1db-4594-b587-c1715a4feeb0
+		summarizeBy: none
+		sourceColumn: fecha_dx_sida
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio_dx_sida
+		dataType: string
+		lineageTag: c5328193-e435-4d27-ac4a-bb1f2f1329d5
+		summarizeBy: none
+		sourceColumn: anio_dx_sida
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes_dx_sida
+		dataType: string
+		lineageTag: 8cdc982e-edb8-4e98-906f-48948c3a7746
+		summarizeBy: none
+		sourceColumn: mes_dx_sida
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_dx_vih
+		dataType: string
+		lineageTag: dad58665-db5a-4b40-b145-ad0c4a18c48e
+		summarizeBy: none
+		sourceColumn: fecha_dx_vih
+
+		annotation SummarizationSetBy = Automatic
+
+	partition VIH = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/3. Salud/REGISTROS/Salud-VIH.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "VIH", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

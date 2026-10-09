@@ -1,0 +1,32 @@
+relationship AutoDetected_73221d33-78d4-42da-bf44-f9da0a680256
+	fromColumn: dimProvincia.ID_REG
+	toColumn: dimRegion.ID_REG
+
+relationship AutoDetected_cd7a5220-6892-48c7-83df-19665b35f3b0
+	fromColumn: dimDistrito.ID_PROV
+	toColumn: dimProvincia.ID_PROV
+
+relationship AutoDetected_268510e3-399e-4155-a5ce-5dcbdf684577
+	fromColumn: VIH.sexo
+	toColumn: Sexo.SEXO
+
+relationship 63b8f536-07b2-6e4c-37d8-81155bc13c93
+	fromColumn: VIH.grupo_edad
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+
+relationship b61702ff-5ab0-9963-3323-8604f06fee79
+	fromColumn: VIH.ubigeo
+	toColumn: dimDistrito.ID_DIS
+
+relationship 50c62e59-0f9d-e601-6b0b-324cf45977a5
+	fromColumn: VIH.anio_dx_vih
+	toColumn: Año.AÑO
+
+relationship 8280de83-5deb-a115-fcc3-d474e7edef56
+	fromColumn: VIH.mes_dx_vih
+	toColumn: Mes.MES
+
+relationship AutoDetected_1fc778b3-d186-4829-885e-b536daf5a9d0
+	fromColumn: dimRegion.ID_DEP
+	toColumn: dimDepartamento.ID_DEP
+

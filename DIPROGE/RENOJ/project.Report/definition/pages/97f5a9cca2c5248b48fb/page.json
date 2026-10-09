@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "97f5a9cca2c5248b48fb",
+  "displayName": "RENOJ-Resumen-Mobile",
+  "displayOption": "ActualSize",
+  "height": 3330,
+  "width": 370,
+  "visibility": "HiddenInViewMode",
+  "type": "Tooltip"
+}

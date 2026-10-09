@@ -1,0 +1,30 @@
+relationship 9ee8c76f-62c3-45be-85be-cc7b27fbbfc1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Miembros.'Fecha de Acreditación'
+	toColumn: LocalDateTable_a08db200-e4cd-4fef-bbc9-e3b27e4cc203.Date
+
+relationship AutoDetected_7e08052e-f975-444f-a1c2-2c9ada58bc79
+	fromColumn: dimRegion.ID_DEP
+	toColumn: dimDepartamento.ID_DEP
+
+relationship 91846598-0fd3-9960-6c1d-f299c69cf55f
+	fromColumn: Miembros.ID
+	toColumn: Representantes.ID
+
+relationship 95d8e9e3-8386-4926-b1b1-683bb2fdff08
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Representantes.ACREDITACIÓN
+	toColumn: LocalDateTable_22127771-2afd-4c14-8f30-d4dd92bfd014.Date
+
+relationship 6bfda675-33a2-4cb8-65a7-555a9e5762d7
+	fromColumn: Representantes.REGIÓN
+	toColumn: dimRegion.REGION
+
+relationship 365816af-ae38-c605-96d3-08dd892b62d8
+	fromColumn: Miembros.'RANGO ETARIO'
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+
+relationship c4e8a1d2-7b3f-4e91-9c06-2f8a5d6e1b70
+	fromColumn: Representantes.'Clave Año'
+	toColumn: Año.AÑO
+

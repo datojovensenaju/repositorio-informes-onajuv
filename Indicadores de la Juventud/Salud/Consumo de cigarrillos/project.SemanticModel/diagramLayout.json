@@ -1,0 +1,61 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 382.65717599999914,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 2027.1546483051332,
+            "y": 593.39096554772686
+          },
+          "nodeIndex": "Año",
+          "nodeLineageTag": "611c59ad-cca9-492c-b38e-95de70881e3e",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1717.1314733051338,
+            "y": 853.92442922720977
+          },
+          "nodeIndex": "datosNacionales",
+          "nodeLineageTag": "d0963d3c-a90e-446a-b476-3fbf20a6325a",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2305.8399653051338,
+            "y": 853.92442922720988
+          },
+          "nodeIndex": "datosRegionales",
+          "nodeLineageTag": "9a8fd12b-9d72-44ad-ab2a-06f0c4b57997",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 56.447393005377869,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

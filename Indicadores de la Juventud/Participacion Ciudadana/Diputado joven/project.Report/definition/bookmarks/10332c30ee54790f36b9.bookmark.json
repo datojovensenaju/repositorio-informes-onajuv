@@ -1,0 +1,1236 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Limpiar diputadoJoven - Web",
+  "name": "10332c30ee54790f36b9",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "3c0511124895c8e4760d",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "f3768557c24110945c66",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "s",
+                "Entity": "Sexo",
+                "Type": 0
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "In": {
+                    "Expressions": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "s"
+                            }
+                          },
+                          "Property": "SEXO"
+                        }
+                      }
+                    ],
+                    "Values": [
+                      [
+                        {
+                          "Literal": {
+                            "Value": "'MUJER'"
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "Literal": {
+                            "Value": "'HOMBRE'"
+                          }
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sexo"
+                }
+              },
+              "Property": "SEXO"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "sections": {
+      "3c0511124895c8e4760d": {
+        "visualContainers": {
+          "80dabd66c30fbcf6d5df": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5948ef47984056a996bf",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "61f53eea69e6e1738c53": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "84bfc2acf44f5bdc89ad": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "3f6ac8f3ddc707aa633a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ae5868617fc8caf06458",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Nivel Educativo Elecciones"
+                        }
+                      },
+                      "Property": "NIVEL_EDUCATIVO_ELECCIONES"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Nivel Educativo Elecciones"
+                        }
+                      },
+                      "Property": "NIVEL_EDUCATIVO_ELECCIONES"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "865a026fc9f71f66c866": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ad2d69abfea40fe4a6fa",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "distritoElectoral"
+                        }
+                      },
+                      "Property": "DISTRITO ELECTORAL"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "distritoElectoral"
+                        }
+                      },
+                      "Property": "DISTRITO ELECTORAL"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "96670d201db47662075f": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0502b3d3ac4e2c8fea30",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Total de Candidatos Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Total de Candidatos Jóvenes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "719de94c421eaca70f79": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "1d90498a5ebc77f17f44",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Porcentaje de Candidatos Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Porcentaje de Candidatos Jóvenes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "779d94562172b7b77aa0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "81e9333245330e109e39",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Porcentaje Mujeres Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Porcentaje Mujeres Jóvenes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "adb565a943ae68bf0e9e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3bfe00e52be956e2078d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Porcentaje Hombres Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Porcentaje Hombres Jóvenes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "d4e4252b82254c17b867": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "16008fe8bb49bd3d55d7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Total de Candidatos Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "37168103c8679f717e5c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura general"
+                        }
+                      },
+                      "Property": "Total de Candidatos No Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Total de Candidatos Jóvenes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "d9b6ca6f1d1e4fa28d02": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "842aa2c69f5ad2bba6e2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b82a0fdf8c8f7d6dd42e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Total de Candidatos Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Total de Candidatos Jóvenes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "7b94a843419057a67ddd": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4485f6f6fbe21282df70",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e1a94123c83abe1e09c7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Total de Candidatos Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Total de Candidatos Jóvenes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "880782a2cf44e46335f2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f985bac43ecf90f30069",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "624faa48d49076a3e257",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura general"
+                        }
+                      },
+                      "Property": "Total de Candidatos No Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura general"
+                        }
+                      },
+                      "Property": "Total de Candidatos No Jóvenes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "a5861986eae7b3456743": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "c518f52b2706434607b5": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "3b6fbbc2410e1fb82fb5": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3f47e1d8e758d61be23d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Nivel Educativo Elecciones"
+                        }
+                      },
+                      "Property": "NIVEL_EDUCATIVO_ELECCIONES"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c7d24d623a3a2987000b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Total de Candidatos Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c6244da4a9ae1dda2e40",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Nivel Educativo Elecciones"
+                        }
+                      },
+                      "Property": "NIVEL_EDUCATIVO_ELECCIONES"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "e3f70fa11df0d33fda7d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "7a22320d25634a2d6119",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Tiene Elección Popular"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7d6bcda8c7faa3fdc366",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "candidatura joven"
+                            }
+                          },
+                          "Property": "Tiene Elección Popular"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "candidatura joven"
+                            }
+                          },
+                          "Property": "Tiene Elección Popular"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Tiene Elección Popular"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "fa04bdc8c4bb22458943": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8b473504186a1751c08f",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Tiene Cargo Partidario"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "3fb0f0851b0077526a96",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "candidatura joven"
+                            }
+                          },
+                          "Property": "Tiene Cargo Partidario"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "candidatura joven"
+                            }
+                          },
+                          "Property": "Tiene Cargo Partidario"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Tiene Cargo Partidario"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d46db7b939d3a0446c9d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "bdc9d88e78c6b57cfb08",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "candidatura joven"
+                            }
+                          },
+                          "Property": "Tiene Cargo Partidario"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c082f26f8366f2c38af0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Tiene Cargo Partidario"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6019d52157d7045f8309",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "candidatura joven"
+                            }
+                          },
+                          "Property": "Tiene Cargo Partidario"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Tiene Cargo Partidario"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "b329443efb2c68d702fb": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "08a0cc8f58a879c1864f",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "candidatura joven"
+                            }
+                          },
+                          "Property": "Tiene Elección Popular"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8e01e1a2a97e8826ffee",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Tiene Elección Popular"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d582432ae9352c9901ba",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sexo"
+                        }
+                      },
+                      "Property": "SEXO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "candidatura joven"
+                            }
+                          },
+                          "Property": "Tiene Elección Popular"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Tiene Elección Popular"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "10ce858a889be39f0953": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "416bddbc3c88bd924485": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "9ab74b3fbf4a2746556c": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "6cf05f2c62f540f67ca8": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "4217ce331492e0d7c736": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "5c8daa82155b8eaae775": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "f168c384c5c8d3b24592": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0b1120b4d425e5680788",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "distritoElectoral"
+                        }
+                      },
+                      "Property": "DISTRITO ELECTORAL"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "cd9d4e53c694fd6f8cb0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Total de Candidatos Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ba2181f463d02202e767",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Total de Candidatos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "41baad930e1636f5d59d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "candidatura joven"
+                        }
+                      },
+                      "Property": "Porcentaje de Candidatos Jóvenes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1428362270b69f56035f",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "candidatura joven"
+                            }
+                          },
+                          "Property": "Escaño Diputado"
+                        }
+                      },
+                      "Function": 4
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "distritoElectoral"
+                        }
+                      },
+                      "Property": "DISTRITO ELECTORAL"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "bb7c8e192ae44c26e88a": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "41697c796f16a87d3cb2": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

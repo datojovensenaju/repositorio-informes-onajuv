@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "8eb6e59c3385c610aa78",
+  "position": {
+    "x": 10,
+    "y": 50,
+    "z": 5000,
+    "height": 60,
+    "width": 1380,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Panel de seguimiento de la población penitenciaria joven (18 a 29 años) recluida en establecimientos del Perú, a partir de cortes anuales a diciembre de cada año, entre 2019 y 2025. Explora su magnitud, perfil y distribución territorial mediante los filtros disponibles.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#666666"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

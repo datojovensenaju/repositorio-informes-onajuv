@@ -1,0 +1,38 @@
+relationship AutoDetected_0ca404ac-6f51-4036-bc7a-6f3c2b59e91c
+	fromColumn: dimRegion.ID_DEP
+	toColumn: dimDepartamento.ID_DEP
+
+relationship AutoDetected_fdf3a10c-288d-40b5-ad94-c5998a58da80
+	fromColumn: dimProvincia.ID_REG
+	toColumn: dimRegion.ID_REG
+
+relationship AutoDetected_31446a54-d2a4-40e7-9e48-37b008b5d1cb
+	fromColumn: dimDistrito.ID_PROV
+	toColumn: dimProvincia.ID_PROV
+
+relationship AutoDetected_509edac8-8b92-449f-9c18-24c3d5293363
+	fromColumn: fact_Voluntarios.SEXO
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_79bcb30d-499f-4b9b-a09e-9e852f61b927
+	fromColumn: fact_Voluntarios.RANGO_EDAD
+	toColumn: Edad.RANGO_EDAD
+
+relationship AutoDetected_9569ac68-7d4e-41e5-9259-8d77c2756c55
+	fromColumn: fact_Voluntarios.NIVEL_EDUCATIVO
+	toColumn: 'Nivel Educativo'.NIVEL_EDUCATIVO
+
+relationship 70932095-c452-4031-c202-ee8079d705e0
+	fromColumn: fact_Voluntarios.OCUPACION
+	toColumn: 'Nivel Ocupacional'.NIVEL_OCUPACIONAL
+
+relationship b89fea22-4c3f-08b8-e988-7566d6c9e630
+	fromColumn: fact_Voluntarios.UBIGEO
+	toColumn: dimDistrito.ID_DIS
+
+relationship AutoDetected_e46e1731-db2f-439e-a137-2a4ec2994c35
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: fact_movilizacion.REGION
+	toColumn: dimRegion.REGION
+

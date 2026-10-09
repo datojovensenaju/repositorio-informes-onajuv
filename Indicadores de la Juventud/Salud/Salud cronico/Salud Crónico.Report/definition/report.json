@@ -1,0 +1,261 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY26SU02",
+      "reportVersionAtImport": {
+        "visual": "2.6.0",
+        "report": "3.1.0",
+        "page": "2.3.0"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a19c0d70acb81d16a958",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Año"
+              }
+            },
+            "Property": "anio"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "Año",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "a"
+                              }
+                            },
+                            "Property": "anio"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "2026L"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "area4577852945162568.png",
+          "path": "area4577852945162568.png",
+          "type": "Image"
+        },
+        {
+          "name": "area9218633706390265.png",
+          "path": "area9218633706390265.png",
+          "type": "Image"
+        },
+        {
+          "name": "educativo1924672464046756.png",
+          "path": "educativo1924672464046756.png",
+          "type": "Image"
+        },
+        {
+          "name": "educativo737851058903729.png",
+          "path": "educativo737851058903729.png",
+          "type": "Image"
+        },
+        {
+          "name": "etnia14378610297517969.png",
+          "path": "etnia14378610297517969.png",
+          "type": "Image"
+        },
+        {
+          "name": "etnia24374021027057768.png",
+          "path": "etnia24374021027057768.png",
+          "type": "Image"
+        },
+        {
+          "name": "idioma32139132065273945.png",
+          "path": "idioma32139132065273945.png",
+          "type": "Image"
+        },
+        {
+          "name": "idioma9250555656311348.png",
+          "path": "idioma9250555656311348.png",
+          "type": "Image"
+        },
+        {
+          "name": "info_(1)8477677557007288.png",
+          "path": "info_(1)8477677557007288.png",
+          "type": "Image"
+        },
+        {
+          "name": "info7367398786798105.png",
+          "path": "info7367398786798105.png",
+          "type": "Image"
+        },
+        {
+          "name": "isotipo_observatorio_-_izquier9790581368572808.png",
+          "path": "isotipo_observatorio_-_izquier9790581368572808.png",
+          "type": "Image"
+        },
+        {
+          "name": "logo_observatorio_(1)15548674041295418.png",
+          "path": "logo_observatorio_(1)15548674041295418.png",
+          "type": "Image"
+        },
+        {
+          "name": "logo-ministerio-de-educacion15425825949127137.png",
+          "path": "logo-ministerio-de-educacion15425825949127137.png",
+          "type": "Image"
+        },
+        {
+          "name": "logo-senaju6884612854521563.png",
+          "path": "logo-senaju6884612854521563.png",
+          "type": "Image"
+        },
+        {
+          "name": "money10584482976184428.png",
+          "path": "money10584482976184428.png",
+          "type": "Image"
+        },
+        {
+          "name": "money24795660217854965.png",
+          "path": "money24795660217854965.png",
+          "type": "Image"
+        },
+        {
+          "name": "nacional-celeste9742988197215767.png",
+          "path": "nacional-celeste9742988197215767.png",
+          "type": "Image"
+        },
+        {
+          "name": "peru004444467918110706.png",
+          "path": "peru004444467918110706.png",
+          "type": "Image"
+        },
+        {
+          "name": "peru22218498919998586.png",
+          "path": "peru22218498919998586.png",
+          "type": "Image"
+        },
+        {
+          "name": "region21585267527103902.png",
+          "path": "region21585267527103902.png",
+          "type": "Image"
+        },
+        {
+          "name": "region8958871609700277.png",
+          "path": "region8958871609700277.png",
+          "type": "Image"
+        },
+        {
+          "name": "sex21016046621333972.png",
+          "path": "sex21016046621333972.png",
+          "type": "Image"
+        },
+        {
+          "name": "sex4025964131688812.png",
+          "path": "sex4025964131688812.png",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY26SU02",
+          "path": "BaseThemes/CY26SU02.json",
+          "type": "BaseTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

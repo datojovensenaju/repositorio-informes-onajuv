@@ -1,0 +1,126 @@
+relationship AutoDetected_9a1a09f4-7654-46b2-a3fc-ff6ebe6425cb
+	fromColumn: intervenidosPorFalta.sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_46b09bfe-1d9a-49c9-987b-aa0219810377
+	fromColumn: accidenteDeTransitoNoFatal.sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_08e3fac7-cb76-4e73-babc-7b60f33f41c0
+	fromColumn: accidenteDeTransitoFatal.sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_5600bab5-7f84-4061-afa5-79eec8d50e10
+	fromColumn: violenciaFamiliar.sexo
+	toColumn: Sexo.SEXO
+
+relationship bc7f1bfb-923f-497d-83d2-701a694140bc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: detenidosComisionDelitos.fecha
+	toColumn: LocalDateTable_54dc0476-7863-4c92-a12d-ba936e8bc97a.Date
+
+relationship d05c801b-7c79-4bb5-b670-219b55ea645c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: intervenidosPorFalta.fecha
+	toColumn: LocalDateTable_af69c5bc-b517-4b93-9a16-0486e44641f6.Date
+
+relationship 7d749aea-3306-4b36-9c6a-4b75ca6ead37
+	joinOnDateBehavior: datePartOnly
+	fromColumn: accidenteDeTransitoNoFatal.fecha
+	toColumn: LocalDateTable_914baf3b-8344-4e24-a82a-ba117fb1fc12.Date
+
+relationship b462d875-c514-4b98-899b-d67e35313812
+	joinOnDateBehavior: datePartOnly
+	fromColumn: accidenteDeTransitoFatal.fecha
+	toColumn: LocalDateTable_60949807-8577-40a0-8435-04feba336451.Date
+
+relationship b62f545e-ac18-4071-8212-cd0841b88187
+	joinOnDateBehavior: datePartOnly
+	fromColumn: violenciaFamiliar.fecha
+	toColumn: LocalDateTable_b4a4b490-c9dc-4a5e-b11f-6c39865b8d33.Date
+
+relationship f00f55dd-160b-41d4-9130-b902bb725584
+	joinOnDateBehavior: datePartOnly
+	fromColumn: violenciaSexual.fecha
+	toColumn: LocalDateTable_588238ed-c1d5-42e0-a9e7-2a8196c57ac8.Date
+
+relationship AutoDetected_cf4a1948-ddc7-4cbe-a356-bce3a73e5af9
+	fromColumn: violenciaSexual.sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_961a75a7-332a-4639-9035-af83b67fa573
+	fromColumn: detenidosComisionDelitos.mes
+	toColumn: Mes.MES
+
+relationship AutoDetected_8e87ff68-832d-40e5-ae4b-2f0db7da3b51
+	fromColumn: intervenidosPorFalta.mes
+	toColumn: Mes.MES
+
+relationship AutoDetected_bc48cb16-701f-4f97-a7c2-8e3dc14cee77
+	fromColumn: accidenteDeTransitoNoFatal.mes
+	toColumn: Mes.MES
+
+relationship AutoDetected_a2e2158d-e8ae-4414-b8f8-bde4ac8b129d
+	fromColumn: accidenteDeTransitoFatal.mes
+	toColumn: Mes.MES
+
+relationship AutoDetected_372bfdb5-4dcc-43bb-b225-8c2e9fc0a191
+	fromColumn: violenciaFamiliar.mes
+	toColumn: Mes.MES
+
+relationship AutoDetected_eafaeadb-da5b-4072-bedf-f3803a714671
+	fromColumn: violenciaSexual.mes
+	toColumn: Mes.MES
+
+relationship AutoDetected_8207283c-ae15-45bb-a410-335071071a61
+	fromColumn: detenidosComisionDelitos.departamento
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship AutoDetected_bee84eb2-f651-4663-94e0-ad3f02daf051
+	fromColumn: intervenidosPorFalta.departamento
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship AutoDetected_dc08ef75-bd31-4c95-91a5-cba2435ed058
+	fromColumn: accidenteDeTransitoNoFatal.departamento
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship AutoDetected_15cfa5db-baba-4b03-b031-84e398290223
+	fromColumn: accidenteDeTransitoFatal.departamento
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship AutoDetected_c024eff0-db31-486c-8f25-3246dc2b56db
+	fromColumn: violenciaFamiliar.departamento
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship AutoDetected_b8ef78ed-b231-49da-8fd7-08920c023132
+	fromColumn: violenciaSexual.departamento
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship 5110b4db-ec54-89f2-7e35-51dc65c22671
+	fromColumn: accidenteDeTransitoFatal.anio
+	toColumn: Año.anio
+
+relationship 9e9dce8f-ded7-b7b1-c05a-5356ca307a54
+	fromColumn: accidenteDeTransitoNoFatal.anio
+	toColumn: Año.anio
+
+relationship 16d47346-a636-c921-9085-838eec101771
+	fromColumn: detenidosComisionDelitos.anio
+	toColumn: Año.anio
+
+relationship ecc21fc5-c285-eef9-e95f-c0c8e4c27e3b
+	fromColumn: violenciaFamiliar.anio
+	toColumn: Año.anio
+
+relationship 59b46ad2-952a-5390-9b72-aacc6060e222
+	fromColumn: violenciaSexual.anio
+	toColumn: Año.anio
+
+relationship a09ab8d8-8a45-2dfd-49de-7d422284d747
+	fromColumn: detenidosComisionDelitos.sexo
+	toColumn: Sexo.SEXO
+
+relationship 10a1564b-9ad4-aa0f-9043-727b361c2cac
+	fromColumn: intervenidosPorFalta.anio
+	toColumn: Año.anio
+

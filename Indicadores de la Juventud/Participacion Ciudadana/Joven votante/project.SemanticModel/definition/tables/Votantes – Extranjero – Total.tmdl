@@ -1,0 +1,49 @@
+table 'Votantes – Extranjero – Total'
+	lineageTag: 981a281f-2e15-4804-a101-a04c8c3d6850
+
+	column Continente
+		dataType: string
+		lineageTag: 5ef9cf21-1f21-4ec1-9504-d04186148d8f
+		summarizeBy: none
+		sourceColumn: Continente
+
+		annotation SummarizationSetBy = Automatic
+
+	column País
+		dataType: string
+		lineageTag: 50818d52-b63c-48db-bdec-b497a2a5c90e
+		summarizeBy: none
+		sourceColumn: País
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: 010be3c9-0ab0-401a-b308-357302659146
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total
+		dataType: int64
+		formatString: 0
+		lineageTag: 747d480a-978d-439c-887b-8367076f1bfc
+		summarizeBy: sum
+		sourceColumn: Total
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Votantes – Extranjero – Total' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/6.%20Participaci%C3%B3n%20ciudadana%20y%20gobernanza/REGISTROS/Participaci%C3%B3nCiudadana_PadronElectoral.xlsx"), null, true),
+				    #"Votantes – Extranjero – Total_Sheet" = Origen{[Item="Votantes – Extranjero – Total",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Votantes – Extranjero – Total_Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Continente", type text}, {"País", type text}, {"Sexo", type text}, {"Total", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

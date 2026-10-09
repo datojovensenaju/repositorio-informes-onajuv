@@ -1,0 +1,100 @@
+expression Parámetro1 = #"Archivo de ejemplo" meta [IsParameterQuery=true, BinaryIdentifier=#"Archivo de ejemplo", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: a44625bd-3287-41c3-b883-6cd81f1f216e
+	queryGroup: 'Transformar archivo de Consulta1\Consultas auxiliares'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformar archivo de ejemplo' =
+		let
+		    Origen = Excel.Workbook(Parámetro1, null, true),
+		    discapacidad_Sheet = Origen{[Item="discapacidad",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(discapacidad_Sheet, [PromoteAllScalars=true])
+		in
+		    #"Encabezados promovidos"
+	lineageTag: 614dd9a1-dfd0-4f7a-8899-3ad55e3c0e82
+	queryGroup: 'Transformar archivo de Consulta1'
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'Archivo de ejemplo' =
+		let
+		    Origen = SharePoint.Files("https://mineduperu.sharepoint.com/sites/DATAJOVEN", [ApiVersion = 15]),
+		    #"Filas filtradas" = Table.SelectRows(Origen, each ([Name] = "SALUD-discapacidad-2025.xlsx")),
+		    Navegación1 = #"Filas filtradas"{0}[Content]
+		in
+		    Navegación1
+	lineageTag: d9305a62-338b-40ea-a80d-83cdf83a044f
+	queryGroup: 'Transformar archivo de Consulta1\Consultas auxiliares'
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformar archivo' =
+		let
+		    Origen = (Parámetro1 as binary) => let
+		    Origen = Excel.Workbook(Parámetro1, null, true),
+		    discapacidad_Sheet = Origen{[Item="discapacidad",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(discapacidad_Sheet, [PromoteAllScalars=true])
+		in
+		    #"Encabezados promovidos"
+		in
+		    Origen
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformar archivo de ejemplo""}" ]
+	lineageTag: 5ea2fa82-c54f-43ca-8d8a-f710ad0d970d
+	queryGroup: 'Transformar archivo de Consulta1\Consultas auxiliares'
+
+	annotation PBI_ResultType = Function
+
+expression Parámetro2 = #"Archivo de ejemplo (2)" meta [IsParameterQuery=true, BinaryIdentifier=#"Archivo de ejemplo (2)", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: ec6e9601-1162-4d80-959a-2de4cf5e9e72
+	queryGroup: 'Transformar archivo de Consulta\Consultas auxiliares'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformar archivo de ejemplo (2)' =
+		let
+		    Origen = Excel.Workbook(Parámetro2, null, true),
+		    movimiento2020_Sheet = Origen{[Item="movimiento",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(movimiento2020_Sheet, [PromoteAllScalars=true])
+		in
+		    #"Encabezados promovidos"
+	lineageTag: ab56421d-ca1a-481c-8c96-69ff6edcb766
+	queryGroup: 'Transformar archivo de Consulta'
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
+expression 'Archivo de ejemplo (2)' =
+		let
+		  Origen = SharePoint.Files("https://mineduperu.sharepoint.com/sites/DATAJOVEN", [ApiVersion = 15]),
+		    #"Filas filtradas" = Table.SelectRows(Origen, each ([Folder Path] = "https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/Juventud Migrante/")),
+		    Navegación1 = #"Filas filtradas"{0}[Content]
+		in
+		  Navegación1
+	lineageTag: 5274ba6a-8813-4c29-9063-c5dd02619353
+	queryGroup: 'Transformar archivo de Consulta\Consultas auxiliares'
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformar archivo (2)' =
+		let
+		    Origen = (Parámetro2 as binary) => let
+		    Origen = Excel.Workbook(Parámetro2, null, true),
+		    movimiento2020_Sheet = Origen{[Item="movimiento",Kind="Sheet"]}[Data],
+		    #"Encabezados promovidos" = Table.PromoteHeaders(movimiento2020_Sheet, [PromoteAllScalars=true])
+		in
+		    #"Encabezados promovidos"
+		in
+		    Origen
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformar archivo de ejemplo (2)""}" ]
+	lineageTag: 7e55ae1a-0256-4f6e-aca1-a2d81d78e2ad
+	queryGroup: 'Transformar archivo de Consulta\Consultas auxiliares'
+
+	annotation PBI_ResultType = Function
+

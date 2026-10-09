@@ -1,0 +1,8 @@
+relationship 3906163c-c4d7-5bfa-dc67-9a9302b94ecb
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.anio
+
+relationship 070dec14-5e5c-5437-dd76-313a7a5c6185
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.anio
+

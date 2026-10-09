@@ -1,0 +1,50 @@
+table dimRegion
+	lineageTag: b0ce6850-c62a-48f5-aa46-b2665ad6c90a
+
+	column ID_REG
+		dataType: string
+		lineageTag: 1aa1a159-a1b2-4565-aa60-8f207e6d1b5b
+		summarizeBy: none
+		sourceColumn: ID_REG
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: abd5b6aa-c7a8-4ff8-9daa-21cbcb5ce762
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_DEP
+		dataType: string
+		lineageTag: eb271958-edaf-4eda-928c-b57a658938bf
+		summarizeBy: none
+		sourceColumn: ID_DEP
+
+		annotation SummarizationSetBy = Automatic
+
+	column LIMITE
+		dataType: string
+		lineageTag: 2c9f5feb-643f-42d6-845e-a04ef9038330
+		summarizeBy: none
+		sourceColumn: LIMITE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimRegion = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Ubigeo.xlsx"), null, true),
+				    dimRegion_Sheet = Origen{[Item="dimRegion",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(dimRegion_Sheet, [PromoteAllScalars=true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each ([REGION] <> "NACIONAL" and [REGION] <> "NO DETERMINADO"))
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

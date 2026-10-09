@@ -1,0 +1,147 @@
+table 'candidatura joven'
+	lineageTag: e4cabe3f-68c9-49b0-9dcf-7c7932d0841c
+
+	measure 'Total de Candidatos Jóvenes' = COUNTROWS('candidatura joven')
+		formatString: 0
+		lineageTag: 270ee59e-12c9-41ee-8fd3-3bcfb1297afd
+
+	measure 'Total de Candidatos' = [Total de Candidatos No Jóvenes] + [Total de Candidatos Jóvenes]
+		formatString: 0
+		lineageTag: b5602f3b-7477-4789-adc4-c1c6ca00180a
+
+	measure 'Porcentaje de Candidatos Jóvenes' = CALCULATE(DIVIDE('candidatura joven'[Total de Candidatos Jóvenes],[Total de Candidatos]))
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 9a90b91f-8515-45a4-8eab-dab142e6cc84
+
+	measure 'Porcentaje Mujeres Jóvenes' = ```
+			DIVIDE (
+			    CALCULATE (
+			        COUNTROWS('candidatura joven'), 
+			        'candidatura joven'[Sexo] = "Mujer"
+			    ),
+			    [Total de Candidatos Jóvenes]
+			)
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 93ec559e-af5e-4746-9256-26082973b759
+
+	measure 'Porcentaje Hombres Jóvenes' = ```
+			DIVIDE (
+			    CALCULATE (
+			        COUNTROWS('candidatura joven'), 
+			        'candidatura joven'[Sexo] = "Hombre"
+			    ),
+			    [Total de Candidatos Jóvenes]
+			)
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 48c6f67c-1f04-4052-921f-c347b5552267
+
+	column 'Distrito Electoral'
+		dataType: string
+		lineageTag: 6d557b8c-0c80-484d-b692-5a44325d7a9e
+		summarizeBy: none
+		sourceColumn: Distrito Electoral
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Escaño Diputado'
+		dataType: int64
+		formatString: 0
+		lineageTag: f5fae2f2-d038-4e80-bc95-65789555034f
+		summarizeBy: sum
+		sourceColumn: Escaño Diputado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Posicion
+		dataType: string
+		lineageTag: 806f6887-0c31-4e9d-9986-270d1c13e6fb
+		summarizeBy: none
+		sourceColumn: Posicion
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Documento Identidad'
+		dataType: string
+		lineageTag: 6ea6a43f-7965-4713-8c00-fe079b3f5647
+		summarizeBy: none
+		sourceColumn: Documento Identidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: 293bcc43-94bf-4bac-a28e-f2ea06c8b2e2
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Edad
+		dataType: string
+		lineageTag: c7f40f74-edee-4bbe-98ac-9138c663b7dd
+		summarizeBy: none
+		sourceColumn: Edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha Nacimiento'
+		dataType: string
+		lineageTag: 6d694d5c-fabb-4940-bf21-b3d56ffd6278
+		summarizeBy: none
+		sourceColumn: Fecha Nacimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nivel Educativo Alcanzado'
+		dataType: string
+		lineageTag: 59080111-c5cc-41e7-bed5-c5c560ced4b4
+		summarizeBy: none
+		sourceColumn: Nivel Educativo Alcanzado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tiene Cargo Partidario'
+		dataType: string
+		lineageTag: 7e36cf0b-704a-4fd9-b5e2-3dd81065cd32
+		summarizeBy: none
+		sourceColumn: Tiene Cargo Partidario
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tiene Elección Popular'
+		dataType: string
+		lineageTag: dbbcea9e-bb23-47b4-844b-92f32d168d5f
+		summarizeBy: none
+		sourceColumn: Tiene Elección Popular
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nivel Educativo Alcanzado - MOBILE'
+		dataType: string
+		lineageTag: 904ab0c0-d011-4353-b8d9-c798d471a0a8
+		summarizeBy: none
+		sourceColumn: Nivel Educativo Alcanzado - MOBILE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'candidatura joven' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/6.%20Participaci%C3%B3n%20ciudadana%20y%20gobernanza/REGISTROS/participacionCiudadana-JovenVotante.xlsx"), null, true),
+				    #"candidatura joven_Sheet" = Origen{[Item="candidatura joven",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"candidatura joven_Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Escaño Diputado", Int64.Type}}),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Tipo cambiado","CON EXPERIENCIA","Con Experiencia",Replacer.ReplaceText,{"Tiene Cargo Partidario"}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Valor reemplazado","SIN EXPERIENCIA","Sin Experiencia",Replacer.ReplaceText,{"Tiene Cargo Partidario"}),
+				    #"Valor reemplazado2" = Table.ReplaceValue(#"Valor reemplazado1","SIN EXPERIENCIA","Sin Experiencia",Replacer.ReplaceText,{"Tiene Elección Popular"}),
+				    #"Valor reemplazado3" = Table.ReplaceValue(#"Valor reemplazado2","CON EXPERIENCIA","Con Experiencia",Replacer.ReplaceText,{"Tiene Elección Popular"})
+				in
+				    #"Valor reemplazado3"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
+

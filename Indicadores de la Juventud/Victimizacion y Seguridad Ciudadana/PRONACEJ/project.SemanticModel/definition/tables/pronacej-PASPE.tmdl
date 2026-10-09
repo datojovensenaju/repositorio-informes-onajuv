@@ -1,0 +1,152 @@
+table pronacej-PASPE
+	lineageTag: cf254e29-52dd-49ae-b411-ffbd5251e9e4
+
+	measure 'Total Jóvenes' =
+			
+			COUNTROWS('pronacej-PASPE')
+		lineageTag: 419d291e-b49f-4709-8572-021624e96e85
+
+		formatStringDefinition = "### ##0"
+
+	measure 'Edad Promedio PASPE' =
+			
+			AVERAGE('pronacej-PASPE'[Edad])
+		lineageTag: 63c13a41-5ef6-4d30-b4a8-bb7d0ea023f8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% Estudian' =
+			
+			DIVIDE(
+			    CALCULATE(
+			        [Total Jóvenes],
+			        'pronacej-PASPE'[Situacion_laboral] IN {
+			            "SOLO ESTUDIA",
+			            "ESTUDIA Y TRABAJA"
+			        }
+			    ),
+			    [Total Jóvenes]
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: c9a1f70f-88d6-463c-b3ef-46adf8c37588
+
+	measure '% Trabajan' =
+			
+			DIVIDE(
+			    CALCULATE(
+			        [Total Jóvenes],
+			        'pronacej-PASPE'[Situacion_laboral] IN {
+			            "SOLO TRABAJA",
+			            "ESTUDIA Y TRABAJA"
+			        }
+			    ),
+			    [Total Jóvenes]
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: bd940350-3600-4d9c-ac04-2ca7c35e05fd
+
+	column Feche_ingreso
+		dataType: string
+		lineageTag: 502d3eb0-13b5-40d6-a702-6202f766c25c
+		summarizeBy: none
+		sourceColumn: Feche_ingreso
+
+		annotation SummarizationSetBy = Automatic
+
+	column Anio
+		dataType: int64
+		formatString: 0
+		lineageTag: ce533686-3dd0-48e6-907b-8649f3599393
+		summarizeBy: none
+		sourceColumn: Anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		dataType: string
+		lineageTag: 326d9d42-ed82-4035-b6c2-8084ca170c8b
+		summarizeBy: none
+		sourceColumn: Mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column CJDRSOA
+		dataType: string
+		lineageTag: 800ef5fe-a272-4e77-97ad-6e75ec3de1b3
+		summarizeBy: none
+		sourceColumn: CJDRSOA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombre_institucion
+		dataType: string
+		lineageTag: d05905eb-a16a-470b-ae0f-ba22aa5b9dcc
+		summarizeBy: none
+		sourceColumn: Nombre_institucion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Edad
+		dataType: int64
+		formatString: 0
+		lineageTag: e07fd4b9-2dfb-4ee9-92e5-f1f5b6a04366
+		summarizeBy: sum
+		sourceColumn: Edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Grupo_edad
+		dataType: string
+		lineageTag: c2490f19-f531-454d-b6d6-7b6cd9d4a02e
+		summarizeBy: none
+		sourceColumn: Grupo_edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: 2202818d-b4ec-4970-9737-818939d69cfd
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Situacion_laboral
+		dataType: string
+		lineageTag: c89a5086-35b3-49da-ab48-90be3b0faad5
+		summarizeBy: none
+		sourceColumn: Situacion_laboral
+
+		annotation SummarizationSetBy = Automatic
+
+	column Situacion_educativa
+		dataType: string
+		lineageTag: d3b9eb10-6c57-4fe9-9844-77eb8dfe86d1
+		summarizeBy: none
+		sourceColumn: Situacion_educativa
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado_laboral
+		dataType: string
+		lineageTag: 481045ec-a570-4143-a993-6b93f809d970
+		summarizeBy: none
+		sourceColumn: Estado_laboral
+
+		annotation SummarizationSetBy = Automatic
+
+	partition pronacej-PASPE = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/4. Victimización y seguridad ciudadana/REGISTROS/PRONACEJ/PRONACEJ_Programa_de_asistencia_y_seguimiento_posterior_al_egreso.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "pronacej-PASPE", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"Anio", Int64.Type}, {"Mes", type text}, {"CJDRSOA", type text}, {"Nombre_institucion", type text}, {"Edad", Int64.Type}, {"Grupo_edad", type text}, {"Sexo", type text}, {"Situacion_laboral", type text}, {"Situacion_educativa", type text}, {"Estado_laboral", type text}}, "es")
+				in
+				  #"Tipo de columna cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

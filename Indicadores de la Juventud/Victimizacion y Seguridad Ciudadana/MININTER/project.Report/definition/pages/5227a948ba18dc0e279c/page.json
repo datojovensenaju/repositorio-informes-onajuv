@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "5227a948ba18dc0e279c",
+  "displayName": "Violencia-WEB",
+  "displayOption": "FitToPage",
+  "height": 1980,
+  "width": 1400,
+  "pageBinding": {
+    "name": "d69018d8648187424a67",
+    "type": "Default",
+    "parameters": [],
+    "acceptsFilterContext": "None"
+  },
+  "visualInteractions": [
+    {
+      "source": "fe63cce596802a497ae6",
+      "target": "b68097bc08b248809e4d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "fe63cce596802a497ae6",
+      "target": "5beaf77f48436b8c3955",
+      "type": "NoFilter"
+    }
+  ]
+}

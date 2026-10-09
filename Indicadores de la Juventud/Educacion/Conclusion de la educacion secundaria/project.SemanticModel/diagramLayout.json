@@ -1,0 +1,99 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 167.44505136889074,
+            "y": 388.39663226378093
+          },
+          "nodeIndex": "Año",
+          "nodeLineageTag": "611c59ad-cca9-492c-b38e-95de70881e3e",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 574.682638942188
+          },
+          "nodeIndex": "datosNacionales",
+          "nodeLineageTag": "e08c7c2a-38af-459c-8185-0864180e762d",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 574.682638942188
+          },
+          "nodeIndex": "datosRegionales",
+          "nodeLineageTag": "ee8f07d7-7ab9-469d-9a7f-c76ee6a811bc",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 378.78241812059639
+          },
+          "nodeIndex": "Datos Regionales",
+          "nodeLineageTag": "b6c223f0-7047-4cdb-9347-dea4b88f1414",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 378.78241812059639
+          },
+          "nodeIndex": "Region Natural",
+          "nodeLineageTag": "eb558a03-1691-4cae-bc1d-b92309b43c1b",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 260.2109164509946
+          },
+          "nodeIndex": "Tabla_Nacional",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 56.447393005377869,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

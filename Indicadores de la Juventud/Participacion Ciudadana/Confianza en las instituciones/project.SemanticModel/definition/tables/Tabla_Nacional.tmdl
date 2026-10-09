@@ -1,0 +1,81 @@
+table Tabla_Nacional
+	lineageTag: e106a937-b07f-4142-8fcd-ed820a505603
+
+	column AÑO
+		lineageTag: be1e02c2-476c-4588-ad3c-151521c90a04
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [AÑO]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		lineageTag: e598af49-c020-418b-a9f2-c427611455f4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CATEGORIA]
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 9c3d8941-037c-43ed-b9b7-d7e121b81072
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [VALOR]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		lineageTag: 9cdaa5ba-41c9-499f-860c-4a0d65f8af44
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CV]
+
+		annotation SummarizationSetBy = Automatic
+
+	column INSTITUCIÓN
+		lineageTag: 8165f708-2400-4fb1-9ba7-18f53099fecd
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [INSTITUCIÓN]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Tabla_Nacional = calculated
+		mode: import
+		source =
+				
+				SELECTCOLUMNS(
+				    FILTER(
+				        datosNacionales,
+				        TRIM(datosNacionales[CATEGORIA]) = "NACIONAL"
+				            && NOT CONTAINSSTRING(datosNacionales[VALOR], "(¬)")
+				    ),
+				    "AÑO", datosNacionales[AÑO],
+				    "CATEGORIA", datosNacionales[CATEGORIA],
+				    "INSTITUCIÓN", datosNacionales[INDICADOR],
+				    "VALOR",
+				        VAR ValorLimpio =
+				            TRIM(
+				                SUBSTITUTE(
+				                    SUBSTITUTE(
+				                        SUBSTITUTE(
+				                            datosNacionales[VALOR],
+				                            "%",
+				                            ""
+				                        ),
+				                        "(",
+				                        ""
+				                    ),
+				                    ")",
+				                    ""
+				                )
+				            )
+				        RETURN
+				            DIVIDE(VALUE(ValorLimpio), 100),
+				    "CV", datosNacionales[CV]
+				)
+
+	annotation PBI_Id = f12d7180d0f548ab9b4daed0a8144e36
+

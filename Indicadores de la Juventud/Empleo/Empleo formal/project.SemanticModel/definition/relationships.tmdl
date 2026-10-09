@@ -1,0 +1,8 @@
+relationship AutoDetected_d8f7ab8a-2a45-4ab2-8948-98a69ef209c8
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.AÑO
+
+relationship AutoDetected_f7febec5-f1ce-47a7-8575-b5f798a5b842
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.AÑO
+

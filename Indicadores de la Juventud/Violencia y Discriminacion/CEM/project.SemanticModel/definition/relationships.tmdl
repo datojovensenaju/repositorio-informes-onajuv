@@ -1,0 +1,4 @@
+relationship AutoDetected_37fea1fb-ff7d-47d7-87f7-9c9ff0a34fb7
+	fromColumn: CEM.departamento
+	toColumn: dimDepartamento.DEPARTAMENTO
+

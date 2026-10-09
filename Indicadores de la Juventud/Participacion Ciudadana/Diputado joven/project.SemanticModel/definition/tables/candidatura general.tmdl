@@ -1,0 +1,87 @@
+table 'candidatura general'
+	lineageTag: f75d1151-4225-4fdb-85b4-0d4939828f2e
+
+	measure 'Total de Candidatos No Jóvenes' = COUNTROWS('candidatura general')
+		formatString: 0
+		lineageTag: f1661b2b-bcfe-4a6d-b364-061e33e84228
+
+	column 'Distrito Electoral'
+		dataType: string
+		lineageTag: 5a42d64f-eaaf-4043-b8b6-c35b608e5808
+		summarizeBy: none
+		sourceColumn: Distrito Electoral
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Escaño Diputado'
+		dataType: int64
+		formatString: 0
+		lineageTag: 23c41863-7d05-4246-bfb6-8e13d5594e6f
+		summarizeBy: sum
+		sourceColumn: Escaño Diputado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Documento Identidad'
+		dataType: string
+		lineageTag: 55c570fd-20a9-4565-b6a0-1a627daae15d
+		summarizeBy: none
+		sourceColumn: Documento Identidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: 9bc60a48-ed14-48ea-84bc-703c8506c73d
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Edad
+		dataType: string
+		lineageTag: 78b3d3cc-9178-405b-ba32-a2097610ed8f
+		summarizeBy: none
+		sourceColumn: Edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Condicion
+		dataType: string
+		lineageTag: c3530932-daab-4c82-89d0-86ade8553472
+		summarizeBy: none
+		sourceColumn: Condicion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Posicion
+		dataType: string
+		lineageTag: a3807d99-03fd-41b4-8827-146e77ea3557
+		summarizeBy: none
+		sourceColumn: Posicion
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado Candidato'
+		dataType: string
+		lineageTag: e67633c1-dc90-4061-aa5c-56d825439565
+		summarizeBy: none
+		sourceColumn: Estado Candidato
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'candidatura general' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/6.%20Participaci%C3%B3n%20ciudadana%20y%20gobernanza/REGISTROS/participacionCiudadana-JovenVotante.xlsx"), null, true),
+				    #"candidatura general_Sheet" = Origen{[Item="candidatura general",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"candidatura general_Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Escaño Diputado", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,112 @@
+table accidenteDeTransitoFatal
+	lineageTag: c305c660-079b-448d-94d9-68843af174d9
+
+	measure 'Total heridos accidentes de transito fatales' =
+			CALCULATE(
+			SUM(accidenteDeTransitoFatal[VALOR]), accidenteDeTransitoFatal[CONDICION]="HERIDO")
+		formatString: 0
+		lineageTag: cbd4e00d-2b76-4376-a432-58ea4c309795
+
+	measure 'total accidentes de transito' = [Total heridos accidentes de transito fatales]+[Total heridos accidentes de transito no fatales]
+		formatString: 0
+		lineageTag: c834189d-9e64-44ab-9cf5-b1ec9fd070a6
+
+	measure 'Total muertos accidentes de transito fatales' =
+			CALCULATE(
+			SUM(accidenteDeTransitoFatal[VALOR]),
+			    accidenteDeTransitoFatal[CONDICION]="MUERTO")
+		formatString: 0
+		lineageTag: 802da080-786a-4271-a7a5-b7ad8d85f616
+
+	measure 'Total conductores accidentes de transito fatales' =
+			CALCULATE(
+			SUM(accidenteDeTransitoFatal[VALOR]),
+			    accidenteDeTransitoFatal[CONDICION]="CONDUCTOR")
+		formatString: 0
+		lineageTag: 59b044c6-9466-4924-b9ae-25b13d13d0d5
+
+	column sexo
+		dataType: string
+		lineageTag: f67f4dac-16be-4d16-ab7a-c81954560595
+		summarizeBy: none
+		sourceColumn: sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column condicion
+		dataType: string
+		lineageTag: 271110d7-64bf-447a-a245-7a9c29ad3858
+		summarizeBy: none
+		sourceColumn: condicion
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 85166bf4-0a92-4102-8449-972fd18e478e
+		summarizeBy: none
+		sourceColumn: fecha
+
+		variation Variación
+			isDefault
+			relationship: b462d875-c514-4b98-899b-d67e35313812
+			defaultHierarchy: LocalDateTable_60949807-8577-40a0-8435-04feba336451.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column mes
+		dataType: string
+		lineageTag: 06ad8342-1ffa-41fe-a065-4150b78d15a4
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 8dd1ec7f-52db-4ae5-8247-c4e1bbed0d30
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: 66f302ac-a0cc-4e5d-a6be-18555a0b6eee
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: int64
+		formatString: 0
+		lineageTag: b24fadc5-6c95-4d7c-9d79-b308450cb874
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+	partition accidenteDeTransitoFatal = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/REGISTROS/MININTER/victimizacion_MININTER.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "accidenteDeTransitoFatal", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"fecha", type date}, {"mes", type text}, {"anio", Int64.Type}, {"departamento", type text}, {"hombre_muerto", Int64.Type}, {"mujer_muerto", Int64.Type}, {"hombre_herido", Int64.Type}, {"mujer_herido", Int64.Type}, {"hombre_conductor", Int64.Type}, {"mujer_conductor", Int64.Type}}, "es"),
+				    #"Otras columnas con anulación de dinamización" = Table.UnpivotOtherColumns(#"Tipo de columna cambiado", {"fecha", "mes", "anio", "departamento"}, "atributo", "valor"),
+				    #"Dividir columna por delimitador" = Table.SplitColumn(#"Otras columnas con anulación de dinamización", "atributo", Splitter.SplitTextByDelimiter("_", QuoteStyle.Csv), {"Atributo.1", "Atributo.2"}),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Dividir columna por delimitador",{{"Atributo.1", type text}, {"Atributo.2", type text}}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado",{{"Atributo.1", "sexo"}, {"Atributo.2", "condicion"}, {"valor", "valor"}})
+				in
+				    #"Columnas con nombre cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

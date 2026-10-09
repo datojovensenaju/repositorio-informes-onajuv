@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 180.1440431222386
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1050.4602874165651,
+            "y": 634.68402292822714
+          },
+          "nodeIndex": "Año",
+          "nodeLineageTag": "40dcbd65-19db-42bb-ad42-8337abc7942d",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 868.3304485936934,
+            "y": 335.88759364498014
+          },
+          "nodeIndex": "Rango Etario",
+          "nodeLineageTag": "ef47faec-fd26-4e44-9c6d-8424b4226d5b",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1224.0944646993155,
+            "y": 329.66977107108551
+          },
+          "nodeIndex": "Sexo",
+          "nodeLineageTag": "d6d6b9f5-5a01-459d-80e2-2d4ed8013e77",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 770.581821130302,
+            "y": 611.22141946220722
+          },
+          "nodeIndex": "Mes",
+          "nodeLineageTag": "5b3acb81-32bd-40b7-87ad-d5d975a71433",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 849.41532652890521,
+            "y": 855.08527812223861
+          },
+          "nodeIndex": "fact_movimiento_migratorio",
+          "nodeLineageTag": "c6258aaa-98be-4834-8afc-dc7a36c97fe5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 56.447393005377741,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

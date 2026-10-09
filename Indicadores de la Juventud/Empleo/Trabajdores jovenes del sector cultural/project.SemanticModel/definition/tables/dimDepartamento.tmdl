@@ -1,0 +1,34 @@
+table dimDepartamento
+	lineageTag: 62358f72-4728-48ea-a6f8-963d7ceaddba
+
+	column ID_DEP
+		dataType: string
+		lineageTag: e7371f6f-ca52-40fd-847d-e601d1ec3989
+		summarizeBy: none
+		sourceColumn: ID_DEP
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: 4fa2a2f9-ab79-4641-ae88-585d19cfb5d4
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimDepartamento = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Ubigeo.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "dimDepartamento", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Encabezados promovidos",{"ID_REGNAT"})
+				in
+				    #"Columnas quitadas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

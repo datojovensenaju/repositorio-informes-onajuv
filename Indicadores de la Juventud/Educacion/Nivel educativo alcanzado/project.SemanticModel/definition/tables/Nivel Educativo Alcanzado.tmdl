@@ -1,0 +1,31 @@
+table 'Nivel Educativo Alcanzado'
+	lineageTag: d1ecef17-e928-4412-9d7c-30523e2a22a2
+
+	column ID_NEA
+		dataType: int64
+		formatString: 0
+		lineageTag: cd4eb482-831b-4e6b-9826-87873fcc5e3f
+		summarizeBy: sum
+		sourceColumn: ID_NEA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL_EDUCATIVO_ALCANZADO
+		dataType: string
+		lineageTag: d8f51bbf-0d0f-4516-9132-c8eee14edc4a
+		summarizeBy: none
+		sourceColumn: NIVEL_EDUCATIVO_ALCANZADO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Nivel Educativo Alcanzado' = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "Nivel Educativo Alcanzado", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"ID_NEA", Int64.Type}, {"NIVEL_EDUCATIVO_ALCANZADO", type text}}, "es")
+				in
+				  #"Tipo de columna cambiado"
+

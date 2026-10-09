@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "f7fcb5e00e2ed5957bcd",
+  "displayName": "RENOJ-Resumen-Web",
+  "displayOption": "ActualSize",
+  "height": 4780,
+  "width": 370,
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "91fe53f2e3e5d0051eda",
+      "target": "246eb82a8c22e754a250",
+      "type": "NoFilter"
+    }
+  ]
+}

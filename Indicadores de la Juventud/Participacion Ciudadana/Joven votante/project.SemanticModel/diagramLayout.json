@@ -1,0 +1,126 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 748,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1619,
+            "y": 798.5
+          },
+          "nodeIndex": "Votantes – Extranjero – Jóvenes",
+          "nodeLineageTag": "37e9eae5-97b9-450c-b849-7bdef4bc24a6",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1669,
+            "y": 544.5
+          },
+          "nodeIndex": "Votantes – Extranjero – Total",
+          "nodeLineageTag": "981a281f-2e15-4804-a101-a04c8c3d6850",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 743,
+            "y": 608.5
+          },
+          "nodeIndex": "Votantes – Perú – Jóvenes",
+          "nodeLineageTag": "0dfd44b1-0e97-49de-b38e-927954aa72c4",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1108,
+            "y": 639.5
+          },
+          "nodeIndex": "Votantes – Perú – Total",
+          "nodeLineageTag": "3eed6564-9101-4bca-85c6-e100a82be606",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 670,
+            "y": 308.5
+          },
+          "nodeIndex": "dimRegion",
+          "nodeLineageTag": "8a4ff155-2155-41e8-86c5-7875d32d459e",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1298,
+            "y": 102.5
+          },
+          "nodeIndex": "Sexo",
+          "nodeLineageTag": "0c07c52f-ef7b-4ecc-8887-829620687f53",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 711,
+            "y": 4.5
+          },
+          "nodeIndex": "dimDepartamento",
+          "nodeLineageTag": "9cba1280-4857-4ed0-9221-b41f8554e62b",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1667,
+            "y": 44.5
+          },
+          "nodeIndex": "TipoVotante",
+          "nodeLineageTag": "5d563ad7-b938-4338-8545-637692403984",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 7
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

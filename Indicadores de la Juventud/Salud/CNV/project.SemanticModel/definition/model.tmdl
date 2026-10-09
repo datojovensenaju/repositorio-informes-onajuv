@@ -1,0 +1,27 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Año","dimRegion","dimProvincia","dimDistrito","Mes","CNV","dimPais","dimDepartamento"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dimRegion
+ref table Año
+ref table dimProvincia
+ref table dimDistrito
+ref table Mes
+ref table CNV
+ref table dimPais
+ref table dimDepartamento
+ref table DateTableTemplate_808b6c62-8bca-47c3-8c33-b1fab5cfcbd6
+ref table LocalDateTable_5db3898a-f2d6-4740-abf7-20905f256249
+
+ref cultureInfo es-MX
+

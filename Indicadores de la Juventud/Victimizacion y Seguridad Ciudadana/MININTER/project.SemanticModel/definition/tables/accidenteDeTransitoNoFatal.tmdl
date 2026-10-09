@@ -1,0 +1,103 @@
+table accidenteDeTransitoNoFatal
+	lineageTag: ec2a69ff-ecb1-4baf-bd37-c58e367c7997
+
+	measure 'Total heridos accidentes de transito no fatales' =
+			CALCULATE(
+			SUM(accidenteDeTransitoNoFatal[VALOR]),
+			    accidenteDeTransitoNoFatal[CONDICION]="HERIDO")
+		formatString: 0
+		lineageTag: b73e15fa-4dec-495a-ac72-cee52f40c956
+
+	measure 'Total coductores accidentes de transito no fatales' =
+			CALCULATE(
+			SUM(accidenteDeTransitoNoFatal[VALOR]),
+			    accidenteDeTransitoNoFatal[CONDICION]="CONDUCTOR")
+		formatString: 0
+		lineageTag: a4cbdfc7-ae96-476e-86f0-b015dbbe9d4c
+
+	column sexo
+		dataType: string
+		lineageTag: e8593ed3-9704-44f5-b93d-a21a92b61c59
+		summarizeBy: none
+		sourceColumn: sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column condicion
+		dataType: string
+		lineageTag: 37e06221-5af7-44d8-ad9b-cec516914326
+		summarizeBy: none
+		sourceColumn: condicion
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c2128ff9-4b77-4984-bc02-4522f4c166e1
+		summarizeBy: none
+		sourceColumn: fecha
+
+		variation Variación
+			isDefault
+			relationship: 7d749aea-3306-4b36-9c6a-4b75ca6ead37
+			defaultHierarchy: LocalDateTable_914baf3b-8344-4e24-a82a-ba117fb1fc12.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column mes
+		dataType: string
+		lineageTag: 2d727900-0acc-4e4a-94ba-a0edcbe2e0a3
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 382a46d0-7b9c-4547-a779-3681113b2294
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: a9f12a48-5fa6-4a2e-87f3-1a8641a4c837
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: int64
+		formatString: 0
+		lineageTag: ef332cfd-c414-495e-9dec-5ff72bc120bd
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+	partition accidenteDeTransitoNoFatal = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/REGISTROS/MININTER/victimizacion_MININTER.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "accidenteDeTransitoNoFatal", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"fecha", type date}, {"mes", type text}, {"anio", Int64.Type}, {"departamento", type text}, {"hombre_herido", Int64.Type}, {"mujer_herido", Int64.Type}, {"hombre_conductor", Int64.Type}, {"mujer_conductor", Int64.Type}}, "es"),
+				    #"Otras columnas con anulación de dinamización" = Table.UnpivotOtherColumns(#"Tipo de columna cambiado", {"departamento", "anio", "mes", "fecha"}, "atributo", "valor"),
+				    #"Dividir columna por delimitador" = Table.SplitColumn(#"Otras columnas con anulación de dinamización", "atributo", Splitter.SplitTextByDelimiter("_", QuoteStyle.Csv), {"Atributo.1", "Atributo.2"}),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Dividir columna por delimitador",{{"Atributo.1", type text}, {"Atributo.2", type text}}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado",{{"Atributo.1", "sexo"}, {"Atributo.2", "condicion"}, {"valor", "valor"}}),
+				    #"Filas filtradas" = Table.SelectRows(#"Columnas con nombre cambiado", each true)
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

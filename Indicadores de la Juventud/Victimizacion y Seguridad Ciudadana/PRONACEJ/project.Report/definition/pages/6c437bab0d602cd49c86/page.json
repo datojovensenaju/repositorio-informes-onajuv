@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "6c437bab0d602cd49c86",
+  "displayName": "PASPE -WEB",
+  "displayOption": "FitToPage",
+  "height": 1980,
+  "width": 1400,
+  "pageBinding": {
+    "name": "0fcf21a2149b0689e802",
+    "type": "Default",
+    "parameters": [],
+    "acceptsFilterContext": "None"
+  },
+  "visualInteractions": [
+    {
+      "source": "94d4c927c041c02a48a0",
+      "target": "992a8b411be9a5e0b804",
+      "type": "NoFilter"
+    }
+  ]
+}

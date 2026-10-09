@@ -1,0 +1,47 @@
+table dimDepartamento
+	lineageTag: 9cba1280-4857-4ed0-9221-b41f8554e62b
+
+	column ID_DEP
+		dataType: string
+		lineageTag: 27bd782a-43ec-4925-a8b5-5e8dc2d06527
+		summarizeBy: none
+		sourceColumn: ID_DEP
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: d459b5c0-6f5c-4e0e-b332-3ebd56ab134b
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_REGNAT
+		dataType: string
+		lineageTag: c778f022-c7ec-4469-9c70-b641d8509423
+		summarizeBy: none
+		sourceColumn: ID_REGNAT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DEPARTAMENTO UBICACIÓN' = "Departamento de " & dimDepartamento[DEPARTAMENTO] & ", Perú"
+		lineageTag: 434224bc-09d2-4f38-a251-d337352b229a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimDepartamento = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Ubigeo.xlsx"), null, true),
+				    dimDepartamento_Sheet = Origen{[Item="dimDepartamento",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(dimDepartamento_Sheet, [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

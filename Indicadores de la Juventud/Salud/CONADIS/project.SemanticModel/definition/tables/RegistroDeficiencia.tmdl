@@ -1,0 +1,147 @@
+table RegistroDeficiencia
+	lineageTag: 3be9b189-63fa-41bc-9e29-7bf55e863f3e
+
+	measure 'Jóvenes por tipo de deficiencia' =
+			
+			DISTINCTCOUNT(
+			    'RegistroDeficiencia'[registro_id]
+			)
+		formatString: 0
+		lineageTag: 9c810ceb-6ab9-447a-b9fa-530ccded3ab2
+
+	column registro_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 3c6f8409-8f88-4356-8a91-b670b9d30f6a
+		summarizeBy: none
+		sourceColumn: registro_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column deficiencia_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 913988b4-b47b-428f-926f-c6757f92e27d
+		summarizeBy: none
+		sourceColumn: deficiencia_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RegistroDeficiencia = m
+		mode: import
+		source =
+				let
+				    Origen = #"RNPCD",
+				
+				    SeleccionarColumnas =
+				        Table.SelectColumns(
+				            Origen,
+				            {
+				                "registro_id",
+				                "def_intelectual",
+				                "def_psicologica",
+				                "def_lenguaje",
+				                "def_audicion",
+				                "def_vision",
+				                "def_visceral",
+				                "def_musculo",
+				                "def_generalizada"
+				            }
+				        ),
+				
+				    DespivotarDeficiencias =
+				        Table.UnpivotOtherColumns(
+				            SeleccionarColumnas,
+				            {"registro_id"},
+				            "campo_origen",
+				            "respuesta"
+				        ),
+				
+				    FiltrarPresentes =
+				        Table.SelectRows(
+				            DespivotarDeficiencias,
+				            each
+				                [respuesta] <> null
+				                and Text.Upper(
+				                    Text.Trim(
+				                        Text.From([respuesta])
+				                    )
+				                ) = "PRESENTA LA DEFICIENCIA"
+				        ),
+				
+				    NormalizarCampoOrigen =
+				        Table.TransformColumns(
+				            FiltrarPresentes,
+				            {
+				                {
+				                    "campo_origen",
+				                    each Text.Lower(
+				                        Text.Trim(
+				                            Text.From(_)
+				                        )
+				                    ),
+				                    type text
+				                }
+				            }
+				        ),
+				
+				    AgregarDeficienciaID =
+				        Table.AddColumn(
+				            NormalizarCampoOrigen,
+				            "deficiencia_id",
+				            each
+				                if [campo_origen] = "def_intelectual" then 1
+				                else if [campo_origen] = "def_psicologica" then 2
+				                else if [campo_origen] = "def_lenguaje" then 3
+				                else if [campo_origen] = "def_audicion" then 4
+				                else if [campo_origen] = "def_vision" then 5
+				                else if [campo_origen] = "def_visceral" then 6
+				                else if [campo_origen] = "def_musculo" then 7
+				                else if [campo_origen] = "def_generalizada" then 8
+				                else null,
+				            Int64.Type
+				        ),
+				
+				    CamposSinMapear =
+				        List.Distinct(
+				            Table.SelectRows(
+				                AgregarDeficienciaID,
+				                each [deficiencia_id] = null
+				            )[campo_origen]
+				        ),
+				
+				    ValidarMapeo =
+				        if List.Count(CamposSinMapear) > 0 then
+				            error
+				                "Existen campos sin mapear: "
+				                & Text.Combine(CamposSinMapear, ", ")
+				        else
+				            AgregarDeficienciaID,
+				
+				    SeleccionarResultado =
+				        Table.SelectColumns(
+				            ValidarMapeo,
+				            {
+				                "registro_id",
+				                "deficiencia_id"
+				            }
+				        ),
+				
+				    EliminarDuplicados =
+				        Table.Distinct(SeleccionarResultado),
+				
+				    CambiarTipos =
+				        Table.TransformColumnTypes(
+				            EliminarDuplicados,
+				            {
+				                {"registro_id", Int64.Type},
+				                {"deficiencia_id", Int64.Type}
+				            }
+				        )
+				in
+				    CambiarTipos
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

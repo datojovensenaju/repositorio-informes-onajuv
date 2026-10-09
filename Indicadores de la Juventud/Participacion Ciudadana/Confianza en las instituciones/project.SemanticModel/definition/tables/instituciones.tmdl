@@ -1,0 +1,34 @@
+table instituciones
+	lineageTag: d1ecef17-e928-4412-9d7c-30523e2a22a2
+
+	column ID_INS
+		dataType: string
+		lineageTag: 8483226d-e8a4-40ba-8cd3-53fcc98c1c60
+		summarizeBy: none
+		sourceColumn: ID_INS
+
+		annotation SummarizationSetBy = Automatic
+
+	column INSTITUCIONES
+		dataType: string
+		lineageTag: f3d7e63a-127b-4b8e-8376-9e0f0997b0af
+		summarizeBy: none
+		sourceColumn: INSTITUCIONES
+
+		annotation SummarizationSetBy = Automatic
+
+	partition instituciones = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/6. Participación ciudadana y gobernanza/ENCUESTAS/ParticipaciónCiudadana_Confianza en las instituciones.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "instituciones", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Encabezados promovidos",{{"Instituciones", "INSTITUCIONES"}})
+				in
+				    #"Columnas con nombre cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

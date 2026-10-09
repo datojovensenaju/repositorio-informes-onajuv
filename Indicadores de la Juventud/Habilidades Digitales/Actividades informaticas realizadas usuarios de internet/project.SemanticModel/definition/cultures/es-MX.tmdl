@@ -1,0 +1,37 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "año.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año",
+			          "ConceptualProperty": "AÑO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Año": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

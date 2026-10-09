@@ -1,0 +1,82 @@
+table factVictimizacionSeguridadCiudadana_Revictimización
+	lineageTag: d8988377-e8d2-4183-a2d2-0f2e74fa700e
+
+	column AÑO
+		dataType: string
+		lineageTag: 0e189d07-7af2-4b30-8c3a-7f1eef8b3b56
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: 8afc641d-7fce-46f0-96ec-9855f855aec2
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 3baff4ed-a5bd-47b2-a12d-58f09650d095
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: ff30fa96-bbec-4fc9-af3e-f2c0dc1c61ea
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: 8ffab687-d849-44df-af9c-b8510c92ece5
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: 2e485dfd-3400-4378-9ca9-fec6dc8cedc1
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: a5c78da0-b7bc-472d-8f5e-44e86bcc9375
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: 03b40f1a-4477-4d9d-af44-95dfee29383c
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factVictimizacionSeguridadCiudadana_Revictimización = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/ENCUESTAS/VictimizacionSeguridadCiudadana_Revictimizaci%C3%B3n.xlsx"), null, true),
+				    Región_Sheet = Origen{[Item="Región",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Región_Sheet, [PromoteAllScalars=true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each ([CATEGORIA] = "REGIONAL"))
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

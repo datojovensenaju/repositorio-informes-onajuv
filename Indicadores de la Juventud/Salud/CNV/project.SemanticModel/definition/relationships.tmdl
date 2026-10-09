@@ -1,0 +1,33 @@
+relationship AutoDetected_73221d33-78d4-42da-bf44-f9da0a680256
+	fromColumn: dimProvincia.ID_REG
+	toColumn: dimRegion.ID_REG
+
+relationship AutoDetected_cd7a5220-6892-48c7-83df-19665b35f3b0
+	fromColumn: dimDistrito.ID_PROV
+	toColumn: dimProvincia.ID_PROV
+
+relationship AutoDetected_0d75bbc2-4f80-480a-8463-ab6d3fedfa34
+	fromColumn: CNV.mes
+	toColumn: Mes.MES
+
+relationship ac1daadc-1e63-2594-cfbd-9888f599f88c
+	fromColumn: CNV.anio
+	toColumn: Año.AÑO
+
+relationship 19335d29-0b3a-42a2-d31b-15a4a421246e
+	fromColumn: CNV.ubigeo
+	toColumn: dimDistrito.ID_DIS
+
+relationship AutoDetected_4bd80335-5c76-4b7b-ba18-fffa8013f7ee
+	fromColumn: dimRegion.ID_DEP
+	toColumn: dimDepartamento.ID_DEP
+
+relationship AutoDetected_08c06477-3849-4821-a05d-5dcaa93c9ae8
+	fromColumn: dimDepartamento.ID_PAIS
+	toColumn: dimPais.ID_PAIS
+
+relationship e4255b21-560f-4a1b-a368-be60aec17445
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CNV.fecha
+	toColumn: LocalDateTable_5db3898a-f2d6-4740-abf7-20905f256249.Date
+

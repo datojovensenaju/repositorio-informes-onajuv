@@ -1,0 +1,80 @@
+table Tabla_Nacional
+	lineageTag: d8242a58-1242-4d5f-9219-a1e4268e9dac
+
+	column AÑO
+		lineageTag: eeba5d5e-0544-477d-a1a6-e43264278942
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [AÑO]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		lineageTag: fb5a3f1b-cbd6-426c-a807-8bfe0e13c27b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CATEGORIA]
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 9a170dfc-71d8-4d36-b2f7-e080be5773fa
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [VALOR]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		lineageTag: 8035cfcb-727e-4dff-91b3-6948731ca6e1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CV]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NIVEL EDUCATIVO'
+		lineageTag: fe5b3811-422f-468f-974e-91ae2ca5c265
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [NIVEL EDUCATIVO]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Tabla_Nacional = calculated
+		mode: import
+		source =
+				
+				SELECTCOLUMNS(
+				    FILTER(
+				        datosNacionales,
+				        TRIM(datosNacionales[CATEGORIA]) = "NACIONAL"
+				    ),
+				    "AÑO", datosNacionales[AÑO],
+				    "NIVEL EDUCATIVO", datosNacionales[INDICADOR],
+				    "CATEGORIA", datosNacionales[CATEGORIA],
+				"VALOR",
+				        VAR ValorLimpio =
+				            TRIM(
+				                SUBSTITUTE(
+				                    SUBSTITUTE(
+				                        SUBSTITUTE(
+				                            datosNacionales[VALOR],
+				                            "%",
+				                            ""
+				                        ),
+				                        "(",
+				                        ""
+				                    ),
+				                    ")",
+				                    ""
+				                )
+				            )
+				        RETURN
+				            DIVIDE(VALUE(ValorLimpio), 100),
+				    "CV", datosNacionales[CV]
+				)
+
+	annotation PBI_Id = 71ed04b314c441cb9d70f194c61ddafe
+

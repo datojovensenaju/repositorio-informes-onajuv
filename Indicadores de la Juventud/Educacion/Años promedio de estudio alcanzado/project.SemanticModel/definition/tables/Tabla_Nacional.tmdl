@@ -1,0 +1,73 @@
+table Tabla_Nacional
+	lineageTag: f3313f90-41c8-4927-bacc-81f4ac30ab18
+
+	column AÑO
+		lineageTag: f5211acd-dafd-429d-8dee-572571a33102
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [AÑO]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		lineageTag: 528d4811-f0b1-407f-b0c3-ce2a27328b5e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CATEGORIA]
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		lineageTag: 53936980-239e-4fcf-94a3-db475f98317b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [VALOR]
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR_NUMERO
+		lineageTag: a8926d33-7715-4021-8c2a-6941b6b9dd3a
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [VALOR_NUMERO]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CV
+		lineageTag: c0be5c80-50ae-484c-a092-e7fe0b66c8e2
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [CV]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Tabla_Nacional = calculated
+		mode: import
+		source =
+				
+				SELECTCOLUMNS(
+				    FILTER(
+				        datosNacionales,
+				        TRIM(datosNacionales[CATEGORIA]) = "NACIONAL"
+				    ),
+				    "AÑO", datosNacionales[AÑO],
+				    "CATEGORIA", datosNacionales[CATEGORIA],
+				    "VALOR", datosNacionales[VALOR],
+				    "VALOR_NUMERO",
+				        IFERROR(
+				            VALUE(
+				                SUBSTITUTE(
+				                    TRIM(datosNacionales[VALOR]),
+				                    "%",
+				                    ""
+				                )
+				            ),
+				            BLANK()
+				        ),
+				    "CV", datosNacionales[CV]
+				)
+
+	annotation PBI_Id = 1df896b5cc1741528b7184c67a679e09
+

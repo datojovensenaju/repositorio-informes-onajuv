@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "88e46a2a8e4b0e03886d",
+  "position": {
+    "x": 10,
+    "y": 113,
+    "z": 17000,
+    "height": 60,
+    "width": 1380,
+    "tabOrder": 16000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Presenta información sobre jóvenes de 15 a 29 años que participan en el Programa de Asistencia y Seguimiento Posterior al Egreso (PASPE) de PRONACEJ, permitiendo conocer sus características demográficas, educativas y laborales, así como su proceso de reinserción social posterior al egreso de los centros juveniles.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#666666"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,83 @@
+table factViolencia_FísicaSexual
+	lineageTag: 06828eb0-2dce-45f7-b7b1-d7475982c526
+
+	column AÑO
+		dataType: string
+		lineageTag: 489e3280-cdbc-4ee0-8c7a-ffef42f04462
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: da27a4e6-3249-4592-93ea-90dc5a12c31e
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 1f585ccb-0f76-45d2-af1a-76776226224b
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: d5636619-c300-41f9-b2ad-7fac43b54924
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: d42ed722-744c-4f58-8ccb-504f005ab94e
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: 5981afa8-12e2-42cf-8f6e-faedb82bd84d
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: b506d062-edca-4108-811a-9e19f7e5f069
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: 149670a5-6b96-49b3-9b76-39263d5b7c22
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factViolencia_FísicaSexual = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/5.%20Violencia%20y%20discriminaci%C3%B3n/ENCUESTAS/Violencia_Violencia%20f%C3%ADsica%20y%20o%20sexual.xlsx"), null, true),
+				    Región_Sheet = Origen{[Item="datosRegionales",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Región_Sheet, [PromoteAllScalars=true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each ([CATEGORIA] = "NACIONAL" or [CATEGORIA] = "REGIONAL")),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Filas filtradas","NACIONAL","REGIONAL",Replacer.ReplaceText,{"CATEGORIA"})
+				in
+				    #"Valor reemplazado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

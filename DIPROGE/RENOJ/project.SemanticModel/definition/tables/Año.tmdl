@@ -1,0 +1,42 @@
+table Año
+	lineageTag: 40dcbd65-19db-42bb-ad42-8337abc7942d
+
+	column AÑO
+		dataType: string
+		lineageTag: 3f705423-0d8e-42bf-927c-0ff7d069e30d
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Año = m
+		mode: import
+		source =
+				let
+				    NormalizarAnio = (valor as any) as nullable text =>
+				        let
+				            comoTexto =
+				                if valor = null then
+				                    null
+				                else if Value.Is(valor, Number.Type) then
+				                    Number.ToText(Number.RoundDown(Number.From(valor)), "0", "en-US")
+				                else
+				                    Text.Trim(Text.From(valor, "en-US")),
+				            digitos = if comoTexto = null then null else Text.Select(comoTexto, {"0".."9"}),
+				            anio = if digitos = null or Text.Length(digitos) < 4 then null else Text.Start(digitos, 4)
+				        in
+				            anio,
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				    Año_Sheet = Origen{[Item="Año",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Año_Sheet, [PromoteAllScalars=true]),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Encabezados promovidos",{{"anio", "AÑO"}}),
+				    #"Año normalizado" = Table.TransformColumns(#"Columnas con nombre cambiado", {{"AÑO", NormalizarAnio, type text}}),
+				    #"Filas válidas" = Table.SelectRows(#"Año normalizado", each [AÑO] <> null),
+				    #"Duplicados quitados" = Table.Distinct(#"Filas válidas", {"AÑO"})
+				in
+				    #"Duplicados quitados"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

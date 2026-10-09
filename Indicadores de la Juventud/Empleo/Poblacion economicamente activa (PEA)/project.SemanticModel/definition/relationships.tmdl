@@ -1,0 +1,12 @@
+relationship AutoDetected_3034f32f-3074-45bb-a322-d443f97b9e55
+	fromColumn: datosRegionales.CATEGORIA
+	toColumn: 'Datos Regionales'.CATEGORIA
+
+relationship 54238dd1-2ed1-1647-291d-fb0bc21cd18b
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.anio
+
+relationship de1dc499-2711-dc35-0324-20ff55198360
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.anio
+

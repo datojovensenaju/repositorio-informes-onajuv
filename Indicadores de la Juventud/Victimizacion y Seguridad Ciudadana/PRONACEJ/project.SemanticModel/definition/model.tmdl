@@ -1,0 +1,25 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Año","Rango Etario","Sexo","Mes","pronacej-CJDR","dimDepartamento","pronacej-PASPE","pronacej-SOA"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Año
+ref table 'Rango Etario'
+ref table Sexo
+ref table Mes
+ref table pronacej-CJDR
+ref table dimDepartamento
+ref table pronacej-PASPE
+ref table pronacej-SOA
+
+ref cultureInfo es-MX
+

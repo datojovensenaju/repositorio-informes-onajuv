@@ -1,0 +1,230 @@
+table poblacion
+	lineageTag: 826cd7c6-b13e-40ed-bd43-406d44844db6
+
+	measure 'Población Penitenciaria Joven' =
+			
+			SUM(poblacion[casos])
+		lineageTag: 33c173e8-6062-434b-b878-8ebd0d5e7336
+
+		formatStringDefinition = "### ### ###"
+
+	measure 'Población Sentenciada' =
+			
+			CALCULATE(
+			    [Población Penitenciaria Joven],
+			    poblacion[SITUACION_JURIDICA] = "SENTENCIADO"
+			)
+		formatString: 0
+		lineageTag: 56112022-d08d-49a0-ae86-4d8aa8943d63
+
+	measure '% Sentenciados' =
+			
+			DIVIDE(
+			    [Población Sentenciada],
+			    [Población Penitenciaria Joven]
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: ddf06c0d-c9bf-4b2e-af68-3852e8cfbfb7
+
+	measure 'Delito Genérico Más Frecuente' =
+			
+			VAR TablaDelitos =
+			    TOPN(
+			        1,
+			        ADDCOLUMNS(
+			            FILTER(
+			                VALUES(
+			                    poblacion[delito_generico]
+			                ),
+			                NOT ISBLANK(
+			                    poblacion[delito_generico]
+			                )
+			            ),
+			            "@TotalPersonas",
+			                CALCULATE(
+			                    SUM(poblacion[casos])
+			                )
+			        ),
+			        [@TotalPersonas], DESC,
+			        poblacion[delito_generico], ASC
+			    )
+			RETURN
+			    CONCATENATEX(
+			        TablaDelitos,
+			        poblacion[delito_generico],
+			        ""
+			    )
+		lineageTag: 92ae4b6f-c983-462e-ad31-010f1168a811
+
+	measure 'Jóvenes de Nacionalidad Extranjera' =
+			
+			CALCULATE(
+			    [Población Penitenciaria Joven],
+			    poblacion[nacionalidad] = "EXTRANJERO"
+			)
+		formatString: 0
+		lineageTag: 453acf73-2cec-44bd-9bef-62bbbd0002e1
+
+	measure '% Jóvenes de Nacionalidad Extranjera' =
+			
+			DIVIDE(
+			    [Jóvenes de Nacionalidad Extranjera],
+			    [Población Penitenciaria Joven],
+			    0
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: e9c278ac-d716-4fe5-a0ba-f8ea646e13a0
+
+	column AÑO
+		dataType: string
+		lineageTag: a72d9e4f-7b03-4d5d-beaf-241fb9b6eb03
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MES
+		dataType: string
+		lineageTag: 9a5ec244-81bb-4c33-bf8d-25f147797984
+		summarizeBy: none
+		sourceColumn: MES
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAIS
+		dataType: string
+		lineageTag: 586d7fd8-cd8b-4869-b32f-01c33e1b46f9
+		summarizeBy: none
+		sourceColumn: PAIS
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_DEP
+		dataType: string
+		lineageTag: 2e8f230c-9cce-4bcc-b041-d63cdc5f0af9
+		summarizeBy: none
+		sourceColumn: ID_DEP
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: 62e9804c-5bda-4814-b36f-02143399e333
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODIGOEP
+		dataType: string
+		lineageTag: 93bbf8f9-9521-4e24-81ab-6b8122eb15b4
+		summarizeBy: none
+		sourceColumn: CODIGOEP
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: caff642b-aee2-48e7-ac49-887cf2aaa77c
+		summarizeBy: none
+		sourceColumn: SEXO
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL_EDUCATIVO
+		dataType: string
+		lineageTag: 5d3542a5-c57e-4623-98a8-4fc4e805d384
+		summarizeBy: none
+		sourceColumn: NIVEL_EDUCATIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ESTADO_CIVIL
+		dataType: string
+		lineageTag: c62c1947-506d-4184-984c-5ceee254993b
+		summarizeBy: none
+		sourceColumn: ESTADO_CIVIL
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL_OCUPACIONAL
+		dataType: string
+		lineageTag: b8dae91d-6e68-4665-b834-47dce6188552
+		summarizeBy: none
+		sourceColumn: NIVEL_OCUPACIONAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column RANGO_EDAD
+		dataType: string
+		lineageTag: 9a4d6c16-e8cd-4851-9abb-c42cb981b16a
+		summarizeBy: none
+		sourceColumn: RANGO_EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column SITUACION_JURIDICA
+		dataType: string
+		lineageTag: c0fa1812-8444-4958-9f14-b2da3d1cf478
+		summarizeBy: none
+		sourceColumn: SITUACION_JURIDICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DELITO_GENERICO
+		dataType: string
+		lineageTag: b9300b70-d3fd-490d-a9a6-55b9bdef3114
+		summarizeBy: none
+		sourceColumn: DELITO_GENERICO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CASOS
+		dataType: int64
+		formatString: 0
+		lineageTag: 334791fe-24c5-425b-94d5-cf018529f12b
+		summarizeBy: sum
+		sourceColumn: CASOS
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column NACIONALIDAD
+		dataType: string
+		lineageTag: 6184d072-79f1-41f5-872c-f411d83a08ad
+		summarizeBy: none
+		sourceColumn: NACIONALIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_REG
+		dataType: string
+		lineageTag: 749fde16-4f22-488a-9912-d8a0e7e1c41e
+		summarizeBy: none
+		sourceColumn: ID_REG
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: d909459c-f33a-46ad-8c16-fd3a5a48efd4
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	partition poblacion = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/REGISTROS/INPE/victimizacion_poblacionInpe.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "poblacion", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

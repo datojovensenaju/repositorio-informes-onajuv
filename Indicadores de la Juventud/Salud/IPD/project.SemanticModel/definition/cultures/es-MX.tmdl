@@ -1,0 +1,3061 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dim_region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimRegion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "dim province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.id_reg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "ID_REG"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id reg": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_REG": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "REGION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.id_dep": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "ID_DEP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id dep": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_DEP": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.limite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "LIMITE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "limite": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango etario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario.id_raneta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario",
+			          "ConceptualProperty": "ID_RANETA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id raneta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_RANETA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario.rango_etario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario",
+			          "ConceptualProperty": "RANGO_ETARIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango etario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rango etario name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RANGO_ETARIO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "dim_provincia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimProvincia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim provincia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimProvincia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_provincia.id_prov": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimProvincia",
+			          "ConceptualProperty": "ID_PROV"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id prov": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_PROV": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification prov": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity prov": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier prov": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential prov": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_provincia.provincia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimProvincia",
+			          "ConceptualProperty": "PROVINCIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "provincia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_provincia.id_reg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimProvincia",
+			          "ConceptualProperty": "ID_REG"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id reg": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_REG": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_distrito": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDistrito"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim distrito": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimDistrito": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_distrito.id_dis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDistrito",
+			          "ConceptualProperty": "ID_DIS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id dis": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_DIS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification dis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "identity dis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "identifier dis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "credential dis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_distrito.distrito": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDistrito",
+			          "ConceptualProperty": "DISTRITO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "distrito": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_distrito.id_prov": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDistrito",
+			          "ConceptualProperty": "ID_PROV"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id prov": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_PROV": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification prov": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity prov": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier prov": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential prov": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.id_sex": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "ID_SEX"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id sex": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_SEX": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sex": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "id masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "id gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "SEXO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexo name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "me.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mes",
+			          "ConceptualProperty": "MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "me.id_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mes",
+			          "ConceptualProperty": "ID_MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_MES": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "identity me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "identifier me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "credential me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.edad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "EDAD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "SEXO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.centro_alto_rendimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "CENTRO_ALTO_RENDIMIENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "centro alto rendimiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CENTRO_ALTO_RENDIMIENTO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "ipd": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ipd": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.grupo_edad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "GRUPO_EDAD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "grupo edad": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "GRUPO_EDAD": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.disciplina": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "DISCIPLINA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "disciplina": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.fecha_ingreso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "FECHA_INGRESO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha ingreso": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FECHA_INGRESO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "ipd.fecha_ingreso.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "VariationSource": "FECHA_INGRESO",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.fecha_ingreso.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "VariationSource": "FECHA_INGRESO",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha ingreso año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.fecha_ingreso.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "VariationSource": "FECHA_INGRESO",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha ingreso trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.fecha_ingreso.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "VariationSource": "FECHA_INGRESO",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha ingreso me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.fecha_ingreso.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "VariationSource": "FECHA_INGRESO",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha ingreso día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.permanencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "PERMANENCIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "permanencia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.anio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "ANIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "anio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.total_de_jóvenes_IPD": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "Total de jóvenes IPD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de jóvenes IPD": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de jóvene ipd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall de jóvene ipd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.edad_promedio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "Edad Promedio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad promedio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.porcentaje_de_nuevos_ingresos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "Porcentaje de nuevos ingresos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "porcentaje de nuevos ingresos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "ipd.disciplina_que_mas_se_practica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IPD",
+			          "ConceptualProperty": "Disciplina que mas se practica"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "disciplina que mas se practica": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "año.anio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año",
+			          "ConceptualProperty": "anio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "anio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "ipd_fecha_ingreso_jerarquía_de_fecha_has_ipd_fecha_ingreso_me": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd.fecha_ingreso.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.jerarquía_de_fecha"
+			          }
+			        },
+			        "ipd.fecha_ingreso.me": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_me"
+			        }
+			      ]
+			    },
+			    "ipd_fecha_ingreso_jerarquía_de_fecha_has_ipd_fecha_ingreso_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd.fecha_ingreso.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.jerarquía_de_fecha"
+			          }
+			        },
+			        "ipd.fecha_ingreso.trimestre": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_trimestres"
+			        }
+			      ]
+			    },
+			    "ipd_fecha_ingreso_jerarquía_de_fecha_has_ipd_fecha_ingreso_año": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd.fecha_ingreso.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.jerarquía_de_fecha"
+			          }
+			        },
+			        "ipd.fecha_ingreso.año": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años"
+			        }
+			      ]
+			    },
+			    "ipd_fecha_ingreso_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd.fecha_ingreso": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso"
+			          }
+			        },
+			        "ipd.fecha_ingreso.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_ingresos_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
+			    "ipd_has_rango_etario": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_rango_etarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "ipd"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_ipds"
+			        }
+			      ]
+			    },
+			    "ipd_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_años"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "ipd"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_ipds"
+			        }
+			      ]
+			    },
+			    "ipd_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_sexos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "ipd"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_ipds"
+			        }
+			      ]
+			    },
+			    "dim_distrito_has_dim_provincia": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDistrito"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_distrito": {
+			          "Target": {
+			            "Entity": "dim_distrito"
+			          }
+			        },
+			        "dim_provincia": {
+			          "Target": {
+			            "Entity": "dim_provincia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_distrito"
+			            },
+			            "Object": {
+			              "Role": "dim_provincia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_distrito_have_dim_provincias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_provincia"
+			            },
+			            "Object": {
+			              "Role": "dim_distrito"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_provincias_have_dim_distrito"
+			        }
+			      ]
+			    },
+			    "dim_provincia_has_dim_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dimProvincia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_provincia": {
+			          "Target": {
+			            "Entity": "dim_provincia"
+			          }
+			        },
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_provincia"
+			            },
+			            "Object": {
+			              "Role": "dim_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_provincias_have_dim_regions"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_provincia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_dim_provincias"
+			        }
+			      ]
+			    },
+			    "año_has_anio": {
+			      "Binding": {
+			        "ConceptualEntity": "Año"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        },
+			        "año.anio": {
+			          "Target": {
+			            "Entity": "año.anio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "año.anio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_anios"
+			        }
+			      ]
+			    },
+			    "ipd_has_disciplina_que_mas_se_practica": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "ipd.disciplina_que_mas_se_practica": {
+			          "Target": {
+			            "Entity": "ipd.disciplina_que_mas_se_practica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "ipd.disciplina_que_mas_se_practica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_disciplina_que_mas_se_practica"
+			        }
+			      ]
+			    },
+			    "ipd_has_porcentaje_de_nuevos_ingresos": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "ipd.porcentaje_de_nuevos_ingresos": {
+			          "Target": {
+			            "Entity": "ipd.porcentaje_de_nuevos_ingresos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "ipd.porcentaje_de_nuevos_ingresos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_porcentaje_de_nuevos_ingresos"
+			        }
+			      ]
+			    },
+			    "ipd_has_edad_promedio": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "ipd.edad_promedio": {
+			          "Target": {
+			            "Entity": "ipd.edad_promedio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "ipd.edad_promedio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_edad_promedio"
+			        }
+			      ]
+			    },
+			    "ipd_has_total_de_jóvenes_IPD": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "ipd.total_de_jóvenes_IPD": {
+			          "Target": {
+			            "Entity": "ipd.total_de_jóvenes_IPD"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "ipd.total_de_jóvenes_IPD"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_total_de_jóvenes_IPD"
+			        }
+			      ]
+			    },
+			    "ipd_has_permanencia": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "ipd.permanencia": {
+			          "Target": {
+			            "Entity": "ipd.permanencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "ipd.permanencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_permanencias"
+			        }
+			      ]
+			    },
+			    "ipd_has_fecha_ingreso": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "ipd.fecha_ingreso": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_fecha_ingresos"
+			        }
+			      ]
+			    },
+			    "ipd_has_disciplina": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "ipd.disciplina": {
+			          "Target": {
+			            "Entity": "ipd.disciplina"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "ipd.disciplina"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_disciplinas"
+			        }
+			      ]
+			    },
+			    "ipd_has_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "ipd.ID": {
+			          "Target": {
+			            "Entity": "ipd.ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "ipd.ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Name": {
+			              "Role": "ipd.ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ID_are_names_IDs_of_ipds"
+			        }
+			      ]
+			    },
+			    "ipd_has_centro_alto_rendimiento": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "ipd.centro_alto_rendimiento": {
+			          "Target": {
+			            "Entity": "ipd.centro_alto_rendimiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "ipd.centro_alto_rendimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_centro_alto_rendimientos"
+			        }
+			      ]
+			    },
+			    "ipd_has_edad": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd": {
+			          "Target": {
+			            "Entity": "ipd"
+			          }
+			        },
+			        "ipd.edad": {
+			          "Target": {
+			            "Entity": "ipd.edad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd"
+			            },
+			            "Object": {
+			              "Role": "ipd.edad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ipds_have_edads"
+			        }
+			      ]
+			    },
+			    "me_has_id_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Mes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "me": {
+			          "Target": {
+			            "Entity": "me"
+			          }
+			        },
+			        "me.id_me": {
+			          "Target": {
+			            "Entity": "me.id_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "me"
+			            },
+			            "Object": {
+			              "Role": "me.id_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_id_me"
+			        }
+			      ]
+			    },
+			    "me_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Mes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "me": {
+			          "Target": {
+			            "Entity": "me"
+			          }
+			        },
+			        "me.me": {
+			          "Target": {
+			            "Entity": "me.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "me"
+			            },
+			            "Object": {
+			              "Role": "me.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_me"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "me"
+			            },
+			            "Name": {
+			              "Role": "me.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_names_IDs_of_me"
+			        }
+			      ]
+			    },
+			    "sexo_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.sexo": {
+			          "Target": {
+			            "Entity": "sexo.sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_sexos"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Name": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_are_names_IDs_of_sexos"
+			        }
+			      ]
+			    },
+			    "sexo_has_id_sex": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.id_sex": {
+			          "Target": {
+			            "Entity": "sexo.id_sex"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.id_sex"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_id_sexes"
+			        }
+			      ]
+			    },
+			    "dim_distrito_has_distrito": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDistrito"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_distrito": {
+			          "Target": {
+			            "Entity": "dim_distrito"
+			          }
+			        },
+			        "dim_distrito.distrito": {
+			          "Target": {
+			            "Entity": "dim_distrito.distrito"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_distrito"
+			            },
+			            "Object": {
+			              "Role": "dim_distrito.distrito"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_distrito_have_distrito"
+			        }
+			      ]
+			    },
+			    "dim_distrito_has_id_dis": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDistrito"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_distrito": {
+			          "Target": {
+			            "Entity": "dim_distrito"
+			          }
+			        },
+			        "dim_distrito.id_dis": {
+			          "Target": {
+			            "Entity": "dim_distrito.id_dis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_distrito"
+			            },
+			            "Object": {
+			              "Role": "dim_distrito.id_dis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_distrito_have_id_dis"
+			        }
+			      ]
+			    },
+			    "dim_provincia_has_provincia": {
+			      "Binding": {
+			        "ConceptualEntity": "dimProvincia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_provincia": {
+			          "Target": {
+			            "Entity": "dim_provincia"
+			          }
+			        },
+			        "dim_provincia.provincia": {
+			          "Target": {
+			            "Entity": "dim_provincia.provincia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_provincia"
+			            },
+			            "Object": {
+			              "Role": "dim_provincia.provincia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_provincias_have_provincias"
+			        }
+			      ]
+			    },
+			    "dim_provincia_has_id_prov": {
+			      "Binding": {
+			        "ConceptualEntity": "dimProvincia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_provincia": {
+			          "Target": {
+			            "Entity": "dim_provincia"
+			          }
+			        },
+			        "dim_provincia.id_prov": {
+			          "Target": {
+			            "Entity": "dim_provincia.id_prov"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_provincia"
+			            },
+			            "Object": {
+			              "Role": "dim_provincia.id_prov"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_provincias_have_id_provs"
+			        }
+			      ]
+			    },
+			    "rango_etario_has_rango_etario": {
+			      "Binding": {
+			        "ConceptualEntity": "Rango Etario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        },
+			        "rango_etario.rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario.rango_etario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "rango_etario.rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_rango_etarios"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Name": {
+			              "Role": "rango_etario.rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_are_names_IDs_of_rango_etarios"
+			        }
+			      ]
+			    },
+			    "rango_etario_has_id_raneta": {
+			      "Binding": {
+			        "ConceptualEntity": "Rango Etario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        },
+			        "rango_etario.id_raneta": {
+			          "Target": {
+			            "Entity": "rango_etario.id_raneta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "rango_etario.id_raneta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_id_ranetas"
+			        }
+			      ]
+			    },
+			    "dim_region_has_limite": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.limite": {
+			          "Target": {
+			            "Entity": "dim_region.limite"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.limite"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_limites"
+			        }
+			      ]
+			    },
+			    "dim_region_has_id_dep": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.id_dep": {
+			          "Target": {
+			            "Entity": "dim_region.id_dep"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.id_dep"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_id_deps"
+			        }
+			      ]
+			    },
+			    "dim_region_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.region": {
+			          "Target": {
+			            "Entity": "dim_region.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_regions"
+			        }
+			      ]
+			    },
+			    "dim_region_has_id_reg": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.id_reg": {
+			          "Target": {
+			            "Entity": "dim_region.id_reg"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.id_reg"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_id_regs"
+			        }
+			      ]
+			    },
+			    "dim_provincia_in_dim_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dimProvincia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_provincia": {
+			          "Target": {
+			            "Entity": "dim_provincia"
+			          }
+			        },
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dim_region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_provincia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_provincias_are_in_dim_regions"
+			        }
+			      ]
+			    },
+			    "dim_region_in_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.region": {
+			          "Target": {
+			            "Entity": "dim_region.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dim_region.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_region.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_are_in_regions"
+			        }
+			      ]
+			    },
+			    "ipd_fecha_ingreso_jerarquía_de_fecha_has_ipd_fecha_ingreso_día": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd.fecha_ingreso.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.jerarquía_de_fecha"
+			          }
+			        },
+			        "ipd.fecha_ingreso.día": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_días"
+			        }
+			      ]
+			    },
+			    "ipd_fecha_ingreso_año_has_ipd_fecha_ingreso_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd.fecha_ingreso.año": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.año"
+			          }
+			        },
+			        "ipd.fecha_ingreso.trimestre": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.año"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.trimestre"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_años"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_años"
+			        }
+			      ]
+			    },
+			    "ipd_fecha_ingreso_trimestre_has_ipd_fecha_ingreso_me": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd.fecha_ingreso.trimestre": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.trimestre"
+			          }
+			        },
+			        "ipd.fecha_ingreso.me": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.trimestre"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.me"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "ipd_fecha_ingreso_me_has_ipd_fecha_ingreso_día": {
+			      "Binding": {
+			        "ConceptualEntity": "IPD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ipd.fecha_ingreso.me": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.me"
+			          }
+			        },
+			        "ipd.fecha_ingreso.día": {
+			          "Target": {
+			            "Entity": "ipd.fecha_ingreso.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.me"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.día"
+			            },
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "ipd.fecha_ingreso.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "ipd.fecha_ingreso.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

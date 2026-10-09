@@ -1,0 +1,34 @@
+table 'Nivel Ocupacional'
+	lineageTag: b12089cb-6aa6-414c-bb9b-8758bf0d8ecc
+
+	column ID_NIVOCU
+		dataType: string
+		lineageTag: eaf8ce90-9c67-480d-a3b3-c40cfd1b1f2a
+		summarizeBy: none
+		sourceColumn: ID_NIVOCU
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL_OCUPACIONAL
+		dataType: string
+		lineageTag: 8a48bb58-a90b-409f-8793-dc17ae0c64bf
+		summarizeBy: none
+		sourceColumn: NIVEL_OCUPACIONAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Nivel Ocupacional' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				    #"Nivel Ocupacional_Sheet" = Origen{[Item="Nivel Ocupacional",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Nivel Ocupacional_Sheet", [PromoteAllScalars=true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each ([NIVEL_OCUPACIONAL] = "BUSCA EMPLEO" or [NIVEL_OCUPACIONAL] = "ESTUDIA" or [NIVEL_OCUPACIONAL] = "ESTUDIA Y TRABAJA" or [NIVEL_OCUPACIONAL] = "TRABAJA" or [NIVEL_OCUPACIONAL] = "TRABAJA SIN SALARIO"))
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "145d2a1687a05d09d5dc",
+  "displayName": "Algún seguro - MOBILE",
+  "displayOption": "ActualSize",
+  "height": 2530,
+  "width": 370,
+  "visibility": "HiddenInViewMode"
+}

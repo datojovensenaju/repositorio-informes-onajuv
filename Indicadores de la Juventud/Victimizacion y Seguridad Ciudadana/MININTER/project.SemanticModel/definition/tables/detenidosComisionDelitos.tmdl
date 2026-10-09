@@ -1,0 +1,90 @@
+table detenidosComisionDelitos
+	lineageTag: 1eaa08ad-e307-487c-b6be-f7b7645c2eda
+
+	measure 'Total Detenidos por Delitos' =
+			
+			SUM(detenidosComisionDelitos[VALOR])
+		formatString: 0
+		lineageTag: 0118b240-870b-4815-9d63-55d1ce94cc79
+
+	measure 'Total Registros Delitos y Faltas' =
+			
+			[Total Detenidos por Delitos] + [Total Intervenidos por Faltas]
+		formatString: 0
+		lineageTag: 1e969832-825e-41c7-9b24-937c4ad7cd52
+
+	column fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1d0a8638-12b5-44bf-b5b1-0fdaeed8a39c
+		summarizeBy: none
+		sourceColumn: fecha
+
+		variation Variación
+			isDefault
+			relationship: bc7f1bfb-923f-497d-83d2-701a694140bc
+			defaultHierarchy: LocalDateTable_54dc0476-7863-4c92-a12d-ba936e8bc97a.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column mes
+		dataType: string
+		lineageTag: f79ee81c-62fa-4e9a-a243-93d5f684dce2
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 3310d469-fb3c-4fc7-8cff-23efc0020910
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: d0f5f4ea-095e-4eba-baa5-dad5e4900c13
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column sexo
+		dataType: string
+		lineageTag: 0867e9e4-cba1-4382-9dc5-0e208704d04d
+		summarizeBy: none
+		sourceColumn: sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: int64
+		formatString: 0
+		lineageTag: 39bfea64-e381-44b8-af56-3bf49f922d36
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+	partition detenidosComisionDelitos = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/REGISTROS/MININTER/victimizacion_MININTER.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "detenidosComisionDelitos", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"fecha", type date}, {"mes", type text}, {"anio", Int64.Type}, {"departamento", type text}, {"hombre", Int64.Type}, {"mujer", Int64.Type}}, "es"),
+				    #"Columna de anulación de dinamización" = Table.UnpivotOtherColumns(#"Tipo de columna cambiado", {"fecha", "mes", "anio", "departamento"}, "atributo", "valor"),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Columna de anulación de dinamización",{{"atributo", "sexo"}})
+				in
+				    #"Columnas con nombre cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

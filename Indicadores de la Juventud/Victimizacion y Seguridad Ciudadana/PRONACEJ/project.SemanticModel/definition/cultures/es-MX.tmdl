@@ -1,0 +1,2353 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "año.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año",
+			          "ConceptualProperty": "AÑO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "año name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "rango_etario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango etario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario.id_raneta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario",
+			          "ConceptualProperty": "ID_RANETA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id raneta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_RANETA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario.rango_etario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario",
+			          "ConceptualProperty": "RANGO_ETARIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango etario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rango etario name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RANGO_ETARIO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.id_sex": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "ID_SEX"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id sex": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_SEX": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sex": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "id masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "id gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "sexo.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sexo",
+			          "ConceptualProperty": "SEXO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexo name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SEXO:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "me.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mes",
+			          "ConceptualProperty": "MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "me.id_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mes",
+			          "ConceptualProperty": "ID_MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_MES": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "identity me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "identifier me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "credential me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.anio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "Anio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "anio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pronacej-CJDR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pronacej CJDR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.departamento_CJDR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "Departamento_CJDR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento CJDR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Departamento_CJDR": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.cjdr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "CJDR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cjdr": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "Estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.educacion_antes_ingreso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "Educacion_antes_ingreso"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "educacion antes ingreso": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "educacion ante ingreso": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Educacion_antes_ingreso": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.nivel_consumo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "Nivel_consumo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel consumo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Nivel_consumo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Nivel de consumo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.tipo_droga": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "Tipo_droga"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo droga": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tipo_droga": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.nivel_consumo_alcohol": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "Nivel_consumo_alcohol"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel consumo alcohol": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Nivel_consumo_alcohol": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "nivel consumo whiskey": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "nivel consumo liquor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "nivel consumo whisky": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "nivel consumo malt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.total_de_jóvenes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "Total de Jóvenes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de jóvenes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de jóvene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall de jóvene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.edad_promedio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "Edad Promedio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad promedio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.sentenciados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "% Sentenciados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% sentenciados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage sentenciado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pct sentenciado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "pronacejCJDR.consumo_drogas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "pronacej-CJDR",
+			          "ConceptualProperty": "% Consumo Drogas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% consumo drogas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage consumo droga": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct consumo droga": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim departamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimDepartamento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.id_dep": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "ID_DEP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id dep": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_DEP": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.id_regnat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "ID_REGNAT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id regnat": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_REGNAT": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification regnat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity regnat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier regnat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential regnat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "pronacejCJDR_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_sexos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_pronacejCJDRs"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_id_regnat": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.id_regnat": {
+			          "Target": {
+			            "Entity": "dim_departamento.id_regnat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.id_regnat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_id_regnats"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento.departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_departamentos"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_id_dep": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.id_dep": {
+			          "Target": {
+			            "Entity": "dim_departamento.id_dep"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.id_dep"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_id_deps"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_consumo_drogas": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.consumo_drogas": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.consumo_drogas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.consumo_drogas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have__consumo_drogas"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_sentenciados": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.sentenciados": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.sentenciados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.sentenciados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have__sentenciados"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_edad_promedio": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.edad_promedio": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.edad_promedio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.edad_promedio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_edad_promedio"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_total_de_jóvenes": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.total_de_jóvenes": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.total_de_jóvenes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.total_de_jóvenes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_total_de_jóvenes"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_estado_civil_padre": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.estado_civil_padre": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.estado_civil_padre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.estado_civil_padre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_estado_civil_padres"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_numero_hijo": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.numero_hijo": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.numero_hijo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.numero_hijo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_numero_hijos"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_duración_medida_mese": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.duración_medida_mese": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.duración_medida_mese"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.duración_medida_mese"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_duración_medida_meses"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_tipo_medida": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.tipo_medida": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.tipo_medida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.tipo_medida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_tipo_medidas"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_tipo_infracción_especifica": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.tipo_infracción_especifica": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.tipo_infracción_especifica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.tipo_infracción_especifica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_tipo_infracción_especificas"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_tipo_infraccion_generica": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.tipo_infraccion_generica": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.tipo_infraccion_generica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.tipo_infraccion_generica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_tipo_infraccion_genericas"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_situación_juridica": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.situación_juridica": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.situación_juridica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.situación_juridica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_situación_juridicas"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_situación_laboral_antes_ingresar": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.situación_laboral_antes_ingresar": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.situación_laboral_antes_ingresar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.situación_laboral_antes_ingresar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_situación_laboral_antes_ingresars"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_nivel_consumo_alcohol": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.nivel_consumo_alcohol": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.nivel_consumo_alcohol"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.nivel_consumo_alcohol"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_nivel_consumo_alcohols"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_tipo_droga": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.tipo_droga": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.tipo_droga"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.tipo_droga"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_tipo_drogas"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_nivel_consumo": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.nivel_consumo": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.nivel_consumo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.nivel_consumo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_nivel_consumos"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_educacion_antes_ingreso": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.educacion_antes_ingreso": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.educacion_antes_ingreso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.educacion_antes_ingreso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_educacion_antes_ingresos"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_estado": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.estado": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.estado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.estado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_estado"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_edad_actual": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.edad_actual": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.edad_actual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.edad_actual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_edad_actuals"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_cjdr": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.cjdr": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.cjdr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.cjdr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_cjdrs"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_departamento_CJDR": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.departamento_CJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.departamento_CJDR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.departamento_CJDR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_departamento_CJDRs"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_departamento_infracción": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.departamento_infracción": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.departamento_infracción"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.departamento_infracción"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_departamento_infraccións"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_fecha_ingreso": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "pronacejCJDR.fecha_ingreso": {
+			          "Target": {
+			            "Entity": "pronacejCJDR.fecha_ingreso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR.fecha_ingreso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_fecha_ingresos"
+			        }
+			      ]
+			    },
+			    "me_has_id_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Mes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "me": {
+			          "Target": {
+			            "Entity": "me"
+			          }
+			        },
+			        "me.id_me": {
+			          "Target": {
+			            "Entity": "me.id_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "me"
+			            },
+			            "Object": {
+			              "Role": "me.id_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_id_me"
+			        }
+			      ]
+			    },
+			    "me_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Mes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "me": {
+			          "Target": {
+			            "Entity": "me"
+			          }
+			        },
+			        "me.me": {
+			          "Target": {
+			            "Entity": "me.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "me"
+			            },
+			            "Object": {
+			              "Role": "me.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_me"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "me"
+			            },
+			            "Name": {
+			              "Role": "me.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_names_IDs_of_me"
+			        }
+			      ]
+			    },
+			    "sexo_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.sexo": {
+			          "Target": {
+			            "Entity": "sexo.sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_sexos"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Name": {
+			              "Role": "sexo.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_are_names_IDs_of_sexos"
+			        }
+			      ]
+			    },
+			    "sexo_has_id_sex": {
+			      "Binding": {
+			        "ConceptualEntity": "Sexo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sexo": {
+			          "Target": {
+			            "Entity": "sexo"
+			          }
+			        },
+			        "sexo.id_sex": {
+			          "Target": {
+			            "Entity": "sexo.id_sex"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sexo"
+			            },
+			            "Object": {
+			              "Role": "sexo.id_sex"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexos_have_id_sexes"
+			        }
+			      ]
+			    },
+			    "rango_etario_has_rango_etario": {
+			      "Binding": {
+			        "ConceptualEntity": "Rango Etario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        },
+			        "rango_etario.rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario.rango_etario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "rango_etario.rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_rango_etarios"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Name": {
+			              "Role": "rango_etario.rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_are_names_IDs_of_rango_etarios"
+			        }
+			      ]
+			    },
+			    "rango_etario_has_id_raneta": {
+			      "Binding": {
+			        "ConceptualEntity": "Rango Etario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        },
+			        "rango_etario.id_raneta": {
+			          "Target": {
+			            "Entity": "rango_etario.id_raneta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "rango_etario.id_raneta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_id_ranetas"
+			        }
+			      ]
+			    },
+			    "año_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Año"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        },
+			        "año.año": {
+			          "Target": {
+			            "Entity": "año.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "año.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_años"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Name": {
+			              "Role": "año.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_are_names_IDs_of_años"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "me": {
+			          "Target": {
+			            "Entity": "me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_me"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "me"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_pronacejCJDRs"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_años"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_pronacejCJDRs"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_rango_etario": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_rango_etarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_pronacejCJDRs"
+			        }
+			      ]
+			    },
+			    "pronacejCJDR_has_dim_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "pronacej-CJDR"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "pronacejCJDR": {
+			          "Target": {
+			            "Entity": "pronacejCJDR"
+			          }
+			        },
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          },
+			          "Nouns": [
+			            {
+			              "departamento origen": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "pronacejCJDR"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "pronacejCJDRs_have_dim_departamentos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "pronacejCJDR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_pronacejCJDRs"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

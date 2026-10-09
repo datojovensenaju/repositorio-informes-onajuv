@@ -1,0 +1,154 @@
+table trabajadoresCulturales
+	lineageTag: 528f74a8-7d0b-481d-b56e-7fae6bc0b820
+
+	measure 'Total jóvenes' = COUNTROWS(trabajadoresCulturales)
+		formatString: 0
+		lineageTag: dd658708-eed0-4823-8ca3-58ec4a53b622
+
+	measure 'Sector cultural principal' =
+			
+			VAR TablaSectores =
+			    TOPN(
+			        1,
+			        ADDCOLUMNS(
+			            VALUES(
+			                trabajadoresCulturales[SECTOR CULTURAL]
+			            ),
+			            "CantidadRegistros",
+			            [Total jóvenes]
+			        ),
+			        [CantidadRegistros],
+			        DESC,
+			        trabajadoresCulturales[SECTOR CULTURAL],
+			        ASC
+			    )
+			RETURN
+			    CONCATENATEX(
+			        TablaSectores,
+			        trabajadoresCulturales[SECTOR CULTURAL]
+			            & " ("
+			            & FORMAT(
+			                [CantidadRegistros],
+			                "#,##0"
+			            )
+			            & ")",
+			        ""
+			    )
+		lineageTag: 54e0bc99-1121-4810-9235-979dca161777
+
+	measure 'Departamento principal' =
+			
+			VAR TablaDepartamentos =
+			    TOPN(
+			        1,
+			        ADDCOLUMNS(
+			            VALUES(
+			                trabajadoresCulturales[DEPARTAMENTO]
+			            ),
+			            "CantidadRegistros",
+			            [Total jóvenes]
+			        ),
+			        [CantidadRegistros],
+			        DESC,
+			        trabajadoresCulturales[DEPARTAMENTO],
+			        ASC
+			    )
+			RETURN
+			    CONCATENATEX(
+			        TablaDepartamentos,
+			        trabajadoresCulturales[DEPARTAMENTO]
+			            & " ("
+			            & FORMAT(
+			                [CantidadRegistros],
+			                "#,##0"
+			            )
+			            & ")",
+			        ""
+			    )
+		lineageTag: 5262596e-fc7b-4d9f-93f5-fa8114525c39
+
+	measure 'Porcentaje del total' =
+			
+			DIVIDE(
+			    [Total jóvenes],
+			    CALCULATE(
+			        [Total jóvenes],
+			        ALLSELECTED(
+			            trabajadoresCulturales
+			        )
+			    ),
+			    0
+			)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 6ed4448d-316d-408b-97b4-465fd46ef91b
+
+	column AÑO
+		dataType: string
+		lineageTag: 058262c3-fb58-4898-8cee-4aeb3cfc8e57
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MES
+		dataType: string
+		lineageTag: 8c433bfc-c41e-473d-a7ca-256e95a4fca5
+		summarizeBy: none
+		sourceColumn: MES
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: 93e0fccb-b25c-405e-8cbf-e4573d708fc8
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: 2f46bb71-1f19-41fa-9413-776f6d801600
+		summarizeBy: none
+		sourceColumn: SEXO
+
+		annotation SummarizationSetBy = Automatic
+
+	column EDAD
+		dataType: string
+		lineageTag: 47132ecd-180c-4148-9089-496c5d3a8259
+		summarizeBy: none
+		sourceColumn: EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column RANGO_EDAD
+		dataType: string
+		lineageTag: 4b013122-3bd3-4f55-8de8-a88c119aff84
+		summarizeBy: none
+		sourceColumn: RANGO_EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SECTOR CULTURAL'
+		dataType: string
+		lineageTag: 26ecd403-d0fc-47ba-b4ff-ba792ddc1522
+		summarizeBy: none
+		sourceColumn: SECTOR CULTURAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition trabajadoresCulturales = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/2.%20Empleo/REGISTROS/Ministerio_cultura_2026_actualizado.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "Ministerio_cultura_2022_0626", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

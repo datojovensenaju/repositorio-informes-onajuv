@@ -1,0 +1,20 @@
+relationship AutoDetected_ef7aa36b-3e8b-4dfd-9671-bcdee7fe3c8a
+	fromColumn: trabajadoresCulturales.AÑO
+	toColumn: Año.AÑO
+
+relationship AutoDetected_118c521e-3b07-4565-9e5e-067c835dc6af
+	fromColumn: trabajadoresCulturales.SEXO
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_6708b6c1-5251-4d54-96c2-f884f16f79ee
+	fromColumn: trabajadoresCulturales.MES
+	toColumn: Mes.MES
+
+relationship AutoDetected_b8afc750-ec30-4d67-abcb-7a027bcfb63d
+	fromColumn: trabajadoresCulturales.DEPARTAMENTO
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship ade74720-f08b-d188-958e-a9d8f5a55c7c
+	fromColumn: trabajadoresCulturales.RANGO_EDAD
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+

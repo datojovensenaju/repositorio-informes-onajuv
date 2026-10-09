@@ -1,0 +1,1614 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "año.anio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año",
+			          "ConceptualProperty": "anio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "anio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Año": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "datos_nacionale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosNacionales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datos nacionale": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dato nacionale": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "datosNacionales": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "datos_nacionale.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosNacionales",
+			          "ConceptualProperty": "AÑO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datos_nacionale.poblacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosNacionales",
+			          "ConceptualProperty": "POBLACION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poblacion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datos_nacionale.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosNacionales",
+			          "ConceptualProperty": "REGION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "datos_nacionale.categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosNacionales",
+			          "ConceptualProperty": "CATEGORIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datos_nacionale.indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosNacionales",
+			          "ConceptualProperty": "INDICADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datos_nacionale.fuente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosNacionales",
+			          "ConceptualProperty": "FUENTE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fuente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datos_nacionale.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosNacionales",
+			          "ConceptualProperty": "VALOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "datos_nacionale.cv": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosNacionales",
+			          "ConceptualProperty": "CV"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cv": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datos_regionale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosRegionales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datos regionale": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dato regionale": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "datosRegionales": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "datos_regionale.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosRegionales",
+			          "ConceptualProperty": "AÑO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datos_regionale.poblacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosRegionales",
+			          "ConceptualProperty": "POBLACION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poblacion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datos_regionale.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosRegionales",
+			          "ConceptualProperty": "REGION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "datos_regionale.categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosRegionales",
+			          "ConceptualProperty": "CATEGORIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datos_regionale.indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosRegionales",
+			          "ConceptualProperty": "INDICADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datos_regionale.fuente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosRegionales",
+			          "ConceptualProperty": "FUENTE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fuente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datos_regionale.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosRegionales",
+			          "ConceptualProperty": "VALOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "datos_regionale.cv": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "datosRegionales",
+			          "ConceptualProperty": "CV"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cv": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "principal_problema": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "principalProblema"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "principal problema": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "principalProblema": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "principal_problema.id_prinpro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "principalProblema",
+			          "ConceptualProperty": "ID_PRINPRO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id prinpro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_PRINPRO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification prinpro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity prinpro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier prinpro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential prinpro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "principal_problema.principal_problema": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "principalProblema",
+			          "ConceptualProperty": "PRINCIPAL PROBLEMA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "principal problema": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "principal problema name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    }
+			  },
+			  "Relationships": {
+			    "datos_regionale_has_principal_problema": {
+			      "Binding": {
+			        "ConceptualEntity": "datosRegionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_regionale": {
+			          "Target": {
+			            "Entity": "datos_regionale"
+			          }
+			        },
+			        "principal_problema": {
+			          "Target": {
+			            "Entity": "principal_problema"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_regionale"
+			            },
+			            "Object": {
+			              "Role": "principal_problema"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_regionales_have_principal_problemas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "principal_problema"
+			            },
+			            "Object": {
+			              "Role": "datos_regionale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "principal_problemas_have_datos_regionales"
+			        }
+			      ]
+			    },
+			    "datos_nacionale_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "datosNacionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_nacionale": {
+			          "Target": {
+			            "Entity": "datos_nacionale"
+			          }
+			        },
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_nacionale"
+			            },
+			            "Object": {
+			              "Role": "año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_nacionales_have_años"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "datos_nacionale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_datos_nacionales"
+			        }
+			      ]
+			    },
+			    "datos_nacionale_has_principal_problema": {
+			      "Binding": {
+			        "ConceptualEntity": "datosNacionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_nacionale": {
+			          "Target": {
+			            "Entity": "datos_nacionale"
+			          }
+			        },
+			        "principal_problema": {
+			          "Target": {
+			            "Entity": "principal_problema"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_nacionale"
+			            },
+			            "Object": {
+			              "Role": "principal_problema"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_nacionales_have_principal_problemas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "principal_problema"
+			            },
+			            "Object": {
+			              "Role": "datos_nacionale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "principal_problemas_have_datos_nacionales"
+			        }
+			      ]
+			    },
+			    "principal_problema_has_principal_problema": {
+			      "Binding": {
+			        "ConceptualEntity": "principalProblema"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "principal_problema": {
+			          "Target": {
+			            "Entity": "principal_problema"
+			          }
+			        },
+			        "principal_problema.principal_problema": {
+			          "Target": {
+			            "Entity": "principal_problema.principal_problema"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "principal_problema"
+			            },
+			            "Object": {
+			              "Role": "principal_problema.principal_problema"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "principal_problemas_have_principal_problemas"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "principal_problema"
+			            },
+			            "Name": {
+			              "Role": "principal_problema.principal_problema"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "principal_problemas_are_names_IDs_of_principal_problemas"
+			        }
+			      ]
+			    },
+			    "principal_problema_has_id_prinpro": {
+			      "Binding": {
+			        "ConceptualEntity": "principalProblema"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "principal_problema": {
+			          "Target": {
+			            "Entity": "principal_problema"
+			          }
+			        },
+			        "principal_problema.id_prinpro": {
+			          "Target": {
+			            "Entity": "principal_problema.id_prinpro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "principal_problema"
+			            },
+			            "Object": {
+			              "Role": "principal_problema.id_prinpro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "principal_problemas_have_id_prinpros"
+			        }
+			      ]
+			    },
+			    "datos_regionale_has_cv": {
+			      "Binding": {
+			        "ConceptualEntity": "datosRegionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_regionale": {
+			          "Target": {
+			            "Entity": "datos_regionale"
+			          }
+			        },
+			        "datos_regionale.cv": {
+			          "Target": {
+			            "Entity": "datos_regionale.cv"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_regionale"
+			            },
+			            "Object": {
+			              "Role": "datos_regionale.cv"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_regionales_have_cv"
+			        }
+			      ]
+			    },
+			    "datos_regionale_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "datosRegionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_regionale": {
+			          "Target": {
+			            "Entity": "datos_regionale"
+			          }
+			        },
+			        "datos_regionale.valor": {
+			          "Target": {
+			            "Entity": "datos_regionale.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_regionale"
+			            },
+			            "Object": {
+			              "Role": "datos_regionale.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_regionales_have_valor"
+			        }
+			      ]
+			    },
+			    "datos_regionale_has_fuente": {
+			      "Binding": {
+			        "ConceptualEntity": "datosRegionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_regionale": {
+			          "Target": {
+			            "Entity": "datos_regionale"
+			          }
+			        },
+			        "datos_regionale.fuente": {
+			          "Target": {
+			            "Entity": "datos_regionale.fuente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_regionale"
+			            },
+			            "Object": {
+			              "Role": "datos_regionale.fuente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_regionales_have_fuentes"
+			        }
+			      ]
+			    },
+			    "datos_regionale_has_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "datosRegionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_regionale": {
+			          "Target": {
+			            "Entity": "datos_regionale"
+			          }
+			        },
+			        "datos_regionale.categoria": {
+			          "Target": {
+			            "Entity": "datos_regionale.categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_regionale"
+			            },
+			            "Object": {
+			              "Role": "datos_regionale.categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_regionales_have_categorias"
+			        }
+			      ]
+			    },
+			    "datos_regionale_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "datosRegionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_regionale": {
+			          "Target": {
+			            "Entity": "datos_regionale"
+			          }
+			        },
+			        "datos_regionale.region": {
+			          "Target": {
+			            "Entity": "datos_regionale.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_regionale"
+			            },
+			            "Object": {
+			              "Role": "datos_regionale.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_regionales_have_regions"
+			        }
+			      ]
+			    },
+			    "datos_regionale_has_poblacion": {
+			      "Binding": {
+			        "ConceptualEntity": "datosRegionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_regionale": {
+			          "Target": {
+			            "Entity": "datos_regionale"
+			          }
+			        },
+			        "datos_regionale.poblacion": {
+			          "Target": {
+			            "Entity": "datos_regionale.poblacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_regionale"
+			            },
+			            "Object": {
+			              "Role": "datos_regionale.poblacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_regionales_have_poblacions"
+			        }
+			      ]
+			    },
+			    "datos_nacionale_has_cv": {
+			      "Binding": {
+			        "ConceptualEntity": "datosNacionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_nacionale": {
+			          "Target": {
+			            "Entity": "datos_nacionale"
+			          }
+			        },
+			        "datos_nacionale.cv": {
+			          "Target": {
+			            "Entity": "datos_nacionale.cv"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_nacionale"
+			            },
+			            "Object": {
+			              "Role": "datos_nacionale.cv"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_nacionales_have_cv"
+			        }
+			      ]
+			    },
+			    "datos_nacionale_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "datosNacionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_nacionale": {
+			          "Target": {
+			            "Entity": "datos_nacionale"
+			          }
+			        },
+			        "datos_nacionale.valor": {
+			          "Target": {
+			            "Entity": "datos_nacionale.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_nacionale"
+			            },
+			            "Object": {
+			              "Role": "datos_nacionale.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_nacionales_have_valor"
+			        }
+			      ]
+			    },
+			    "datos_nacionale_has_fuente": {
+			      "Binding": {
+			        "ConceptualEntity": "datosNacionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_nacionale": {
+			          "Target": {
+			            "Entity": "datos_nacionale"
+			          }
+			        },
+			        "datos_nacionale.fuente": {
+			          "Target": {
+			            "Entity": "datos_nacionale.fuente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_nacionale"
+			            },
+			            "Object": {
+			              "Role": "datos_nacionale.fuente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_nacionales_have_fuentes"
+			        }
+			      ]
+			    },
+			    "datos_nacionale_has_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "datosNacionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_nacionale": {
+			          "Target": {
+			            "Entity": "datos_nacionale"
+			          }
+			        },
+			        "datos_nacionale.categoria": {
+			          "Target": {
+			            "Entity": "datos_nacionale.categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_nacionale"
+			            },
+			            "Object": {
+			              "Role": "datos_nacionale.categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_nacionales_have_categorias"
+			        }
+			      ]
+			    },
+			    "datos_nacionale_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "datosNacionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_nacionale": {
+			          "Target": {
+			            "Entity": "datos_nacionale"
+			          }
+			        },
+			        "datos_nacionale.region": {
+			          "Target": {
+			            "Entity": "datos_nacionale.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_nacionale"
+			            },
+			            "Object": {
+			              "Role": "datos_nacionale.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_nacionales_have_regions"
+			        }
+			      ]
+			    },
+			    "datos_nacionale_has_poblacion": {
+			      "Binding": {
+			        "ConceptualEntity": "datosNacionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_nacionale": {
+			          "Target": {
+			            "Entity": "datos_nacionale"
+			          }
+			        },
+			        "datos_nacionale.poblacion": {
+			          "Target": {
+			            "Entity": "datos_nacionale.poblacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_nacionale"
+			            },
+			            "Object": {
+			              "Role": "datos_nacionale.poblacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_nacionales_have_poblacions"
+			        }
+			      ]
+			    },
+			    "año_has_anio": {
+			      "Binding": {
+			        "ConceptualEntity": "Año"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        },
+			        "año.anio": {
+			          "Target": {
+			            "Entity": "año.anio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "año.anio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_anios"
+			        }
+			      ]
+			    },
+			    "datos_regionale_in_region": {
+			      "Binding": {
+			        "ConceptualEntity": "datosRegionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_regionale": {
+			          "Target": {
+			            "Entity": "datos_regionale"
+			          }
+			        },
+			        "datos_regionale.region": {
+			          "Target": {
+			            "Entity": "datos_regionale.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "datos_regionale.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "datos_regionale"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "datos_regionale.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_regionales_are_in_regions"
+			        }
+			      ]
+			    },
+			    "datos_nacionale_in_region": {
+			      "Binding": {
+			        "ConceptualEntity": "datosNacionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_nacionale": {
+			          "Target": {
+			            "Entity": "datos_nacionale"
+			          }
+			        },
+			        "datos_nacionale.region": {
+			          "Target": {
+			            "Entity": "datos_nacionale.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "datos_nacionale.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "datos_nacionale"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "datos_nacionale.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_nacionales_are_in_regions"
+			        }
+			      ]
+			    },
+			    "datos_regionale_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "datosRegionales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datos_regionale": {
+			          "Target": {
+			            "Entity": "datos_regionale"
+			          }
+			        },
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datos_regionale"
+			            },
+			            "Object": {
+			              "Role": "año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datos_regionales_have_años"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "datos_regionale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_datos_regionales"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

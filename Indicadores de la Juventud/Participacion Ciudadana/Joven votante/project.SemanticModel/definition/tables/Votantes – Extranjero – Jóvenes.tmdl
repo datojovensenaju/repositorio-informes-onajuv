@@ -1,0 +1,104 @@
+table 'Votantes – Extranjero – Jóvenes'
+	lineageTag: 37e9eae5-97b9-450c-b849-7bdef4bc24a6
+
+	measure 'Total de Jóvenes Votantes Exterior' = ```
+			
+			    CALCULATE(SUM('Votantes – Extranjero – Jóvenes'[Total]))
+			```
+		lineageTag: e0aedb32-2653-4b55-b0a3-d0a85bb09836
+
+		formatStringDefinition = "### ### ###"
+
+	measure 'total Nuevos Votantes Exterior' =
+			CALCULATE(
+			        SUM('Votantes – Extranjero – Jóvenes'[Total]),
+			        'Votantes – Extranjero – Jóvenes'[TipoVotante] = "Nuevo")
+		formatString: 0
+		lineageTag: c2751968-285e-47c3-b139-586dafaf46bd
+
+	measure totalHombreVotanteExterior = ```
+			COALESCE(CALCULATE(
+			        SUM('Votantes – Extranjero – Jóvenes'[Total]),
+			        'Sexo'[SEXO] = "HOMBRE"), 
+			    "-"
+			)
+			```
+		formatString: 0
+		lineageTag: 5203b3af-5214-4c9b-8794-54dd0f7b4d0e
+
+	measure totalMujerVotanteExterior = ```
+			COALESCE(CALCULATE(
+			        SUM('Votantes – Extranjero – Jóvenes'[Total]),
+			        'Sexo'[SEXO] = "MUJER"), 
+			    "-"
+			)
+			```
+		formatString: 0
+		lineageTag: 59a16b7e-c809-41e6-bbcb-4d844d5c43b3
+
+	measure '% Jóvenes País' =
+			
+			DIVIDE(
+			    [Total de Jóvenes Votantes Exterior],
+			    CALCULATE(
+			        [Total de Jóvenes Votantes Exterior],
+			        ALL('Votantes – Extranjero – Jóvenes')
+			    )
+			)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: e2392489-ea12-4c2d-b630-8daed2363e0a
+
+	column Continente
+		dataType: string
+		lineageTag: 26c49785-a975-4aec-9191-f07bc33ff1c8
+		summarizeBy: none
+		sourceColumn: Continente
+
+		annotation SummarizationSetBy = Automatic
+
+	column País
+		dataType: string
+		lineageTag: fcb1a33b-c111-460a-953e-d85dba362355
+		summarizeBy: none
+		sourceColumn: País
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: 55e0e65f-e09e-41bd-9a39-fce317624fce
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column TipoVotante
+		dataType: string
+		lineageTag: 227c0637-a13f-451d-ab3e-fe1ffb158085
+		summarizeBy: none
+		sourceColumn: TipoVotante
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total
+		dataType: int64
+		formatString: 0
+		lineageTag: 5e7c8d35-e8dc-42c5-bb86-bff19dbf99cb
+		summarizeBy: sum
+		sourceColumn: Total
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Votantes – Extranjero – Jóvenes' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/6.%20Participaci%C3%B3n%20ciudadana%20y%20gobernanza/REGISTROS/Participaci%C3%B3nCiudadana_PadronElectoral.xlsx"), null, true),
+				    #"Votantes – Extranjero – Jóvenes_Sheet" = Origen{[Item="Votantes – Extranjero – Jóvenes",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Votantes – Extranjero – Jóvenes_Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Continente", type text}, {"País", type text}, {"Sexo", type text}, {"TipoVotante", type text}, {"Total", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

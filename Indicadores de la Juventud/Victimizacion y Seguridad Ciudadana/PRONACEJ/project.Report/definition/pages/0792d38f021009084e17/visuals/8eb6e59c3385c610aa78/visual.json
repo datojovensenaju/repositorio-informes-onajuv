@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "8eb6e59c3385c610aa78",
+  "position": {
+    "x": 10,
+    "y": 113,
+    "z": 17000,
+    "height": 60,
+    "width": 1380,
+    "tabOrder": 16000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Presenta información sobre adolescentes y jóvenes de 15 a 29 años atendidos en los Centros Juveniles de Diagnóstico y Rehabilitación (CJDR), permitiendo analizar sus características demográficas, educativas, familiares, jurídicas y territoriales, así como las principales infracciones registradas y factores asociados a su proceso de rehabilitación.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#666666"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

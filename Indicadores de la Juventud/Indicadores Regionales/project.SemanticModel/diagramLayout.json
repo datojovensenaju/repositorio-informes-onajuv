@@ -1,0 +1,581 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 416.42822890856405,
+        "y": 75.714223437920737
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 349.38305001469371,
+            "y": 0
+          },
+          "nodeIndex": "dimDepartamento",
+          "nodeLineageTag": "c46d73e1-5190-4fd4-9647-eda06c2c948a",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 352,
+            "y": 426
+          },
+          "nodeIndex": "dimProvincia",
+          "nodeLineageTag": "5aefbb9c-01eb-440b-bb27-b98d316ef4f7",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 14
+        },
+        {
+          "location": {
+            "x": 740.70408990698786,
+            "y": 177.29848277171843
+          },
+          "nodeIndex": "dimRegion",
+          "nodeLineageTag": "fefd4873-bea2-46d9-ba30-bd362c784f41",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 15
+        },
+        {
+          "location": {
+            "x": 1491.4736470820392,
+            "y": 418.25427454505757
+          },
+          "nodeIndex": "Año",
+          "nodeLineageTag": "7c30ca73-987d-49f8-82d4-2fd21fdd7ef2",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 16
+        },
+        {
+          "location": {
+            "x": 447.58380855123477,
+            "y": 1363.2755568150722
+          },
+          "nodeIndex": "factPoblacionGeneral",
+          "nodeLineageTag": "7cf67184-490b-4d42-91ba-566d5bb8b831",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 19
+        },
+        {
+          "location": {
+            "x": 202.57051205608388,
+            "y": 1365.2296776078542
+          },
+          "nodeIndex": "factPoblacionJoven",
+          "nodeLineageTag": "1f03da13-d9a9-4a23-9b5c-4a4ad1cd7407",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 28
+        },
+        {
+          "location": {
+            "x": 1103.5846112078791,
+            "y": 277.84469795984563
+          },
+          "nodeIndex": "Sexo",
+          "nodeLineageTag": "5c973fa7-cd6b-4996-a719-fe62da63b276",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 17
+        },
+        {
+          "location": {
+            "x": 719.44569543517923,
+            "y": 489.79356687532118
+          },
+          "nodeIndex": "dimDistrito",
+          "nodeLineageTag": "a961606c-1b18-46ac-aa09-adc53f11c929",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 18
+        },
+        {
+          "location": {
+            "x": 387.10457059344571,
+            "y": 770.59779269087016
+          },
+          "nodeIndex": "Rango Etario",
+          "nodeLineageTag": "2ba574ac-787f-4c23-8429-099a0052d8e1",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 2601.88211654155,
+            "y": 283.88263413831305
+          },
+          "nodeIndex": "factEducación_AñosDeEscolaridad",
+          "nodeLineageTag": "918d76f9-9d68-4897-85e9-098fa7d757ec",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 20
+        },
+        {
+          "location": {
+            "x": 2283.5931668307539,
+            "y": 926.52640299999985
+          },
+          "nodeIndex": "factEducación_AsistenciaSuperior",
+          "nodeLineageTag": "c191c147-0a9b-4a63-899c-445bd080270a",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 2043.2889415454092,
+            "y": 926.52640299999985
+          },
+          "nodeIndex": "factEducacion_ConclusionSecundaria",
+          "nodeLineageTag": "7e896b0b-9585-4b14-adb4-22fa1ea6ab5b",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 21
+        },
+        {
+          "location": {
+            "x": 2932.0174010549422,
+            "y": 592.03773637864606
+          },
+          "nodeIndex": "factEducacion_ConclusionSuperior",
+          "nodeLineageTag": "fb6d39c1-4912-4fca-97fd-230fcf8ed14c",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 43
+        },
+        {
+          "location": {
+            "x": 1559.1373689747206,
+            "y": 933.61264699999981
+          },
+          "nodeIndex": "factEducación_MaxNivelAlcanzado",
+          "nodeLineageTag": "8852375c-619e-4eaa-b7c6-e8ac5287cca9",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 22
+        },
+        {
+          "location": {
+            "x": 2524.40885103577,
+            "y": 1640.3448032537838
+          },
+          "nodeIndex": "factSalud_EpisodioDepresivo",
+          "nodeLineageTag": "d5dc5f54-e2d7-41bb-8fb0-d3c9959e19a5",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 29
+        },
+        {
+          "location": {
+            "x": 2283.6700891606365,
+            "y": 1642.8415228934393
+          },
+          "nodeIndex": "factSalud-Alcohol",
+          "nodeLineageTag": "46d5c961-6d5c-43da-aed3-bc7a67ab9535",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 30
+        },
+        {
+          "location": {
+            "x": 2045.1127508967097,
+            "y": 1644.5900936824064
+          },
+          "nodeIndex": "factSalud-CuentaConSeguro",
+          "nodeLineageTag": "1800256f-cf9e-4ad4-bc8c-ad590583482c",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 31
+        },
+        {
+          "location": {
+            "x": 1801.0948273247443,
+            "y": 1646.9215617212433
+          },
+          "nodeIndex": "factSalud-Embarazo",
+          "nodeLineageTag": "9a9b0733-bc97-48ee-b8b6-3e93d96ae0ef",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 32
+        },
+        {
+          "location": {
+            "x": 1561.0111711878703,
+            "y": 1652.5349733620317
+          },
+          "nodeIndex": "factSalud-EnfermedadCrónica",
+          "nodeLineageTag": "b1596d6e-2359-4dc2-a408-0411265e1ead",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 33
+        },
+        {
+          "location": {
+            "x": 1316.9741614135444,
+            "y": 1656.5074132018442
+          },
+          "nodeIndex": "factSalud-SIS",
+          "nodeLineageTag": "309e86fa-34bc-440c-8665-76eb0040bf9c",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1078.8958113989365,
+            "y": 1658.4936331217507
+          },
+          "nodeIndex": "factSalud-Tabaco",
+          "nodeLineageTag": "c07ba4d5-805d-4c6c-8255-ef7d8cfe240a",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 2788.1003652258673,
+            "y": 1925.5453163326238
+          },
+          "nodeIndex": "factTrabajo_ActividadRealizada",
+          "nodeLineageTag": "bf3b407b-5109-4c60-929e-c7323182defe",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 2283.0811636104436,
+            "y": 1934.5782019887242
+          },
+          "nodeIndex": "factTrabajo_Desempleo",
+          "nodeLineageTag": "6d84d083-8028-4eee-8a8e-9e22de7403ea",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 2045.0028135958364,
+            "y": 1934.5782019887247
+          },
+          "nodeIndex": "factTrabajo_EmpleoFormal",
+          "nodeLineageTag": "a2bb9100-cba7-48f0-9b66-640332991a7e",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1802.9520237414179,
+            "y": 1936.5644219086307
+          },
+          "nodeIndex": "factTrabajo_EmpleoInformal",
+          "nodeLineageTag": "2f04ba8e-4ce3-4678-b2de-690a32589bdd",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 34
+        },
+        {
+          "location": {
+            "x": 1562.8874538069044,
+            "y": 1936.5644219086307
+          },
+          "nodeIndex": "factTrabajo_Ingresos",
+          "nodeLineageTag": "50de94ae-ec0c-4b8d-b38f-657f7429194a",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 35
+        },
+        {
+          "location": {
+            "x": 1318.8504440325787,
+            "y": 1940.5368617484435
+          },
+          "nodeIndex": "factTrabajo_PEA",
+          "nodeLineageTag": "5f0c5723-1e9c-4927-a207-f6028f59a7c7",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 2520.781535950031,
+            "y": 2222.580090375136
+          },
+          "nodeIndex": "factVictimizacionSeguridadCiudadana_ActividadQueDejóDeRealizar",
+          "nodeLineageTag": "368e1b32-e6fa-4420-8286-c3904edf5669",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 36
+        },
+        {
+          "location": {
+            "x": 2278.73074609561,
+            "y": 2222.580090375136
+          },
+          "nodeIndex": "factVictimizacionSeguridadCiudadana_InseguridadCaminarNoche",
+          "nodeLineageTag": "e09bc690-af1f-46be-96e2-0c9a5f909324",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 2038.6661761610981,
+            "y": 2224.566310295043
+          },
+          "nodeIndex": "factVictimizacionSeguridadCiudadana_PercepciónInseguridad12Meses",
+          "nodeLineageTag": "d14d22b0-b5ee-4078-99de-b4c6cf765279",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 37
+        },
+        {
+          "location": {
+            "x": 1798.6016062265833,
+            "y": 2226.5525302149485
+          },
+          "nodeIndex": "factVictimizacionSeguridadCiudadana_Revictimización",
+          "nodeLineageTag": "d8988377-e8d2-4183-a2d2-0f2e74fa700e",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1558.5370362920708,
+            "y": 2224.5663102950421
+          },
+          "nodeIndex": "factVictimizacionSeguridadCiudadana_VíctimaHechoDelictivo",
+          "nodeLineageTag": "48920d79-4fec-4fc0-b3a9-fa539fa1a0a3",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 38
+        },
+        {
+          "location": {
+            "x": 2522.3897781949149,
+            "y": 2506.6095389217353
+          },
+          "nodeIndex": "factViolencia_Familiar",
+          "nodeLineageTag": "4c4adae3-d558-4944-91a6-9db96fb2d557",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 39
+        },
+        {
+          "location": {
+            "x": 2278.6208087947366,
+            "y": 2506.6095389217353
+          },
+          "nodeIndex": "factViolencia_FísicaAlgunaVez",
+          "nodeLineageTag": "66918d98-80a8-41e3-ac1d-ff6e390d4f61",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 40
+        },
+        {
+          "location": {
+            "x": 2040.8104991542755,
+            "y": 2508.5957588416413
+          },
+          "nodeIndex": "factViolencia_FSPAlgunaVez",
+          "nodeLineageTag": "8abd4091-638c-44ae-9c8b-a988b01910af",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 41
+        },
+        {
+          "location": {
+            "x": 1800.7461110636239,
+            "y": 2508.5957588416418
+          },
+          "nodeIndex": "factViolencia_PsicológicaAlgunaVez",
+          "nodeLineageTag": "b6a7d4e7-7c9f-4a21-9215-531fbe4fe5e4",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 42
+        },
+        {
+          "location": {
+            "x": 2522.0835511873142,
+            "y": 1312.0002197833098
+          },
+          "nodeIndex": "factParticipaciónCiudadana_ConfianzaInstituciones",
+          "nodeLineageTag": "28e267f7-77d8-4c0e-926c-159769fa281e",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 23
+        },
+        {
+          "location": {
+            "x": 2282.9035778606308,
+            "y": 1316.1550085378117
+          },
+          "nodeIndex": "factParticipaciónCiudadana_ConoceDemocracia",
+          "nodeLineageTag": "3c3f6009-33c5-4e7f-876e-c679f1e9a7a2",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 24
+        },
+        {
+          "location": {
+            "x": 2042.503303375704,
+            "y": 1316.9840620514776
+          },
+          "nodeIndex": "factParticipaciónCiudadana_DemocraciaFunciona",
+          "nodeLineageTag": "f0fdd831-6653-4940-b075-652b1bdfec5b",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 25
+        },
+        {
+          "location": {
+            "x": 1799.6954594083554,
+            "y": 1316.9840620514776
+          },
+          "nodeIndex": "factParticipaciónCiudadana_DemocraciaImporta",
+          "nodeLineageTag": "e9c5f2e1-4875-421f-bdfe-0cb1441770a9",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 26
+        },
+        {
+          "location": {
+            "x": 1559.3843350806621,
+            "y": 1316.9840620514776
+          },
+          "nodeIndex": "factParticipaciónCiudadana_DemocraciaSiemprePreferible",
+          "nodeLineageTag": "5e1e246f-aa28-49e0-8e96-60f2d5cc2302",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 27
+        },
+        {
+          "location": {
+            "x": 1321.2337091486522,
+            "y": 1309.4939031325112
+          },
+          "nodeIndex": "factParticipaciónCiudadana_ParticipaciónAsociación",
+          "nodeLineageTag": "77c4912a-e03a-42b0-a7a3-31a99c018663",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 19.730664061344484,
+            "y": 248.04263391404496
+          },
+          "nodeIndex": "factViolencia_FísicaSexual",
+          "nodeLineageTag": "06828eb0-2dce-45f7-b7b1-d7475982c526",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 44.905697313104092,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

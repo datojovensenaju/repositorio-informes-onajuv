@@ -1,0 +1,24 @@
+relationship AutoDetected_cc9caea0-a2cd-4e93-8255-5cde8ae0ac10
+	fromColumn: 'candidatura joven'.'Distrito Electoral'
+	toColumn: distritoElectoral.'DISTRITO ELECTORAL'
+
+relationship AutoDetected_474cbcad-d99a-4749-a8d8-89278881b01b
+	fromColumn: 'candidatura general'.'Distrito Electoral'
+	toColumn: distritoElectoral.'DISTRITO ELECTORAL'
+
+relationship AutoDetected_0f343474-aad5-4a31-8914-9ee67abea2a7
+	fromColumn: 'candidatura joven'.Sexo
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_84f070b2-9356-49a0-ac34-2a8fae68ef58
+	fromColumn: 'candidatura general'.Sexo
+	toColumn: Sexo.SEXO
+
+relationship 5f08a975-646f-baa5-208f-e1e20865d353
+	fromColumn: 'candidatura joven'.'Nivel Educativo Alcanzado'
+	toColumn: 'Nivel Educativo Elecciones'.NIVEL_EDUCATIVO_ELECCIONES
+
+relationship df2b2b1a-c83a-f46b-92bb-ec7788c1d421
+	fromColumn: 'candidatura joven'.'Nivel Educativo Alcanzado - MOBILE'
+	toColumn: 'Nivel Educativo Elecciones - Mo'.NIVEL_EDUCATIVO_ELECCIONES_MB
+

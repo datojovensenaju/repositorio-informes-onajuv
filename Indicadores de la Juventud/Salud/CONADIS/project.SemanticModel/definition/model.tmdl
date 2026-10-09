@@ -1,0 +1,31 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Año","dimRegion","dimProvincia","dimDistrito","Rango Etario","Sexo","Mes","RNPCD","DimDeficiencia","RegistroDeficiencia","DimLimitacion","RegistroLimitacion"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dimRegion
+ref table Año
+ref table 'Rango Etario'
+ref table dimProvincia
+ref table dimDistrito
+ref table Sexo
+ref table Mes
+ref table RNPCD
+ref table DimDeficiencia
+ref table RegistroDeficiencia
+ref table DimLimitacion
+ref table RegistroLimitacion
+ref table DateTableTemplate_6cffdb07-b7d7-4d31-aa92-9bbf9eeec0e8
+ref table LocalDateTable_5b5bbe41-d322-4ab4-a8ef-2818302ea797
+
+ref cultureInfo es-MX
+

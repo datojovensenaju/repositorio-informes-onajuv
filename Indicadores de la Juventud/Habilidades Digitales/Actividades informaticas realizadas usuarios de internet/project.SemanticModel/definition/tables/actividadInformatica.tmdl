@@ -1,0 +1,43 @@
+table actividadInformatica
+	lineageTag: d1ecef17-e928-4412-9d7c-30523e2a22a2
+
+	column ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 0f1910bf-f2df-4ce7-950c-a37dbe916afd
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TIPO ACTIVIDAD'
+		dataType: string
+		lineageTag: ec1e6c67-7b8b-44b3-ada8-361985f53915
+		summarizeBy: none
+		sourceColumn: TIPO ACTIVIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ACTIVIDAD INFORMATICA'
+		dataType: string
+		lineageTag: 11594d27-33a2-48bc-8b31-c13f03c99a97
+		summarizeBy: none
+		sourceColumn: ACTIVIDAD INFORMATICA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition actividadInformatica = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/7. Competencias digitales/Actividades informáticas realizadas por jóvenes usuarios de internet.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "actividadInformatica", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"ID", Int64.Type}, {"TIPO ACTIVIDAD", type text}, {"ACTIVIDAD INFORMATICA", type text}}, "es")
+				in
+				  #"Tipo de columna cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

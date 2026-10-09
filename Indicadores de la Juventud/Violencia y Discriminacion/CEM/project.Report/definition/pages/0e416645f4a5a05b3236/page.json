@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "0e416645f4a5a05b3236",
+  "displayName": "CEM - Mobile",
+  "displayOption": "ActualSize",
+  "height": 5210,
+  "width": 370,
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "ec77f7f012b111ba9a09",
+      "target": "86aa5214f31461ba9aa1",
+      "type": "NoFilter"
+    }
+  ]
+}

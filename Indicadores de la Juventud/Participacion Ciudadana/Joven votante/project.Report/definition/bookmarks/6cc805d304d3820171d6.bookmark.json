@@ -1,0 +1,534 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Limpiar Filtros Exterior Mobile",
+  "name": "6cc805d304d3820171d6",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "f0495cc620a3946e9a51",
+    "sections": {
+      "f0495cc620a3946e9a51": {
+        "visualContainers": {
+          "528a74b9ecb8a621b1a8": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "01fd73ed00128e724227": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "05f4f56b0288cf74ad15",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TipoVotante"
+                        }
+                      },
+                      "Property": "TIPO_VOTANTE"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TipoVotante"
+                        }
+                      },
+                      "Property": "TIPO_VOTANTE"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d45e4867004b54a315d3": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "e4210a65306a339cbe45": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "c262b4bbee4b02decaaa": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "50a5c28b97015a01be56": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "44705d1a94d1b54a0d78": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "a9ba869c924c0bdba819": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "d94dece474490eb80458": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "fccdecd01e7000d21bd2": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "343521f7180719a380b8": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "36cc8cd3e9d15e007525": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "95aa5e1e8aa60a5820a0": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "fa6531851dbb6ad3bb26": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "3de2950375a5eea0e690": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "416866428e47e42459d6": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "e4f0800d756ead993173": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a4205f5c876210197eab",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "d",
+                        "Entity": "dimDepartamento",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "d"
+                                        }
+                                      },
+                                      "Property": "DEPARTAMENTO"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'NO DETERMINADO'"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'NACIONAL'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "DEPARTAMENTO"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "44a31c40941d481b6937",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "País"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "País"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "87fc38e6048897e8aa32": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "41bf654e03293267530b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "Total de Jóvenes Votantes Exterior"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "Total de Jóvenes Votantes Exterior"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "99e330a775ed7e37895c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2b5bec09b43f6354429f",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "total Nuevos Votantes Exterior"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "total Nuevos Votantes Exterior"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "98f1d132009b4b330c9b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8ed80b72d3f744ae6bbc",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "totalHombreVotanteExterior"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "totalHombreVotanteExterior"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "159fdd2000815b62c014": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ab8c4fa33608da9fb353",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "totalMujerVotanteExterior"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "totalMujerVotanteExterior"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "3bba6a110839963d0ab1": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "b5184f2d3666cc95e12d": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "0fb22dd4c0e408b76e0b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "932ec3281602ed1417ca",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "Sexo"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Votantes – Extranjero – Jóvenes"
+                        }
+                      },
+                      "Property": "Sexo"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

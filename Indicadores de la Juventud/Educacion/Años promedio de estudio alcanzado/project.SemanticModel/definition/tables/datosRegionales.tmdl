@@ -1,0 +1,121 @@
+table datosRegionales
+	lineageTag: 71ec4e77-260b-4507-a7e0-9457ea5207d8
+
+	measure 'Valor Región' =
+			
+			CALCULATE(
+			    MAX(datosRegionales[VALOR]),
+			    datosRegionales[CATEGORIA] = "REGIONAL"
+			)
+		lineageTag: 407d5705-4451-4063-be76-011beb4fd1ed
+
+	measure 'Valor Urbano' =
+			
+			CALCULATE(
+			    MAX(datosRegionales[VALOR]),
+			    datosRegionales[CATEGORIA] = "URBANO"
+			)
+		lineageTag: f349b76a-ee74-4bd7-a69e-80226f282f4e
+
+	measure 'Valor Rural' =
+			
+			CALCULATE(
+			    MAX(datosRegionales[VALOR]),
+			    datosRegionales[CATEGORIA] = "RURAL"
+			)
+		lineageTag: 50c45e3d-1010-4393-996c-f3fb8d27ed74
+
+	measure 'Valor Hombre' =
+			
+			CALCULATE(
+			    MAX(datosRegionales[VALOR]),
+			    datosRegionales[CATEGORIA] = "HOMBRE"
+			)
+		lineageTag: 711c3887-7e65-4f1f-9dc0-2ebd32b358f4
+
+	measure 'Valor Mujer' =
+			
+			CALCULATE(
+			    MAX(datosRegionales[VALOR]),
+			    datosRegionales[CATEGORIA] = "MUJER"
+			)
+		lineageTag: 985afc04-526d-423a-8944-3109e853b6ce
+
+	column AÑO
+		dataType: string
+		lineageTag: 03bd127b-4aae-43ff-95f5-33b9737bde46
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: de42359d-68d4-4def-ba4d-ec4a0cc78744
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 8547e3de-6e9c-4e2a-8611-c0c268ba3dd1
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: 3a290ce2-b4c3-4503-816a-8515adebc286
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: fe9b6f0c-2c03-44f6-a9a8-42b01a81889a
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: d467d2bd-9614-493c-9425-aa0593d61731
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: 979e436e-68dd-41d2-8eab-b5d5c2b5cbb3
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: fbd30dd2-dff7-48e9-8593-81b7cf821ea6
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition datosRegionales = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/1.%20Educaci%C3%B3n/Educaci%C3%B3n_A%C3%B1os%20promedio%20de%20estudio%20alcanzados.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "datosRegionales", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

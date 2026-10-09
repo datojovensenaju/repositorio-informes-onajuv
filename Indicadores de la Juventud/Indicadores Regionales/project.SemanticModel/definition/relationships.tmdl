@@ -1,0 +1,312 @@
+relationship AutoDetected_a657b34f-a92f-46c4-9cc7-3004e1a99ba7
+	fromColumn: dimRegion.ID_DEP
+	toColumn: dimDepartamento.ID_DEP
+
+relationship AutoDetected_a1c2c585-efe7-4ad5-9214-eff9974e8fd8
+	fromColumn: dimProvincia.ID_REG
+	toColumn: dimRegion.ID_REG
+
+relationship AutoDetected_d2b37b48-1533-40cf-9645-0869b74fb1a3
+	fromColumn: factPoblacionGeneral.SEXO
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_d4c49b81-8f84-4149-a35f-afd5f1703c1c
+	fromColumn: factPoblacionJoven.SEXO
+	toColumn: Sexo.SEXO
+
+relationship 3c0adb7a-136d-d673-d98d-8ec714d9e071
+	fromColumn: factPoblacionJoven.UBIGEO
+	toColumn: dimDistrito.ID_DIS
+
+relationship 92b6fb2a-7b13-e518-9a10-7ad0dea700a2
+	fromColumn: dimDistrito.ID_PROV
+	toColumn: dimProvincia.ID_PROV
+
+relationship 04365e67-69b3-f40b-1303-414bbd7ed8d2
+	fromColumn: factPoblacionGeneral.UBIGEO
+	toColumn: dimDistrito.ID_DIS
+
+relationship 819c9c19-fb51-971e-c2d5-546f8451887d
+	fromColumn: factEducación_AñosDeEscolaridad.REGION
+	toColumn: dimRegion.REGION
+
+relationship cbea492f-b6f7-4124-9218-39fac7a20aa7
+	fromColumn: factPoblacionJoven.'RANGO DE EDAD'
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+
+relationship AutoDetected_f8df4ff5-dc7a-4b30-b2d7-b7c3ba4955ae
+	fromColumn: factEducación_AsistenciaSuperior.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_5ec929ba-6ef9-43f6-8532-701da4ec764d
+	fromColumn: factEducacion_ConclusionSecundaria.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_147af77b-710b-4efc-b748-98ec2b15014a
+	fromColumn: factEducacion_ConclusionSuperior.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_8d90cf5c-cb06-482f-9ea7-758755fe5a9f
+	fromColumn: factEducación_MaxNivelAlcanzado.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_363d8b0f-8527-467e-b697-addffca592c4
+	fromColumn: factTrabajo_ActividadRealizada.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_1ce81d5d-cc3c-4d0b-a25e-34de2a87c89e
+	fromColumn: factTrabajo_Desempleo.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_72770d60-5bce-4ec4-b0be-12353580eba8
+	fromColumn: factTrabajo_EmpleoFormal.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_734c9946-53d6-4b67-aa81-eaf614e816fc
+	fromColumn: factTrabajo_EmpleoInformal.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_bd133c3c-e305-41a1-96cb-5d024c869d73
+	fromColumn: factTrabajo_Ingresos.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_98e3fe22-b797-4340-89ac-6fd11fd52dce
+	fromColumn: factTrabajo_PEA.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_c42b582d-d9ef-48d2-b801-7089bac65eb8
+	fromColumn: factSalud-Alcohol.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_664663cd-528c-4d0e-be39-1136fbbdad38
+	fromColumn: factSalud-CuentaConSeguro.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_27c5b6a7-5c6c-4dc4-9a52-6501bfd60385
+	fromColumn: factSalud_EpisodioDepresivo.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_e5069363-8a57-4a67-9b4a-7b76f353111f
+	fromColumn: factSalud-Embarazo.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_ede57186-f9a6-4e16-ad7d-c200d5df4674
+	fromColumn: factSalud-EnfermedadCrónica.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_9f9d3dfb-f810-48c3-9bfd-2c35377f6696
+	fromColumn: factSalud-SIS.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_71d9a7da-b7ef-4db5-907a-4072911bfbcc
+	fromColumn: factSalud-Tabaco.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_7ff02477-b1fe-4c58-865c-e043a7ac2b69
+	fromColumn: factVictimizacionSeguridadCiudadana_ActividadQueDejóDeRealizar.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_c33da27d-af0b-4c13-b65b-5a70877f1b40
+	fromColumn: factVictimizacionSeguridadCiudadana_InseguridadCaminarNoche.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_f6644b08-8952-48dd-b24d-253829a72d40
+	fromColumn: factVictimizacionSeguridadCiudadana_PercepciónInseguridad12Meses.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_0afdae03-ca4e-4407-b990-1bc82785d9b7
+	fromColumn: factVictimizacionSeguridadCiudadana_Revictimización.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_43d4e662-a1fb-4e50-acb1-01cb1852b78c
+	fromColumn: factVictimizacionSeguridadCiudadana_VíctimaHechoDelictivo.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_08bbf6c2-a225-4b5d-bea6-a11387b70390
+	fromColumn: factViolencia_Familiar.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_d6b162d5-a5cf-4c02-9cf4-d027be7358ec
+	fromColumn: factViolencia_FísicaAlgunaVez.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_5ffcdaa7-5abe-4b1e-b262-01d925fe2595
+	fromColumn: factViolencia_FSPAlgunaVez.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_c367df50-80e4-4467-a12c-477bca66c15c
+	fromColumn: factViolencia_PsicológicaAlgunaVez.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_66194ddb-4ea9-4d5f-abfd-23e72f2df203
+	fromColumn: factParticipaciónCiudadana_ConfianzaInstituciones.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_4933e21c-bf51-4405-bb70-84c7705ff6be
+	fromColumn: factParticipaciónCiudadana_ConoceDemocracia.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_6fea022a-1c2d-4af8-8df7-292d6ae031ef
+	fromColumn: factParticipaciónCiudadana_DemocraciaFunciona.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_d9dd8bbb-4858-4f6a-aba2-910f2d7c6e52
+	fromColumn: factParticipaciónCiudadana_DemocraciaImporta.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_580f334b-57b4-49c6-b057-2e747b7150f6
+	fromColumn: factParticipaciónCiudadana_DemocraciaSiemprePreferible.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_5f11acba-de19-462c-ae1d-b86d06840b67
+	fromColumn: factParticipaciónCiudadana_ParticipaciónAsociación.REGION
+	toColumn: dimRegion.REGION
+
+relationship AutoDetected_36455e8a-dd1f-4294-964d-cb53037413a2
+	fromColumn: factViolencia_FísicaSexual.REGION
+	toColumn: dimRegion.REGION
+
+relationship c25baf05-c2ab-4d81-8fc8-e6b69d2e09dd
+	fromColumn: factPoblacionGeneral.AÑO
+	toColumn: Año.AÑO
+
+relationship 1f5d3057-8e7d-4e7c-af8d-76be45debdd3
+	fromColumn: factPoblacionJoven.AÑO
+	toColumn: Año.AÑO
+
+relationship 10657059-c221-4da4-9610-24cb86e483a5
+	fromColumn: factEducación_AñosDeEscolaridad.AÑO
+	toColumn: Año.AÑO
+
+relationship 3ccaf080-eac0-43a1-ae8e-5e88a35c73d6
+	fromColumn: factEducación_AsistenciaSuperior.AÑO
+	toColumn: Año.AÑO
+
+relationship ee545a17-880b-40f6-91eb-06abd6446d88
+	fromColumn: factEducacion_ConclusionSecundaria.AÑO
+	toColumn: Año.AÑO
+
+relationship af29ad39-25a0-447f-b621-a27fece6b5f7
+	fromColumn: factEducacion_ConclusionSuperior.AÑO
+	toColumn: Año.AÑO
+
+relationship 1a225ebb-2cb0-4272-9156-53090d727b57
+	fromColumn: factEducación_MaxNivelAlcanzado.AÑO
+	toColumn: Año.AÑO
+
+relationship e7eaa576-ff57-40f4-8175-fbbe16d19ec6
+	fromColumn: factTrabajo_ActividadRealizada.AÑO
+	toColumn: Año.AÑO
+
+relationship 204fde7e-64b7-44fd-9d3b-6c2e2a65b76c
+	fromColumn: factTrabajo_Desempleo.AÑO
+	toColumn: Año.AÑO
+
+relationship 3b8d9888-c7de-4878-b505-b32f9a87efc1
+	fromColumn: factTrabajo_EmpleoFormal.AÑO
+	toColumn: Año.AÑO
+
+relationship 5f258869-6404-42bb-9288-6726ba7bfd87
+	fromColumn: factTrabajo_EmpleoInformal.AÑO
+	toColumn: Año.AÑO
+
+relationship 0bf18780-5e71-4fdc-800e-99fe63479e51
+	fromColumn: factTrabajo_Ingresos.AÑO
+	toColumn: Año.AÑO
+
+relationship 8adc5e16-e6ad-4a39-9ce9-85e6b1bc9ea3
+	fromColumn: factTrabajo_PEA.AÑO
+	toColumn: Año.AÑO
+
+relationship d4f04929-b26b-4c12-bd72-534feb18330b
+	fromColumn: factSalud-Alcohol.AÑO
+	toColumn: Año.AÑO
+
+relationship d24d2fea-8cdf-4e14-856c-915f5d110f73
+	fromColumn: factSalud-CuentaConSeguro.AÑO
+	toColumn: Año.AÑO
+
+relationship 091a463f-0096-4331-94e2-e2dd6cafaa80
+	fromColumn: factSalud_EpisodioDepresivo.AÑO
+	toColumn: Año.AÑO
+
+relationship 212947e0-a0b6-4e3e-8ac2-598a52dc313d
+	fromColumn: factSalud-Embarazo.AÑO
+	toColumn: Año.AÑO
+
+relationship 9ce78fe0-8864-4967-a59a-5cc65b374237
+	fromColumn: factSalud-EnfermedadCrónica.AÑO
+	toColumn: Año.AÑO
+
+relationship b3def5ea-90f6-4f10-b48c-3a32b8625feb
+	fromColumn: factSalud-SIS.AÑO
+	toColumn: Año.AÑO
+
+relationship cb2c0ce2-134d-4364-aea0-1969a41b37c0
+	fromColumn: factSalud-Tabaco.AÑO
+	toColumn: Año.AÑO
+
+relationship 01b9d1b9-ee0a-48fd-8ac4-b7251e74612c
+	fromColumn: factVictimizacionSeguridadCiudadana_ActividadQueDejóDeRealizar.AÑO
+	toColumn: Año.AÑO
+
+relationship e1710a0a-54c7-4024-9322-45b86cb68e5d
+	fromColumn: factVictimizacionSeguridadCiudadana_InseguridadCaminarNoche.AÑO
+	toColumn: Año.AÑO
+
+relationship 6fe514cd-da07-45e9-90e7-41a887007100
+	fromColumn: factVictimizacionSeguridadCiudadana_PercepciónInseguridad12Meses.AÑO
+	toColumn: Año.AÑO
+
+relationship 715d0d13-3ea8-42e7-be60-1a400292a624
+	fromColumn: factVictimizacionSeguridadCiudadana_Revictimización.AÑO
+	toColumn: Año.AÑO
+
+relationship 00b6ce9b-37c5-4c8f-bd62-d153dbc307f7
+	fromColumn: factVictimizacionSeguridadCiudadana_VíctimaHechoDelictivo.AÑO
+	toColumn: Año.AÑO
+
+relationship 67f05966-e8c6-4c36-b3e0-8e8e53d2aee3
+	fromColumn: factViolencia_Familiar.AÑO
+	toColumn: Año.AÑO
+
+relationship 27503a67-b5bc-45ce-8dd5-c686fbea869e
+	fromColumn: factViolencia_FísicaAlgunaVez.AÑO
+	toColumn: Año.AÑO
+
+relationship 070c4f33-1923-42d4-b559-d780355f8291
+	fromColumn: factViolencia_FSPAlgunaVez.AÑO
+	toColumn: Año.AÑO
+
+relationship 3d237fa9-fca6-419d-844d-2c6812162d35
+	fromColumn: factViolencia_PsicológicaAlgunaVez.AÑO
+	toColumn: Año.AÑO
+
+relationship cc0a623c-1dd7-4623-a32a-64752fd26119
+	fromColumn: factParticipaciónCiudadana_ConfianzaInstituciones.AÑO
+	toColumn: Año.AÑO
+
+relationship bd39a641-3584-49a3-b5e4-55978774af99
+	fromColumn: factParticipaciónCiudadana_ConoceDemocracia.AÑO
+	toColumn: Año.AÑO
+
+relationship d5c51fa2-1a43-466c-a524-c65026c32295
+	fromColumn: factParticipaciónCiudadana_DemocraciaFunciona.AÑO
+	toColumn: Año.AÑO
+
+relationship 420a9868-7b53-4492-ac2d-bb6eb8b7d0d1
+	fromColumn: factParticipaciónCiudadana_DemocraciaImporta.AÑO
+	toColumn: Año.AÑO
+
+relationship b21a05ce-f0fe-4ca9-90be-da7a974a1a7d
+	fromColumn: factParticipaciónCiudadana_DemocraciaSiemprePreferible.AÑO
+	toColumn: Año.AÑO
+
+relationship 1c0391ae-0f7e-42a0-9b2e-378214926904
+	fromColumn: factParticipaciónCiudadana_ParticipaciónAsociación.AÑO
+	toColumn: Año.AÑO
+
+relationship 90186ea1-d292-4813-a63e-e3276e1a8ccc
+	fromColumn: factViolencia_FísicaSexual.AÑO
+	toColumn: Año.AÑO
+

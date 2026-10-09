@@ -1,0 +1,242 @@
+table pronacej-CJDR
+	lineageTag: b95795c2-88e5-47fd-a18d-994c7718e353
+
+	measure 'Total de Jóvenes' = ```
+			COUNTROWS('pronacej-CJDR') 
+			```
+		lineageTag: 72fd85ca-22d8-4146-ab8e-24ff6ae71949
+
+		formatStringDefinition = "### ##0"
+
+	measure 'Edad Promedio' =
+			
+			AVERAGE('pronacej-CJDR'[Edad_Actual])
+		formatString: 0
+		lineageTag: 46106b34-30cb-4570-942a-e673aa7d0f64
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure '% Sentenciados' =
+			
+			DIVIDE(
+			    CALCULATE(
+			        [Total de Jóvenes],
+			        'pronacej-CJDR'[Situacion_Juridica] = "SENTENCIADO"
+			    ),
+			    [Total de Jóvenes]
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: f14fe15d-7b6e-441d-ad06-fdd02029653d
+
+	measure '% Consumo Drogas' =
+			
+			DIVIDE(
+			    CALCULATE(
+			        [Total de Jóvenes],
+			        'pronacej-CJDR'[Nivel_consumo] <> "NO CONSUME"
+			    ),
+			    [Total de Jóvenes]
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 9967f71b-e341-4400-b563-acc41a60f482
+
+	column Anio
+		dataType: string
+		lineageTag: 5feda0b0-cc7f-4290-a492-292952195317
+		summarizeBy: none
+		sourceColumn: Anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		dataType: string
+		lineageTag: f5c90b76-918d-462a-b911-f1f534cb7051
+		summarizeBy: none
+		sourceColumn: Mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Departamento_CJDR
+		dataType: string
+		lineageTag: 46882eba-36cb-4ed5-b34a-2a33eeed70e5
+		summarizeBy: none
+		sourceColumn: Departamento_CJDR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CJDR
+		dataType: string
+		lineageTag: a572569d-3086-4391-9cad-727520bbd79a
+		summarizeBy: none
+		sourceColumn: CJDR
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: 3badc030-57d7-47cb-bb4f-18372c597c3a
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado
+		dataType: string
+		lineageTag: cf497ef7-b36f-489d-bbc1-45e8965b3829
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Educacion_antes_ingreso
+		dataType: string
+		lineageTag: 8ceb229b-eff7-49cb-b1ee-9cfd0a4336e2
+		summarizeBy: none
+		sourceColumn: Educacion_antes_ingreso
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nivel_consumo
+		dataType: string
+		lineageTag: b11b4c5e-e795-4cf5-ab21-a0ab07f4245e
+		summarizeBy: none
+		sourceColumn: Nivel_consumo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo_droga
+		dataType: string
+		lineageTag: 12654eb0-3437-457d-a71b-079b66da4051
+		summarizeBy: none
+		sourceColumn: Tipo_droga
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nivel_consumo_alcohol
+		dataType: string
+		lineageTag: 8b4ef78f-d14c-4bde-9e2c-91305def7490
+		summarizeBy: none
+		sourceColumn: Nivel_consumo_alcohol
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha_ingreso
+		dataType: string
+		lineageTag: 9288c86e-5ad8-4c48-b13f-c5f257f590f2
+		summarizeBy: none
+		sourceColumn: Fecha_ingreso
+
+		annotation SummarizationSetBy = Automatic
+
+	column Departamento_origen
+		dataType: string
+		lineageTag: 6096173e-9ce7-4cf8-be4d-7eebc57c5900
+		summarizeBy: none
+		sourceColumn: Departamento_origen
+
+		annotation SummarizationSetBy = Automatic
+
+	column Departamento_infraccion
+		dataType: string
+		lineageTag: a0031836-da99-4692-bf5e-d13d3db59526
+		summarizeBy: none
+		sourceColumn: Departamento_infraccion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Edad_actual
+		dataType: int64
+		formatString: 0
+		lineageTag: d2f0d4b9-5e85-4884-add6-fd62ffa01611
+		summarizeBy: sum
+		sourceColumn: Edad_actual
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rango_edad
+		dataType: string
+		lineageTag: f5e13d02-6b23-4efa-976d-be3a9c58bc43
+		summarizeBy: none
+		sourceColumn: Rango_edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado_laboral
+		dataType: string
+		lineageTag: 91421fa7-7ea9-49e0-8b1a-dbe2ff742d7f
+		summarizeBy: none
+		sourceColumn: Estado_laboral
+
+		annotation SummarizationSetBy = Automatic
+
+	column Situacion_juridica
+		dataType: string
+		lineageTag: 18c4d901-7ae7-4395-9e9e-5b6f47304338
+		summarizeBy: none
+		sourceColumn: Situacion_juridica
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo_infraccion_generica
+		dataType: string
+		lineageTag: 0cbbdd95-bce9-4381-a0ac-c7c1618c8aab
+		summarizeBy: none
+		sourceColumn: Tipo_infraccion_generica
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo_infraccion_especifica
+		dataType: string
+		lineageTag: 22c92fee-0efe-49de-af35-713f2b53baaa
+		summarizeBy: none
+		sourceColumn: Tipo_infraccion_especifica
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo_medida
+		dataType: string
+		lineageTag: fe54779f-c49e-47ae-9be9-f0d95734d248
+		summarizeBy: none
+		sourceColumn: Tipo_medida
+
+		annotation SummarizationSetBy = Automatic
+
+	column Duracion_medida_meses
+		dataType: string
+		lineageTag: 5f2e2d0e-05d1-4c8e-bb7a-e64c9535a4d4
+		summarizeBy: none
+		sourceColumn: Duracion_medida_meses
+
+		annotation SummarizationSetBy = Automatic
+
+	column Numero_hijos
+		dataType: string
+		lineageTag: 79814ff4-1abf-4c50-9c53-d4836e118a4e
+		summarizeBy: none
+		sourceColumn: Numero_hijos
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado_civil_padres
+		dataType: string
+		lineageTag: a1b2ea57-13cd-438d-ac24-5e7a23ef10f5
+		summarizeBy: none
+		sourceColumn: Estado_civil_padres
+
+		annotation SummarizationSetBy = Automatic
+
+	partition pronacej-CJDR = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/4. Victimización y seguridad ciudadana/REGISTROS/PRONACEJ/PRONACEJ_Centro_Juvenil_de_Diagnóstico_y_Rehabilitación_de_Lima.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "pronacej-CJDR", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Edad_actual", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

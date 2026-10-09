@@ -1,0 +1,116 @@
+table culturaIndigena
+	lineageTag: 4cee72bc-878c-4f67-a2ef-c58dd86b0198
+
+	column AÑO
+		dataType: int64
+		formatString: 0
+		lineageTag: b790c7fa-251b-4f26-9141-6bb987702b5b
+		summarizeBy: sum
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MES
+		dataType: string
+		lineageTag: 04bc1f2d-5055-45fb-b0e5-2062d947c363
+		summarizeBy: none
+		sourceColumn: MES
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Autoidentificación étnica'
+		dataType: string
+		lineageTag: 80268319-971e-496d-89f7-ebef5b8951a9
+		summarizeBy: none
+		sourceColumn: Autoidentificación étnica
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Autoidentificación étnica _específica'
+		dataType: string
+		lineageTag: ce9a0a3c-f4d6-4faf-9ade-e92a932c6047
+		summarizeBy: none
+		sourceColumn: Autoidentificación étnica _específica
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_REG
+		dataType: int64
+		formatString: 0
+		lineageTag: edbfdf9c-7bf3-49d4-bbc9-659d9220d56a
+		summarizeBy: sum
+		sourceColumn: ID_REG
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 7b3de48e-b106-45fa-89fb-cc5d603ada1c
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_DEP
+		dataType: int64
+		formatString: 0
+		lineageTag: e70fe76a-608d-40d5-aaa8-ca5e337ab1db
+		summarizeBy: sum
+		sourceColumn: ID_DEP
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: c2f070da-e02f-4165-8eef-aa30ec2a072c
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: df672c1f-637d-4acb-aed0-3b4077d5e405
+		summarizeBy: none
+		sourceColumn: SEXO
+
+		annotation SummarizationSetBy = Automatic
+
+	column EDAD
+		dataType: string
+		lineageTag: f44dde38-9056-4c0f-9e4b-518e1368bdb8
+		summarizeBy: none
+		sourceColumn: EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column RANGO_EDAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b5ca4e4-1524-4fbc-9b57-0722211836db
+		summarizeBy: sum
+		sourceColumn: RANGO_EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SECTOR CULTURAL'
+		dataType: string
+		lineageTag: 372c7b4e-d2c2-4519-b000-d0668eb4f4ae
+		summarizeBy: none
+		sourceColumn: SECTOR CULTURAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition culturaIndigena = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/2.%20Empleo/REGISTROS/TRAB_CULT_INDIGENA_2022_2026.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "TRAB_CULT_INDIGENA_2022_2026", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"AÑO", Int64.Type}, {"MES", type text}, {"Autoidentificación étnica", type text}, {"Autoidentificación étnica _específica", type text}, {"ID_REG", Int64.Type}, {"REGION", type text}, {"ID_DEP", Int64.Type}, {"DEPARTAMENTO", type text}, {"SEXO", type text}, {"EDAD", type text}, {"RANGO_EDAD", Int64.Type}, {"SECTOR CULTURAL", type text}}, "es")
+				in
+				  #"Tipo de columna cambiado"
+
+	annotation PBI_ResultType = Table
+

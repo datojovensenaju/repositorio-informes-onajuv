@@ -1,0 +1,4188 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "representante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "representante": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "representante.ubigeo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "UBIGEO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ubigeo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.temática_de_organización_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "Temática de organización 1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "temática de organización 1": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.temática_de_organización_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "Temática de organización 2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "temática de organización 2": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.organización_juvenil_o_institución_pública_o_privada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "ORGANIZACIÓN JUVENIL O INSTITUCIÓN (PÚBLICA O PRIVADA)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "organización juvenil o institución (pública o privada)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "organización juvenil o institución": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "representante.acreditación": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "ACREDITACIÓN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "acreditación": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "representante.acreditación.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "VariationSource": "ACREDITACIÓN",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.acreditación.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "VariationSource": "ACREDITACIÓN",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "acreditación año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.acreditación.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "VariationSource": "ACREDITACIÓN",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "acreditación trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.acreditación.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "VariationSource": "ACREDITACIÓN",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "acreditación me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.acreditación.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "VariationSource": "ACREDITACIÓN",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "acreditación día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.región": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "REGIÓN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "región": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.provincia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "PROVINCIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "provincia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.distrito": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "DISTRITO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "distrito": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "SEXO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Sexo:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "representante.medio_de_verificación": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "MEDIO DE VERIFICACIÓN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medio de verificación": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.tipo_de_organización": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "TIPO DE ORGANIZACIÓN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo de organización": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tipo de organización:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "representante.detalle_tipo_de_organización": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "DETALLE TIPO DE ORGANIZACIÓN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "detalle tipo de organización": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.temática_de_organización": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "TEMÁTICA DE ORGANIZACIÓN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "temática de organización": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Temática de organización:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "representante.año_acreditación": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "AÑO ACREDITACIÓN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "año acreditación": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.total_de_organizaciones": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "Total de Organizaciones"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de organizaciones": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de organizacione": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall de organizacione": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Total de Organizaciones:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "miembro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "miembro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.organización_juvenil_o_institución_pública_o_privada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Organización Juvenil o Institución Pública o Privada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "organización juvenil o institución pública o privada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.fecha_de_acreditación": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Fecha de Acreditación"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha de acreditación": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "miembro.fecha_de_acreditación.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "VariationSource": "Fecha de Acreditación",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.fecha_de_acreditación.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "VariationSource": "Fecha de Acreditación",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha de acreditación año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.fecha_de_acreditación.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "VariationSource": "Fecha de Acreditación",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha de acreditación trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.fecha_de_acreditación.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "VariationSource": "Fecha de Acreditación",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha de acreditación me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.fecha_de_acreditación.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "VariationSource": "Fecha de Acreditación",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha de acreditación día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Region"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.cargo_en_la_organización": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Cargo en la organización"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cargo en la organización": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.fecha_de_nacimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Fecha de nacimiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha de nacimiento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.edad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Edad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.región_integrante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Región Integrantes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "región integrante": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.temática_de_organización_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Temática de organización 1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "temática de organización 1": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.temática_de_organización_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Temática de organización 2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "temática de organización 2": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.miembros_registrados_1529": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Miembros Registrados (15-29)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "miembros registrados (15-29)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "miembros registrados": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "miembros registrados (15 29)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Miembros Registrados:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Miembros registrados (15-29):": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "MIEMBROS REGISTRADOS (15-29 AÑOS)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.promedio_edad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "Promedio Edad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "promedio edad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim departamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimDepartamento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.id_dep": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "ID_DEP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id dep": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_DEP": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimRegion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "dim province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.id_reg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "ID_REG"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id reg": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_REG": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential reg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "ID_Región:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "REGION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Región": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.id_dep": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "ID_DEP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id dep": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_DEP": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_region.limite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimRegion",
+			          "ConceptualProperty": "LIMITE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "limite": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "miembro.rango_etario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miembros",
+			          "ConceptualProperty": "RANGO ETARIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "rango etario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.tarjeta_organización": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "Tarjeta Organización"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tarjeta organización": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.medio_digital_de_organización": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "Medio Digital de Organización"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medio digital de organización": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango etario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario.id_raneta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario",
+			          "ConceptualProperty": "ID_RANETA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id raneta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_RANETA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential raneta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "rango_etario.rango_etario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rango Etario",
+			          "ConceptualProperty": "RANGO_ETARIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango etario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rango etario name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RANGO_ETARIO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Grupo de Edad:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Rango etario:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "representante.tarjeta_región": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "Tarjeta Región"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tarjeta región": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "representante.total_sin_filtros": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Representantes",
+			          "ConceptualProperty": "Total sin filtros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total sin filtros": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate sin filtro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall sin filtro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "año.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Año",
+			          "ConceptualProperty": "AÑO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Año": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "AÑO ACREDITACIÓN": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "miembro_fecha_de_acreditación_jerarquía_de_fecha_has_miembro_fecha_de_acreditación_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro.fecha_de_acreditación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.jerarquía_de_fecha"
+			          }
+			        },
+			        "miembro.fecha_de_acreditación.día": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_días"
+			        }
+			      ]
+			    },
+			    "miembro_fecha_de_acreditación_jerarquía_de_fecha_has_miembro_fecha_de_acreditación_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro.fecha_de_acreditación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.jerarquía_de_fecha"
+			          }
+			        },
+			        "miembro.fecha_de_acreditación.me": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_me"
+			        }
+			      ]
+			    },
+			    "miembro_fecha_de_acreditación_jerarquía_de_fecha_has_miembro_fecha_de_acreditación_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro.fecha_de_acreditación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.jerarquía_de_fecha"
+			          }
+			        },
+			        "miembro.fecha_de_acreditación.trimestre": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_trimestres"
+			        }
+			      ]
+			    },
+			    "miembro_fecha_de_acreditación_jerarquía_de_fecha_has_miembro_fecha_de_acreditación_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro.fecha_de_acreditación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.jerarquía_de_fecha"
+			          }
+			        },
+			        "miembro.fecha_de_acreditación.año": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años"
+			        }
+			      ]
+			    },
+			    "miembro_fecha_de_acreditación_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro.fecha_de_acreditación": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación"
+			          }
+			        },
+			        "miembro.fecha_de_acreditación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_de_acreditacións_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
+			    "representante_acreditación_me_has_representante_acreditación_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante.acreditación.me": {
+			          "Target": {
+			            "Entity": "representante.acreditación.me"
+			          }
+			        },
+			        "representante.acreditación.día": {
+			          "Target": {
+			            "Entity": "representante.acreditación.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante.acreditación.me"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante.acreditación.día"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "representante.acreditación.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "representante.acreditación.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me"
+			        }
+			      ]
+			    },
+			    "representante_acreditación_trimestre_has_representante_acreditación_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante.acreditación.trimestre": {
+			          "Target": {
+			            "Entity": "representante.acreditación.trimestre"
+			          }
+			        },
+			        "representante.acreditación.me": {
+			          "Target": {
+			            "Entity": "representante.acreditación.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante.acreditación.trimestre"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante.acreditación.me"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "representante.acreditación.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "representante.acreditación.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "representante_acreditación_año_has_representante_acreditación_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante.acreditación.año": {
+			          "Target": {
+			            "Entity": "representante.acreditación.año"
+			          }
+			        },
+			        "representante.acreditación.trimestre": {
+			          "Target": {
+			            "Entity": "representante.acreditación.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante.acreditación.año"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante.acreditación.trimestre"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_años"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "representante.acreditación.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "representante.acreditación.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_años"
+			        }
+			      ]
+			    },
+			    "representante_acreditación_jerarquía_de_fecha_has_representante_acreditación_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante.acreditación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "representante.acreditación.jerarquía_de_fecha"
+			          }
+			        },
+			        "representante.acreditación.día": {
+			          "Target": {
+			            "Entity": "representante.acreditación.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante.acreditación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_días1"
+			        }
+			      ]
+			    },
+			    "representante_acreditación_jerarquía_de_fecha_has_representante_acreditación_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante.acreditación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "representante.acreditación.jerarquía_de_fecha"
+			          }
+			        },
+			        "representante.acreditación.me": {
+			          "Target": {
+			            "Entity": "representante.acreditación.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante.acreditación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_me1"
+			        }
+			      ]
+			    },
+			    "representante_acreditación_jerarquía_de_fecha_has_representante_acreditación_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante.acreditación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "representante.acreditación.jerarquía_de_fecha"
+			          }
+			        },
+			        "representante.acreditación.trimestre": {
+			          "Target": {
+			            "Entity": "representante.acreditación.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante.acreditación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_trimestres1"
+			        }
+			      ]
+			    },
+			    "representante_acreditación_jerarquía_de_fecha_has_representante_acreditación_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante.acreditación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "representante.acreditación.jerarquía_de_fecha"
+			          }
+			        },
+			        "representante.acreditación.año": {
+			          "Target": {
+			            "Entity": "representante.acreditación.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante.acreditación.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años1"
+			        }
+			      ]
+			    },
+			    "representante_acreditación_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante.acreditación": {
+			          "Target": {
+			            "Entity": "representante.acreditación"
+			          }
+			        },
+			        "representante.acreditación.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "representante.acreditación.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante.acreditación"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "acreditacións_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
+			    "dim_region_has_dim_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_dim_departamentos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_dim_regions"
+			        }
+			      ]
+			    },
+			    "miembro_has_rango_etario": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_rango_etarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "miembro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_miembros"
+			        }
+			      ]
+			    },
+			    "miembro_has_representante": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "representante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_representantes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "miembro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_miembros"
+			        }
+			      ]
+			    },
+			    "representante_has_dim_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "dim_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_dim_regions"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "representante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_representantes"
+			        }
+			      ]
+			    },
+			    "representante_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_años"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "representante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_representantes"
+			        }
+			      ]
+			    },
+			    "representante_has_total_sin_filtros": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.total_sin_filtros": {
+			          "Target": {
+			            "Entity": "representante.total_sin_filtros"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.total_sin_filtros"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_total_sin_filtros"
+			        }
+			      ]
+			    },
+			    "dim_region_has_representante_tarjeta_región": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "representante.tarjeta_región": {
+			          "Target": {
+			            "Entity": "representante.tarjeta_región"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "representante.tarjeta_región"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_tarjeta_región"
+			        }
+			      ]
+			    },
+			    "rango_etario_has_rango_etario": {
+			      "Binding": {
+			        "ConceptualEntity": "Rango Etario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        },
+			        "rango_etario.rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario.rango_etario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "rango_etario.rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_rango_etarios"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Name": {
+			              "Role": "rango_etario.rango_etario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_are_names_IDs_of_rango_etarios"
+			        }
+			      ]
+			    },
+			    "rango_etario_has_id_raneta": {
+			      "Binding": {
+			        "ConceptualEntity": "Rango Etario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rango_etario": {
+			          "Target": {
+			            "Entity": "rango_etario"
+			          }
+			        },
+			        "rango_etario.id_raneta": {
+			          "Target": {
+			            "Entity": "rango_etario.id_raneta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rango_etario"
+			            },
+			            "Object": {
+			              "Role": "rango_etario.id_raneta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rango_etarios_have_id_ranetas"
+			        }
+			      ]
+			    },
+			    "representante_has_medio_digital_de_organización": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.medio_digital_de_organización": {
+			          "Target": {
+			            "Entity": "representante.medio_digital_de_organización"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.medio_digital_de_organización"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_medio_digital_de_organización"
+			        }
+			      ]
+			    },
+			    "representante_has_tarjeta_organización": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.tarjeta_organización": {
+			          "Target": {
+			            "Entity": "representante.tarjeta_organización"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.tarjeta_organización"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_tarjeta_organización"
+			        }
+			      ]
+			    },
+			    "año_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Año"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "año": {
+			          "Target": {
+			            "Entity": "año"
+			          }
+			        },
+			        "año.año": {
+			          "Target": {
+			            "Entity": "año.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Object": {
+			              "Role": "año.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_años"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "año"
+			            },
+			            "Name": {
+			              "Role": "año.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_are_names_IDs_of_años"
+			        }
+			      ]
+			    },
+			    "dim_region_has_limite": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.limite": {
+			          "Target": {
+			            "Entity": "dim_region.limite"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.limite"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_limites"
+			        }
+			      ]
+			    },
+			    "dim_region_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.region": {
+			          "Target": {
+			            "Entity": "dim_region.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_regions"
+			        }
+			      ]
+			    },
+			    "dim_region_has_id_reg": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.id_reg": {
+			          "Target": {
+			            "Entity": "dim_region.id_reg"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Object": {
+			              "Role": "dim_region.id_reg"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_have_id_regs"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_id_regnat": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.id_regnat": {
+			          "Target": {
+			            "Entity": "dim_departamento.id_regnat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.id_regnat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_id_regnats"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento.departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_departamentos"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_id_dep": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.id_dep": {
+			          "Target": {
+			            "Entity": "dim_departamento.id_dep"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.id_dep"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_id_deps"
+			        }
+			      ]
+			    },
+			    "miembro_has_promedio_edad": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.promedio_edad": {
+			          "Target": {
+			            "Entity": "miembro.promedio_edad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.promedio_edad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_promedio_edad"
+			        }
+			      ]
+			    },
+			    "miembro_has_miembros_registrados_1529": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.miembros_registrados_1529": {
+			          "Target": {
+			            "Entity": "miembro.miembros_registrados_1529"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.miembros_registrados_1529"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_miembros_registrados_1529"
+			        }
+			      ]
+			    },
+			    "miembro_has_temática_de_organización_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.temática_de_organización_2": {
+			          "Target": {
+			            "Entity": "miembro.temática_de_organización_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.temática_de_organización_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_temática_de_organización_2"
+			        }
+			      ]
+			    },
+			    "miembro_has_temática_de_organización_1": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.temática_de_organización_1": {
+			          "Target": {
+			            "Entity": "miembro.temática_de_organización_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.temática_de_organización_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_temática_de_organización_1"
+			        }
+			      ]
+			    },
+			    "miembro_has_región_integrante": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.región_integrante": {
+			          "Target": {
+			            "Entity": "miembro.región_integrante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.región_integrante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_región_integrantes"
+			        }
+			      ]
+			    },
+			    "miembro_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.sexo": {
+			          "Target": {
+			            "Entity": "miembro.sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_sexos"
+			        }
+			      ]
+			    },
+			    "miembro_has_edad": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.edad": {
+			          "Target": {
+			            "Entity": "miembro.edad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.edad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_edads"
+			        }
+			      ]
+			    },
+			    "miembro_has_fecha_de_nacimiento": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.fecha_de_nacimiento": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_nacimiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_nacimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_fecha_de_nacimientos"
+			        }
+			      ]
+			    },
+			    "miembro_has_cargo_en_la_organización": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.cargo_en_la_organización": {
+			          "Target": {
+			            "Entity": "miembro.cargo_en_la_organización"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.cargo_en_la_organización"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_cargo_en_la_organizacións"
+			        }
+			      ]
+			    },
+			    "miembro_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.region": {
+			          "Target": {
+			            "Entity": "miembro.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_regions"
+			        }
+			      ]
+			    },
+			    "miembro_has_fecha_de_acreditación": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.fecha_de_acreditación": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_fecha_de_acreditacións"
+			        }
+			      ]
+			    },
+			    "miembro_has_organización_juvenil_o_institución_pública_o_privada": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.organización_juvenil_o_institución_pública_o_privada": {
+			          "Target": {
+			            "Entity": "miembro.organización_juvenil_o_institución_pública_o_privada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Object": {
+			              "Role": "miembro.organización_juvenil_o_institución_pública_o_privada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_have_organización_juvenil_o_institución_pública_o_privadas"
+			        }
+			      ]
+			    },
+			    "representante_has_total_de_organizaciones": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.total_de_organizaciones": {
+			          "Target": {
+			            "Entity": "representante.total_de_organizaciones"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.total_de_organizaciones"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_total_de_organizaciones"
+			        }
+			      ]
+			    },
+			    "representante_has_temática_de_organización": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.temática_de_organización": {
+			          "Target": {
+			            "Entity": "representante.temática_de_organización"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.temática_de_organización"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_temática_de_organizacións"
+			        }
+			      ]
+			    },
+			    "representante_has_detalle_tipo_de_organización": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.detalle_tipo_de_organización": {
+			          "Target": {
+			            "Entity": "representante.detalle_tipo_de_organización"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.detalle_tipo_de_organización"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_detalle_tipo_de_organizacións"
+			        }
+			      ]
+			    },
+			    "representante_has_tipo_de_organización": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.tipo_de_organización": {
+			          "Target": {
+			            "Entity": "representante.tipo_de_organización"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.tipo_de_organización"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_tipo_de_organizacións"
+			        }
+			      ]
+			    },
+			    "representante_has_medio_de_verificación": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.medio_de_verificación": {
+			          "Target": {
+			            "Entity": "representante.medio_de_verificación"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.medio_de_verificación"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_medio_de_verificacións"
+			        }
+			      ]
+			    },
+			    "representante_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.sexo": {
+			          "Target": {
+			            "Entity": "representante.sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_sexos"
+			        }
+			      ]
+			    },
+			    "representante_has_distrito": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.distrito": {
+			          "Target": {
+			            "Entity": "representante.distrito"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.distrito"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_distrito"
+			        }
+			      ]
+			    },
+			    "representante_has_provincia": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.provincia": {
+			          "Target": {
+			            "Entity": "representante.provincia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.provincia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_provincias"
+			        }
+			      ]
+			    },
+			    "representante_has_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.departamento": {
+			          "Target": {
+			            "Entity": "representante.departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_departamentos"
+			        }
+			      ]
+			    },
+			    "representante_has_acreditación": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.acreditación": {
+			          "Target": {
+			            "Entity": "representante.acreditación"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.acreditación"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_acreditacións"
+			        }
+			      ]
+			    },
+			    "representante_has_organización_juvenil_o_institución_pública_o_privada": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.organización_juvenil_o_institución_pública_o_privada": {
+			          "Target": {
+			            "Entity": "representante.organización_juvenil_o_institución_pública_o_privada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.organización_juvenil_o_institución_pública_o_privada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_organización_juvenil_o_institución_pública_o_privada"
+			        }
+			      ]
+			    },
+			    "representante_has_temática_de_organización_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.temática_de_organización_2": {
+			          "Target": {
+			            "Entity": "representante.temática_de_organización_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.temática_de_organización_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_temática_de_organización_2"
+			        }
+			      ]
+			    },
+			    "representante_has_temática_de_organización_1": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.temática_de_organización_1": {
+			          "Target": {
+			            "Entity": "representante.temática_de_organización_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.temática_de_organización_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_temática_de_organización_1"
+			        }
+			      ]
+			    },
+			    "representante_has_ubigeo": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.ubigeo": {
+			          "Target": {
+			            "Entity": "representante.ubigeo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.ubigeo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_ubigeos"
+			        }
+			      ]
+			    },
+			    "representante_has_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "representante.ID": {
+			          "Target": {
+			            "Entity": "representante.ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Object": {
+			              "Role": "representante.ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_have_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Name": {
+			              "Role": "representante.ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ID_are_names_IDs_of_representantes"
+			        }
+			      ]
+			    },
+			    "representante_in_dim_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Representantes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "representante": {
+			          "Target": {
+			            "Entity": "representante"
+			          }
+			        },
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dim_region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "representante"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "representantes_are_in_dim_regions"
+			        }
+			      ]
+			    },
+			    "dim_region_in_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dimRegion"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_region": {
+			          "Target": {
+			            "Entity": "dim_region"
+			          }
+			        },
+			        "dim_region.region": {
+			          "Target": {
+			            "Entity": "dim_region.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dim_region.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_region"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_region.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_regions_are_in_regions"
+			        }
+			      ]
+			    },
+			    "miembro_in_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro": {
+			          "Target": {
+			            "Entity": "miembro"
+			          }
+			        },
+			        "miembro.region": {
+			          "Target": {
+			            "Entity": "miembro.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "miembro.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "miembro"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "miembro.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "miembros_are_in_regions"
+			        }
+			      ]
+			    },
+			    "miembro_fecha_de_acreditación_año_has_miembro_fecha_de_acreditación_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro.fecha_de_acreditación.año": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.año"
+			          }
+			        },
+			        "miembro.fecha_de_acreditación.trimestre": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.año"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_trimestres1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.trimestre"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_años1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_años1"
+			        }
+			      ]
+			    },
+			    "miembro_fecha_de_acreditación_trimestre_has_miembro_fecha_de_acreditación_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro.fecha_de_acreditación.trimestre": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.trimestre"
+			          }
+			        },
+			        "miembro.fecha_de_acreditación.me": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.trimestre"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.me"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres1"
+			        }
+			      ]
+			    },
+			    "miembro_fecha_de_acreditación_me_has_miembro_fecha_de_acreditación_día": {
+			      "Binding": {
+			        "ConceptualEntity": "Miembros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "miembro.fecha_de_acreditación.me": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.me"
+			          }
+			        },
+			        "miembro.fecha_de_acreditación.día": {
+			          "Target": {
+			            "Entity": "miembro.fecha_de_acreditación.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.me"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.día"
+			            },
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "miembro.fecha_de_acreditación.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "miembro.fecha_de_acreditación.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me1"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

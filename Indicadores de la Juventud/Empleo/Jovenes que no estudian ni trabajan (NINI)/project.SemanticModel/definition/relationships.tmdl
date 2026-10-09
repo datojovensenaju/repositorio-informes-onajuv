@@ -1,0 +1,12 @@
+relationship 8cb67655-23c2-5dc4-c625-2e8605d27b3b
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.anio
+
+relationship bff39686-2152-cb01-f041-7a7153e13f23
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.anio
+
+relationship 0cc050d0-cb68-3026-3a6a-7116d5b481e6
+	fromColumn: datosNacionales.CATEGORIA
+	toColumn: 'Region Natural'.CATEGORIA
+

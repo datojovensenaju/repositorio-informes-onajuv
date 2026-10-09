@@ -1,0 +1,48 @@
+table 'Votantes – Perú – Total'
+	lineageTag: 3eed6564-9101-4bca-85c6-e100a82be606
+
+	measure 'Total de Votantes en Perú' = ```
+			
+			    CALCULATE(SUM('Votantes – Perú – Total'[Total]))
+			```
+		formatString: 0
+		lineageTag: 73fa7daa-3164-4063-9262-7c63a53fb147
+
+	column Departamento
+		dataType: string
+		lineageTag: cf466b7b-2da3-4d7b-ab30-cd0b654412a3
+		summarizeBy: none
+		sourceColumn: Departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: 91933f75-38ae-42c5-8474-6bdf1f15e880
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total
+		dataType: int64
+		formatString: 0
+		lineageTag: 61092394-e8b0-495a-ad45-472556018f76
+		summarizeBy: sum
+		sourceColumn: Total
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Votantes – Perú – Total' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/6.%20Participaci%C3%B3n%20ciudadana%20y%20gobernanza/REGISTROS/Participaci%C3%B3nCiudadana_PadronElectoral.xlsx"), null, true),
+				    #"Votantes – Perú – Total_Sheet" = Origen{[Item="Votantes – Perú – Total",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Votantes – Perú – Total_Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Departamento", type text}, {"Sexo", type text}, {"Total", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

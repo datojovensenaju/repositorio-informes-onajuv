@@ -1,0 +1,99 @@
+table Indicadores
+	lineageTag: 6e039d9e-d008-4776-a9a3-e8ec94380d77
+
+	column COD_OBJETIVO
+		dataType: string
+		lineageTag: bb073a6e-1ae7-4469-b7af-80dd62082e0e
+		summarizeBy: none
+		sourceColumn: COD_OBJETIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column OBJETIVO_PRIORITARIO
+		dataType: string
+		lineageTag: c64b5f97-a104-4785-9574-4c80d34fb66d
+		summarizeBy: none
+		sourceColumn: OBJETIVO_PRIORITARIO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_INDICADOR
+		dataType: string
+		lineageTag: 8a73f1a5-0e76-475e-8f7d-862f9e1d241b
+		summarizeBy: none
+		sourceColumn: COD_INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: 047cb6ad-8d74-47e9-9701-8191e58e3662
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column JUSTIFICACIÓN
+		dataType: string
+		lineageTag: b30e2256-43fc-45e9-b77c-50f677713a3c
+		summarizeBy: none
+		sourceColumn: JUSTIFICACIÓN
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESPONSABLE_OBJETIVO
+		dataType: string
+		lineageTag: 329f10f2-de23-4180-9d0e-387063bb385c
+		summarizeBy: none
+		sourceColumn: RESPONSABLE_OBJETIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column IMG_RESPONSABLE
+		dataType: string
+		lineageTag: 16ca4edd-5383-4e42-82a6-3ac7666da8f1
+		summarizeBy: none
+		sourceColumn: IMG_RESPONSABLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESPONSABLE_INDICADOR
+		dataType: string
+		lineageTag: 6734c5d8-05fb-4008-82bf-c1294e384ef6
+		summarizeBy: none
+		sourceColumn: RESPONSABLE_INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: e41d7f64-1457-4a88-9e90-9340589ea4bd
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column FICHA_TECNICA
+		dataType: string
+		lineageTag: 1e366cbe-88f4-4f9e-9c91-cdd6dd2ac947
+		summarizeBy: none
+		sourceColumn: FICHA_TECNICA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Indicadores = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/POL%C3%8DTICA%20NACIONAL%20DE%20JUVENTUD/Politica%20Nacional%20de%20la%20Juventud.xlsx"), null, true),
+				    Indicadores_Sheet = Origen{[Item="Indicadores",Kind="Sheet"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Indicadores_Sheet,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}}),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Tipo cambiado", [PromoteAllScalars=true]),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"COD_OBJETIVO", type text}, {"OBJETIVO_PRIORITARIO", type text}, {"COD_INDICADOR", type text}, {"INDICADOR", type text}, {"JUSTIFICACIÓN", type text}, {"RESPONSABLE_OBJETIVO", type text}, {"IMG_RESPONSABLE", type text}, {"RESPONSABLE_INDICADOR", type text}, {"FUENTE", type text}, {"FICHA_TECNICA", type text}})
+				in
+				    #"Tipo cambiado1"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

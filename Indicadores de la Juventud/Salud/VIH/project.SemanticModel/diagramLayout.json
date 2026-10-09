@@ -1,0 +1,161 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 179.99999999999991,
+        "y": 373.99999999999983
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 340.642383666478,
+            "y": 0
+          },
+          "nodeIndex": "dimRegion",
+          "nodeLineageTag": "0e452d2a-61df-4e8b-95ca-d9858b80a47c",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1050.4602874165651,
+            "y": 634.68402292822714
+          },
+          "nodeIndex": "Año",
+          "nodeLineageTag": "40dcbd65-19db-42bb-ad42-8337abc7942d",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 868.3304485936934,
+            "y": 335.88759364498014
+          },
+          "nodeIndex": "Rango Etario",
+          "nodeLineageTag": "ef47faec-fd26-4e44-9c6d-8424b4226d5b",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 440.92777183786109,
+            "y": 742.0871262444773
+          },
+          "nodeIndex": "dimDistrito",
+          "nodeLineageTag": "5eb0ab99-3e6a-48be-9bbf-d1f95da057da",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 327.39723117041035,
+            "y": 408.34835774023435
+          },
+          "nodeIndex": "dimProvincia",
+          "nodeLineageTag": "62196820-3cc3-4558-a8fe-cdfc7b9d76cb",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1224.0944646993155,
+            "y": 329.66977107108551
+          },
+          "nodeIndex": "Sexo",
+          "nodeLineageTag": "d6d6b9f5-5a01-459d-80e2-2d4ed8013e77",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 770.581821130302,
+            "y": 611.22141946220722
+          },
+          "nodeIndex": "Mes",
+          "nodeLineageTag": "5b3acb81-32bd-40b7-87ad-d5d975a71433",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 852.77069478957026,
+            "y": 869.7916274434192
+          },
+          "nodeIndex": "VIH",
+          "nodeLineageTag": "a10da4ba-ac86-4121-b7e9-b9808cd1e513",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 704.69723352890549,
+            "y": 0
+          },
+          "nodeIndex": "dimDepartamento",
+          "nodeLineageTag": "78178001-0a2e-4ab3-8223-26459b9214d7",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1180.6972335289051,
+            "y": 508.8958137217096
+          },
+          "nodeIndex": "Indicador diagnóstico",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Parámetro",
+          "nodeLineageTag": "2b133898-7bc3-4cef-9e24-e9790885468f",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100.00000000000004,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

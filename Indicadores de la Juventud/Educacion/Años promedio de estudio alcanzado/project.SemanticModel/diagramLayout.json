@@ -1,0 +1,112 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 708.62439999999845
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 424.32139636889087,
+            "y": 1518.9991675928832
+          },
+          "nodeIndex": "Año",
+          "nodeLineageTag": "611c59ad-cca9-492c-b38e-95de70881e3e",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 1540.5300012712908
+          },
+          "nodeIndex": "datosNacionales",
+          "nodeLineageTag": "38a777dc-841f-46f6-9983-ed7f133c7581",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 663.11405399999921,
+            "y": 1723.0007842712903
+          },
+          "nodeIndex": "datosRegionales",
+          "nodeLineageTag": "71ec4e77-260b-4507-a7e0-9457ea5207d8",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 893.96722399999942,
+            "y": 1238.6497812085054
+          },
+          "nodeIndex": "Datos Regionales",
+          "nodeLineageTag": "83bc284b-2df3-4437-a2da-5ab75e012e48",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 462.25658000000089,
+            "y": 1121.7267552085054
+          },
+          "nodeIndex": "Region Natural",
+          "nodeLineageTag": "7d0db3cc-15d4-4a38-a81e-54b05451568c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1177.9672239999995,
+            "y": 1091.7333035389033
+          },
+          "nodeIndex": "Tabla_Nacional",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1461.9672239999995,
+            "y": 935.41479627320723
+          },
+          "nodeIndex": "dimRegion",
+          "nodeLineageTag": "032897e6-ac1c-4a94-a727-bb9dae7cf755",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 8
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 56.447393005377869,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

@@ -1,0 +1,26 @@
+table Año
+	lineageTag: 7c30ca73-987d-49f8-82d4-2fd21fdd7ef2
+
+	column AÑO
+		dataType: string
+		lineageTag: cefafc40-5c48-4833-96c4-dec57ccf38f5
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Año = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				    Año_Sheet = Origen{[Item="Año",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Año_Sheet, [PromoteAllScalars=true]),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Encabezados promovidos",{{"anio", "AÑO"}})
+				in
+				    #"Columnas con nombre cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

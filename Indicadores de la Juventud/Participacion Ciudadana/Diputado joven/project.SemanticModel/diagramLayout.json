@@ -1,0 +1,100 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1021.2050117892361,
+            "y": 464
+          },
+          "nodeIndex": "candidatura general",
+          "nodeLineageTag": "f75d1151-4225-4fdb-85b4-0d4939828f2e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 450.19783606157978,
+            "y": 528.29469955528145
+          },
+          "nodeIndex": "candidatura joven",
+          "nodeLineageTag": "e4cabe3f-68c9-49b0-9dcf-7c7932d0841c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 629.00458293257452,
+            "y": 45.46851096264993
+          },
+          "nodeIndex": "distritoElectoral",
+          "nodeLineageTag": "1689b227-2881-4402-8927-42aa590e5f2e",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1060.0045829325745,
+            "y": 0
+          },
+          "nodeIndex": "Nivel Educativo Elecciones",
+          "nodeLineageTag": "d13636a6-5230-4ccb-be8d-4efa68ad2899",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 71,
+            "y": 0
+          },
+          "nodeIndex": "Sexo",
+          "nodeLineageTag": "529367ea-1005-4e2c-b8e6-514db87368c8",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 243.64734977764073
+          },
+          "nodeIndex": "Nivel Educativo Elecciones - Mo",
+          "nodeLineageTag": "f36c9ca1-af53-4bd5-9eb4-ad5b107b03fd",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

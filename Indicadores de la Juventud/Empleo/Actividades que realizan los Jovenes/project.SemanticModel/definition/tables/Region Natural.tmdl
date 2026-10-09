@@ -1,0 +1,38 @@
+table 'Region Natural'
+	lineageTag: e2304a18-f036-4899-95fd-88304dcf5fd4
+
+	column id_regnat
+		dataType: int64
+		formatString: 0
+		lineageTag: 78165fd0-7305-4368-8379-0bcebc5e727b
+		summarizeBy: none
+		sourceColumn: id_regnat
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: 0728dc7c-3fa8-4c2e-835e-2a61873c7785
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+		sortByColumn: id_regnat
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Region Natural' = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "Region Natural", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"id_regnat", Int64.Type}, {"CATEGORIA", type text}}, "es")
+				in
+				  #"Tipo de columna cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

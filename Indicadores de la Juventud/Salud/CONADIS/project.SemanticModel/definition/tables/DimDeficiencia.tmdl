@@ -1,0 +1,67 @@
+table DimDeficiencia
+	lineageTag: 32a39851-b80b-4a0d-950a-adebb59faf9f
+
+	column deficiencia_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b385c13-fcbc-4933-b4d1-388c0a942ff2
+		summarizeBy: none
+		sourceColumn: deficiencia_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column campo_origen
+		dataType: string
+		lineageTag: 951432ed-e9dd-42d0-a39e-e5c76cf47514
+		summarizeBy: none
+		sourceColumn: campo_origen
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_deficiencia
+		dataType: string
+		lineageTag: 1b6a4f00-b263-4dad-91b4-f76ea7ba70b3
+		summarizeBy: none
+		sourceColumn: tipo_deficiencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column orden
+		dataType: int64
+		formatString: 0
+		lineageTag: 51878ca4-732b-49cf-ac28-39daa3c0fd6c
+		summarizeBy: none
+		sourceColumn: orden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimDeficiencia = m
+		mode: import
+		source =
+				let
+				    DimDeficiencia =
+				        #table(
+				            type table [
+				                deficiencia_id = Int64.Type,
+				                campo_origen = text,
+				                tipo_deficiencia = text,
+				                orden = Int64.Type
+				            ],
+				            {
+				                {1, "Def_Intelectual", "Intelectual", 1},
+				                {2, "Def_Psicologica", "Psicológica", 2},
+				                {3, "Def_Lenguaje", "Lenguaje", 3},
+				                {4, "Def_audicion", "Audición", 4},
+				                {5, "Def_Vision", "Visión", 5},
+				                {6, "Def_Visceral", "Visceral", 6},
+				                {7, "Def_Musculo", "Músculo-esquelética", 7},
+				                {8, "Def_Generalizada", "Generalizada", 8}
+				            }
+				        )
+				in
+				    DimDeficiencia
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

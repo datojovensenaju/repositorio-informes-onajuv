@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Salud Crónico"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "dfc666df-11a0-4d86-9c07-53c48f8f0715"
+  }
+}

@@ -1,0 +1,27 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Año","dimRegion","dimProvincia","dimDistrito","Rango Etario","Sexo","Mes","IPD"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dimRegion
+ref table Año
+ref table 'Rango Etario'
+ref table dimProvincia
+ref table dimDistrito
+ref table Sexo
+ref table Mes
+ref table IPD
+ref table DateTableTemplate_e73bf5b4-331b-4e1c-bb7a-66456c44b889
+ref table LocalDateTable_5979b33e-ac62-42f1-9ca2-841f6d29e11f
+
+ref cultureInfo es-MX
+

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "086158d0042e5bf062df",
+  "displayName": "RENOJ-Detalle-Mobile",
+  "displayOption": "ActualSize",
+  "height": 2310,
+  "width": 370,
+  "visibility": "HiddenInViewMode"
+}

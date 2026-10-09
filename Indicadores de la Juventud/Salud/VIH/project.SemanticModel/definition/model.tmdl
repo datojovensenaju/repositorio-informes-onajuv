@@ -1,0 +1,36 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Transformar archivo de Consulta1'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Transformar archivo de Consulta1\Consultas auxiliares'
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Año","dimRegion","dimProvincia","dimDistrito","Rango Etario","Parámetro1","Transformar archivo de ejemplo","Archivo de ejemplo","Transformar archivo","Sexo","Mes","VIH","dimDepartamento"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dimRegion
+ref table Año
+ref table 'Rango Etario'
+ref table dimProvincia
+ref table dimDistrito
+ref table Sexo
+ref table Mes
+ref table VIH
+ref table dimDepartamento
+ref table 'Indicador diagnóstico'
+ref table Parámetro
+
+ref cultureInfo es-MX
+

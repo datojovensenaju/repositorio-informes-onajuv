@@ -1,0 +1,16 @@
+relationship AutoDetected_9329a1ad-2ec5-418f-8554-345753cde34e
+	fromColumn: poblacion.SEXO
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_ae13464b-4ee1-4fc9-a9f3-2f8cc90dae10
+	fromColumn: poblacion.REGION
+	toColumn: dimRegion.REGION
+
+relationship 38a30ca4-3bf2-44af-762a-d40289d37a6d
+	fromColumn: poblacion.AÑO
+	toColumn: Año.anio
+
+relationship 6a3ed7a3-e244-de91-d855-4f2dba082993
+	fromColumn: poblacion.RANGO_EDAD
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+

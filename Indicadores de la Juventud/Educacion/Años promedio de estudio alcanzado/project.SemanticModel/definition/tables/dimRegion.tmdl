@@ -1,0 +1,54 @@
+table dimRegion
+	lineageTag: 032897e6-ac1c-4a94-a727-bb9dae7cf755
+
+	column ID_REG
+		dataType: string
+		lineageTag: 8dc06539-b2fe-4093-9f8d-5c83ac2aa381
+		summarizeBy: none
+		sourceColumn: ID_REG
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: d27c6f75-dd54-411b-91c6-6d335afd623a
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_DEP
+		dataType: string
+		lineageTag: a7943c9e-58c9-47ce-bd59-b7fe20ed31c1
+		summarizeBy: none
+		sourceColumn: ID_DEP
+
+		annotation SummarizationSetBy = Automatic
+
+	column LIMITE
+		dataType: string
+		lineageTag: 29cbeb93-cdb2-48e1-b9a7-0d76b1ae39ef
+		summarizeBy: none
+		sourceColumn: LIMITE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimRegion = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Ubigeo.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "dimRegion", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				    #"Filas inferiores quitadas" = Table.RemoveLastN(#"Encabezados promovidos",1),
+				    #"Filas superiores quitadas" = Table.Skip(#"Filas inferiores quitadas",1),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Filas superiores quitadas","LIMA PROVINCIA","LIMA REGION",Replacer.ReplaceText,{"REGION"}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Valor reemplazado","Á","A",Replacer.ReplaceText,{"REGION"}),
+				    #"Valor reemplazado2" = Table.ReplaceValue(#"Valor reemplazado1","Í","I",Replacer.ReplaceText,{"REGION"})
+				in
+				    #"Valor reemplazado2"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,32 @@
+relationship c9797d91-6679-518d-ce4a-f0daddcf3014
+	fromColumn: datosRegionales.INDICADOR
+	toColumn: 'Asistencia a educación superior'.ASISTENCIA_UNIVERSITARIA
+
+relationship 46082f1f-1bdd-86bf-0da0-a5eff89339ea
+	fromColumn: datosNacionales.INDICADOR
+	toColumn: 'Asistencia a educación superior'.ASISTENCIA_UNIVERSITARIA
+
+relationship 09e70da0-c3a8-9e06-f53b-0d00b1ab4b40
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.anio
+
+relationship 7b15224e-975d-3140-5de3-20c19045b27c
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.anio
+
+relationship 8a0a3b4f-92e3-6059-7d26-7bd2171c6e0e
+	fromColumn: datosNacionales.CATEGORIA
+	toColumn: 'Datos Regionales'.CATEGORIA
+
+relationship 349162fd-0a7b-81eb-7ef9-c155f73ed522
+	fromColumn: datosNacionales.CATEGORIA
+	toColumn: 'Region Natural'.CATEGORIA
+
+relationship 89db0bad-91f0-cf49-255b-7370cffb7a32
+	fromColumn: Tabla_Nacional.FRECUENCIA
+	toColumn: 'Asistencia a educación superior'.ASISTENCIA_UNIVERSITARIA
+
+relationship 46fc7e3d-c117-ff84-35cf-27d4e96d3603
+	fromColumn: Tabla_Nacional.AÑO
+	toColumn: Año.anio
+

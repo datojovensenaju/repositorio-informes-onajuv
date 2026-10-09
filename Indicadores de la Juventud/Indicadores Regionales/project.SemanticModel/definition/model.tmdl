@@ -1,0 +1,62 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["dimDepartamento","dimRegion","dimProvincia","Año","factPoblacionGeneral","factPoblacionJoven","Sexo","dimDistrito","Rango Etario","factEducación_AñosDeEscolaridad","factEducación_AsistenciaSuperior","factEducacion_ConclusionSecundaria","factEducacion_ConclusionSuperior","factEducación_MaxNivelAlcanzado","factTrabajo_ActividadRealizada","factTrabajo_Desempleo","factTrabajo_EmpleoFormal","factTrabajo_EmpleoInformal","factTrabajo_Ingresos","factTrabajo_PEA","factSalud_EpisodioDepresivo","factSalud-Alcohol","factSalud-CuentaConSeguro","factSalud-Embarazo","factSalud-EnfermedadCrónica","factSalud-SIS","factSalud-Tabaco","factVictimizacionSeguridadCiudadana_ActividadQueDejóDeRealizar","factVictimizacionSeguridadCiudadana_InseguridadCaminarNoche","factVictimizacionSeguridadCiudadana_PercepciónInseguridad12Meses","factVictimizacionSeguridadCiudadana_Revictimización","factVictimizacionSeguridadCiudadana_VíctimaHechoDelictivo","factViolencia_Familiar","factViolencia_FísicaAlgunaVez","factViolencia_FísicaSexual","factViolencia_FSPAlgunaVez","factViolencia_PsicológicaAlgunaVez","factParticipaciónCiudadana_ConfianzaInstituciones","factParticipaciónCiudadana_ConoceDemocracia","factParticipaciónCiudadana_DemocraciaFunciona","factParticipaciónCiudadana_DemocraciaImporta","factParticipaciónCiudadana_DemocraciaSiemprePreferible","factParticipaciónCiudadana_ParticipaciónAsociación"]
+
+annotation __LastRPTime = 134351064791438656
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dimDepartamento
+ref table dimRegion
+ref table dimProvincia
+ref table Año
+ref table factPoblacionGeneral
+ref table factPoblacionJoven
+ref table Sexo
+ref table dimDistrito
+ref table 'Rango Etario'
+ref table factEducación_AñosDeEscolaridad
+ref table factEducación_AsistenciaSuperior
+ref table factEducacion_ConclusionSecundaria
+ref table factEducacion_ConclusionSuperior
+ref table factEducación_MaxNivelAlcanzado
+ref table factTrabajo_ActividadRealizada
+ref table factTrabajo_Desempleo
+ref table factTrabajo_EmpleoFormal
+ref table factTrabajo_EmpleoInformal
+ref table factTrabajo_Ingresos
+ref table factTrabajo_PEA
+ref table factSalud-Alcohol
+ref table factSalud-CuentaConSeguro
+ref table factSalud_EpisodioDepresivo
+ref table factSalud-Embarazo
+ref table factSalud-EnfermedadCrónica
+ref table factSalud-SIS
+ref table factSalud-Tabaco
+ref table factVictimizacionSeguridadCiudadana_ActividadQueDejóDeRealizar
+ref table factVictimizacionSeguridadCiudadana_InseguridadCaminarNoche
+ref table factVictimizacionSeguridadCiudadana_PercepciónInseguridad12Meses
+ref table factVictimizacionSeguridadCiudadana_Revictimización
+ref table factVictimizacionSeguridadCiudadana_VíctimaHechoDelictivo
+ref table factViolencia_Familiar
+ref table factViolencia_FísicaAlgunaVez
+ref table factViolencia_FSPAlgunaVez
+ref table factViolencia_PsicológicaAlgunaVez
+ref table factParticipaciónCiudadana_ConfianzaInstituciones
+ref table factParticipaciónCiudadana_ConoceDemocracia
+ref table factParticipaciónCiudadana_DemocraciaFunciona
+ref table factParticipaciónCiudadana_DemocraciaImporta
+ref table factParticipaciónCiudadana_DemocraciaSiemprePreferible
+ref table factParticipaciónCiudadana_ParticipaciónAsociación
+ref table factViolencia_FísicaSexual
+
+ref cultureInfo es-MX
+

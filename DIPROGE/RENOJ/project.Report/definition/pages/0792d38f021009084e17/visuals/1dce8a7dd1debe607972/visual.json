@@ -1,0 +1,283 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "1dce8a7dd1debe607972",
+  "position": {
+    "x": 478.75,
+    "y": 450,
+    "z": 16000,
+    "height": 481.25,
+    "width": 898.75,
+    "tabOrder": 13000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Representantes"
+                    }
+                  },
+                  "Property": "ORGANIZACIÓN JUVENIL O INSTITUCIÓN (PÚBLICA O PRIVADA)"
+                }
+              },
+              "queryRef": "Representantes.ORGANIZACIÓN JUVENIL O INSTITUCIÓN (PÚBLICA O PRIVADA)",
+              "nativeQueryRef": "ORGANIZACIÓN JUVENIL O INSTITUCIÓN (PÚBLICA O PRIVADA)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Miembros"
+                    }
+                  },
+                  "Property": "Miembros Registrados (15-29)"
+                }
+              },
+              "queryRef": "Miembros.Miembros Registrados (15-29)",
+              "nativeQueryRef": "MIEMBROS REGISTRADOS (15-29 AÑOS)",
+              "displayName": "MIEMBROS REGISTRADOS (15-29 AÑOS)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Representantes"
+                    }
+                  },
+                  "Property": "TIPO DE ORGANIZACIÓN"
+                }
+              },
+              "queryRef": "Representantes.TIPO DE ORGANIZACIÓN",
+              "nativeQueryRef": "TIPO DE ORGANIZACIÓN"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Representantes"
+                    }
+                  },
+                  "Property": "REGIÓN"
+                }
+              },
+              "queryRef": "Representantes.REGIÓN",
+              "nativeQueryRef": "REGIÓN"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Año"
+                    }
+                  },
+                  "Property": "AÑO"
+                }
+              },
+              "queryRef": "Año.AÑO",
+              "nativeQueryRef": "AÑO ACREDITACIÓN",
+              "displayName": "AÑO ACREDITACIÓN"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Representantes"
+                  }
+                },
+                "Property": "ORGANIZACIÓN JUVENIL O INSTITUCIÓN (PÚBLICA O PRIVADA)"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "italic": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#343C3E'"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#82C0C7'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "277.5872938525674D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Representantes.ORGANIZACIÓN JUVENIL O INSTITUCIÓN (PÚBLICA O PRIVADA)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "175.7500156445423D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Miembros.Miembros Registrados (15-29)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "156.99999510413105D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Representantes.TIPO DE ORGANIZACIÓN"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "111.00001298619783D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Año.AÑO"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

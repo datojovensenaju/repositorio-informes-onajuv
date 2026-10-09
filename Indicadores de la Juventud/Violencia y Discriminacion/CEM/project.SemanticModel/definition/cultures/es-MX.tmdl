@@ -1,0 +1,5234 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "cem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cem": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        }
+			      ]
+			    },
+			    "cem.nivel_educativo_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "nivel_educativo_victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel educativo victima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nivel_educativo_victima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.condicion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "condicion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "condicion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "region"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Región": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "cem.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "departamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.cem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "cem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cem": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.total_de_casos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "Total de Casos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de casos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de caso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall de caso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Total de atenciones:": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total de atenciones": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "cem.edad_promedio_de_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "Edad promedio de victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad promedio de victima": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.mujeres": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "% MUJERES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% mujeres": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage mujere": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pct mujere": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "cem.impusieron_denuncia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "Impusieron Denuncia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "impusieron denuncia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.riesgo_severo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "Riesgo Severo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "riesgo severo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.vincula_de_pareja": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "Vincula de Pareja"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vincula de pareja": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.casos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "% Casos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% casos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage caso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pct caso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "cem.total_segmentado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "Total Segmentado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total segmentado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate segmentado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall segmentado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim departamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimDepartamento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.id_dep": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "ID_DEP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id dep": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_DEP": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential dep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Identificador de departamento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.departamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "DEPARTAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.departamento_ubicación": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "DEPARTAMENTO UBICACIÓN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento ubicación": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.mujeres1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "Mujeres"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mujeres": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.hombres": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "Hombres"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hombres": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.tentativa_feminicidio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "% Tentativa Feminicidio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% tentativa feminicidio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage tentativa feminicidio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct tentativa feminicidio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "cem.entity__total_de_casos_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "_Total de Casos FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_total de casos FormatString": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ aggregate de caso formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_ overall de caso formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "cem.fecha_ingreso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "fecha_ingreso"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha ingreso": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha_ingreso": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.anio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "anio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "anio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.victima_peruana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "victima_peruana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "victima peruana": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "victima_peruana": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.victima_extranjera": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "victima_extranjera"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "victima extranjera": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "victima_extranjera": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.pais_victima_extranjera": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "pais_victima_extranjera"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pais victima extranjera": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pais_victima_extranjera": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.edad_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "edad_victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad victima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "edad_victima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.grupo_edad_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "grupo_edad_victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "grupo edad victima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "grupo_edad_victima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Grupo de edad": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "cem.sexo_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "sexo_victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo victima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexo_victima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.victima_gestando": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "victima_gestando"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "victima gestando": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "victima_gestando": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.lengua_materna_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "lengua_materna_victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lengua materna victima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "lengua_materna_victima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.etnia_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "etnia_victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "etnia victima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "etnia_victima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.departamento_domicilio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "departamento_domicilio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento domicilio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "departamento_domicilio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.provincia_domicilio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "provincia_domicilio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "provincia domicilio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "provincia_domicilio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.distrito_domicilio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "distrito_domicilio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "distrito domicilio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "distrito_domicilio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.area_residencia_domicilio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "area_residencia_domicilio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "area residencia domicilio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "area_residencia_domicilio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "region residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "locale residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "locality residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "neighbourhood residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "district residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "continent residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "field residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "neighborhood residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "section residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "space residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "cem.estado_civil_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "estado_civil_victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado civil victima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "estado_civil_victima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.estudia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "estudia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estudia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.trabaja": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "trabaja"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trabaja": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.ocupacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "ocupacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ocupacion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.sin_seguro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "sin_seguro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sin seguro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sin_seguro": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.discapacidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "discapacidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "discapacidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.agresor_peruano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "agresor_peruano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "agresor peruano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "agresor_peruano": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.agresor_extranjero": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "agresor_extranjero"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "agresor extranjero": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "agresor_extranjero": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.pais_agresaro_extranjero": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "pais_agresaro_extranjero"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pais agresaro extranjero": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pais_agresaro_extranjero": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.vinculo_agresor_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "vinculo_agresor_victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vinculo agresor victima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vinculo_agresor_victima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.vinculo_pareja": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "vinculo_pareja"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vinculo pareja": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vinculo_pareja": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.vinculo_familia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "vinculo_familia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vinculo familia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vinculo_familia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.sin_vinculo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "sin_vinculo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sin vinculo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sin_vinculo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.agresor_vive_con_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "agresor_vive_con_victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "agresor vive con victima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "agresor_vive_con_victima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.agresor_area_residencia_domicilio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "agresor_area_residencia_domicilio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "agresor area residencia domicilio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "agresor_area_residencia_domicilio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "agresor region residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "agresor locale residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "agresor locality residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "agresor neighbourhood residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "agresor district residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "agresor continent residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "agresor field residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "agresor neighborhood residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "agresor section residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "agresor space residencia domicilio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "cem.edad_agresor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "edad_agresor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad agresor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "edad_agresor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.rango_edad_agresor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "rango_edad_agresor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rango edad agresor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rango_edad_agresor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.sexo_agresor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "sexo_agresor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo agresor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexo_agresor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.nivel_educativo_agresor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "nivel_educativo_agresor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel educativo agresor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nivel_educativo_agresor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.trabaja_agresor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "trabaja_agresor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trabaja agresor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "trabaja_agresor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.ocupacion_agresor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "ocupacion_agresor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ocupacion agresor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ocupacion_agresor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.tipo_violencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "tipo_violencia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo violencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_violencia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.discapacidad_agresor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "discapacidad_agresor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "discapacidad agresor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "discapacidad_agresor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.primera_vez_agredir": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "primera_vez_agredir"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "primera vez agredir": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "primera_vez_agredir": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.frecuencia_agresion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "frecuencia_agresion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "frecuencia agresion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "frecuencia_agresion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.estado_agresor_ua": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "estado_agresor_ua"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado agresor ua": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "estado_agresor_ua": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.estado_victima_ua": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "estado_victima_ua"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado victima ua": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "estado_victima_ua": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.vulnerabilidad_victima_lgtbi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "vulnerabilidad_victima_lgtbi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vulnerabilidad victima lgtbi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vulnerabilidad_victima_lgtbi": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.vulnerabilidad_victima_vih": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "vulnerabilidad_victima_vih"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vulnerabilidad victima vih": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vulnerabilidad_victima_vih": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.nivel_riesgo_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "nivel_riesgo_victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel riesgo victima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nivel_riesgo_victima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.interpuso_denuncia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "interpuso_denuncia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "interpuso denuncia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "interpuso_denuncia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.desea_denunciar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "desea_denunciar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desea denunciar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "desea_denunciar": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.situacion_agresor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "situacion_agresor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacion agresor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "situacion_agresor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.tentativa_feminicidio1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "tentativa_feminicidio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tentativa feminicidio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tentativa_feminicidio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.modalidad_tentativa_feminicidio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "modalidad_tentativa_feminicidio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "modalidad tentativa feminicidio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "modalidad_tentativa_feminicidio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.nacionalidad_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "nacionalidad_victima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nacionalidad victima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nacionalidad_victima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.movil_tentativa_feminicidio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "movil_tentativa_feminicidio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "movil tentativa feminicidio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "movil_tentativa_feminicidio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.nacionalidad_agresor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "nacionalidad_agresor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nacionalidad agresor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nacionalidad_agresor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.seguro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "seguro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "seguro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.total_hijo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "total_hijos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total hijo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total_hijos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate hijo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall hijo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "cem.nivel_ocupacional_agresor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "nivel_ocupacional_agresor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel ocupacional agresor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nivel_ocupacional_agresor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.departamento_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "departamento_1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "departamento 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "departamento_1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cem.provincia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "provincia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "provincia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.distrito": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "distrito"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "distrito": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "cem.ubigeo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "ubigeo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ubigeo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_departamento.id_pais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimDepartamento",
+			          "ConceptualProperty": "ID_PAIS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id pais": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_PAIS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification pais": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity pais": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier pais": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential pais": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "cem.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "AÑO"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "cem.sexo_victima1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "SEXO VICTIMA"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "cem.rango_etario_de_la_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "RANGO ETARIO DE LA VICTIMA"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "cem.tipo_violencia1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "TIPO VIOLENCIA"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "cem.nivel_de_riesgo_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "NIVEL DE RIESGO VICTIMA"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "cem.nivel_ocupacional": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "NIVEL OCUPACIONAL"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "cem.vinculo_del_agresor_con_la_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CEM",
+			          "ConceptualProperty": "VINCULO DEL AGRESOR CON LA VICTIMA"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "dimnivelriesgo.nivel_de_riesgo_victima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dimNivelRiesgo",
+			          "ConceptualProperty": "NIVEL DE RIESGO VICTIMA"
+			        }
+			      },
+			      "State": "Generated"
+			    }
+			  },
+			  "Relationships": {
+			    "cem_has_dim_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_dim_departamentos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "cem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_cems"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_id_pais": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.id_pais": {
+			          "Target": {
+			            "Entity": "dim_departamento.id_pais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.id_pais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_id_paises"
+			        }
+			      ]
+			    },
+			    "cem_has_ubigeo": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.ubigeo": {
+			          "Target": {
+			            "Entity": "cem.ubigeo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.ubigeo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_ubigeos"
+			        }
+			      ]
+			    },
+			    "cem_has_distrito": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.distrito": {
+			          "Target": {
+			            "Entity": "cem.distrito"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.distrito"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_distrito"
+			        }
+			      ]
+			    },
+			    "cem_has_provincia": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.provincia": {
+			          "Target": {
+			            "Entity": "cem.provincia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.provincia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_provincias"
+			        }
+			      ]
+			    },
+			    "cem_has_departamento_1": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.departamento_1": {
+			          "Target": {
+			            "Entity": "cem.departamento_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.departamento_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_departamento_1"
+			        }
+			      ]
+			    },
+			    "cem_has_nivel_ocupacional_agresor": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.nivel_ocupacional_agresor": {
+			          "Target": {
+			            "Entity": "cem.nivel_ocupacional_agresor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.nivel_ocupacional_agresor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_nivel_ocupacional_agresors"
+			        }
+			      ]
+			    },
+			    "cem_has_total_hijo": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.total_hijo": {
+			          "Target": {
+			            "Entity": "cem.total_hijo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.total_hijo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_total_hijos"
+			        }
+			      ]
+			    },
+			    "cem_has_seguro": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.seguro": {
+			          "Target": {
+			            "Entity": "cem.seguro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.seguro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_seguros"
+			        }
+			      ]
+			    },
+			    "cem_has_nacionalidad_agresor": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.nacionalidad_agresor": {
+			          "Target": {
+			            "Entity": "cem.nacionalidad_agresor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.nacionalidad_agresor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_nacionalidad_agresors"
+			        }
+			      ]
+			    },
+			    "cem_has_movil_tentativa_feminicidio": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.movil_tentativa_feminicidio": {
+			          "Target": {
+			            "Entity": "cem.movil_tentativa_feminicidio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.movil_tentativa_feminicidio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_movil_tentativa_feminicidios"
+			        }
+			      ]
+			    },
+			    "cem_has_nacionalidad_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.nacionalidad_victima": {
+			          "Target": {
+			            "Entity": "cem.nacionalidad_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.nacionalidad_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_nacionalidad_victimas"
+			        }
+			      ]
+			    },
+			    "cem_has_modalidad_tentativa_feminicidio": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.modalidad_tentativa_feminicidio": {
+			          "Target": {
+			            "Entity": "cem.modalidad_tentativa_feminicidio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.modalidad_tentativa_feminicidio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_modalidad_tentativa_feminicidios"
+			        }
+			      ]
+			    },
+			    "cem_has_tentativa_feminicidio1": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.tentativa_feminicidio1": {
+			          "Target": {
+			            "Entity": "cem.tentativa_feminicidio1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.tentativa_feminicidio1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_tentativa_feminicidios"
+			        }
+			      ]
+			    },
+			    "cem_has_situacion_agresor": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.situacion_agresor": {
+			          "Target": {
+			            "Entity": "cem.situacion_agresor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.situacion_agresor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_situacion_agresors"
+			        }
+			      ]
+			    },
+			    "cem_has_desea_denunciar": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.desea_denunciar": {
+			          "Target": {
+			            "Entity": "cem.desea_denunciar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.desea_denunciar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_desea_denunciars"
+			        }
+			      ]
+			    },
+			    "cem_has_interpuso_denuncia": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.interpuso_denuncia": {
+			          "Target": {
+			            "Entity": "cem.interpuso_denuncia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.interpuso_denuncia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_interpuso_denuncias"
+			        }
+			      ]
+			    },
+			    "cem_has_nivel_riesgo_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.nivel_riesgo_victima": {
+			          "Target": {
+			            "Entity": "cem.nivel_riesgo_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.nivel_riesgo_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_nivel_riesgo_victimas"
+			        }
+			      ]
+			    },
+			    "cem_has_vulnerabilidad_victima_vih": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.vulnerabilidad_victima_vih": {
+			          "Target": {
+			            "Entity": "cem.vulnerabilidad_victima_vih"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.vulnerabilidad_victima_vih"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_vulnerabilidad_victima_vihs"
+			        }
+			      ]
+			    },
+			    "cem_has_vulnerabilidad_victima_lgtbi": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.vulnerabilidad_victima_lgtbi": {
+			          "Target": {
+			            "Entity": "cem.vulnerabilidad_victima_lgtbi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.vulnerabilidad_victima_lgtbi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_vulnerabilidad_victima_lgtbis"
+			        }
+			      ]
+			    },
+			    "cem_has_estado_victima_ua": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.estado_victima_ua": {
+			          "Target": {
+			            "Entity": "cem.estado_victima_ua"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.estado_victima_ua"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_estado_victima_ua"
+			        }
+			      ]
+			    },
+			    "cem_has_estado_agresor_ua": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.estado_agresor_ua": {
+			          "Target": {
+			            "Entity": "cem.estado_agresor_ua"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.estado_agresor_ua"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_estado_agresor_ua"
+			        }
+			      ]
+			    },
+			    "cem_has_frecuencia_agresion": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.frecuencia_agresion": {
+			          "Target": {
+			            "Entity": "cem.frecuencia_agresion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.frecuencia_agresion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_frecuencia_agresions"
+			        }
+			      ]
+			    },
+			    "cem_has_primera_vez_agredir": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.primera_vez_agredir": {
+			          "Target": {
+			            "Entity": "cem.primera_vez_agredir"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.primera_vez_agredir"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_primera_vez_agredirs"
+			        }
+			      ]
+			    },
+			    "cem_has_discapacidad_agresor": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.discapacidad_agresor": {
+			          "Target": {
+			            "Entity": "cem.discapacidad_agresor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.discapacidad_agresor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_discapacidad_agresors"
+			        }
+			      ]
+			    },
+			    "cem_has_tipo_violencia": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.tipo_violencia": {
+			          "Target": {
+			            "Entity": "cem.tipo_violencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.tipo_violencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_tipo_violencias"
+			        }
+			      ]
+			    },
+			    "cem_has_ocupacion_agresor": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.ocupacion_agresor": {
+			          "Target": {
+			            "Entity": "cem.ocupacion_agresor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.ocupacion_agresor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_ocupacion_agresors"
+			        }
+			      ]
+			    },
+			    "cem_has_trabaja_agresor": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.trabaja_agresor": {
+			          "Target": {
+			            "Entity": "cem.trabaja_agresor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.trabaja_agresor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_trabaja_agresors"
+			        }
+			      ]
+			    },
+			    "cem_has_nivel_educativo_agresor": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.nivel_educativo_agresor": {
+			          "Target": {
+			            "Entity": "cem.nivel_educativo_agresor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.nivel_educativo_agresor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_nivel_educativo_agresors"
+			        }
+			      ]
+			    },
+			    "cem_has_sexo_agresor": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.sexo_agresor": {
+			          "Target": {
+			            "Entity": "cem.sexo_agresor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.sexo_agresor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_sexo_agresors"
+			        }
+			      ]
+			    },
+			    "cem_has_rango_edad_agresor": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.rango_edad_agresor": {
+			          "Target": {
+			            "Entity": "cem.rango_edad_agresor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.rango_edad_agresor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_rango_edad_agresors"
+			        }
+			      ]
+			    },
+			    "cem_has_edad_agresor": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.edad_agresor": {
+			          "Target": {
+			            "Entity": "cem.edad_agresor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.edad_agresor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_edad_agresors"
+			        }
+			      ]
+			    },
+			    "cem_has_agresor_area_residencia_domicilio": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.agresor_area_residencia_domicilio": {
+			          "Target": {
+			            "Entity": "cem.agresor_area_residencia_domicilio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.agresor_area_residencia_domicilio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_agresor_area_residencia_domicilios"
+			        }
+			      ]
+			    },
+			    "cem_has_agresor_vive_con_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.agresor_vive_con_victima": {
+			          "Target": {
+			            "Entity": "cem.agresor_vive_con_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.agresor_vive_con_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_agresor_vive_con_victimas"
+			        }
+			      ]
+			    },
+			    "cem_has_sin_vinculo": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.sin_vinculo": {
+			          "Target": {
+			            "Entity": "cem.sin_vinculo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.sin_vinculo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_sin_vinculos"
+			        }
+			      ]
+			    },
+			    "cem_has_vinculo_familia": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.vinculo_familia": {
+			          "Target": {
+			            "Entity": "cem.vinculo_familia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.vinculo_familia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_vinculo_familias"
+			        }
+			      ]
+			    },
+			    "cem_has_vinculo_pareja": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.vinculo_pareja": {
+			          "Target": {
+			            "Entity": "cem.vinculo_pareja"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.vinculo_pareja"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_vinculo_parejas"
+			        }
+			      ]
+			    },
+			    "cem_has_vinculo_agresor_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.vinculo_agresor_victima": {
+			          "Target": {
+			            "Entity": "cem.vinculo_agresor_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.vinculo_agresor_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_vinculo_agresor_victimas"
+			        }
+			      ]
+			    },
+			    "cem_has_pais_agresaro_extranjero": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.pais_agresaro_extranjero": {
+			          "Target": {
+			            "Entity": "cem.pais_agresaro_extranjero"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.pais_agresaro_extranjero"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_pais_agresaro_extranjeros"
+			        }
+			      ]
+			    },
+			    "cem_has_agresor_extranjero": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.agresor_extranjero": {
+			          "Target": {
+			            "Entity": "cem.agresor_extranjero"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.agresor_extranjero"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_agresor_extranjeros"
+			        }
+			      ]
+			    },
+			    "cem_has_agresor_peruano": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.agresor_peruano": {
+			          "Target": {
+			            "Entity": "cem.agresor_peruano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.agresor_peruano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_agresor_peruanos"
+			        }
+			      ]
+			    },
+			    "cem_has_discapacidad": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.discapacidad": {
+			          "Target": {
+			            "Entity": "cem.discapacidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.discapacidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_discapacidads"
+			        }
+			      ]
+			    },
+			    "cem_has_sin_seguro": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.sin_seguro": {
+			          "Target": {
+			            "Entity": "cem.sin_seguro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.sin_seguro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_sin_seguros"
+			        }
+			      ]
+			    },
+			    "cem_has_ocupacion": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.ocupacion": {
+			          "Target": {
+			            "Entity": "cem.ocupacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.ocupacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_ocupacions"
+			        }
+			      ]
+			    },
+			    "cem_has_trabaja": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.trabaja": {
+			          "Target": {
+			            "Entity": "cem.trabaja"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.trabaja"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_trabajas"
+			        }
+			      ]
+			    },
+			    "cem_has_estudia": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.estudia": {
+			          "Target": {
+			            "Entity": "cem.estudia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.estudia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_estudias"
+			        }
+			      ]
+			    },
+			    "cem_has_estado_civil_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.estado_civil_victima": {
+			          "Target": {
+			            "Entity": "cem.estado_civil_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.estado_civil_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_estado_civil_victimas"
+			        }
+			      ]
+			    },
+			    "cem_has_area_residencia_domicilio": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.area_residencia_domicilio": {
+			          "Target": {
+			            "Entity": "cem.area_residencia_domicilio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.area_residencia_domicilio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_area_residencia_domicilios"
+			        }
+			      ]
+			    },
+			    "cem_has_distrito_domicilio": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.distrito_domicilio": {
+			          "Target": {
+			            "Entity": "cem.distrito_domicilio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.distrito_domicilio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_distrito_domicilios"
+			        }
+			      ]
+			    },
+			    "cem_has_provincia_domicilio": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.provincia_domicilio": {
+			          "Target": {
+			            "Entity": "cem.provincia_domicilio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.provincia_domicilio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_provincia_domicilios"
+			        }
+			      ]
+			    },
+			    "cem_has_departamento_domicilio": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.departamento_domicilio": {
+			          "Target": {
+			            "Entity": "cem.departamento_domicilio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.departamento_domicilio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_departamento_domicilios"
+			        }
+			      ]
+			    },
+			    "cem_has_etnia_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.etnia_victima": {
+			          "Target": {
+			            "Entity": "cem.etnia_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.etnia_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_etnia_victimas"
+			        }
+			      ]
+			    },
+			    "cem_has_lengua_materna_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.lengua_materna_victima": {
+			          "Target": {
+			            "Entity": "cem.lengua_materna_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.lengua_materna_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_lengua_materna_victimas"
+			        }
+			      ]
+			    },
+			    "cem_has_victima_gestando": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.victima_gestando": {
+			          "Target": {
+			            "Entity": "cem.victima_gestando"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.victima_gestando"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_victima_gestandos"
+			        }
+			      ]
+			    },
+			    "cem_has_sexo_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.sexo_victima": {
+			          "Target": {
+			            "Entity": "cem.sexo_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.sexo_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_sexo_victimas"
+			        }
+			      ]
+			    },
+			    "cem_has_grupo_edad_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.grupo_edad_victima": {
+			          "Target": {
+			            "Entity": "cem.grupo_edad_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.grupo_edad_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_grupo_edad_victimas"
+			        }
+			      ]
+			    },
+			    "cem_has_edad_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.edad_victima": {
+			          "Target": {
+			            "Entity": "cem.edad_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.edad_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_edad_victimas"
+			        }
+			      ]
+			    },
+			    "cem_has_pais_victima_extranjera": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.pais_victima_extranjera": {
+			          "Target": {
+			            "Entity": "cem.pais_victima_extranjera"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.pais_victima_extranjera"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_pais_victima_extranjeras"
+			        }
+			      ]
+			    },
+			    "cem_has_victima_extranjera": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.victima_extranjera": {
+			          "Target": {
+			            "Entity": "cem.victima_extranjera"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.victima_extranjera"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_victima_extranjeras"
+			        }
+			      ]
+			    },
+			    "cem_has_victima_peruana": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.victima_peruana": {
+			          "Target": {
+			            "Entity": "cem.victima_peruana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.victima_peruana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_victima_peruanas"
+			        }
+			      ]
+			    },
+			    "cem_has_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.dia": {
+			          "Target": {
+			            "Entity": "cem.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_dias"
+			        }
+			      ]
+			    },
+			    "cem_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.me": {
+			          "Target": {
+			            "Entity": "cem.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_me"
+			        }
+			      ]
+			    },
+			    "cem_has_anio": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.anio": {
+			          "Target": {
+			            "Entity": "cem.anio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.anio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_anios"
+			        }
+			      ]
+			    },
+			    "cem_has_fecha_ingreso": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.fecha_ingreso": {
+			          "Target": {
+			            "Entity": "cem.fecha_ingreso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.fecha_ingreso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_fecha_ingresos"
+			        }
+			      ]
+			    },
+			    "cem_has_tentativa_feminicidio": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.tentativa_feminicidio": {
+			          "Target": {
+			            "Entity": "cem.tentativa_feminicidio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.tentativa_feminicidio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have__tentativa_feminicidio"
+			        }
+			      ]
+			    },
+			    "cem_has_hombres": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.hombres": {
+			          "Target": {
+			            "Entity": "cem.hombres"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.hombres"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_hombres"
+			        }
+			      ]
+			    },
+			    "cem_has_mujeres1": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.mujeres1": {
+			          "Target": {
+			            "Entity": "cem.mujeres1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.mujeres1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_mujeres"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_departamento_ubicación": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.departamento_ubicación": {
+			          "Target": {
+			            "Entity": "dim_departamento.departamento_ubicación"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.departamento_ubicación"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_departamento_ubicacións"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_departamento": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento.departamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.departamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_departamentos"
+			        }
+			      ]
+			    },
+			    "dim_departamento_has_id_dep": {
+			      "Binding": {
+			        "ConceptualEntity": "dimDepartamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_departamento": {
+			          "Target": {
+			            "Entity": "dim_departamento"
+			          }
+			        },
+			        "dim_departamento.id_dep": {
+			          "Target": {
+			            "Entity": "dim_departamento.id_dep"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_departamento"
+			            },
+			            "Object": {
+			              "Role": "dim_departamento.id_dep"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_departamentos_have_id_deps"
+			        }
+			      ]
+			    },
+			    "cem_has_total_segmentado": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.total_segmentado": {
+			          "Target": {
+			            "Entity": "cem.total_segmentado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.total_segmentado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_total_segmentado"
+			        }
+			      ]
+			    },
+			    "cem_has_casos": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.casos": {
+			          "Target": {
+			            "Entity": "cem.casos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.casos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have__casos"
+			        }
+			      ]
+			    },
+			    "cem_has_vincula_de_pareja": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.vincula_de_pareja": {
+			          "Target": {
+			            "Entity": "cem.vincula_de_pareja"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.vincula_de_pareja"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_vincula_de_pareja"
+			        }
+			      ]
+			    },
+			    "cem_has_riesgo_severo": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.riesgo_severo": {
+			          "Target": {
+			            "Entity": "cem.riesgo_severo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.riesgo_severo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_riesgo_severo"
+			        }
+			      ]
+			    },
+			    "cem_has_impusieron_denuncia": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.impusieron_denuncia": {
+			          "Target": {
+			            "Entity": "cem.impusieron_denuncia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.impusieron_denuncia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_impusieron_denuncia"
+			        }
+			      ]
+			    },
+			    "cem_has_mujeres": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.mujeres": {
+			          "Target": {
+			            "Entity": "cem.mujeres"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.mujeres"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have__mujeres"
+			        }
+			      ]
+			    },
+			    "cem_has_edad_promedio_de_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.edad_promedio_de_victima": {
+			          "Target": {
+			            "Entity": "cem.edad_promedio_de_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.edad_promedio_de_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_edad_promedio_de_victima"
+			        }
+			      ]
+			    },
+			    "cem_has_total_de_casos": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.total_de_casos": {
+			          "Target": {
+			            "Entity": "cem.total_de_casos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.total_de_casos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_total_de_casos"
+			        }
+			      ]
+			    },
+			    "cem_has_cem": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.cem": {
+			          "Target": {
+			            "Entity": "cem.cem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.cem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_cems"
+			        }
+			      ]
+			    },
+			    "cem_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.region": {
+			          "Target": {
+			            "Entity": "cem.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_regions"
+			        }
+			      ]
+			    },
+			    "cem_has_condicion": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.condicion": {
+			          "Target": {
+			            "Entity": "cem.condicion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.condicion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_condicions"
+			        }
+			      ]
+			    },
+			    "cem_has_nivel_educativo_victima": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.nivel_educativo_victima": {
+			          "Target": {
+			            "Entity": "cem.nivel_educativo_victima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Object": {
+			              "Role": "cem.nivel_educativo_victima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_have_nivel_educativo_victimas"
+			        }
+			      ]
+			    },
+			    "cem_in_agresor_area_residencia_domicilio": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.agresor_area_residencia_domicilio": {
+			          "Target": {
+			            "Entity": "cem.agresor_area_residencia_domicilio"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "cem.agresor_area_residencia_domicilio"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "cem.agresor_area_residencia_domicilio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_are_in_agresor_area_residencia_domicilios"
+			        }
+			      ]
+			    },
+			    "cem_in_area_residencia_domicilio": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.area_residencia_domicilio": {
+			          "Target": {
+			            "Entity": "cem.area_residencia_domicilio"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "cem.area_residencia_domicilio"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "cem.area_residencia_domicilio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_are_in_area_residencia_domicilios"
+			        }
+			      ]
+			    },
+			    "cem_in_region": {
+			      "Binding": {
+			        "ConceptualEntity": "CEM"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cem": {
+			          "Target": {
+			            "Entity": "cem"
+			          }
+			        },
+			        "cem.region": {
+			          "Target": {
+			            "Entity": "cem.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "cem.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "cem"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "cem.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cems_are_in_regions"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

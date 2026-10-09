@@ -1,0 +1,1264 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Limpiar CEM - Web",
+  "name": "d0a2632abf5a8ed42cbb",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "8a13edc3ea7a10856656",
+    "sections": {
+      "8a13edc3ea7a10856656": {
+        "visualContainers": {
+          "2763c70ab107eff36580": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4aa96c1836f6f342593e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "8342e1b9f0f668ce3282": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4b9bd850a0ebc7cd4339",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "% MUJERES"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "% MUJERES"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "391d23f829112552637d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "08da31fd650304b0e095",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Riesgo Severo"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Riesgo Severo"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "b19f9de71305ab32d1a1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "92af084972c4cfbba014",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "anio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "c",
+                                "Entity": "CEM",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "c"
+                                            }
+                                          },
+                                          "Property": "anio"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'2026'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "anio"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ea105c0510e205149e19": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c2563a305fb59ce41f13",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "tipo_violencia"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "tipo_violencia"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "9d1f9ff360ef538b6dc4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "68bcd421dcc70338b10d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "nivel_riesgo_victima"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "nivel_riesgo_victima"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "b2c3106f0c985a3252ad": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "d18741d82e8f3df557e3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "102e4046731f28247c8e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "grupo_edad_victima"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "grupo_edad_victima"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "39d0d996d6f0fb62632f": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8cd8e28ab9b067510b4f",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "sexo_victima"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "sexo_victima"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "869c422f3ab9c6633728": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "26390869c881b4d983fa",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "cem"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "cem"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5288d2bd0ae1ccbbf8c4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a3e188e015d165fd71ad",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "dda9fdcec622b3287077",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "tipo_violencia"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "tipo_violencia"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "8afb43a79c146aac3536": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "bcd4d96eabc5d00a06a7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "01656244cf9c5ee4e178",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "sexo_victima"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "sexo_victima"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "245267b3d30d2fd746d1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "879f264a41b497d7b433",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "grupo_edad_victima"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "31990968d717a65113f7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "grupo_edad_victima"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "grupo_edad_victima"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "240e1e137241410cf9c7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "68ec01868961bc9a74ba",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "nivel_riesgo_victima"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4576caf62912e9f4f633",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "nivel_riesgo_victima"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ef30fc955add1bcae760": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "89654581c690ffa9fe82",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "df0fbab609533b0bab4b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "anio"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6f35d1cf5bcc0a088cca",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "sexo_victima"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "anio"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "f3ccafe1b98c8134f0af": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "450c3b4c730e7c7b5445",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "DEPARTAMENTO"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "DEPARTAMENTO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "85e5811f8002e9abe636": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5fc2486bbedd113787f5",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "715965c73b4be985dab9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "% Casos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9fc744a065ac9d903d38",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Mujeres"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "3453038679152c85d311",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Hombres"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8af8a30783b4919a486a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "region"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {}
+            }
+          },
+          "22810d1bb4397830a91a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3cb7bfcaa97f007daefa",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c34f73792fbec5be5721",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "tipo_violencia"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "tipo_violencia"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "85d13c3b5a0155d0cbf6": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "ee70058d4d5a7e96df09": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "f993e96ca1678991dc6d": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "1a83aa5b2d9da5b28b0d": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "00580e8d6cd9b14daf39": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "53e2cf39d63374414c23": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "1ca14ed8140f2d2bbdfc": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "1cf74233fb3ebd352562": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "b9d572d46deb84955e52": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "5d51c9779ce3fe696da7": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "3fde03d8e853f67bb0c8": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6730d8902360b40ee663",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimDepartamento"
+                        }
+                      },
+                      "Property": "ID_DEP"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "91358b44964e132f773e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dimDepartamento"
+                            }
+                          },
+                          "Property": "DEPARTAMENTO"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6f9a30a15875fd0811cc",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CEM"
+                        }
+                      },
+                      "Property": "Total de Casos"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "shapeMap",
+              "objects": {}
+            }
+          },
+          "48bb9c8bb284168fa394": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "33d48e3abc2c45915742": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "dab0e45a775b65d22e86": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "09318925007f339a250f": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

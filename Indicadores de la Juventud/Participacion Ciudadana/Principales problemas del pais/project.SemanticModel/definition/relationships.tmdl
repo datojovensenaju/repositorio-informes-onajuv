@@ -1,0 +1,16 @@
+relationship 1a44f40e-aca6-ad4b-d9c6-f2d44d599c1f
+	fromColumn: datosRegionales.INDICADOR
+	toColumn: principalProblema.'PRINCIPAL PROBLEMA'
+
+relationship e81b5dc0-166b-96f1-72e1-774868ebb11e
+	fromColumn: datosNacionales.INDICADOR
+	toColumn: principalProblema.'PRINCIPAL PROBLEMA'
+
+relationship f95b8307-1b3c-f86b-a0d7-12730a530923
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.anio
+
+relationship 6fa7b2c9-13ae-abce-a18b-0de6ab5eaed5
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.anio
+

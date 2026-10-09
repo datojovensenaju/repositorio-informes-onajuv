@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "f0495cc620a3946e9a51",
+  "displayName": "Extranjero_Mobile",
+  "displayOption": "ActualSize",
+  "height": 2280,
+  "width": 370,
+  "visibility": "HiddenInViewMode"
+}

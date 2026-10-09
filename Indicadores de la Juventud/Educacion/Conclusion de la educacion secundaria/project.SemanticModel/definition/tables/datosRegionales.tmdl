@@ -1,0 +1,127 @@
+table datosRegionales
+	lineageTag: ee8f07d7-7ab9-469d-9a7f-c76ee6a811bc
+
+	measure 'Valor Hombre' =
+			
+			CALCULATE(
+			    MAX(datosRegionales[VALOR]),
+			    datosRegionales[CATEGORIA] = "HOMBRE"
+			)
+		lineageTag: b097e0cd-21d8-4fdc-94e1-8cee695b77d4
+
+	measure 'Valor Mujer' =
+			
+			CALCULATE(
+			    MAX(datosRegionales[VALOR]),
+			    datosRegionales[CATEGORIA] = "MUJER"
+			)
+		lineageTag: 5d588569-f563-4e1e-a318-69d3eab54af3
+
+	measure 'Valor Región' =
+			
+			CALCULATE(
+			    MAX(datosRegionales[VALOR]),
+			    datosRegionales[CATEGORIA] = "REGIONAL"
+			)
+		lineageTag: 9fcfae8d-3d7f-4e17-98b3-1f4d6ce17732
+
+	measure 'Valor Rural' =
+			
+			CALCULATE(
+			    MAX(datosRegionales[VALOR]),
+			    datosRegionales[CATEGORIA] = "RURAL"
+			)
+		lineageTag: 350e47d8-a741-4c04-b247-bf47e0cf00c8
+
+	measure 'Valor Urbano' =
+			
+			CALCULATE(
+			    MAX(datosRegionales[VALOR]),
+			    datosRegionales[CATEGORIA] = "URBANO"
+			)
+		lineageTag: 327fb28b-e7f9-4c90-b674-d71ed0f78b49
+
+	column AÑO
+		dataType: string
+		lineageTag: 9a6141d6-5401-4bfa-a14b-980d9c3edfb6
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: 37a2ef59-abf6-4f71-ba87-840a124852c0
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 36fb3abf-65a4-4646-a937-e768ae8677a8
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: ec1792aa-f047-4dc0-8fe3-aaa59ebc011e
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: b16b8bb7-aebd-4ebc-8e00-67d005640a8a
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: 7c5215c0-9b18-4ba9-8bf9-e4744afe6e78
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: 46ff236c-6ea7-4347-9b71-9f8f3c4bf811
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: 700356b7-c99f-4762-b6e2-6a13ed987e32
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition datosRegionales = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/1.%20Educaci%C3%B3n/Educacion_Conclusi%C3%B3n%20de%20la%20educaci%C3%B3n%20secundaria.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "datosRegionales", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Encabezados promovidos","ANCASH","ÁNCASH",Replacer.ReplaceText,{"REGION"}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Valor reemplazado","APURIMAC","APURÍMAC",Replacer.ReplaceText,{"REGION"}),
+				    #"Valor reemplazado2" = Table.ReplaceValue(#"Valor reemplazado1","HUANUCO","HUÁNUCO",Replacer.ReplaceText,{"REGION"}),
+				    #"Valor reemplazado3" = Table.ReplaceValue(#"Valor reemplazado2","JUNIN","JUNÍN",Replacer.ReplaceText,{"REGION"}),
+				    #"Valor reemplazado4" = Table.ReplaceValue(#"Valor reemplazado3","LIMA REGION","LIMA PROVINCIA",Replacer.ReplaceText,{"REGION"}),
+				    #"Valor reemplazado5" = Table.ReplaceValue(#"Valor reemplazado4","SAN MARTIN","SAN MARTÍN",Replacer.ReplaceText,{"REGION"})
+				in
+				    #"Valor reemplazado5"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,83 @@
+table factVictimizacionSeguridadCiudadana_InseguridadCaminarNoche
+	lineageTag: e09bc690-af1f-46be-96e2-0c9a5f909324
+
+	column AÑO
+		dataType: string
+		lineageTag: 384f507a-22b3-4bf5-bd42-754f4dfa85b6
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: fa5f9399-6264-4d36-b0f2-9a1938b54968
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: dcc55bf3-4e49-44e6-ba94-98c95351bd05
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: c460f8a2-2a4e-4ab6-bee4-3d222c435ab8
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: 0cfef9a3-420e-417b-b90e-6945165730b5
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: ed88193d-be39-4627-bdf4-c40034ea030f
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: 1917f442-2c58-4b3b-9a46-520915261441
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: 8e4461ed-c28a-4961-99cd-503449b626e8
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factVictimizacionSeguridadCiudadana_InseguridadCaminarNoche = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/ENCUESTAS/VictimizacionSeguridadCiudadana_%20Percepci%C3%B3n%20de%20inseguridad%20de%20los%20j%C3%B3venes%20al%20caminar%20solo%20a%20de%20noche%20en%20%20su%20zona%20o%20barrio.xlsx"), null, true),
+				    Región_Sheet = Origen{[Item="datosRegionales",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Región_Sheet, [PromoteAllScalars=true]),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Encabezados promovidos","NACIONAL","REGIONAL",Replacer.ReplaceText,{"CATEGORIA"}),
+				    #"Filas filtradas" = Table.SelectRows(#"Valor reemplazado", each ([CATEGORIA] = "REGIONAL"))
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

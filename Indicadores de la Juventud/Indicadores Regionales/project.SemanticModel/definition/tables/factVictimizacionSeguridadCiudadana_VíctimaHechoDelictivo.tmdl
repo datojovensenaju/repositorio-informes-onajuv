@@ -1,0 +1,82 @@
+table factVictimizacionSeguridadCiudadana_VíctimaHechoDelictivo
+	lineageTag: 48920d79-4fec-4fc0-b3a9-fa539fa1a0a3
+
+	column AÑO
+		dataType: string
+		lineageTag: b0720ffd-bbc1-49b5-9696-1b1a7a040dae
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column POBLACION
+		dataType: string
+		lineageTag: 89e2bb5c-2b9f-474d-82ef-0596ae2e2a3d
+		summarizeBy: none
+		sourceColumn: POBLACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: cb5a25a9-8d17-4a03-8bcb-97db1975c889
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: 41fa936d-e15c-442b-bd8e-6ac8f88f022d
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDICADOR
+		dataType: string
+		lineageTag: 8af331f7-11a9-489d-9f10-4b64b42d89ad
+		summarizeBy: none
+		sourceColumn: INDICADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: string
+		lineageTag: db5a381d-7070-4e99-9585-0ef8535e7fdb
+		summarizeBy: none
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CV
+		dataType: string
+		lineageTag: f2e24393-b8d4-4a8e-9dfd-5ca5979ef249
+		summarizeBy: none
+		sourceColumn: CV
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUENTE
+		dataType: string
+		lineageTag: f8eadc31-5e7e-4126-b82d-a81d07194e6e
+		summarizeBy: none
+		sourceColumn: FUENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factVictimizacionSeguridadCiudadana_VíctimaHechoDelictivo = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/ENCUESTAS/VictimizacionSeguridadCiudadana_J%C3%B3venes%20v%C3%ADctimas%20de%20alg%C3%BAn%20hecho%20delictivo.xlsx"), null, true),
+				    Región_Sheet = Origen{[Item="datosRegionales",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Región_Sheet, [PromoteAllScalars=true]),
+				    #"Filas filtradas" = Table.SelectRows(#"Encabezados promovidos", each ([CATEGORIA] = "REGIONAL"))
+				in
+				    #"Filas filtradas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

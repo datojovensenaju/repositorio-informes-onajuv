@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "1bad6c5a0078ebdccd60",
+  "displayName": "Alcohol - WEB",
+  "displayOption": "ActualSize",
+  "height": 1980,
+  "width": 1400,
+  "filterConfig": {
+    "filterSortOrder": "Custom"
+  }
+}

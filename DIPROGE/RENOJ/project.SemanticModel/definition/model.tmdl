@@ -1,0 +1,28 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Representantes","Miembros","dimDepartamento","dimRegion","Año","Rango Etario"]
+
+annotation __LastRPTime = 134356868124879457
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Representantes
+ref table DateTableTemplate_f8b97ae8-96c3-4803-990e-2cc75a7236b8
+ref table Miembros
+ref table LocalDateTable_a08db200-e4cd-4fef-bbc9-e3b27e4cc203
+ref table dimDepartamento
+ref table dimRegion
+ref table Año
+ref table LocalDateTable_22127771-2afd-4c14-8f30-d4dd92bfd014
+ref table 'Rango Etario'
+
+ref cultureInfo es-MX
+

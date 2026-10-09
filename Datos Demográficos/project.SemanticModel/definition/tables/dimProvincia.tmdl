@@ -1,0 +1,41 @@
+table dimProvincia
+	lineageTag: 83dbce5f-daee-47a3-8d15-8992e13d59dd
+
+	column ID_PROV
+		dataType: string
+		lineageTag: 2d6fbdcc-a859-4c94-b2cc-994d8c8fbc32
+		summarizeBy: none
+		sourceColumn: ID_PROV
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROVINCIA
+		dataType: string
+		lineageTag: 4f862e64-cb69-42b5-9ae9-a31e6b58d5a0
+		summarizeBy: none
+		sourceColumn: PROVINCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_REG
+		dataType: string
+		lineageTag: 2a1f28a7-4e5c-442f-9cb9-80b452d5ea5e
+		summarizeBy: none
+		sourceColumn: ID_REG
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimProvincia = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Ubigeo.xlsx"), null, true),
+				    dimProvincia_Sheet = Origen{[Item="dimProvincia",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(dimProvincia_Sheet, [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

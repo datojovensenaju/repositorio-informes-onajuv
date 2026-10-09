@@ -1,0 +1,33 @@
+table frecuenciaDeUso
+	lineageTag: a4613648-8e54-4976-9679-1df8f429b171
+
+	column ID_FREC
+		dataType: string
+		lineageTag: 3ed37f21-0968-4b88-b45b-c2c1f1e4aae6
+		summarizeBy: none
+		sourceColumn: ID_FREC
+
+		annotation SummarizationSetBy = Automatic
+
+	column FRECUENCIA
+		dataType: string
+		lineageTag: 7ddd4199-4d49-403a-82c5-dbdcdbd3bfe2
+		summarizeBy: none
+		sourceColumn: FRECUENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition frecuenciaDeUso = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/7.%20Competencias%20digitales/Frecuencia%20de%20uso%20del%20internet.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "frecuenciaDeUso", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

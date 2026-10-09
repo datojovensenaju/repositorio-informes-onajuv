@@ -1,0 +1,25 @@
+relationship AutoDetected_9d66ae28-a072-40ea-bfac-7640c0996dec
+	fromColumn: Indicadores.COD_OBJETIVO
+	toColumn: 'Objetivo Prioritario'.COD_OBJETIVO
+
+relationship AutoDetected_0a7cc80b-277f-44cc-bc5d-3f2cd0179c4c
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: bothDirections
+	fromColumn: Lineamientos.COD_OBJETIVO
+	toColumn: 'Objetivo Prioritario'.COD_OBJETIVO
+
+relationship AutoDetected_beed9afa-0e35-4290-ad67-b3bd1603249e
+	fromColumn: 'Valor de Indicadores'.COD_INDICADOR
+	toColumn: Indicadores.COD_INDICADOR
+
+relationship AutoDetected_c0da14e5-20a7-48ae-8358-f9663836c189
+	crossFilteringBehavior: bothDirections
+	securityFilteringBehavior: bothDirections
+	fromColumn: Servicio.COD_LINEAMIENTO
+	toColumn: Lineamientos.COD_LINEAMIENTO
+
+relationship AutoDetected_549a8e84-ab66-4bf1-878b-e629e12f3a45
+	crossFilteringBehavior: bothDirections
+	fromColumn: Servicio.PROVEEDOR
+	toColumn: Proveedor.PROVEEDOR
+

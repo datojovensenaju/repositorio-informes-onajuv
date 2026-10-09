@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "f7fcb5e00e2ed5957bcd",
+  "displayName": "CNV-SALUD-Mobile",
+  "displayOption": "FitToPage",
+  "height": 1980,
+  "width": 1400,
+  "visibility": "HiddenInViewMode"
+}

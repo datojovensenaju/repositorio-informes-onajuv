@@ -1,0 +1,102 @@
+table violenciaSexual
+	lineageTag: 87c649d4-5433-4190-933a-4beba37bc4bc
+
+	measure 'Total agresores de violencia sexual' =
+			CALCULATE(DIVIDE(
+			SUM(violenciaSexual[AGRESOR]),2))
+		formatString: 0
+		lineageTag: ddfbbfa4-6c97-4aec-bbac-5f423010d69f
+
+	measure 'Total victimas de violencia sexual' =
+			CALCULATE(
+			SUM(violenciaSexual[victima]))
+		formatString: 0
+		lineageTag: 46044df2-b177-412e-b299-51271b1ccd81
+
+	column victima
+		dataType: int64
+		formatString: 0
+		lineageTag: 6a1bfe78-e02b-4081-9bb1-7050ff232e1b
+		summarizeBy: sum
+		sourceColumn: victima
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f702469e-9ad6-4ea6-9287-c4e3a5d16d84
+		summarizeBy: none
+		sourceColumn: fecha
+
+		variation Variación
+			isDefault
+			relationship: f00f55dd-160b-41d4-9130-b902bb725584
+			defaultHierarchy: LocalDateTable_588238ed-c1d5-42e0-a9e7-2a8196c57ac8.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column mes
+		dataType: string
+		lineageTag: db38a6ca-1260-44d6-b7fc-cfbd248b74d0
+		summarizeBy: none
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: bb1dffaa-60e9-4de2-ad1e-9866ab5e7d36
+		summarizeBy: none
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column departamento
+		dataType: string
+		lineageTag: bb632d40-330a-4bc3-9423-c983bf5f557c
+		summarizeBy: none
+		sourceColumn: departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column agresor
+		dataType: int64
+		formatString: 0
+		lineageTag: c38dbdb1-1975-458e-be94-c893bcc0a833
+		summarizeBy: sum
+		sourceColumn: agresor
+
+		annotation SummarizationSetBy = Automatic
+
+	column sexo
+		dataType: string
+		lineageTag: 8e75ee4c-1239-4d02-a679-d6d3483b6408
+		summarizeBy: none
+		sourceColumn: sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition violenciaSexual = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/4.%20Victimizaci%C3%B3n%20y%20seguridad%20ciudadana/REGISTROS/MININTER/victimizacion_MININTER.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "violenciaSexual", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"fecha", type date}, {"mes", type text}, {"anio", Int64.Type}, {"departamento", type text}, {"hombre_victima", Int64.Type}, {"mujer_victima", Int64.Type}, {"agresor", Int64.Type}}, "es"),
+				    #"Otras columnas con anulación de dinamización" = Table.UnpivotOtherColumns(#"Tipo de columna cambiado", {"agresor", "departamento", "anio", "mes", "fecha"}, "atributo", "Valor"),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Otras columnas con anulación de dinamización",{{"atributo", "sexo"}, {"Valor", "victima"}}),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Columnas con nombre cambiado","hombre_victima","hombre",Replacer.ReplaceText,{"sexo"}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Valor reemplazado","mujer_victima","mujer",Replacer.ReplaceText,{"sexo"}),
+				    #"Valor reemplazado2" = Table.ReplaceValue(#"Valor reemplazado1","hombre_victima","hombre",Replacer.ReplaceText,{"sexo"})
+				in
+				    #"Valor reemplazado2"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

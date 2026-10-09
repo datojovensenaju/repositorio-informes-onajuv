@@ -1,0 +1,106 @@
+table 'Votantes – Perú – Jóvenes'
+	lineageTag: 0dfd44b1-0e97-49de-b38e-927954aa72c4
+
+	measure 'Total de Jóvenes Votantes en Perú' = ```
+			
+			    CALCULATE(SUM('Votantes – Perú – Jóvenes'[Total]))
+			```
+		lineageTag: 864280aa-cfd3-4825-ac34-fa803a6be3df
+
+		formatStringDefinition = "### ### ###"
+
+	measure totalHombreVotantePerú = ```
+			COALESCE(
+			    CALCULATE(
+			        SUM('Votantes – Perú – Jóvenes'[Total]),
+			        'Sexo'[SEXO] = "HOMBRE"), 
+			    "-"
+			)
+			```
+		lineageTag: abf25709-8fd5-4024-804f-fcb712783023
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure totalMujerVotantePerú = ```
+			COALESCE(
+			    CALCULATE(
+			        SUM('Votantes – Perú – Jóvenes'[Total]),
+			        'Sexo'[SEXO] = "MUJER"
+			    ), 
+			    "-"
+			)
+			```
+		lineageTag: 3802ae8a-e8aa-4a40-94d7-f2daab770a2a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'total Nuevos Votantes Nacional' =
+			CALCULATE(
+			        SUM('Votantes – Perú – Jóvenes'[Total]),
+			        'Votantes – Perú – Jóvenes'[TipoVotante] = "Nuevo")
+		formatString: 0
+		lineageTag: c0304b20-1d64-4ff7-8add-9bee2b6e3fb3
+
+	measure '% Jóvenes Departamental' =
+			
+			DIVIDE(
+			    [Total de Jóvenes Votantes en Perú],
+			    CALCULATE(
+			        [Total de Jóvenes Votantes en Perú],
+			        ALL('Votantes – Perú – Jóvenes')
+			    )
+			)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 84a8a941-656a-480d-9c07-3a7b39e27bf0
+
+	measure 'Sub Header' = 0.1
+		lineageTag: 4cf16f33-166d-44e9-af9a-28bf45046c88
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Departamento
+		dataType: string
+		lineageTag: fce4eb6a-e0f1-4946-894b-c2bd652302d1
+		summarizeBy: none
+		sourceColumn: Departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: 05552947-b12a-4cfb-8c87-b6f2e0e57bbc
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column TipoVotante
+		dataType: string
+		lineageTag: 3d842191-b6bc-4c65-a14a-147c89e55a8f
+		summarizeBy: none
+		sourceColumn: TipoVotante
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ed5f163-98ca-4247-903a-50249885f3d5
+		summarizeBy: sum
+		sourceColumn: Total
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Votantes – Perú – Jóvenes' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/6.%20Participaci%C3%B3n%20ciudadana%20y%20gobernanza/REGISTROS/Participaci%C3%B3nCiudadana_PadronElectoral.xlsx"), null, true),
+				    #"Votantes – Perú – Jóvenes_Sheet" = Origen{[Item="Votantes – Perú – Jóvenes",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Votantes – Perú – Jóvenes_Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Departamento", type text}, {"Sexo", type text}, {"TipoVotante", type text}, {"Total", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

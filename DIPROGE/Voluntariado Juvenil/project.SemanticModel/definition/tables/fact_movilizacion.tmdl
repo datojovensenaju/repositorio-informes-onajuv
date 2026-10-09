@@ -1,0 +1,81 @@
+table fact_movilizacion
+	lineageTag: 73684cc0-63b1-465f-b971-ec3fae319039
+
+	measure Porcentaje_Movilizacion =
+			
+			DIVIDE(
+			    [Total_movilizacion],
+			    [Total Voluntarios]
+			)
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 9f54dae7-f621-4d05-b83a-3e3c538222bc
+
+	measure Total_movilizacion = SUM(fact_movilizacion[VOLUNTARIOS_MOVILIZADOS])
+		formatString: 0
+		lineageTag: ff00f74f-b331-4f59-961c-b2df6b7cd606
+
+	column TRIMESTRE
+		dataType: string
+		lineageTag: 71725d0c-5ff0-4185-ab30-bac7deb16d6a
+		summarizeBy: none
+		sourceColumn: TRIMESTRE
+
+		annotation SummarizationSetBy = Automatic
+
+	column AÑO
+		dataType: string
+		lineageTag: 223d28c0-c8d4-4014-b7dc-58d97c3c2ee6
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO_ACTIVIDAD
+		dataType: string
+		lineageTag: 4cdce231-a7ef-4833-b086-7c918f0cc5e3
+		summarizeBy: none
+		sourceColumn: TIPO_ACTIVIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column VOLUNTARIOS_MOVILIZADOS
+		dataType: int64
+		formatString: 0
+		lineageTag: 950a0c0b-53bd-4316-8777-894463c6dad1
+		summarizeBy: sum
+		sourceColumn: VOLUNTARIOS_MOVILIZADOS
+
+		annotation SummarizationSetBy = Automatic
+
+	column TOTAL_JORNADAS
+		dataType: int64
+		formatString: 0
+		lineageTag: e13ce6d5-08f3-43eb-982f-0a56322682ac
+		summarizeBy: sum
+		sourceColumn: TOTAL_JORNADAS
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 0c41748b-61f6-46af-a404-7035128f8a78
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_movilizacion = m
+		mode: import
+		source =
+				let
+				  Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/DIPROGE/voluntariadoJuvenil.xlsx"), null, true),
+				  #"Navegación 1" = Origen{[Item = "fact_movilizacion", Kind = "Sheet"]}[Data],
+				  #"Encabezados promovidos" = Table.PromoteHeaders(#"Navegación 1", [PromoteAllScalars = true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"VOLUNTARIOS_MOVILIZADOS", Int64.Type}, {"TOTAL_JORNADAS", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

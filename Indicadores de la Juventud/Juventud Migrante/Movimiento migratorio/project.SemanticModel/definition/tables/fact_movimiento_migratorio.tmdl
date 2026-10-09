@@ -1,0 +1,170 @@
+table fact_movimiento_migratorio
+	lineageTag: c6258aaa-98be-4834-8afc-dc7a36c97fe5
+
+	measure 'Total Movimientos' =
+			
+			SUM(fact_movimiento_migratorio[CANTIDADES])
+		lineageTag: 5630ca92-ea70-47ff-b490-8ca75323b906
+
+		formatStringDefinition = "### ### ###"
+
+	measure 'Total Ingresos' =
+			
+			CALCULATE(
+			    [Total Movimientos],
+			    fact_movimiento_migratorio[TIPOMOVIMIENTO] = "INGRESO"
+			)
+		lineageTag: dfd8b581-c7a6-4380-bfce-2ffe51d8527d
+
+		formatStringDefinition = "### ### ###"
+
+	measure 'Total Salidas' =
+			
+			CALCULATE(
+			    [Total Movimientos],
+			    fact_movimiento_migratorio[TIPOMOVIMIENTO] = "SALIDA"
+			)
+		lineageTag: 04a32d23-d352-4ea8-b580-b1f96b7a8dfa
+
+		formatStringDefinition = "### ### ###"
+
+	measure 'Saldo Migratorio' =
+			
+			[Total Ingresos] - [Total Salidas]
+		lineageTag: a2c80024-8ad0-4d1f-8a03-5307dd5beade
+
+		formatStringDefinition = "### ### ###"
+
+	column 'Source.Name'
+		dataType: string
+		lineageTag: 7cafe6c0-074e-4c8d-9eb7-4b867373ec90
+		summarizeBy: none
+		sourceColumn: Source.Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column AÑO
+		dataType: string
+		lineageTag: b66ece2e-1421-43b0-a4c9-a60975114515
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MES
+		dataType: string
+		lineageTag: 4f1d5c3d-13fc-4a3e-b3f4-85d0052b5ec1
+		summarizeBy: none
+		sourceColumn: MES
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPOMOVIMIENTO
+		dataType: string
+		lineageTag: 9b99766e-de15-43c6-938a-662bedc012d9
+		summarizeBy: none
+		sourceColumn: TIPOMOVIMIENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column PUNTODECONTROL
+		dataType: string
+		lineageTag: c8a44fc4-d7da-4535-a4a6-36c5a3af425d
+		summarizeBy: none
+		sourceColumn: PUNTODECONTROL
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAISNACIONALIDAD
+		dataType: string
+		lineageTag: 0e822a61-2845-4ec1-8bbf-a60ac2ba3849
+		summarizeBy: none
+		sourceColumn: PAISNACIONALIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAISMOVIMIENTO
+		dataType: string
+		lineageTag: fe664552-d6fe-4d92-80e1-8193621a42b7
+		summarizeBy: none
+		sourceColumn: PAISMOVIMIENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: ad4f2b03-f13c-4f0d-8d6c-1cb74d9b31ae
+		summarizeBy: none
+		sourceColumn: SEXO
+
+		annotation SummarizationSetBy = Automatic
+
+	column EDAD
+		dataType: string
+		lineageTag: cdef0b0e-c2fc-41ea-9f18-77531d5a03f4
+		summarizeBy: none
+		sourceColumn: EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column MEDIODETRANSPORTE
+		dataType: string
+		lineageTag: f300c77a-2686-4d5f-bded-348c6c30e911
+		summarizeBy: none
+		sourceColumn: MEDIODETRANSPORTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ESTADOCIVIL
+		dataType: string
+		lineageTag: 8fc4c0d0-aa5c-4739-a248-6a0c108b8695
+		summarizeBy: none
+		sourceColumn: ESTADOCIVIL
+
+		annotation SummarizationSetBy = Automatic
+
+	column MOTIVOVIAJE
+		dataType: string
+		lineageTag: 7e3a2d76-c178-49d1-b144-294b24614b3c
+		summarizeBy: none
+		sourceColumn: MOTIVOVIAJE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CANTIDADES
+		dataType: int64
+		formatString: 0
+		lineageTag: abd464c0-6133-44a6-ac7a-c1dbac33bbb1
+		summarizeBy: sum
+		sourceColumn: CANTIDADES
+
+		annotation SummarizationSetBy = Automatic
+
+	column RANGO_EDAD
+		dataType: string
+		lineageTag: 07a266cb-01c7-47c5-a811-d3966cf8b974
+		summarizeBy: none
+		sourceColumn: RANGO_EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_movimiento_migratorio = m
+		mode: import
+		source =
+				let
+				  Origen = SharePoint.Files("https://mineduperu.sharepoint.com/sites/DATAJOVEN", [ApiVersion = 15]),
+				    #"Filas filtradas" = Table.SelectRows(Origen, each ([Folder Path] = "https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/Juventud Migrante/")),
+				    #"Archivos ocultos filtrados1" = Table.SelectRows(#"Filas filtradas", each [Attributes]?[Hidden]? <> true),
+				    #"Invocar función personalizada1" = Table.AddColumn(#"Archivos ocultos filtrados1", "Transformar archivo (2)", each #"Transformar archivo (2)"([Content])),
+				    #"Columnas con nombre cambiado1" = Table.RenameColumns(#"Invocar función personalizada1", {"Name", "Source.Name"}),
+				    #"Otras columnas quitadas1" = Table.SelectColumns(#"Columnas con nombre cambiado1", {"Source.Name", "Transformar archivo (2)"}),
+				    #"Columna de tabla expandida1" = Table.ExpandTableColumn(#"Otras columnas quitadas1", "Transformar archivo (2)", Table.ColumnNames(#"Transformar archivo (2)"(#"Archivo de ejemplo (2)"))),
+				    #"Filas filtradas1" = Table.SelectRows(#"Columna de tabla expandida1", each true),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Filas filtradas1",{{"CANTIDADES", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

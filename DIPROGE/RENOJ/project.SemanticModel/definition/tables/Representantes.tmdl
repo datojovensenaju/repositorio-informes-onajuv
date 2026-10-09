@@ -1,0 +1,214 @@
+table Representantes
+	lineageTag: ceb5480b-155b-426d-abc3-c007e4f77a5e
+
+	measure 'Total de Organizaciones' = COUNTROWS(Representantes)
+		formatString: 0
+		lineageTag: eda87b6e-eb38-46c0-8abb-fd4c4d18fb74
+
+	measure 'Tarjeta Organización' =
+			
+			IF(
+			    NOT HASONEVALUE(Representantes[ORGANIZACIÓN JUVENIL O INSTITUCIÓN (PÚBLICA O PRIVADA)]),
+			    "Selecciona una organización",
+			    SELECTEDVALUE(Representantes[ORGANIZACIÓN JUVENIL O INSTITUCIÓN (PÚBLICA O PRIVADA)])
+			)
+		lineageTag: c386bd9e-a451-4724-9e02-e5334a1e7742
+
+	measure 'Medio Digital de Organización' =
+			
+			IF(
+			    NOT HASONEVALUE(Representantes[MEDIO DE VERIFICACIÓN]),
+			    "-",
+			    SELECTEDVALUE(Representantes[MEDIO DE VERIFICACIÓN])
+			)
+		lineageTag: 8631ff59-e4c1-4848-a47d-591fc25de418
+
+	measure 'Tarjeta Región' =
+			
+			IF(
+			    NOT HASONEVALUE(dimRegion[REGION]),
+			    "NACIONAL",
+			    SELECTEDVALUE(dimRegion[REGION])
+			)
+		lineageTag: 4319494a-e00b-4092-baf7-ccedd236ce9b
+
+	measure 'Total sin filtros' = CALCULATE(COUNTROWS(Representantes), ALL(Representantes))
+		formatString: 0
+		lineageTag: e667faa6-9eb7-4b30-bfe9-5ff5e3bd8c90
+
+	column ID
+		dataType: string
+		lineageTag: a1c961ad-630b-46aa-aea2-f32e1c6c48ef
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column UBIGEO
+		dataType: string
+		lineageTag: a65dd0ca-5414-4591-a1b8-ddce586d881b
+		summarizeBy: none
+		sourceColumn: UBIGEO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Temática de organización 1'
+		dataType: string
+		lineageTag: d7fd32e9-4e0b-4fb6-9bac-40c41129296e
+		summarizeBy: none
+		sourceColumn: Temática de organización 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Temática de organización 2'
+		dataType: string
+		lineageTag: 3cc53a6c-7a45-4d4b-81e0-521cf86231fb
+		summarizeBy: none
+		sourceColumn: Temática de organización 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ORGANIZACIÓN JUVENIL O INSTITUCIÓN (PÚBLICA O PRIVADA)'
+		dataType: string
+		lineageTag: 73f20153-2975-47de-960d-0b6c086d8168
+		summarizeBy: none
+		sourceColumn: ORGANIZACIÓN JUVENIL O INSTITUCIÓN (PÚBLICA O PRIVADA)
+
+		annotation SummarizationSetBy = Automatic
+
+	column ACREDITACIÓN
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e6f84def-8638-4823-ab5a-7d15cc6d07c9
+		summarizeBy: none
+		sourceColumn: ACREDITACIÓN
+
+		variation Variación
+			isDefault
+			relationship: 95d8e9e3-8386-4926-b1b1-683bb2fdff08
+			defaultHierarchy: LocalDateTable_22127771-2afd-4c14-8f30-d4dd92bfd014.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: 28cd65f6-b4f1-48fd-b74c-a5ee43e8b952
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGIÓN
+		dataType: string
+		lineageTag: c7d47d2e-becd-4b9c-b6bf-3481dce2ed0d
+		summarizeBy: none
+		sourceColumn: REGIÓN
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROVINCIA
+		dataType: string
+		lineageTag: c0503e45-96e5-4498-acbb-7ed075e0d335
+		summarizeBy: none
+		sourceColumn: PROVINCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISTRITO
+		dataType: string
+		lineageTag: 417c5b08-b280-40e0-8b25-6b51670edc68
+		summarizeBy: none
+		sourceColumn: DISTRITO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: d09a02b4-c96f-40f2-8f86-c2df7b090282
+		summarizeBy: none
+		sourceColumn: SEXO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MEDIO DE VERIFICACIÓN'
+		dataType: string
+		lineageTag: 01fff3d5-f770-4529-a258-f4b8e71472aa
+		summarizeBy: none
+		sourceColumn: MEDIO DE VERIFICACIÓN
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TIPO DE ORGANIZACIÓN'
+		dataType: string
+		lineageTag: 16754d86-1239-4fa3-aa4f-b5056b2e43e4
+		summarizeBy: none
+		sourceColumn: TIPO DE ORGANIZACIÓN
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DETALLE TIPO DE ORGANIZACIÓN'
+		dataType: string
+		lineageTag: 82ee3166-e810-454f-a938-1fb6fc26f971
+		summarizeBy: none
+		sourceColumn: DETALLE TIPO DE ORGANIZACIÓN
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TEMÁTICA DE ORGANIZACIÓN'
+		dataType: string
+		lineageTag: 9e5b3a37-0c77-4182-8149-33b0976badd1
+		summarizeBy: none
+		sourceColumn: TEMÁTICA DE ORGANIZACIÓN
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AÑO ACREDITACIÓN'
+		dataType: int64
+		formatString: 0
+		lineageTag: f627da7f-3e42-4744-8380-a38c335aa6a2
+		summarizeBy: sum
+		sourceColumn: AÑO ACREDITACIÓN
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_REG
+		dataType: string
+		lineageTag: f949f174-907f-4535-a434-213d2cd00991
+		summarizeBy: none
+		sourceColumn: ID_REG
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nº DE MIEMBROS'
+		dataType: string
+		lineageTag: a09bc897-b847-423e-b762-7144d48b94d3
+		summarizeBy: none
+		sourceColumn: Nº DE MIEMBROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Clave Año' = IF(ISBLANK(Representantes[AÑO ACREDITACIÓN]), BLANK(), FORMAT(Representantes[AÑO ACREDITACIÓN], "0000"))
+		dataType: string
+		isHidden
+		lineageTag: 7f3c9a21-4e58-4b6d-a1c2-9d0e5f6a7b83
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Representantes = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/DIPROGE/RENOJ-SETIEMBRE.xlsx"), null, true),
+				    Representantes_Sheet = Origen{[Item="Representantes",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Representantes_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"ACREDITACIÓN", type date}, {"AÑO ACREDITACIÓN", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,33 @@
+table 'Rango Etario'
+	lineageTag: ef47faec-fd26-4e44-9c6d-8424b4226d5b
+
+	column ID_RANETA
+		dataType: string
+		lineageTag: bcff4161-7813-416f-8f2c-186779d91b06
+		summarizeBy: none
+		sourceColumn: ID_RANETA
+
+		annotation SummarizationSetBy = Automatic
+
+	column RANGO_ETARIO
+		dataType: string
+		lineageTag: 6cecf184-d568-404e-b341-b54bdf75aaf6
+		summarizeBy: none
+		sourceColumn: RANGO_ETARIO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Rango Etario' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
+				    #"Rango Etario_Sheet" = Origen{[Item="Rango Etario",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Rango Etario_Sheet", [PromoteAllScalars=true])
+				in
+				    #"Encabezados promovidos"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

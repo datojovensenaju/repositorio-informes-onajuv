@@ -1,0 +1,28 @@
+relationship 5a427105-8c98-75df-5039-83a83f4fa116
+	fromColumn: datosRegionales.INDICADOR
+	toColumn: actividadRealizada.ACTIVIDAD_REALIZADA
+
+relationship 2b8b6c8c-d800-5891-f3e0-fb2c994cd50b
+	fromColumn: datosNacionales.INDICADOR
+	toColumn: actividadRealizada.ACTIVIDAD_REALIZADA
+
+relationship d5d0f093-118d-cd00-70b9-7ed051f116c6
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.anio
+
+relationship 2fc623fa-fac0-9547-5d9c-3d2ec7d92477
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.anio
+
+relationship 5e2e946e-006f-315f-20af-b97bc72cb335
+	fromColumn: datosNacionales.CATEGORIA
+	toColumn: 'Region Natural'.CATEGORIA
+
+relationship af4ad4c2-c661-74c9-21a9-abb3bc314803
+	fromColumn: Tabla_Nacional.AÑO
+	toColumn: Año.anio
+
+relationship e3fc6c4b-80c6-8b98-13fc-fe5de3ab1a70
+	fromColumn: Tabla_Nacional.ACTIVIDADES
+	toColumn: actividadRealizada.ACTIVIDAD_REALIZADA
+

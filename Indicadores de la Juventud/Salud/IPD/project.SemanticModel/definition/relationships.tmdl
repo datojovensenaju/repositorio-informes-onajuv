@@ -1,0 +1,25 @@
+relationship AutoDetected_73221d33-78d4-42da-bf44-f9da0a680256
+	fromColumn: dimProvincia.ID_REG
+	toColumn: dimRegion.ID_REG
+
+relationship AutoDetected_cd7a5220-6892-48c7-83df-19665b35f3b0
+	fromColumn: dimDistrito.ID_PROV
+	toColumn: dimProvincia.ID_PROV
+
+relationship a5915cd7-a033-4bb8-84d9-0a506f9e7bb9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: IPD.FECHA_INGRESO
+	toColumn: LocalDateTable_5979b33e-ac62-42f1-9ca2-841f6d29e11f.Date
+
+relationship AutoDetected_0077d794-31f3-4a66-be6a-5c29c796db9d
+	fromColumn: IPD.SEXO
+	toColumn: Sexo.SEXO
+
+relationship c7bd2650-aae0-da6f-76e8-aa7acdeba5c0
+	fromColumn: IPD.ANIO
+	toColumn: Año.anio
+
+relationship aed21af7-2e03-d435-4b00-9e7e350853f1
+	fromColumn: IPD.GRUPO_EDAD
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+

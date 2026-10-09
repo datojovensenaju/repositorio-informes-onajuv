@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "cd8cf9fd7c2c77378396",
+  "position": {
+    "x": 10,
+    "y": 70,
+    "z": 17000,
+    "height": 45,
+    "width": 1380,
+    "tabOrder": 18000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Muestra la distribución porcentual de jóvenes de 15 a 29 años que utilizan Internet, según la frecuencia declarada de uso: una vez al día, una vez a la semana, una vez al mes o cada dos meses. La información se presenta para el total nacional."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

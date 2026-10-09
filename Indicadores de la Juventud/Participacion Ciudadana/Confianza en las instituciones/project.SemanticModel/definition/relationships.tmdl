@@ -1,0 +1,24 @@
+relationship 51249a59-b19a-f72b-f537-3fc15c7fd0cb
+	fromColumn: datosNacionales.INDICADOR
+	toColumn: instituciones.INSTITUCIONES
+
+relationship b330fa58-5185-c1f9-0f18-e5a78fe979ce
+	fromColumn: datosRegionales.INDICADOR
+	toColumn: instituciones.INSTITUCIONES
+
+relationship f82c695a-8d00-3f22-bf47-1c862689f0dd
+	fromColumn: datosNacionales.AÑO
+	toColumn: Año.anio
+
+relationship 8fbe8205-4f16-7e6f-e975-20aeef8630ea
+	fromColumn: datosRegionales.AÑO
+	toColumn: Año.anio
+
+relationship 3659cf1b-b7f0-50d0-dea9-0bb0d81a34cf
+	fromColumn: Tabla_Nacional.INSTITUCIÓN
+	toColumn: instituciones.INSTITUCIONES
+
+relationship 17169ad3-4c3f-a582-ace8-4dd32be6aa17
+	fromColumn: Tabla_Nacional.AÑO
+	toColumn: Año.anio
+
