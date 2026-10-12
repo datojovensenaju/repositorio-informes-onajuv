@@ -20,28 +20,6 @@ cultureInfo es-MX
 			        }
 			      ]
 			    },
-			    "año.año": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Año",
-			          "ConceptualProperty": "AÑO"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "año": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "año name": {
-			            "State": "Generated"
-			          }
-			        }
-			      ],
-			      "NameType": "Name"
-			    },
 			    "rango_etario": {
 			      "Definition": {
 			        "Binding": {

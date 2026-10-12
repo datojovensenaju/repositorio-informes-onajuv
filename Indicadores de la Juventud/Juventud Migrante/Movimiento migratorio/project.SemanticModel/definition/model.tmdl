@@ -26,7 +26,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_QueryOrder = ["Año","Rango Etario","Parámetro1","Transformar archivo de ejemplo","Archivo de ejemplo","Transformar archivo","Sexo","Mes","fact_movimiento_migratorio","Parámetro2","Transformar archivo de ejemplo (2)","Archivo de ejemplo (2)","Transformar archivo (2)"]
 
-annotation PBI_ProTooling = ["DevMode"]
+annotation PBI_ProTooling = ["DevMode","MCP-PBIModeling"]
 
 ref table Año
 ref table 'Rango Etario'

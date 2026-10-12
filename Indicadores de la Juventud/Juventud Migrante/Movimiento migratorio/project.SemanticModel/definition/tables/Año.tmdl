@@ -3,9 +3,9 @@ table Año
 
 	column AÑO
 		dataType: string
-		lineageTag: 93abdb19-68c8-4ac9-ae8d-3e926b0f32bb
+		lineageTag: e8579311-b311-4741-8ee6-077e894df6cb
 		summarizeBy: none
-		sourceColumn: AÑO
+		sourceColumn: anio
 
 		annotation SummarizationSetBy = Automatic
 

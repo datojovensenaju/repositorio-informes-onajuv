@@ -71,7 +71,7 @@ expression 'Transformar archivo de ejemplo (2)' =
 expression 'Archivo de ejemplo (2)' =
 		let
 		  Origen = SharePoint.Files("https://mineduperu.sharepoint.com/sites/DATAJOVEN", [ApiVersion = 15]),
-		    #"Filas filtradas" = Table.SelectRows(Origen, each ([Folder Path] = "https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/Juventud Migrante/")),
+		    #"Filas filtradas" = Table.SelectRows(Origen, each ([Folder Path] = "https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos compartidos/General/POWER BI - DATO JOVEN/INDICADORES SOBRE JUVENTUD/Juventud Migrante/") and Text.Contains([Name], "MovimientosMigratorios", Comparer.OrdinalIgnoreCase)),
 		    Navegación1 = #"Filas filtradas"{0}[Content]
 		in
 		  Navegación1
