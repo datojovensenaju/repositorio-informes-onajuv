@@ -26,3 +26,4 @@ table 'Sector Cultural'
 				)
 
 	annotation PBI_ResultType = Table
+

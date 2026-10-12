@@ -1,6 +1,70 @@
 table asistenciaLectura
 	lineageTag: 8e5a9556-de79-4800-97e0-7eea1a81bb2b
 
+	measure 'Total asistentes' = SUM ( asistenciaLectura[N ASISTENTES] )
+		formatString: #,0
+		lineageTag: 1f6a8c34-9d20-4b17-a6e5-3c8b0d71e4a2
+
+	measure 'Departamento con más asistentes' =
+			
+			VAR TablaDepartamentos =
+			    TOPN (
+			        1,
+			        ADDCOLUMNS (
+			            VALUES ( dimDepartamento[DEPARTAMENTO] ),
+			            "CantidadAsistentes",
+			            [Total asistentes]
+			        ),
+			        [CantidadAsistentes], DESC,
+			        dimDepartamento[DEPARTAMENTO], ASC
+			    )
+			RETURN
+			    CONCATENATEX (
+			        TablaDepartamentos,
+			        dimDepartamento[DEPARTAMENTO]
+			            & " ("
+			            & FORMAT ( [CantidadAsistentes], "#,##0" )
+			            & ")",
+			        ""
+			    )
+		lineageTag: 6b2e9d45-1c70-4a88-b3f1-8e5a7c20d9b4
+
+	measure 'Variación asistentes' =
+			
+			VAR AnioTexto = MAX ( 'Año'[AÑO] )
+			VAR AnioNumero = VALUE ( AnioTexto )
+			VAR Actual =
+			    CALCULATE (
+			        [Total asistentes],
+			        'Año'[AÑO] = FORMAT ( AnioNumero, "0" )
+			    )
+			VAR Anterior =
+			    CALCULATE (
+			        [Total asistentes],
+			        'Año'[AÑO] = FORMAT ( AnioNumero - 1, "0" )
+			    )
+			VAR Variacion = DIVIDE ( Actual - Anterior, Anterior )
+			RETURN
+			    IF (
+			        ISBLANK ( AnioTexto ),
+			        BLANK (),
+			        FORMAT ( AnioNumero, "0" ) & " / " & FORMAT ( AnioNumero - 1, "0" ) & ": "
+			            & IF (
+			                ISBLANK ( Variacion ),
+			                "sin registro anterior",
+			                FORMAT ( Variacion, "+0.0%;-0.0%;0.0%" )
+			            )
+			    )
+		lineageTag: 8d4c1a67-5e32-4f09-9b76-2a1c6e80f3d5
+
+	measure '% del total asistentes' =
+			DIVIDE (
+			    [Total asistentes],
+			    CALCULATE ( [Total asistentes], ALLSELECTED ( asistenciaLectura ) )
+			)
+		formatString: 0.0%
+		lineageTag: e15b7c90-3a48-4d16-8f27-9c0d4a62b1e8
+
 	column AÑO
 		dataType: string
 		lineageTag: a13c9915-362a-44e6-8d5f-4a54abb707f4
@@ -33,20 +97,20 @@ table asistenciaLectura
 
 		annotation SummarizationSetBy = Automatic
 
-	column SEXO
-		dataType: string
-		lineageTag: 7c1e4a90-2b58-4d6e-9a11-6f0c3e8b21d4
-		summarizeBy: none
-		sourceColumn: SEXO
-
-		annotation SummarizationSetBy = Automatic
-
 	column 'N ASISTENTES'
 		dataType: int64
 		formatString: 0
 		lineageTag: a4cd2d6a-bdeb-4423-a265-891648cf41e9
 		summarizeBy: sum
 		sourceColumn: N ASISTENTES
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: 7c1e4a90-2b58-4d6e-9a11-6f0c3e8b21d4
+		summarizeBy: none
+		sourceColumn: SEXO
 
 		annotation SummarizationSetBy = Automatic
 

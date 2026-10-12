@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["Año","Rango Etario","Sexo","Mes","dimDepartamento","Sector Cultural","trabajadoresCulturales","asistenciaLectura","culturaIndigena"]
+annotation PBI_QueryOrder = ["Año","Rango Etario","Sexo","Mes","dimDepartamento","trabajadoresCulturales","asistenciaLectura","culturaIndigena"]
 
 annotation __LastRPTime = 134358690144004752
 
@@ -19,10 +19,10 @@ ref table 'Rango Etario'
 ref table Sexo
 ref table Mes
 ref table dimDepartamento
-ref table 'Sector Cultural'
 ref table trabajadoresCulturales
 ref table asistenciaLectura
 ref table culturaIndigena
+ref table 'Sector Cultural'
 
 ref cultureInfo es-MX
 

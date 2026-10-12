@@ -38,10 +38,6 @@ relationship asistenciaLectura_Sexo
 	fromColumn: asistenciaLectura.SEXO
 	toColumn: Sexo.SEXO
 
-relationship asistenciaLectura_RangoEtario
-	fromColumn: asistenciaLectura.RANGO_EDAD
-	toColumn: 'Rango Etario'.RANGO_ETARIO
-
 relationship culturaIndigena_Año
 	fromColumn: culturaIndigena.AÑO
 	toColumn: Año.AÑO
@@ -59,7 +55,7 @@ relationship culturaIndigena_Sexo
 	toColumn: Sexo.SEXO
 
 relationship culturaIndigena_RangoEtario
-	fromColumn: culturaIndigena.RANGO_EDAD
+	fromColumn: culturaIndigena.EDAD
 	toColumn: 'Rango Etario'.RANGO_ETARIO
 
 relationship culturaIndigena_SectorCultural

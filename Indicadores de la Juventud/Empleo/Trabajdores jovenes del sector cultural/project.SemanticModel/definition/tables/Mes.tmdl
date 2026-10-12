@@ -20,15 +20,27 @@ table Mes
 
 		annotation SummarizationSetBy = Automatic
 
+	column MES_NOMBRE
+		dataType: string
+		lineageTag: 4e8b1c72-6a39-4d05-9f14-2b7c0e85a6d3
+		summarizeBy: none
+		sourceColumn: MES_NOMBRE
+		sortByColumn: ID_MES
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Mes = m
 		mode: import
 		source =
 				let
 				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/COMPLEMENTO/Estandarizaci%C3%B3n.xlsx"), null, true),
 				    Mes_Sheet = Origen{[Item="Mes",Kind="Sheet"]}[Data],
-				    #"Encabezados promovidos" = Table.PromoteHeaders(Mes_Sheet, [PromoteAllScalars=true])
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Mes_Sheet, [PromoteAllScalars=true]),
+				    #"Nombre de mes" = Table.AddColumn(#"Encabezados promovidos", "MES_NOMBRE", each Text.Proper([MES]), type text)
 				in
-				    #"Encabezados promovidos"
+				    #"Nombre de mes"
 
 	annotation PBI_NavigationStepName = Navegación
 

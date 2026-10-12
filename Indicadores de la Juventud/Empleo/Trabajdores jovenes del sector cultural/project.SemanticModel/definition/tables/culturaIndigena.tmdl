@@ -1,6 +1,66 @@
 table culturaIndigena
 	lineageTag: 4cee72bc-878c-4f67-a2ef-c58dd86b0198
 
+	measure 'Total registros indígenas' = COUNTROWS ( culturaIndigena )
+		formatString: #,0
+		lineageTag: a91c4e28-7b65-4d30-8f12-6c3a9e50b7d1
+
+	measure 'Etnia principal' =
+			
+			VAR TablaEtnias =
+			    TOPN (
+			        1,
+			        ADDCOLUMNS (
+			            VALUES ( culturaIndigena[Autoidentificación étnica] ),
+			            "CantidadRegistros",
+			            [Total registros indígenas]
+			        ),
+			        [CantidadRegistros], DESC,
+			        culturaIndigena[Autoidentificación étnica], ASC
+			    )
+			RETURN
+			    CONCATENATEX (
+			        TablaEtnias,
+			        culturaIndigena[Autoidentificación étnica]
+			            & " ("
+			            & FORMAT ( [CantidadRegistros], "#,##0" )
+			            & ")",
+			        ""
+			    )
+		lineageTag: b72d5f39-8c46-4e21-9a03-7d4b0f61c8e2
+
+	measure 'Sector indígena principal' =
+			
+			VAR TablaSectores =
+			    TOPN (
+			        1,
+			        ADDCOLUMNS (
+			            VALUES ( culturaIndigena[SECTOR CULTURAL] ),
+			            "CantidadRegistros",
+			            [Total registros indígenas]
+			        ),
+			        [CantidadRegistros], DESC,
+			        culturaIndigena[SECTOR CULTURAL], ASC
+			    )
+			RETURN
+			    CONCATENATEX (
+			        TablaSectores,
+			        culturaIndigena[SECTOR CULTURAL]
+			            & " ("
+			            & FORMAT ( [CantidadRegistros], "#,##0" )
+			            & ")",
+			        ""
+			    )
+		lineageTag: c83e604a-9d57-4f32-ab14-8e5c1072d9f3
+
+	measure '% del total indígena' =
+			DIVIDE (
+			    [Total registros indígenas],
+			    CALCULATE ( [Total registros indígenas], ALLSELECTED ( culturaIndigena ) )
+			)
+		formatString: 0.0%
+		lineageTag: d94f715b-0e68-4033-bc25-9f6d2183e0a4
+
 	column AÑO
 		dataType: string
 		lineageTag: b790c7fa-251b-4f26-9141-6bb987702b5b

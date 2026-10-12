@@ -1080,6 +1080,48 @@ cultureInfo es-MX
 			        }
 			      },
 			      "State": "Generated"
+			    },
+			    "asistencialectura.total_asistentes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "asistenciaLectura",
+			          "ConceptualProperty": "Total asistentes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Total asistentes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "culturaindigena.total_registros_indígenas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "culturaIndigena",
+			          "ConceptualProperty": "Total registros indígenas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Total registros indígenas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
