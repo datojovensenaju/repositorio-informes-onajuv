@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "0670fca25e378c5cf455",
+  "name": "ec68f5219f4c73c4c6c5",
   "position": {
-    "x": 760,
-    "y": 60,
-    "z": 13000,
-    "height": 70,
-    "width": 150,
-    "tabOrder": 12000
+    "x": 775.71428571428578,
+    "y": 60.000000000000007,
+    "z": 4,
+    "height": 65.714285714285722,
+    "width": 227.14285714285717,
+    "tabOrder": 4
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "trabajadoresCulturales"
+                      "Entity": "Rango Etario"
                     }
                   },
-                  "Property": "TRIMESTRE"
+                  "Property": "RANGO_ETARIO"
                 }
               },
-              "queryRef": "trabajadoresCulturales.TRIMESTRE",
-              "nativeQueryRef": "TRIMESTRE",
+              "queryRef": "Rango Etario.RANGO_ETARIO",
+              "nativeQueryRef": "RANGO_ETARIO",
               "active": true
             }
           ]
@@ -48,16 +48,29 @@
           }
         }
       ],
-      "general": [
+      "header": [
         {
           "properties": {
-            "selfFilterEnabled": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "'GRUPO DE EDAD'"
                 }
               }
             },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
             "orientation": {
               "expr": {
                 "Literal": {
@@ -75,19 +88,6 @@
               "expr": {
                 "Literal": {
                   "Value": "12D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "header": [
-        {
-          "properties": {
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
                 }
               }
             }
@@ -142,6 +142,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "RANGO_ETARIO",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

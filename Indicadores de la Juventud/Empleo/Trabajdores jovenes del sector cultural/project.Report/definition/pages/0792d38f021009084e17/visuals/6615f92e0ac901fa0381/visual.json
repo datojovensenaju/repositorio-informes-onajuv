@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "6615f92e0ac901fa0381",
   "position": {
-    "x": 910,
-    "y": 60,
-    "z": 10000,
-    "height": 65.555555555555557,
-    "width": 180,
-    "tabOrder": 8000
+    "x": 775.71428571428578,
+    "y": 60.000000000000007,
+    "z": 9000,
+    "height": 65.714285714285722,
+    "width": 227.14285714285717,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "slicer",
@@ -142,6 +142,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "RANGO_ETARIO",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

@@ -2,7 +2,7 @@
 
 Colección de tableros de **Dato Joven** (sitio SharePoint `DATAJOVEN` de MINEDU) sobre la situación de la juventud en el Perú. El repositorio guarda los proyectos en formato **PBIP** (Power BI Project): el reporte y el modelo semántico viven como carpetas de texto (JSON del reporte y TMDL del modelo), listos para abrirse en Power BI Desktop y versionarse en Git.
 
-Hay **57 proyectos**, **124 páginas**, cerca de **3 900 objetos visuales** y **187 medidas DAX**. Cada indicador es un proyecto independiente. No hay un modelo semántico único para todo el observatorio, salvo el tablero consolidado `Indicadores Regionales`.
+Hay **57 proyectos**, **124 páginas**, **3 902 objetos visuales** y **187 medidas DAX**. Cada indicador es un proyecto independiente. No hay un modelo semántico único para todo el observatorio, salvo el tablero consolidado `Indicadores Regionales`.
 
 ## Cómo está organizado
 
@@ -25,7 +25,7 @@ dato joven - power bi/
     └── Indicadores Regionales/          consolidado de encuestas
 ```
 
-La carpeta del repositorio sigue los temas del observatorio. La biblioteca de Excel en SharePoint usa una numeración paralela (`1. Educación` … `7. Competencias digitales`). Habilidades digitales en el repo corresponde a la carpeta SharePoint `7. Competencias digitales`.
+La carpeta del repositorio sigue los temas del observatorio. La biblioteca de Excel en SharePoint usa una numeración paralela (`1. Educación` … `7. Competencias digitales`). La carpeta Habilidades digitales del repositorio corresponde a la carpeta de SharePoint `7. Competencias digitales`.
 
 ## Anatomía de un proyecto
 
@@ -92,7 +92,8 @@ Los productos que vienen de padrones o sistemas de registro usan un modelo en es
 | MININTER                             | delitos, faltas, violencia familiar y sexual, accidentes de tránsito | Registros de victimización                                                        |
 | INPE                                 | `poblacion`                                                          | Población penitenciaria joven                                                     |
 | PRONACEJ                             | `pronacej-CJDR`, `pronacej-SOA`, `pronacej-PASPE`                    | Diagnóstico y rehabilitación, orientación al adolescente, seguimiento post egreso |
-| CNV, CONADIS, Discapacidad, IPD, VIH | un hecho por registro                                                | Nacidos vivos, discapacidad, deporte, VIH                                         |
+| CNV, Discapacidad, IPD, VIH          | un hecho por registro                                                | Nacidos vivos, discapacidad, deporte, VIH                                         |
+| CONADIS                              | `RNPCD`, `RegistroLimitacion`, `RegistroDeficiencia`                 | Persona con discapacidad, limitación y deficiencia                                |
 | Joven votante                        | padrón nacional y extranjero, jóvenes y total                        | Electores jóvenes                                                                 |
 | Diputado joven                       | candidatura general y joven                                          | Candidaturas jóvenes                                                              |
 | Trabajadores del sector cultural     | trabajadores culturales, cultura indígena, asistencia a lectura      | Empleo cultural                                                                   |
@@ -103,12 +104,12 @@ Los productos que vienen de padrones o sistemas de registro usan un modelo en es
 
 ## Páginas, tema y navegación
 
-Cada tablero tiene, como mínimo, una página **web** y una **móvil**.
+La plantilla de cada tablero es una página **web** y una **móvil**. CONADIS y Discapacidad se salen de ese molde: sus dos páginas miden 1400 px de ancho.
 
-- Web: **1400 × 1980** px en la gran mayoría.
-- Móvil: ancho fijo de **370** px y alto variable según el contenido.
+- Web: **1400 × 1980** px en la gran mayoría. Diputado joven mide 1400 × 2500. Las páginas web de joven votante (nacional y extranjero) miden 1400 × 1400.
+- Móvil: la plantilla usa ancho de **370** px y alto variable. Varias páginas con nombre de móvil conservan el lienzo web de **1400 × 1980**: CNV, movimiento migratorio, trabajadores del sector cultural, y las móviles de INPE, MININTER y PRONACEJ. Indicadores regionales móvil mide **1280 × 720**.
 
-El tema base es `CY26SU02` (un proyecto conserva `CY25SU12`). Los objetos que más se repiten son imágenes, cuadros de texto, tablas, segmentadores, tarjetas, gráficos de anillo, líneas y barras, y mapas de departamentos del Perú (`shapeMap`, con un topojson de departamentos). Algunos registros usan Azure Maps. Hay **76 marcadores**, casi siempre para limpiar filtros entre la vista web y la móvil.
+El tema base es `CY26SU02`. Joven votante conserva `CY25SU12`. Los objetos que más se repiten son imágenes, cuadros de texto, tablas, segmentadores, tarjetas, gráficos de anillo, líneas y barras, y mapas de departamentos del Perú (`shapeMap`, 24, con un topojson de departamentos). Seis mapas son Azure Maps. Hay **76 marcadores**, casi siempre para limpiar filtros entre la vista web y la móvil.
 
 Las dimensiones compartidas salen de dos libros de la carpeta `COMPLEMENTO` de SharePoint:
 
@@ -140,7 +141,7 @@ POWER BI - DATO JOVEN/
     └── Juventud Migrante/               carpeta leída con SharePoint.Files
 ```
 
-La partición M típica es `Excel.Workbook(Web.Contents("<url del xlsx>"))`. Movimiento migratorio es la excepción: combina los archivos de una carpeta de SharePoint con `SharePoint.Files`.
+La partición M típica es `Excel.Workbook(Web.Contents("<url del xlsx>"))`. El hecho de movimiento migratorio es la excepción: combina los archivos de una carpeta de SharePoint con `SharePoint.Files`. VIH y Discapacidad guardan además una consulta auxiliar `Archivo de ejemplo` que también llama a `SharePoint.Files`; sus tablas siguen cargando con `Web.Contents`. En VIH esa consulta de ejemplo todavía filtra `SALUD-discapacidad-2025.xlsx`.
 
 Para refrescar hace falta una cuenta con acceso a ese sitio. Las credenciales no están en el repositorio.
 
@@ -200,13 +201,13 @@ Varios reportes se copiaron desde una plantilla y conservan el nombre de página
 - Percepción de inseguridad, percepción de inseguridad en la noche, víctimas de hechos delictivos y delincuencia muestran el título «Años promedio de estudio».
 - Percepción de discriminación muestra el título «Violencia física y/o sexual».
 - La página móvil de PRONACEJ, MININTER e INPE se llama «Movimiento Migratorio». La página web de INPE se llama «CJDR».
-- IPD, Discapacidad y CONADIS conservan una página llamada «RENOJ-Resumen-Web». Salud crónica conserva el título «Episodio depresivo».
+- IPD, Discapacidad y CONADIS conservan una página llamada «RENOJ-Resumen-Web». La página web de IPD se llama «Discapacidad-SALUD-Web». Salud crónica conserva el título «Episodio depresivo» en web y en móvil.
 
 Otros puntos para quien mantenga los modelos:
 
-- `Participacion Ciudadana/Caracteristicas mas importantes asociadas a la democracia` tiene páginas, pero su modelo semántico no incluye la carpeta `definition` con tablas TMDL.
+- `Participacion Ciudadana/Caracteristicas mas importantes asociadas a la democracia` tiene páginas, pero el repositorio no versiona el TMDL de su modelo: no hay `database.tmdl`, `model.tmdl` ni tablas. Solo están `definition.pbism`, `.platform` y `diagramLayout.json`.
 - En varios modelos de encuesta conviven las tablas `datosRegionales` y `Datos Regionales`. La segunda suele ser un catálogo de `Estandarización.xlsx`, no el hecho regional.
-- La carpeta `Violencia psciologica` y el archivo `roject.pbip` conservan el nombre con el que se guardó el proyecto.
+- La carpeta `Violencia psciologica`, la carpeta `Trabajdores jovenes del sector cultural`, el doble espacio de `Percepcion  del funcionamiento de la democracia` y el archivo `roject.pbip` conservan el nombre con el que se guardó el proyecto.
 - Algunas URLs de `Web.Contents` están codificadas y otras van con espacios y tildes literales. Ambas formas aparecen en el mismo tema.
-- No hay medidas de tiempo, roles RLS ni grupos de cálculo. La inteligencia de tiempo de Power BI está activada en el modelo, pero el análisis temporal se hace con la dimensión `Año` (y `Mes` en los registros).
+- No hay medidas de tiempo, roles RLS ni grupos de cálculo. La inteligencia de tiempo de Power BI está activada y el análisis temporal se hace con la dimensión `Año` (y `Mes` en los registros). RENOJ, CNV, CONADIS, IPD y MININTER además materializaron tablas automáticas `LocalDateTable` y `DateTableTemplate`.
 

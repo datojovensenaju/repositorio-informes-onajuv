@@ -18,3 +18,51 @@ relationship ade74720-f08b-d188-958e-a9d8f5a55c7c
 	fromColumn: trabajadoresCulturales.RANGO_EDAD
 	toColumn: 'Rango Etario'.RANGO_ETARIO
 
+relationship trabajadoresCulturales_SectorCultural
+	fromColumn: trabajadoresCulturales.'SECTOR CULTURAL'
+	toColumn: 'Sector Cultural'.'SECTOR CULTURAL'
+
+relationship asistenciaLectura_Año
+	fromColumn: asistenciaLectura.AÑO
+	toColumn: Año.AÑO
+
+relationship asistenciaLectura_Mes
+	fromColumn: asistenciaLectura.MES
+	toColumn: Mes.MES
+
+relationship asistenciaLectura_Departamento
+	fromColumn: asistenciaLectura.DEPARTAMENTO
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship asistenciaLectura_Sexo
+	fromColumn: asistenciaLectura.SEXO
+	toColumn: Sexo.SEXO
+
+relationship asistenciaLectura_RangoEtario
+	fromColumn: asistenciaLectura.RANGO_EDAD
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+
+relationship culturaIndigena_Año
+	fromColumn: culturaIndigena.AÑO
+	toColumn: Año.AÑO
+
+relationship culturaIndigena_Mes
+	fromColumn: culturaIndigena.MES
+	toColumn: Mes.MES
+
+relationship culturaIndigena_Departamento
+	fromColumn: culturaIndigena.DEPARTAMENTO
+	toColumn: dimDepartamento.DEPARTAMENTO
+
+relationship culturaIndigena_Sexo
+	fromColumn: culturaIndigena.SEXO
+	toColumn: Sexo.SEXO
+
+relationship culturaIndigena_RangoEtario
+	fromColumn: culturaIndigena.RANGO_EDAD
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+
+relationship culturaIndigena_SectorCultural
+	fromColumn: culturaIndigena.'SECTOR CULTURAL'
+	toColumn: 'Sector Cultural'.'SECTOR CULTURAL'
+

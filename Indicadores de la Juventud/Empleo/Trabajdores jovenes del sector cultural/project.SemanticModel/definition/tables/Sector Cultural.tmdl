@@ -1,0 +1,28 @@
+table 'Sector Cultural'
+	lineageTag: 9b4e2c17-6a08-4f3d-b5e1-2d7c8a91f640
+
+	column 'SECTOR CULTURAL'
+		lineageTag: c5d8a1e4-3b72-4e90-8f16-7a2b9c04d5e8
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [SECTOR CULTURAL]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Sector Cultural' = calculated
+		mode: import
+		source =
+				DISTINCT (
+				    UNION (
+				        SELECTCOLUMNS (
+				            trabajadoresCulturales,
+				            "SECTOR CULTURAL", trabajadoresCulturales[SECTOR CULTURAL]
+				        ),
+				        SELECTCOLUMNS (
+				            culturaIndigena,
+				            "SECTOR CULTURAL", culturaIndigena[SECTOR CULTURAL]
+				        )
+				    )
+				)
+
+	annotation PBI_ResultType = Table

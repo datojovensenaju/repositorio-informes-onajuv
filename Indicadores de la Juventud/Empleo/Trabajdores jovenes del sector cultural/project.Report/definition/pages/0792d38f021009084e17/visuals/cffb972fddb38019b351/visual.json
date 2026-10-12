@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "cffb972fddb38019b351",
   "position": {
-    "x": 1090,
-    "y": 60,
+    "x": 1002.8571428571429,
+    "y": 60.000000000000007,
     "z": 3000,
-    "height": 65.555555555555557,
-    "width": 150,
+    "height": 65.714285714285722,
+    "width": 184.28571428571431,
     "tabOrder": 1000
   },
   "visual": {
@@ -142,6 +142,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "SEXO",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

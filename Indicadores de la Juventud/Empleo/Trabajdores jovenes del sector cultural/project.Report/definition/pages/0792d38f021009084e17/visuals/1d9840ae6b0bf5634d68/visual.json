@@ -4,10 +4,10 @@
   "position": {
     "x": 10,
     "y": 60,
-    "z": 11000,
+    "z": 10000,
     "height": 70,
     "width": 500,
-    "tabOrder": 10000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "trabajadoresCulturales"
+                      "Entity": "Sector Cultural"
                     }
                   },
                   "Property": "SECTOR CULTURAL"
                 }
               },
-              "queryRef": "trabajadoresCulturales.SECTOR CULTURAL",
+              "queryRef": "Sector Cultural.SECTOR CULTURAL",
               "nativeQueryRef": "SECTOR CULTURAL",
               "active": true
             }
@@ -109,6 +109,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "SECTOR CULTURAL",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

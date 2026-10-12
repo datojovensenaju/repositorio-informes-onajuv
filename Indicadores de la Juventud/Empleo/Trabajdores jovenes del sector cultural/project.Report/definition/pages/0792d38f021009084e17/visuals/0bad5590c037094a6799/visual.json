@@ -4,10 +4,10 @@
   "position": {
     "x": 473.75,
     "y": 305,
-    "z": 27000,
+    "z": 19000,
     "height": 372.5,
     "width": 452.5,
-    "tabOrder": 27000
+    "tabOrder": 19000
   },
   "visual": {
     "visualType": "columnChart",
@@ -55,16 +55,16 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Rango Etario"
+                    "Entity": "trabajadoresCulturales"
                   }
                 },
-                "Property": "RANGO_ETARIO"
+                "Property": "Total jóvenes"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }

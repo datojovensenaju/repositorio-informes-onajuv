@@ -694,61 +694,6 @@
               "objects": {}
             }
           },
-          "0670fca25e378c5cf455": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "63a42c3af55c43696875",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "trabajadoresCulturales"
-                        }
-                      },
-                      "Property": "TRIMESTRE"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "trabajadoresCulturales"
-                        }
-                      },
-                      "Property": "TRIMESTRE"
-                    }
-                  }
-                ]
-              }
-            }
-          },
           "b7d0fdfea0883c40e7ca": {
             "singleVisual": {
               "visualType": "textbox",
