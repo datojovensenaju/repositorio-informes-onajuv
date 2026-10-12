@@ -1,0 +1,22 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Año","Rango Etario","Sexo","Mes","fact_inmigrantes"]
+
+annotation PBI_ProTooling = ["DevMode","MCP-PBIModeling"]
+
+ref table Año
+ref table 'Rango Etario'
+ref table Sexo
+ref table Mes
+ref table fact_inmigrantes
+
+ref cultureInfo es-MX
+
