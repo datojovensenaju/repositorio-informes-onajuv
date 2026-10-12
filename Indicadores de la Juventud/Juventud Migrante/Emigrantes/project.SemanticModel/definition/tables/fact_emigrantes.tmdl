@@ -1,0 +1,308 @@
+table fact_emigrantes
+	lineageTag: 3e8c1f74-5a20-4b96-8d11-6c7e2a9b04f3
+
+	measure 'Total Emigrantes' =
+			
+			SUM(fact_emigrantes[CANTIDADES])
+		lineageTag: c1a0e101-1111-4111-8111-000000000101
+
+		formatStringDefinition = "### ### ###"
+
+	measure '% del principal país' =
+			VAR Ranking =
+			    TOPN (
+			        1,
+			        FILTER (
+			            SUMMARIZE (
+			                fact_emigrantes,
+			                fact_emigrantes[PAISMOVIMIENTO],
+			                "Total", [Total Emigrantes]
+			            ),
+			            NOT ISBLANK ( fact_emigrantes[PAISMOVIMIENTO] )
+			        ),
+			        [Total], DESC
+			    )
+			RETURN
+			    DIVIDE ( MAXX ( Ranking, [Total] ), [Total Emigrantes] )
+		lineageTag: c1a0e102-1111-4111-8111-000000000102
+
+		formatStringDefinition = "0.0%"
+
+	measure '% del principal motivo' =
+			VAR Ranking =
+			    TOPN (
+			        1,
+			        FILTER (
+			            SUMMARIZE (
+			                fact_emigrantes,
+			                fact_emigrantes[MOTIVOVIAJE],
+			                "Total", [Total Emigrantes]
+			            ),
+			            NOT ISBLANK ( fact_emigrantes[MOTIVOVIAJE] )
+			        ),
+			        [Total], DESC
+			    )
+			RETURN
+			    DIVIDE ( MAXX ( Ranking, [Total] ), [Total Emigrantes] )
+		lineageTag: c1a0e103-1111-4111-8111-000000000103
+
+		formatStringDefinition = "0.0%"
+
+	measure '% del principal rango' =
+			VAR Ranking =
+			    TOPN (
+			        1,
+			        FILTER (
+			            SUMMARIZE (
+			                fact_emigrantes,
+			                fact_emigrantes[RANGO_EDAD],
+			                "Total", [Total Emigrantes]
+			            ),
+			            NOT ISBLANK ( fact_emigrantes[RANGO_EDAD] )
+			        ),
+			        [Total], DESC
+			    )
+			RETURN
+			    DIVIDE ( MAXX ( Ranking, [Total] ), [Total Emigrantes] )
+		lineageTag: c1a0e104-1111-4111-8111-000000000104
+
+		formatStringDefinition = "0.0%"
+
+	measure 'Título principal país' =
+			VAR Ranking =
+			    TOPN (
+			        1,
+			        FILTER (
+			            SUMMARIZE (
+			                fact_emigrantes,
+			                fact_emigrantes[PAISMOVIMIENTO],
+			                "Total", [Total Emigrantes]
+			            ),
+			            NOT ISBLANK ( fact_emigrantes[PAISMOVIMIENTO] )
+			        ),
+			        [Total], DESC
+			    )
+			VAR Nombre = MAXX ( Ranking, fact_emigrantes[PAISMOVIMIENTO] )
+			VAR Pct = [% del principal país]
+			RETURN
+			    IF ( ISBLANK ( Nombre ), BLANK (), FORMAT ( Pct, "0.0%" ) & " · " & Nombre )
+		lineageTag: c1a0e105-1111-4111-8111-000000000105
+
+	measure 'Título principal motivo' =
+			VAR Ranking =
+			    TOPN (
+			        1,
+			        FILTER (
+			            SUMMARIZE (
+			                fact_emigrantes,
+			                fact_emigrantes[MOTIVOVIAJE],
+			                "Total", [Total Emigrantes]
+			            ),
+			            NOT ISBLANK ( fact_emigrantes[MOTIVOVIAJE] )
+			        ),
+			        [Total], DESC
+			    )
+			VAR Nombre = MAXX ( Ranking, fact_emigrantes[MOTIVOVIAJE] )
+			VAR Pct = [% del principal motivo]
+			RETURN
+			    IF ( ISBLANK ( Nombre ), BLANK (), FORMAT ( Pct, "0.0%" ) & " · " & Nombre )
+		lineageTag: c1a0e106-1111-4111-8111-000000000106
+
+	measure 'Título principal rango' =
+			VAR Ranking =
+			    TOPN (
+			        1,
+			        FILTER (
+			            SUMMARIZE (
+			                fact_emigrantes,
+			                fact_emigrantes[RANGO_EDAD],
+			                "Total", [Total Emigrantes]
+			            ),
+			            NOT ISBLANK ( fact_emigrantes[RANGO_EDAD] )
+			        ),
+			        [Total], DESC
+			    )
+			VAR Nombre = MAXX ( Ranking, fact_emigrantes[RANGO_EDAD] )
+			VAR Pct = [% del principal rango]
+			RETURN
+			    IF ( ISBLANK ( Nombre ), BLANK (), FORMAT ( Pct, "0.0%" ) & " · " & Nombre )
+		lineageTag: c1a0e107-1111-4111-8111-000000000107
+
+	column AÑO
+		dataType: string
+		lineageTag: c1a0e001-1111-4111-8111-000000000001
+		summarizeBy: none
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MES
+		dataType: string
+		lineageTag: c1a0e002-1111-4111-8111-000000000002
+		summarizeBy: none
+		sourceColumn: MES
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAISMOVIMIENTO
+		dataType: string
+		lineageTag: c1a0e003-1111-4111-8111-000000000003
+		summarizeBy: none
+		sourceColumn: PAISMOVIMIENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONTINENTE
+		dataType: string
+		lineageTag: c1a0e004-1111-4111-8111-000000000004
+		summarizeBy: none
+		sourceColumn: CONTINENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column MOTIVOVIAJE
+		dataType: string
+		lineageTag: c1a0e005-1111-4111-8111-000000000005
+		summarizeBy: none
+		sourceColumn: MOTIVOVIAJE
+
+		annotation SummarizationSetBy = Automatic
+
+	column PUNTODECONTROL
+		dataType: string
+		lineageTag: c1a0e006-1111-4111-8111-000000000006
+		summarizeBy: none
+		sourceColumn: PUNTODECONTROL
+
+		annotation SummarizationSetBy = Automatic
+
+	column MEDIODETRANSPORTE
+		dataType: string
+		lineageTag: c1a0e007-1111-4111-8111-000000000007
+		summarizeBy: none
+		sourceColumn: MEDIODETRANSPORTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ESTADOCIVIL
+		dataType: string
+		lineageTag: c1a0e008-1111-4111-8111-000000000008
+		summarizeBy: none
+		sourceColumn: ESTADOCIVIL
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROFESION_OCUPACION
+		dataType: string
+		lineageTag: c1a0e009-1111-4111-8111-000000000009
+		summarizeBy: none
+		sourceColumn: PROFESION_OCUPACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEXO
+		dataType: string
+		lineageTag: c1a0e00a-1111-4111-8111-00000000000a
+		summarizeBy: none
+		sourceColumn: SEXO
+
+		annotation SummarizationSetBy = Automatic
+
+	column EDAD
+		dataType: string
+		lineageTag: c1a0e00b-1111-4111-8111-00000000000b
+		summarizeBy: none
+		sourceColumn: EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column RANGO_EDAD
+		dataType: string
+		lineageTag: c1a0e00c-1111-4111-8111-00000000000c
+		summarizeBy: none
+		sourceColumn: RANGO_EDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_REG
+		dataType: string
+		lineageTag: c1a0e00d-1111-4111-8111-00000000000d
+		summarizeBy: none
+		sourceColumn: ID_REG
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: c1a0e00e-1111-4111-8111-00000000000e
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column UBIGEO
+		dataType: string
+		lineageTag: c1a0e00f-1111-4111-8111-00000000000f
+		summarizeBy: none
+		sourceColumn: UBIGEO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTAMENTO
+		dataType: string
+		lineageTag: c1a0e010-1111-4111-8111-000000000010
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROVINCIA
+		dataType: string
+		lineageTag: c1a0e011-1111-4111-8111-000000000011
+		summarizeBy: none
+		sourceColumn: PROVINCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISTRITO
+		dataType: string
+		lineageTag: c1a0e012-1111-4111-8111-000000000012
+		summarizeBy: none
+		sourceColumn: DISTRITO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CANTIDADES
+		dataType: int64
+		formatString: 0
+		lineageTag: c1a0e013-1111-4111-8111-000000000013
+		summarizeBy: sum
+		sourceColumn: CANTIDADES
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DEPARTAMENTO DEL PUNTO DE CONTROL'
+		dataType: string
+		lineageTag: 16fcaec9-a085-4e1a-8cd8-95670d5ee862
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO DEL PUNTO DE CONTROL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_emigrantes = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(Web.Contents("https://mineduperu.sharepoint.com/sites/DATAJOVEN/Documentos%20compartidos/General/POWER%20BI%20-%20DATO%20JOVEN/INDICADORES%20SOBRE%20JUVENTUD/Juventud%20migrante/JuventudMigrante-Emigrantes-2019_2025.xlsx"), null, true),
+				    #"Solo hojas" = Table.SelectRows(Origen, each [Kind] = "Sheet"),
+				    Hoja = #"Solo hojas"{0}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Hoja, [PromoteAllScalars=true]),
+				    #"Columnas renombradas" = Table.RenameColumns(#"Encabezados promovidos", {{"PAIS MOVIMIENTO", "PAISMOVIMIENTO"}, {"MOTIVO VIAJE", "MOTIVOVIAJE"}, {"PUNTO DE CONTROL", "PUNTODECONTROL"}, {"MEDIO DE TRANSPORTE", "MEDIODETRANSPORTE"}, {"ESTADO CIVIL", "ESTADOCIVIL"}, {"PROFESIÓN U OCUPACIÓN", "PROFESION_OCUPACION"}}),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Columnas renombradas", {{"CANTIDADES", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

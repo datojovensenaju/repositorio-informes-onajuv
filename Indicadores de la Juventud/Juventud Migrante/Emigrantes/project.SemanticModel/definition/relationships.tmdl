@@ -1,0 +1,16 @@
+relationship AutoDetected_58d61b71-8995-4953-92a6-55c4e3658be8
+	fromColumn: fact_emigrantes.SEXO
+	toColumn: Sexo.SEXO
+
+relationship AutoDetected_4f02a230-1ee6-411b-894b-af4d334686b9
+	fromColumn: fact_emigrantes.MES
+	toColumn: Mes.MES
+
+relationship f15af8cc-a39d-eeaa-9db8-0390f3ab3a9e
+	fromColumn: fact_emigrantes.RANGO_EDAD
+	toColumn: 'Rango Etario'.RANGO_ETARIO
+
+relationship AutoDetected_c22164f9-2d11-416b-8769-3b05ab8e3bf4
+	fromColumn: fact_emigrantes.AÑO
+	toColumn: Año.AÑO
+

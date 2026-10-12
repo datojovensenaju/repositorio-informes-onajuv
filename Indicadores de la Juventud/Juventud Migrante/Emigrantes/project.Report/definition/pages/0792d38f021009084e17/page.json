@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "0792d38f021009084e17",
+  "displayName": "Emigrantes-WEB",
+  "displayOption": "FitToPage",
+  "height": 2028,
+  "width": 1400,
+  "pageBinding": {
+    "name": "10090e823fa61166e7c0",
+    "type": "Default",
+    "parameters": [],
+    "acceptsFilterContext": "None"
+  },
+  "visualInteractions": [
+    {
+      "source": "42c46cc4a47a220289a5",
+      "target": "6153fdc6ead3748b5a03",
+      "type": "NoFilter"
+    },
+    {
+      "source": "42c46cc4a47a220289a5",
+      "target": "68f6a8570ddd797e2e47",
+      "type": "NoFilter"
+    }
+  ]
+}
