@@ -827,37 +827,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "01c1511f0b7a036a360d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Año"
-              }
-            },
-            "Property": "AÑO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f738b956ce08d028c608",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "asistenciaLectura"
-              }
-            },
-            "Property": "Total asistentes"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

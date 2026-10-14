@@ -350,23 +350,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "188e1a74c12588c70b8a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "asistenciaLectura"
-              }
-            },
-            "Property": "Variación asistentes"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

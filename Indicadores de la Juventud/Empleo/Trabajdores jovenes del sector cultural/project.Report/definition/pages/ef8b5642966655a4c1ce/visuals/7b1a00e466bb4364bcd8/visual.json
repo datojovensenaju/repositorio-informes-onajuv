@@ -859,37 +859,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "4a5d5ddabdac199a74b0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Mes"
-              }
-            },
-            "Property": "MES_NOMBRE"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "ab7264b34ff4cb9b461c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "asistenciaLectura"
-              }
-            },
-            "Property": "Total asistentes"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -3,7 +3,7 @@
   "name": "fbcabe80e84470943001",
   "position": {
     "x": 10,
-    "y": 1961.3333333333335,
+    "y": 1978.75,
     "z": 3000,
     "height": 66.666666666666671,
     "width": 225,
@@ -31,7 +31,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Octubre de 2026",
+                    "value": "Diciembre 2025",
                     "textStyle": {
                       "fontSize": "12pt",
                       "color": "#666666"
