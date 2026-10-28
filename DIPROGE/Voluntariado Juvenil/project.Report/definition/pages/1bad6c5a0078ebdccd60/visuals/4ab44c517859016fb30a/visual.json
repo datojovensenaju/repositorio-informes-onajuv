@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "4ab44c517859016fb30a",
   "position": {
     "x": 10,
@@ -27,7 +27,7 @@
                     }
                   },
                   {
-                    "value": "La información corresponde a Diciembre 2025.",
+                    "value": "La información corresponde a Marzo 2026.",
                     "textStyle": {
                       "fontSize": "11pt",
                       "color": "#252423"

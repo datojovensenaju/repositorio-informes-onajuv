@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "5227a948ba18dc0e279c",
   "displayName": "SOA -WEB",
-  "displayOption": "FitToPage",
-  "height": 1980,
+  "displayOption": "ActualSize",
+  "height": 2090,
   "width": 1400,
   "pageBinding": {
     "name": "d69018d8648187424a67",

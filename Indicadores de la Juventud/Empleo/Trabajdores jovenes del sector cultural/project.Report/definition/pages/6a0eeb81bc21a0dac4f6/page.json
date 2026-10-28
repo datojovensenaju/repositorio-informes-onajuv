@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "6a0eeb81bc21a0dac4f6",
   "displayName": "Pueblos indigenas",
-  "displayOption": "FitToPage",
-  "height": 1980,
+  "displayOption": "ActualSize",
+  "height": 2070,
   "width": 1400
 }

@@ -108,7 +108,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "true"
+                "Value": "false"
               }
             }
           }
@@ -190,11 +190,6 @@
         {
           "name": "logo_observatorio_(1)15548674041295418.png",
           "path": "logo_observatorio_(1)15548674041295418.png",
-          "type": "Image"
-        },
-        {
-          "name": "logo_observatorio_nuevo-07_(1)6811325414774037.png",
-          "path": "logo_observatorio_nuevo-07_(1)6811325414774037.png",
           "type": "Image"
         },
         {

@@ -326,24 +326,6 @@
     "sections": {
       "5227a948ba18dc0e279c": {
         "visualContainers": {
-          "f23be225861798ed9315": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "433e966f3aa96bd189b5": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "94f36bb64394abca2b37": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
           "c5646d90c034741a8077": {
             "singleVisual": {
               "visualType": "textbox",
@@ -1383,24 +1365,6 @@
                   }
                 ]
               }
-            }
-          },
-          "7dbba974f905604ae842": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "ffe48cdf5aaa3d74ef12": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "fcddbf754ba118e15e5c": {
-            "singleVisual": {
-              "visualType": "image",
-              "objects": {}
             }
           }
         }

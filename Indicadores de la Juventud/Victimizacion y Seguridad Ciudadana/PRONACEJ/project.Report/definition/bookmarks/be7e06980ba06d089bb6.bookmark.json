@@ -722,24 +722,6 @@
               ]
             }
           },
-          "f23be225861798ed9315": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "433e966f3aa96bd189b5": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "94f36bb64394abca2b37": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
           "91b16a36eb10caea11c2": {
             "filters": {
               "byExpr": [

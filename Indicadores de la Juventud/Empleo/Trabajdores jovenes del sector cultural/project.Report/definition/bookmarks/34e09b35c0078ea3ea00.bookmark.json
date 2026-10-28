@@ -499,24 +499,6 @@
               "objects": {}
             }
           },
-          "fbcabe80e84470943001": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "6bf85c91a6e40c2813e9": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "022925e52d10a9e2e7ce": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
           "6615f92e0ac901fa0381": {
             "filters": {
               "byExpr": [

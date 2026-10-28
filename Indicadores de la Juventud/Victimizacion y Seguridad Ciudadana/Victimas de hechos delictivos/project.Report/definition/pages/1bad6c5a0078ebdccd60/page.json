@@ -4,8 +4,5 @@
   "displayName": "Años promedio de estudio - WEB",
   "displayOption": "ActualSize",
   "height": 1980,
-  "width": 1400,
-  "filterConfig": {
-    "filterSortOrder": "Custom"
-  }
+  "width": 1400
 }

@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "0792d38f021009084e17",
   "displayName": "Delitos-WEB",
-  "displayOption": "FitToPage",
-  "height": 1980,
+  "displayOption": "ActualSize",
+  "height": 2020,
   "width": 1400,
   "pageBinding": {
     "name": "10090e823fa61166e7c0",

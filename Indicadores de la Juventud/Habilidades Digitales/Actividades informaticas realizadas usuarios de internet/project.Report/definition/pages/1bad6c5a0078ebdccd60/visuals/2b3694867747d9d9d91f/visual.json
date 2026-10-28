@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "2b3694867747d9d9d91f",
   "position": {
     "x": 510,
     "y": 130,
-    "z": 16000,
+    "z": 15000,
     "height": 75,
     "width": 890,
-    "tabOrder": 27000
+    "tabOrder": 26000
   },
   "visual": {
     "visualType": "slicer",
@@ -152,23 +152,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9714b2e7a3aac00b705b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "actividadInformatica"
-              }
-            },
-            "Property": "ACTIVIDAD INFORMATICA"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

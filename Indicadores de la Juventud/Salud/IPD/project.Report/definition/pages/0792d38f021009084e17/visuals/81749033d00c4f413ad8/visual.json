@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Fecha de publicación:",
+                    "value": "Ultima actualización:",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "12pt",
@@ -31,7 +31,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Agosto 2026",
+                    "value": "Octubre 2026",
                     "textStyle": {
                       "color": "#343c3e"
                     }

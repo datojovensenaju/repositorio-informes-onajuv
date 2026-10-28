@@ -431,6 +431,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "3a7ed63b58b0c9aac498",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_movimiento_migratorio"
+              }
+            },
+            "Property": "Total Movimientos"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
